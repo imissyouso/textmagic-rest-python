@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.create_push_token_input_object import CreatePushTokenInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.create_push_token_input_object import CreatePushTokenInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestCreatePushTokenInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreatePushTokenInputObject(unittest.TestCase):
     def testCreatePushTokenInputObject(self):
         """Test CreatePushTokenInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.create_push_token_input_object.CreatePushTokenInputObject()  # noqa: E501
+        # model = swagger_client.models.create_push_token_input_object.CreatePushTokenInputObject()  # noqa: E501
         pass
 
 

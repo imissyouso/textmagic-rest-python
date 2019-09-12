@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_sender_settings_response import GetSenderSettingsResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_sender_settings_response import GetSenderSettingsResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetSenderSettingsResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetSenderSettingsResponse(unittest.TestCase):
     def testGetSenderSettingsResponse(self):
         """Test GetSenderSettingsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_sender_settings_response.GetSenderSettingsResponse()  # noqa: E501
+        # model = swagger_client.models.get_sender_settings_response.GetSenderSettingsResponse()  # noqa: E501
         pass
 
 

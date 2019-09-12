@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.update_contact_input_object import UpdateContactInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.update_contact_input_object import UpdateContactInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestUpdateContactInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUpdateContactInputObject(unittest.TestCase):
     def testUpdateContactInputObject(self):
         """Test UpdateContactInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.update_contact_input_object.UpdateContactInputObject()  # noqa: E501
+        # model = swagger_client.models.update_contact_input_object.UpdateContactInputObject()  # noqa: E501
         pass
 
 

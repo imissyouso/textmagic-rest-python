@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.group_image import GroupImage  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.group_image import GroupImage  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGroupImage(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGroupImage(unittest.TestCase):
     def testGroupImage(self):
         """Test GroupImage"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.group_image.GroupImage()  # noqa: E501
+        # model = swagger_client.models.group_image.GroupImage()  # noqa: E501
         pass
 
 

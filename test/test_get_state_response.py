@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_state_response import GetStateResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_state_response import GetStateResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetStateResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetStateResponse(unittest.TestCase):
     def testGetStateResponse(self):
         """Test GetStateResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_state_response.GetStateResponse()  # noqa: E501
+        # model = swagger_client.models.get_state_response.GetStateResponse()  # noqa: E501
         pass
 
 

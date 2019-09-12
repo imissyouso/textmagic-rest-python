@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.successful_response import SuccessfulResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.successful_response import SuccessfulResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestSuccessfulResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSuccessfulResponse(unittest.TestCase):
     def testSuccessfulResponse(self):
         """Test SuccessfulResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.successful_response.SuccessfulResponse()  # noqa: E501
+        # model = swagger_client.models.successful_response.SuccessfulResponse()  # noqa: E501
         pass
 
 

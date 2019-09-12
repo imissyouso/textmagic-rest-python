@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.survey_recipient import SurveyRecipient  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.survey_recipient import SurveyRecipient  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestSurveyRecipient(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSurveyRecipient(unittest.TestCase):
     def testSurveyRecipient(self):
         """Test SurveyRecipient"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.survey_recipient.SurveyRecipient()  # noqa: E501
+        # model = swagger_client.models.survey_recipient.SurveyRecipient()  # noqa: E501
         pass
 
 

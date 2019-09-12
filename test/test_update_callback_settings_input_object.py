@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.update_callback_settings_input_object import UpdateCallbackSettingsInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.update_callback_settings_input_object import UpdateCallbackSettingsInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestUpdateCallbackSettingsInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUpdateCallbackSettingsInputObject(unittest.TestCase):
     def testUpdateCallbackSettingsInputObject(self):
         """Test UpdateCallbackSettingsInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.update_callback_settings_input_object.UpdateCallbackSettingsInputObject()  # noqa: E501
+        # model = swagger_client.models.update_callback_settings_input_object.UpdateCallbackSettingsInputObject()  # noqa: E501
         pass
 
 

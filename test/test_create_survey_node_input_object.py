@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.create_survey_node_input_object import CreateSurveyNodeInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.create_survey_node_input_object import CreateSurveyNodeInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestCreateSurveyNodeInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreateSurveyNodeInputObject(unittest.TestCase):
     def testCreateSurveyNodeInputObject(self):
         """Test CreateSurveyNodeInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.create_survey_node_input_object.CreateSurveyNodeInputObject()  # noqa: E501
+        # model = swagger_client.models.create_survey_node_input_object.CreateSurveyNodeInputObject()  # noqa: E501
         pass
 
 

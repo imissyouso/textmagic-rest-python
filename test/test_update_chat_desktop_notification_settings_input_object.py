@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.update_chat_desktop_notification_settings_input_object import UpdateChatDesktopNotificationSettingsInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.update_chat_desktop_notification_settings_input_object import UpdateChatDesktopNotificationSettingsInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestUpdateChatDesktopNotificationSettingsInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUpdateChatDesktopNotificationSettingsInputObject(unittest.TestCase):
     def testUpdateChatDesktopNotificationSettingsInputObject(self):
         """Test UpdateChatDesktopNotificationSettingsInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.update_chat_desktop_notification_settings_input_object.UpdateChatDesktopNotificationSettingsInputObject()  # noqa: E501
+        # model = swagger_client.models.update_chat_desktop_notification_settings_input_object.UpdateChatDesktopNotificationSettingsInputObject()  # noqa: E501
         pass
 
 

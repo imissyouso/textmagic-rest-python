@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.delete_scheduled_messages_bulk_input_object import DeleteScheduledMessagesBulkInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.delete_scheduled_messages_bulk_input_object import DeleteScheduledMessagesBulkInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestDeleteScheduledMessagesBulkInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDeleteScheduledMessagesBulkInputObject(unittest.TestCase):
     def testDeleteScheduledMessagesBulkInputObject(self):
         """Test DeleteScheduledMessagesBulkInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.delete_scheduled_messages_bulk_input_object.DeleteScheduledMessagesBulkInputObject()  # noqa: E501
+        # model = swagger_client.models.delete_scheduled_messages_bulk_input_object.DeleteScheduledMessagesBulkInputObject()  # noqa: E501
         pass
 
 

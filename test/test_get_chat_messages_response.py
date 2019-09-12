@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_chat_messages_response import GetChatMessagesResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_chat_messages_response import GetChatMessagesResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetChatMessagesResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetChatMessagesResponse(unittest.TestCase):
     def testGetChatMessagesResponse(self):
         """Test GetChatMessagesResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_chat_messages_response.GetChatMessagesResponse()  # noqa: E501
+        # model = swagger_client.models.get_chat_messages_response.GetChatMessagesResponse()  # noqa: E501
         pass
 
 

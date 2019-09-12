@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_all_bulk_sessions_response import GetAllBulkSessionsResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_all_bulk_sessions_response import GetAllBulkSessionsResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetAllBulkSessionsResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetAllBulkSessionsResponse(unittest.TestCase):
     def testGetAllBulkSessionsResponse(self):
         """Test GetAllBulkSessionsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_all_bulk_sessions_response.GetAllBulkSessionsResponse()  # noqa: E501
+        # model = swagger_client.models.get_all_bulk_sessions_response.GetAllBulkSessionsResponse()  # noqa: E501
         pass
 
 

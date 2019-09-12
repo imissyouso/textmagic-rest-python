@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.clear_and_assign_contacts_to_list_input_object import ClearAndAssignContactsToListInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.clear_and_assign_contacts_to_list_input_object import ClearAndAssignContactsToListInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestClearAndAssignContactsToListInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestClearAndAssignContactsToListInputObject(unittest.TestCase):
     def testClearAndAssignContactsToListInputObject(self):
         """Test ClearAndAssignContactsToListInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.clear_and_assign_contacts_to_list_input_object.ClearAndAssignContactsToListInputObject()  # noqa: E501
+        # model = swagger_client.models.clear_and_assign_contacts_to_list_input_object.ClearAndAssignContactsToListInputObject()  # noqa: E501
         pass
 
 

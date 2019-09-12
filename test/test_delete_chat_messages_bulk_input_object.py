@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.delete_chat_messages_bulk_input_object import DeleteChatMessagesBulkInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.delete_chat_messages_bulk_input_object import DeleteChatMessagesBulkInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestDeleteChatMessagesBulkInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDeleteChatMessagesBulkInputObject(unittest.TestCase):
     def testDeleteChatMessagesBulkInputObject(self):
         """Test DeleteChatMessagesBulkInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.delete_chat_messages_bulk_input_object.DeleteChatMessagesBulkInputObject()  # noqa: E501
+        # model = swagger_client.models.delete_chat_messages_bulk_input_object.DeleteChatMessagesBulkInputObject()  # noqa: E501
         pass
 
 

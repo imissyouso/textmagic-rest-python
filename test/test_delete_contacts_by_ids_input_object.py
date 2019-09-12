@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.delete_contacts_by_ids_input_object import DeleteContactsByIdsInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.delete_contacts_by_ids_input_object import DeleteContactsByIdsInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestDeleteContactsByIdsInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDeleteContactsByIdsInputObject(unittest.TestCase):
     def testDeleteContactsByIdsInputObject(self):
         """Test DeleteContactsByIdsInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.delete_contacts_by_ids_input_object.DeleteContactsByIdsInputObject()  # noqa: E501
+        # model = swagger_client.models.delete_contacts_by_ids_input_object.DeleteContactsByIdsInputObject()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_contacts_by_list_id_response import GetContactsByListIdResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_contacts_by_list_id_response import GetContactsByListIdResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetContactsByListIdResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetContactsByListIdResponse(unittest.TestCase):
     def testGetContactsByListIdResponse(self):
         """Test GetContactsByListIdResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_contacts_by_list_id_response.GetContactsByListIdResponse()  # noqa: E501
+        # model = swagger_client.models.get_contacts_by_list_id_response.GetContactsByListIdResponse()  # noqa: E501
         pass
 
 

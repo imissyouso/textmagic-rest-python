@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.request_sender_id_input_object import RequestSenderIdInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.request_sender_id_input_object import RequestSenderIdInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestRequestSenderIdInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestRequestSenderIdInputObject(unittest.TestCase):
     def testRequestSenderIdInputObject(self):
         """Test RequestSenderIdInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.request_sender_id_input_object.RequestSenderIdInputObject()  # noqa: E501
+        # model = swagger_client.models.request_sender_id_input_object.RequestSenderIdInputObject()  # noqa: E501
         pass
 
 

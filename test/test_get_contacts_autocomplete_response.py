@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_contacts_autocomplete_response import GetContactsAutocompleteResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_contacts_autocomplete_response import GetContactsAutocompleteResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetContactsAutocompleteResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetContactsAutocompleteResponse(unittest.TestCase):
     def testGetContactsAutocompleteResponse(self):
         """Test GetContactsAutocompleteResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_contacts_autocomplete_response.GetContactsAutocompleteResponse()  # noqa: E501
+        # model = swagger_client.models.get_contacts_autocomplete_response.GetContactsAutocompleteResponse()  # noqa: E501
         pass
 
 

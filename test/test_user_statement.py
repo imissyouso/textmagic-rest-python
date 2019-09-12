@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.user_statement import UserStatement  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.user_statement import UserStatement  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestUserStatement(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUserStatement(unittest.TestCase):
     def testUserStatement(self):
         """Test UserStatement"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.user_statement.UserStatement()  # noqa: E501
+        # model = swagger_client.models.user_statement.UserStatement()  # noqa: E501
         pass
 
 

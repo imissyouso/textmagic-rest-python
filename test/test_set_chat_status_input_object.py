@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.set_chat_status_input_object import SetChatStatusInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.set_chat_status_input_object import SetChatStatusInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestSetChatStatusInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSetChatStatusInputObject(unittest.TestCase):
     def testSetChatStatusInputObject(self):
         """Test SetChatStatusInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.set_chat_status_input_object.SetChatStatusInputObject()  # noqa: E501
+        # model = swagger_client.models.set_chat_status_input_object.SetChatStatusInputObject()  # noqa: E501
         pass
 
 

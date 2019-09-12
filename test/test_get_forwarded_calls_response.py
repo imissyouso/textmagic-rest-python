@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_forwarded_calls_response import GetForwardedCallsResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_forwarded_calls_response import GetForwardedCallsResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetForwardedCallsResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetForwardedCallsResponse(unittest.TestCase):
     def testGetForwardedCallsResponse(self):
         """Test GetForwardedCallsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_forwarded_calls_response.GetForwardedCallsResponse()  # noqa: E501
+        # model = swagger_client.models.get_forwarded_calls_response.GetForwardedCallsResponse()  # noqa: E501
         pass
 
 

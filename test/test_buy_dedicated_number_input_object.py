@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.buy_dedicated_number_input_object import BuyDedicatedNumberInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.buy_dedicated_number_input_object import BuyDedicatedNumberInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestBuyDedicatedNumberInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestBuyDedicatedNumberInputObject(unittest.TestCase):
     def testBuyDedicatedNumberInputObject(self):
         """Test BuyDedicatedNumberInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.buy_dedicated_number_input_object.BuyDedicatedNumberInputObject()  # noqa: E501
+        # model = swagger_client.models.buy_dedicated_number_input_object.BuyDedicatedNumberInputObject()  # noqa: E501
         pass
 
 

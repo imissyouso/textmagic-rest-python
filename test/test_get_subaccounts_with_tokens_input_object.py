@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_subaccounts_with_tokens_input_object import GetSubaccountsWithTokensInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_subaccounts_with_tokens_input_object import GetSubaccountsWithTokensInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetSubaccountsWithTokensInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetSubaccountsWithTokensInputObject(unittest.TestCase):
     def testGetSubaccountsWithTokensInputObject(self):
         """Test GetSubaccountsWithTokensInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_subaccounts_with_tokens_input_object.GetSubaccountsWithTokensInputObject()  # noqa: E501
+        # model = swagger_client.models.get_subaccounts_with_tokens_input_object.GetSubaccountsWithTokensInputObject()  # noqa: E501
         pass
 
 

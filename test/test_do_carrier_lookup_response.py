@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.do_carrier_lookup_response import DoCarrierLookupResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.do_carrier_lookup_response import DoCarrierLookupResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestDoCarrierLookupResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDoCarrierLookupResponse(unittest.TestCase):
     def testDoCarrierLookupResponse(self):
         """Test DoCarrierLookupResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.do_carrier_lookup_response.DoCarrierLookupResponse()  # noqa: E501
+        # model = swagger_client.models.do_carrier_lookup_response.DoCarrierLookupResponse()  # noqa: E501
         pass
 
 

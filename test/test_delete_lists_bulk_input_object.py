@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.delete_lists_bulk_input_object import DeleteListsBulkInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.delete_lists_bulk_input_object import DeleteListsBulkInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestDeleteListsBulkInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDeleteListsBulkInputObject(unittest.TestCase):
     def testDeleteListsBulkInputObject(self):
         """Test DeleteListsBulkInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.delete_lists_bulk_input_object.DeleteListsBulkInputObject()  # noqa: E501
+        # model = swagger_client.models.delete_lists_bulk_input_object.DeleteListsBulkInputObject()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.get_messages_by_session_id_response import GetMessagesBySessionIdResponse  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.get_messages_by_session_id_response import GetMessagesBySessionIdResponse  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestGetMessagesBySessionIdResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetMessagesBySessionIdResponse(unittest.TestCase):
     def testGetMessagesBySessionIdResponse(self):
         """Test GetMessagesBySessionIdResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_messages_by_session_id_response.GetMessagesBySessionIdResponse()  # noqa: E501
+        # model = swagger_client.models.get_messages_by_session_id_response.GetMessagesBySessionIdResponse()  # noqa: E501
         pass
 
 

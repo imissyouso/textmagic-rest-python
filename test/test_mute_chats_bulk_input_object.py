@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.mute_chats_bulk_input_object import MuteChatsBulkInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.mute_chats_bulk_input_object import MuteChatsBulkInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestMuteChatsBulkInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestMuteChatsBulkInputObject(unittest.TestCase):
     def testMuteChatsBulkInputObject(self):
         """Test MuteChatsBulkInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.mute_chats_bulk_input_object.MuteChatsBulkInputObject()  # noqa: E501
+        # model = swagger_client.models.mute_chats_bulk_input_object.MuteChatsBulkInputObject()  # noqa: E501
         pass
 
 

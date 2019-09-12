@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.message_template import MessageTemplate  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.message_template import MessageTemplate  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestMessageTemplate(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestMessageTemplate(unittest.TestCase):
     def testMessageTemplate(self):
         """Test MessageTemplate"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.message_template.MessageTemplate()  # noqa: E501
+        # model = swagger_client.models.message_template.MessageTemplate()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# TextMagic.TextMagicApi
+# swagger_client.TextMagicApi
 
 All URIs are relative to *http://my.textmagic.com*
 
@@ -188,18 +188,18 @@ Assign contacts to the specified list.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-assign_contacts_to_list_input_object = TextMagic.AssignContactsToListInputObject() # AssignContactsToListInputObject | Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+assign_contacts_to_list_input_object = swagger_client.AssignContactsToListInputObject() # AssignContactsToListInputObject | Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user
 id = 1 # int | 
 
 try:
@@ -241,18 +241,18 @@ Block contact from inbound and outbound communication by phone number.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-block_contact_input_object = TextMagic.BlockContactInputObject() # BlockContactInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+block_contact_input_object = swagger_client.BlockContactInputObject() # BlockContactInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -294,18 +294,18 @@ Buy a dedicated number and assign it to the specified account.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-buy_dedicated_number_input_object = TextMagic.BuyDedicatedNumberInputObject() # BuyDedicatedNumberInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+buy_dedicated_number_input_object = swagger_client.BuyDedicatedNumberInputObject() # BuyDedicatedNumberInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -346,17 +346,17 @@ Cancel a survey.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -397,18 +397,18 @@ Check user phone verification code
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-check_phone_verification_code_input_object = TextMagic.CheckPhoneVerificationCodeInputObject() # CheckPhoneVerificationCodeInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+check_phone_verification_code_input_object = swagger_client.CheckPhoneVerificationCodeInputObject() # CheckPhoneVerificationCodeInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -449,18 +449,18 @@ Reset list members to the specified contacts.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-clear_and_assign_contacts_to_list_input_object = TextMagic.ClearAndAssignContactsToListInputObject() # ClearAndAssignContactsToListInputObject | Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+clear_and_assign_contacts_to_list_input_object = swagger_client.ClearAndAssignContactsToListInputObject() # ClearAndAssignContactsToListInputObject | Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user
 id = 1 # int | 
 
 try:
@@ -502,18 +502,18 @@ Close chats by chat ids or close all chats
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-close_chats_bulk_input_object = TextMagic.CloseChatsBulkInputObject() # CloseChatsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+close_chats_bulk_input_object = swagger_client.CloseChatsBulkInputObject() # CloseChatsBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -554,17 +554,17 @@ Close all chats that have no unread messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Close all chats that have no unread messages.
@@ -600,17 +600,17 @@ Close subaccount.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -650,18 +650,18 @@ Create a new contact from the submitted data.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-create_contact_input_object = TextMagic.CreateContactInputObject() # CreateContactInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+create_contact_input_object = swagger_client.CreateContactInputObject() # CreateContactInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -703,18 +703,18 @@ Create a new contact note.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-create_contact_note_input_object = TextMagic.CreateContactNoteInputObject() # CreateContactNoteInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+create_contact_note_input_object = swagger_client.CreateContactNoteInputObject() # CreateContactNoteInputObject | 
 id = 56 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -758,18 +758,18 @@ Create a new custom field from the submitted data.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-create_custom_field_input_object = TextMagic.CreateCustomFieldInputObject() # CreateCustomFieldInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+create_custom_field_input_object = swagger_client.CreateCustomFieldInputObject() # CreateCustomFieldInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -811,18 +811,18 @@ Create a new list from the submitted data.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-create_list_input_object = TextMagic.CreateListInputObject() # CreateListInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+create_list_input_object = swagger_client.CreateListInputObject() # CreateListInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -864,18 +864,18 @@ Add or update a device token.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-create_push_token_input_object = TextMagic.CreatePushTokenInputObject() # CreatePushTokenInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+create_push_token_input_object = swagger_client.CreatePushTokenInputObject() # CreatePushTokenInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -916,18 +916,18 @@ Create a new survey from the submitted data.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-create_survey_input_object = TextMagic.CreateSurveyInputObject() # CreateSurveyInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+create_survey_input_object = swagger_client.CreateSurveyInputObject() # CreateSurveyInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -969,18 +969,18 @@ Create a new node from the submitted data.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-create_survey_node_input_object = TextMagic.CreateSurveyNodeInputObject() # CreateSurveyNodeInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+create_survey_node_input_object = swagger_client.CreateSurveyNodeInputObject() # CreateSurveyNodeInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -1024,18 +1024,18 @@ Create a new template from the submitted data.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-create_template_input_object = TextMagic.CreateTemplateInputObject() # CreateTemplateInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+create_template_input_object = swagger_client.CreateTemplateInputObject() # CreateTemplateInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -1077,17 +1077,17 @@ Delete all contacts.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Delete all contacts.
@@ -1125,17 +1125,17 @@ Delete all messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Delete all messages
@@ -1171,17 +1171,17 @@ Delete an avatar for the current user.\\
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Delete an avatar for the current user.\\
@@ -1217,18 +1217,18 @@ Delete messages from chat by given messages ID(s).
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_chat_messages_bulk_input_object = TextMagic.DeleteChatMessagesBulkInputObject() # DeleteChatMessagesBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_chat_messages_bulk_input_object = swagger_client.DeleteChatMessagesBulkInputObject() # DeleteChatMessagesBulkInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -1271,18 +1271,18 @@ Delete chats by given ID(s) or delete all chats.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_chats_bulk_input_object = TextMagic.DeleteChatsBulkInputObject() # DeleteChatsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_chats_bulk_input_object = swagger_client.DeleteChatsBulkInputObject() # DeleteChatsBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -1323,17 +1323,17 @@ Delete a single contact.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -1373,17 +1373,17 @@ Delete an avatar for the contact.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 56 # int | 
 
 try:
@@ -1423,17 +1423,17 @@ Delete a single contact note.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -1473,19 +1473,19 @@ Delete contact note by given ID(s) or delete all contact notes.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
-delete_contact_notes_bulk_input_object = TextMagic.DeleteContactNotesBulkInputObject() # DeleteContactNotesBulkInputObject | 
+delete_contact_notes_bulk_input_object = swagger_client.DeleteContactNotesBulkInputObject() # DeleteContactNotesBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -1527,18 +1527,18 @@ Delete contact by given ID(s) or delete all contacts.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_contacts_by_ids_input_object = TextMagic.DeleteContactsByIdsInputObject() # DeleteContactsByIdsInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_contacts_by_ids_input_object = swagger_client.DeleteContactsByIdsInputObject() # DeleteContactsByIdsInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -1579,18 +1579,18 @@ Unassign contacts from the specified list.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_contacs_from_list_object = TextMagic.DeleteContacsFromListObject() # DeleteContacsFromListObject | Contact ID(s), separated by comma
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_contacs_from_list_object = swagger_client.DeleteContacsFromListObject() # DeleteContacsFromListObject | Contact ID(s), separated by comma
 id = 1 # int | 
 
 try:
@@ -1631,17 +1631,17 @@ Delete a single custom field.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -1681,17 +1681,17 @@ Cancel dedicated number subscription.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -1731,17 +1731,17 @@ Delete the incoming message.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -1781,18 +1781,18 @@ Delete inbound messages by given ID(s) or delete all inbound messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_inbound_messages_bulk_input_object = TextMagic.DeleteInboundMessagesBulkInputObject() # DeleteInboundMessagesBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_inbound_messages_bulk_input_object = swagger_client.DeleteInboundMessagesBulkInputObject() # DeleteInboundMessagesBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -1833,17 +1833,17 @@ Delete a single list.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -1883,17 +1883,17 @@ Delete an avatar for the list.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -1933,18 +1933,18 @@ Delete contact from list by given ID(s) or all contacts from list.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_list_contacts_bulk_input_object = TextMagic.DeleteListContactsBulkInputObject() # DeleteListContactsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_list_contacts_bulk_input_object = swagger_client.DeleteListContactsBulkInputObject() # DeleteListContactsBulkInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -1987,18 +1987,18 @@ Delete list by given ID(s) or delete all lists.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_lists_bulk_input_object = TextMagic.DeleteListsBulkInputObject() # DeleteListsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_lists_bulk_input_object = swagger_client.DeleteListsBulkInputObject() # DeleteListsBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -2039,17 +2039,17 @@ Delete a message session, together with all nested messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -2089,18 +2089,18 @@ Delete messages sessions, together with all nested messages, by given ID(s) or d
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_message_sessions_bulk_input_object = TextMagic.DeleteMessageSessionsBulkInputObject() # DeleteMessageSessionsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_message_sessions_bulk_input_object = swagger_client.DeleteMessageSessionsBulkInputObject() # DeleteMessageSessionsBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -2143,17 +2143,17 @@ Delete a single message.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -2195,18 +2195,18 @@ Delete outbound messages by given ID(s) or delete all outbound messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_outbound_messages_bulk_input_object = TextMagic.DeleteOutboundMessagesBulkInputObject() # DeleteOutboundMessagesBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_outbound_messages_bulk_input_object = swagger_client.DeleteOutboundMessagesBulkInputObject() # DeleteOutboundMessagesBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -2247,17 +2247,17 @@ Delete a push notification device token.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 type = 'type_example' # str | 
 device_id = 56 # int | 
 
@@ -2299,17 +2299,17 @@ Delete a message session, together with all nested messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -2349,18 +2349,18 @@ Delete scheduled messages by given ID(s) or delete all scheduled messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_scheduled_messages_bulk_input_object = TextMagic.DeleteScheduledMessagesBulkInputObject() # DeleteScheduledMessagesBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_scheduled_messages_bulk_input_object = swagger_client.DeleteScheduledMessagesBulkInputObject() # DeleteScheduledMessagesBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -2401,17 +2401,17 @@ Delete a Sender ID.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -2451,17 +2451,17 @@ Delete a survey.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -2501,17 +2501,17 @@ Delete a node.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -2551,17 +2551,17 @@ Delete a single template.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -2601,18 +2601,18 @@ Delete template by given ID(s) or delete all templates.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-delete_templates_bulk_input_object = TextMagic.DeleteTemplatesBulkInputObject() # DeleteTemplatesBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+delete_templates_bulk_input_object = swagger_client.DeleteTemplatesBulkInputObject() # DeleteTemplatesBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -2655,13 +2655,13 @@ Returning a username and token that you should pass to the all requests (in X-TM
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi()
-do_auth_input_object = TextMagic.DoAuthInputObject() # DoAuthInputObject | 
+api_instance = swagger_client.TextMagicApi()
+do_auth_input_object = swagger_client.DoAuthInputObject() # DoAuthInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -2703,17 +2703,17 @@ Carrier Lookup
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 phone = '\"1-541-754-3010\"' # str | 
 country = 'US' # str | Country code for local formatted numbers (optional) (default to US)
 
@@ -2756,17 +2756,17 @@ Validate Email address using Email Lookup tool
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 email = '\"andrey.v@textmagic.biz\"' # str | 
 
 try:
@@ -2807,17 +2807,17 @@ Duplicate a survey.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -2858,17 +2858,17 @@ Get all bulk sending sessions.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -2911,17 +2911,17 @@ Get all user chats.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 status = 'status_example' # str | Fetch only (a)ctive, (c)losed or (d)eleted chats (optional)
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
@@ -2972,17 +2972,17 @@ Get all inbox messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
@@ -3029,17 +3029,17 @@ Get all message sending sessions.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -3084,17 +3084,17 @@ Get all user oubound messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 last_id = 56 # int | Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified (optional)
@@ -3139,17 +3139,17 @@ Get all scheduled messages.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 status = 'x' # str | Fetch schedules with the specific status: a - actual, c - completed, x - all (optional) (default to x)
@@ -3198,17 +3198,17 @@ Get all user templates.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional)
 limit = 10 # int | How many results to return (optional)
 
@@ -3251,17 +3251,17 @@ Find available dedicated numbers to buy.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 country = '\"GB\"' # str | Dedicated number country. Two letters in upper case
 prefix = 1 # int | Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree = 1 parameter and there are available tollfree numbers, this parameter will be ignore. (optional) (default to 1)
 tollfree = 0 # int | Should we show only tollfree numbers (tollfree available only for US). Default is false. (optional) (default to 0)
@@ -3306,17 +3306,17 @@ Get all available sender setting options which could be used in \"from\" paramet
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 country = 'country_example' # str | Return sender setting options available in specific country only. Two upper case characters (optional)
 
 try:
@@ -3357,17 +3357,17 @@ Returns the list of available balance options which can be used as a bound to de
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
@@ -3404,17 +3404,17 @@ Get balance notification settings
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get balance notification settings
@@ -3451,17 +3451,17 @@ Get blocked contacts.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 query = 'query_example' # str | Find blocked contacts by specified search query (optional)
@@ -3510,17 +3510,17 @@ Get bulk message session status.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -3561,17 +3561,17 @@ Fetch callback URL settings
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Fetch callback URL settings
@@ -3608,17 +3608,17 @@ Check pricing for a inbound/outbound call.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Check pricing for a inbound/outbound call.
@@ -3655,17 +3655,17 @@ Get a single chat.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -3706,17 +3706,17 @@ Find chats by phone.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 phone = 'phone_example' # str | 
 upsert = 0 # int | Create a new chat if not found (optional) (default to 0)
 reopen = 0 # int | Reopen chat if found or do not change status (optional) (default to 0)
@@ -3761,17 +3761,17 @@ Fetch messages from chat with specified chat id.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
@@ -3826,17 +3826,17 @@ Get a single contact.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | The contact id
 
 try:
@@ -3877,17 +3877,17 @@ Get a single contact by phone number.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 phone = 'phone_example' # str | 
 
 try:
@@ -3928,17 +3928,17 @@ Check is that phone number blocked
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 phone = '9997339956475' # str | Phone number to check
 
 try:
@@ -3979,17 +3979,17 @@ Get contact import session progress.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 56 # int | 
 
 try:
@@ -4030,17 +4030,17 @@ Get a single contact note.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 56 # int | 
 
 try:
@@ -4081,17 +4081,17 @@ Fetch notes assigned to the given contact.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
@@ -4136,17 +4136,17 @@ Get all user contacts.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 shared = 0 # int | Should shared contacts to be included (optional) (default to 0)
@@ -4195,17 +4195,17 @@ Get contacts autocomplete suggestions by given search term.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 query = '\"A\"' # str | Find recipients by specified search query
 limit = 10 # int | How many results to return (optional) (default to 10)
 lists = 0 # int | Should lists be returned or not (optional) (default to 0)
@@ -4252,17 +4252,17 @@ A useful synonym for \"contacts/search\" command with provided \"listId\" parame
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | Given group Id.
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
@@ -4311,17 +4311,17 @@ Return list of countries.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Return list of countries.
@@ -4358,17 +4358,17 @@ Get current user info.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get current user info.
@@ -4405,17 +4405,17 @@ Get a single custom field.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -4456,17 +4456,17 @@ Get all contact custom fields.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -4509,17 +4509,17 @@ Get a single dedicated number.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -4560,17 +4560,17 @@ Get an array of all rules that are disallowed to the current account.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get an array of all rules that are disallowed to the current account.
@@ -4607,17 +4607,17 @@ Get favorite contacts and lists.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 query = 'A' # str | Find contacts or lists by specified search query (optional) (default to A)
@@ -4662,17 +4662,17 @@ Get all forwarded calls.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -4715,17 +4715,17 @@ Get a single inbox message.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -4766,17 +4766,17 @@ Get inbound messages notification settings
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get inbound messages notification settings
@@ -4813,17 +4813,17 @@ Return account invoices.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -4866,17 +4866,17 @@ Get a single list.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -4917,17 +4917,17 @@ Fetch all contacts IDs belonging to the list with ID.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -4968,17 +4968,17 @@ Return lists which contact belongs to.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
@@ -5025,17 +5025,17 @@ Get messages preview (with tags merged) up to 100 messages per session.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 text = '\"Test message test\"' # str | Message text. Required if template_id is not set (optional)
 template_id = 1 # int | Template used instead of message text. Required if text is not set (optional)
 sending_time = 1565606455 # int | DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now (optional)
@@ -5110,17 +5110,17 @@ Check pricing for a new outbound message.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 include_blocked = 0 # int | Should we show pricing for the blocked contacts. (optional) (default to 0)
 text = '\"Test message test\"' # str | Message text. Required if template_id is not set (optional)
 template_id = 1 # int | Template used instead of message text. Required if text is not set (optional)
@@ -5197,17 +5197,17 @@ Get message prices for all countries.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get pricing
@@ -5244,17 +5244,17 @@ Get a message session.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -5295,17 +5295,17 @@ Get sending session statistics.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 include_deleted = 0 # int | Search also in deleted messages (optional) (default to 0)
 
@@ -5350,17 +5350,17 @@ A useful synonym for \"messages/search\" command with provided \"sessionId\" par
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
@@ -5409,17 +5409,17 @@ Return counters for messaging data views.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Return counters for messaging data views.
@@ -5456,17 +5456,17 @@ Return messaging statistics.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 by = 'off' # str | Group results by specified period: off, day, month or year. Default is off (optional) (default to off)
 start = 56 # int | Start date in unix timestamp format. Default is 7 days ago (optional)
 end = 'end_example' # str | End date in unix timestamp format. Default is now (optional)
@@ -5513,17 +5513,17 @@ Get a single outgoing message.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -5566,17 +5566,17 @@ Get outbound messages history.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 limit = 10 # int | How many results to return (optional) (default to 10)
 last_id = 56 # int | Filter results by ID, selecting all values lesser than the specified ID. (optional)
 query = 'query_example' # str | Find message by specified search query (optional)
@@ -5625,17 +5625,17 @@ Get all device tokens assigned to the current account
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get all device tokens assigned to the current account
@@ -5672,17 +5672,17 @@ Get message schedule.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -5723,17 +5723,17 @@ Get a single Sender ID.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -5774,17 +5774,17 @@ Get all sender IDs of current user.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -5827,17 +5827,17 @@ Get current user sender settings.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 country = 'country_example' # str | Return sender settings enabled for sending to specified country. Two upper case characters (optional)
 
 try:
@@ -5878,17 +5878,17 @@ Return account spending statistics.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 start = 56 # int | Optional. Start date in unix timestamp format. Default is 7 days ago (optional)
@@ -5935,17 +5935,17 @@ Get current entities state
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get current entities state
@@ -5982,17 +5982,17 @@ Get a single subaccount.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -6033,17 +6033,17 @@ Get all subaccounts of current user.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -6088,18 +6088,18 @@ When more than one token related to app name, last key will be returned.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-get_subaccounts_with_tokens_input_object = TextMagic.GetSubaccountsWithTokensInputObject() # GetSubaccountsWithTokensInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+get_subaccounts_with_tokens_input_object = swagger_client.GetSubaccountsWithTokensInputObject() # GetSubaccountsWithTokensInputObject | 
 page = 1 # float | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 x_ignore_null_values = true # bool |  (optional) (default to true)
@@ -6145,17 +6145,17 @@ Get a survey by id.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -6196,17 +6196,17 @@ Get a node by id.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -6247,17 +6247,17 @@ Fetch nodes by given survey id.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -6298,17 +6298,17 @@ Get all user surveys.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -6351,17 +6351,17 @@ Get a single template.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -6402,17 +6402,17 @@ Return all available timezone IDs.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 full = 0 # int | Return full info about timezones in array (0 or 1). Default is 0 (optional) (default to 0)
 
 try:
@@ -6453,17 +6453,17 @@ Get total amount of unread messages in the current user chats.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get total amount of unread messages in the current user chats.
@@ -6500,17 +6500,17 @@ Get a single unsubscribed contact.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -6551,17 +6551,17 @@ Get all contact have unsubscribed from your communication.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 
@@ -6604,17 +6604,17 @@ Get user's dedicated numbers.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 survey_id = 56 # int | Fetch only that numbers which are ready for the survey (optional)
@@ -6659,17 +6659,17 @@ Get all user lists.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
@@ -6720,17 +6720,17 @@ Get minimal valid apps versions
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Get minimal valid apps versions
@@ -6767,18 +6767,18 @@ Invite new subaccount.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-invite_subaccount_input_object = TextMagic.InviteSubaccountInputObject() # InviteSubaccountInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+invite_subaccount_input_object = swagger_client.InviteSubaccountInputObject() # InviteSubaccountInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -6819,18 +6819,18 @@ Mark several chats as read by chat ids or mark all chats as read
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-mark_chats_read_bulk_input_object = TextMagic.MarkChatsReadBulkInputObject() # MarkChatsReadBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+mark_chats_read_bulk_input_object = swagger_client.MarkChatsReadBulkInputObject() # MarkChatsReadBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -6871,18 +6871,18 @@ Mark several chats as UNread by chat ids or mark all chats as UNread
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-mark_chats_unread_bulk_input_object = TextMagic.MarkChatsUnreadBulkInputObject() # MarkChatsUnreadBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+mark_chats_unread_bulk_input_object = swagger_client.MarkChatsUnreadBulkInputObject() # MarkChatsUnreadBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -6923,18 +6923,18 @@ Merge two question nodes.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-merge_survey_nodes_input_object = TextMagic.MergeSurveyNodesInputObject() # MergeSurveyNodesInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+merge_survey_nodes_input_object = swagger_client.MergeSurveyNodesInputObject() # MergeSurveyNodesInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -6975,18 +6975,18 @@ Set mute mode.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-mute_chat_input_object = TextMagic.MuteChatInputObject() # MuteChatInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+mute_chat_input_object = swagger_client.MuteChatInputObject() # MuteChatInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -7028,18 +7028,18 @@ Mute several chats by chat ids or mute all chats
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-mute_chats_bulk_input_object = TextMagic.MuteChatsBulkInputObject() # MuteChatsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+mute_chats_bulk_input_object = swagger_client.MuteChatsBulkInputObject() # MuteChatsBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -7080,17 +7080,17 @@ Just does a pong.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Just does a pong.
@@ -7127,18 +7127,18 @@ Reopen chats by chat ids or reopen all chats
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-reopen_chats_bulk_input_object = TextMagic.ReopenChatsBulkInputObject() # ReopenChatsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+reopen_chats_bulk_input_object = swagger_client.ReopenChatsBulkInputObject() # ReopenChatsBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -7181,18 +7181,18 @@ Returning user object, key and app name.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-request_new_subaccount_token_input_object = TextMagic.RequestNewSubaccountTokenInputObject() # RequestNewSubaccountTokenInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+request_new_subaccount_token_input_object = swagger_client.RequestNewSubaccountTokenInputObject() # RequestNewSubaccountTokenInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -7234,18 +7234,18 @@ Request for a new Sender ID.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-request_sender_id_input_object = TextMagic.RequestSenderIdInputObject() # RequestSenderIdInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+request_sender_id_input_object = swagger_client.RequestSenderIdInputObject() # RequestSenderIdInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -7287,17 +7287,17 @@ Reset a survey flow.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -7338,17 +7338,17 @@ Find chats by inbound or outbound messages text.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 query = 'query_example' # str | Find chats by specified search query (optional)
@@ -7393,17 +7393,17 @@ Find chats by IDs.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 ids = 'ids_example' # str | Find chats by ID(s) (optional)
@@ -7448,17 +7448,17 @@ Find chats by recipient (contact, list name or phone number).
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 query = 'query_example' # str | Find chats by specified search query (optional)
@@ -7505,17 +7505,17 @@ Find user contacts by given parameters.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 shared = 0 # int | Should shared contacts to be included (optional) (default to 0)
@@ -7576,17 +7576,17 @@ Find inbound messages by given parameters.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 ids = 'ids_example' # str | Find message by ID(s) (optional)
@@ -7639,17 +7639,17 @@ Find contact lists by given parameters.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 ids = '\"1,2,3,4\"' # str | Find lists by ID(s) (optional)
@@ -7706,17 +7706,17 @@ Find outbound messages by given parameters.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 last_id = 56 # int | Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified (optional)
@@ -7771,17 +7771,17 @@ Find scheduled messages by given parameters.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 query = 'query_example' # str | Find messages by specified search query (optional)
@@ -7834,17 +7834,17 @@ Find user templates by given parameters.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 page = 1 # int | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
 ids = 'ids_example' # str | Find template by ID(s) (optional)
@@ -7893,17 +7893,17 @@ Send user email verification
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Send user email verification
@@ -7941,18 +7941,18 @@ The main entrypoint to send messages. See examples above for the reference.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-send_message_input_object = TextMagic.SendMessageInputObject() # SendMessageInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+send_message_input_object = swagger_client.SendMessageInputObject() # SendMessageInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -7994,17 +7994,17 @@ Send user phone verification
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 
 try:
     # Send user phone verification
@@ -8040,18 +8040,18 @@ Set status of the chat given by ID.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-set_chat_status_input_object = TextMagic.SetChatStatusInputObject() # SetChatStatusInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+set_chat_status_input_object = swagger_client.SetChatStatusInputObject() # SetChatStatusInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8093,17 +8093,17 @@ Start a survey.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
 
 try:
@@ -8144,18 +8144,18 @@ Unblock contact by phone number.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-unblock_contact_input_object = TextMagic.UnblockContactInputObject() # UnblockContactInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+unblock_contact_input_object = swagger_client.UnblockContactInputObject() # UnblockContactInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8196,18 +8196,18 @@ Unblock several contacts by blocked contact ids or unblock all contacts
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-unblock_contacts_bulk_input_object = TextMagic.UnblockContactsBulkInputObject() # UnblockContactsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+unblock_contacts_bulk_input_object = swagger_client.UnblockContactsBulkInputObject() # UnblockContactsBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8248,18 +8248,18 @@ Unmute several chats by chat ids or unmute all chats
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-unmute_chats_bulk_input_object = TextMagic.UnmuteChatsBulkInputObject() # UnmuteChatsBulkInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+unmute_chats_bulk_input_object = swagger_client.UnmuteChatsBulkInputObject() # UnmuteChatsBulkInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8300,18 +8300,18 @@ Unsubscribe contact from your communication by phone number.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-unsubscribe_contact_input_object = TextMagic.UnsubscribeContactInputObject() # UnsubscribeContactInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+unsubscribe_contact_input_object = swagger_client.UnsubscribeContactInputObject() # UnsubscribeContactInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8353,18 +8353,18 @@ Update balance notification settings
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_balance_notification_settings_input_object = TextMagic.UpdateBalanceNotificationSettingsInputObject() # UpdateBalanceNotificationSettingsInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_balance_notification_settings_input_object = swagger_client.UpdateBalanceNotificationSettingsInputObject() # UpdateBalanceNotificationSettingsInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8405,18 +8405,18 @@ Update callback URL settings
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_callback_settings_input_object = TextMagic.UpdateCallbackSettingsInputObject() # UpdateCallbackSettingsInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_callback_settings_input_object = swagger_client.UpdateCallbackSettingsInputObject() # UpdateCallbackSettingsInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8457,18 +8457,18 @@ Update chat desktop notification settings
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_chat_desktop_notification_settings_input_object = TextMagic.UpdateChatDesktopNotificationSettingsInputObject() # UpdateChatDesktopNotificationSettingsInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_chat_desktop_notification_settings_input_object = swagger_client.UpdateChatDesktopNotificationSettingsInputObject() # UpdateChatDesktopNotificationSettingsInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8509,18 +8509,18 @@ Update existing contact.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_contact_input_object = TextMagic.UpdateContactInputObject() # UpdateContactInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_contact_input_object = swagger_client.UpdateContactInputObject() # UpdateContactInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -8564,18 +8564,18 @@ Update existing contact note.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_contact_note_input_object = TextMagic.UpdateContactNoteInputObject() # UpdateContactNoteInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_contact_note_input_object = swagger_client.UpdateContactNoteInputObject() # UpdateContactNoteInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -8619,18 +8619,18 @@ Update current user info.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_current_user_input_object = TextMagic.UpdateCurrentUserInputObject() # UpdateCurrentUserInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_current_user_input_object = swagger_client.UpdateCurrentUserInputObject() # UpdateCurrentUserInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8672,18 +8672,18 @@ Update existing custom field.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_custom_field_input_object = TextMagic.UpdateCustomFieldInputObject() # UpdateCustomFieldInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_custom_field_input_object = swagger_client.UpdateCustomFieldInputObject() # UpdateCustomFieldInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -8727,18 +8727,18 @@ Update contact's custom field value.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_custom_field_value_input_object = TextMagic.UpdateCustomFieldValueInputObject() # UpdateCustomFieldValueInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_custom_field_value_input_object = swagger_client.UpdateCustomFieldValueInputObject() # UpdateCustomFieldValueInputObject | 
 id = 'id_example' # str | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -8782,18 +8782,18 @@ Update inbound messages notification settings
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_inbound_messages_notification_settings_input_object = TextMagic.UpdateInboundMessagesNotificationSettingsInputObject() # UpdateInboundMessagesNotificationSettingsInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_inbound_messages_notification_settings_input_object = swagger_client.UpdateInboundMessagesNotificationSettingsInputObject() # UpdateInboundMessagesNotificationSettingsInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8834,19 +8834,19 @@ Update existing list.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 id = 1 # int | 
-update_list_object = TextMagic.UpdateListObject() # UpdateListObject |  (optional)
+update_list_object = swagger_client.UpdateListObject() # UpdateListObject |  (optional)
 
 try:
     # Update existing list.
@@ -8887,18 +8887,18 @@ Change user password.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_password_input_object = TextMagic.UpdatePasswordInputObject() # UpdatePasswordInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_password_input_object = swagger_client.UpdatePasswordInputObject() # UpdatePasswordInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8939,18 +8939,18 @@ Change sender settings for specified country.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_sender_setting_input_object = TextMagic.UpdateSenderSettingInputObject() # UpdateSenderSettingInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_sender_setting_input_object = swagger_client.UpdateSenderSettingInputObject() # UpdateSenderSettingInputObject | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
@@ -8991,18 +8991,18 @@ Update existing survey.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_survey_input_object = TextMagic.UpdateSurveyInputObject() # UpdateSurveyInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_survey_input_object = swagger_client.UpdateSurveyInputObject() # UpdateSurveyInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -9046,18 +9046,18 @@ Update existing node.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_survey_node_input_object = TextMagic.UpdateSurveyNodeInputObject() # UpdateSurveyNodeInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_survey_node_input_object = swagger_client.UpdateSurveyNodeInputObject() # UpdateSurveyNodeInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -9101,18 +9101,18 @@ Update existing template.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-update_template_input_object = TextMagic.UpdateTemplateInputObject() # UpdateTemplateInputObject | 
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
+update_template_input_object = swagger_client.UpdateTemplateInputObject() # UpdateTemplateInputObject | 
 id = 1 # int | 
 x_ignore_null_values = true # bool |  (optional) (default to true)
 
@@ -9156,17 +9156,17 @@ Add an avatar for the current user.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 image = '/path/to/file.txt' # file | User avatar. Should be PNG or JPG file not more than 10 MB
 
 try:
@@ -9206,17 +9206,17 @@ Add an avatar for the contact.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 image = '/path/to/file.txt' # file | Contact avatar. Should be PNG or JPG file not more than 10 MB
 id = 56 # int | 
 
@@ -9259,17 +9259,17 @@ Add an avatar for the list.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 image = '/path/to/file.txt' # file | List avatar. Should be PNG or JPG file not more than 10 MB
 id = 1 # int | 
 
@@ -9314,17 +9314,17 @@ Upload a new file to insert it as a link.
 ```python
 from __future__ import print_function
 import time
-import TextMagic
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
+configuration = swagger_client.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+api_instance = swagger_client.TextMagicApi(swagger_client.ApiClient(configuration))
 file = '/path/to/file.txt' # file | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats
 
 try:

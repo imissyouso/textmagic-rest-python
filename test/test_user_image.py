@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.user_image import UserImage  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.user_image import UserImage  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestUserImage(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUserImage(unittest.TestCase):
     def testUserImage(self):
         """Test UserImage"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.user_image.UserImage()  # noqa: E501
+        # model = swagger_client.models.user_image.UserImage()  # noqa: E501
         pass
 
 

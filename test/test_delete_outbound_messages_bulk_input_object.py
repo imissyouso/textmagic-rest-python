@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import TextMagic
-from TextMagic.Model.delete_outbound_messages_bulk_input_object import DeleteOutboundMessagesBulkInputObject  # noqa: E501
-from TextMagic.rest import ApiException
+import swagger_client
+from swagger_client.models.delete_outbound_messages_bulk_input_object import DeleteOutboundMessagesBulkInputObject  # noqa: E501
+from swagger_client.rest import ApiException
 
 
 class TestDeleteOutboundMessagesBulkInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDeleteOutboundMessagesBulkInputObject(unittest.TestCase):
     def testDeleteOutboundMessagesBulkInputObject(self):
         """Test DeleteOutboundMessagesBulkInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.delete_outbound_messages_bulk_input_object.DeleteOutboundMessagesBulkInputObject()  # noqa: E501
+        # model = swagger_client.models.delete_outbound_messages_bulk_input_object.DeleteOutboundMessagesBulkInputObject()  # noqa: E501
         pass
 
 
