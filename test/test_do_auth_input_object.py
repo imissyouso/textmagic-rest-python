@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.do_auth_input_object import DoAuthInputObject  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.do_auth_input_object import DoAuthInputObject  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestDoAuthInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDoAuthInputObject(unittest.TestCase):
     def testDoAuthInputObject(self):
         """Test DoAuthInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.do_auth_input_object.DoAuthInputObject()  # noqa: E501
+        # model = TextMagic.models.do_auth_input_object.DoAuthInputObject()  # noqa: E501
         pass
 
 

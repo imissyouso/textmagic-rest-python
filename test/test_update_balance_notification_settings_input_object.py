@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.update_balance_notification_settings_input_object import UpdateBalanceNotificationSettingsInputObject  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.update_balance_notification_settings_input_object import UpdateBalanceNotificationSettingsInputObject  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestUpdateBalanceNotificationSettingsInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUpdateBalanceNotificationSettingsInputObject(unittest.TestCase):
     def testUpdateBalanceNotificationSettingsInputObject(self):
         """Test UpdateBalanceNotificationSettingsInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.update_balance_notification_settings_input_object.UpdateBalanceNotificationSettingsInputObject()  # noqa: E501
+        # model = TextMagic.models.update_balance_notification_settings_input_object.UpdateBalanceNotificationSettingsInputObject()  # noqa: E501
         pass
 
 

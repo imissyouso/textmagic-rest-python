@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.unblock_contacts_bulk_input_object import UnblockContactsBulkInputObject  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.unblock_contacts_bulk_input_object import UnblockContactsBulkInputObject  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestUnblockContactsBulkInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUnblockContactsBulkInputObject(unittest.TestCase):
     def testUnblockContactsBulkInputObject(self):
         """Test UnblockContactsBulkInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.unblock_contacts_bulk_input_object.UnblockContactsBulkInputObject()  # noqa: E501
+        # model = TextMagic.models.unblock_contacts_bulk_input_object.UnblockContactsBulkInputObject()  # noqa: E501
         pass
 
 

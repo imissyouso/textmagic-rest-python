@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.messages_ics_parameters import MessagesIcsParameters  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.messages_ics_parameters import MessagesIcsParameters  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestMessagesIcsParameters(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestMessagesIcsParameters(unittest.TestCase):
     def testMessagesIcsParameters(self):
         """Test MessagesIcsParameters"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.messages_ics_parameters.MessagesIcsParameters()  # noqa: E501
+        # model = TextMagic.models.messages_ics_parameters.MessagesIcsParameters()  # noqa: E501
         pass
 
 

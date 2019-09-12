@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.unsubscribe_contact_input_object import UnsubscribeContactInputObject  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.unsubscribe_contact_input_object import UnsubscribeContactInputObject  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestUnsubscribeContactInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUnsubscribeContactInputObject(unittest.TestCase):
     def testUnsubscribeContactInputObject(self):
         """Test UnsubscribeContactInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.unsubscribe_contact_input_object.UnsubscribeContactInputObject()  # noqa: E501
+        # model = TextMagic.models.unsubscribe_contact_input_object.UnsubscribeContactInputObject()  # noqa: E501
         pass
 
 

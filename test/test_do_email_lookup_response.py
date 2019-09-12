@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.do_email_lookup_response import DoEmailLookupResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.do_email_lookup_response import DoEmailLookupResponse  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestDoEmailLookupResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDoEmailLookupResponse(unittest.TestCase):
     def testDoEmailLookupResponse(self):
         """Test DoEmailLookupResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.do_email_lookup_response.DoEmailLookupResponse()  # noqa: E501
+        # model = TextMagic.models.do_email_lookup_response.DoEmailLookupResponse()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.currency import Currency  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.currency import Currency  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestCurrency(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCurrency(unittest.TestCase):
     def testCurrency(self):
         """Test Currency"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.currency.Currency()  # noqa: E501
+        # model = TextMagic.models.currency.Currency()  # noqa: E501
         pass
 
 

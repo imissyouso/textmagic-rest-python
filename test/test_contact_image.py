@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.contact_image import ContactImage  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.contact_image import ContactImage  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestContactImage(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestContactImage(unittest.TestCase):
     def testContactImage(self):
         """Test ContactImage"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.contact_image.ContactImage()  # noqa: E501
+        # model = TextMagic.models.contact_image.ContactImage()  # noqa: E501
         pass
 
 

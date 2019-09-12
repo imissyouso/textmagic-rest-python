@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.merge_survey_nodes_input_object import MergeSurveyNodesInputObject  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.merge_survey_nodes_input_object import MergeSurveyNodesInputObject  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestMergeSurveyNodesInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestMergeSurveyNodesInputObject(unittest.TestCase):
     def testMergeSurveyNodesInputObject(self):
         """Test MergeSurveyNodesInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.merge_survey_nodes_input_object.MergeSurveyNodesInputObject()  # noqa: E501
+        # model = TextMagic.models.merge_survey_nodes_input_object.MergeSurveyNodesInputObject()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.search_lists_response import SearchListsResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.search_lists_response import SearchListsResponse  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestSearchListsResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSearchListsResponse(unittest.TestCase):
     def testSearchListsResponse(self):
         """Test SearchListsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.search_lists_response.SearchListsResponse()  # noqa: E501
+        # model = TextMagic.models.search_lists_response.SearchListsResponse()  # noqa: E501
         pass
 
 

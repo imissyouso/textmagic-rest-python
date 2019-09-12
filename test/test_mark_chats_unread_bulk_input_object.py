@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.mark_chats_unread_bulk_input_object import MarkChatsUnreadBulkInputObject  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.mark_chats_unread_bulk_input_object import MarkChatsUnreadBulkInputObject  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestMarkChatsUnreadBulkInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestMarkChatsUnreadBulkInputObject(unittest.TestCase):
     def testMarkChatsUnreadBulkInputObject(self):
         """Test MarkChatsUnreadBulkInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.mark_chats_unread_bulk_input_object.MarkChatsUnreadBulkInputObject()  # noqa: E501
+        # model = TextMagic.models.mark_chats_unread_bulk_input_object.MarkChatsUnreadBulkInputObject()  # noqa: E501
         pass
 
 

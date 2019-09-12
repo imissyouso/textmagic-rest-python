@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_unread_messages_total_response import GetUnreadMessagesTotalResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.get_unread_messages_total_response import GetUnreadMessagesTotalResponse  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestGetUnreadMessagesTotalResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetUnreadMessagesTotalResponse(unittest.TestCase):
     def testGetUnreadMessagesTotalResponse(self):
         """Test GetUnreadMessagesTotalResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_unread_messages_total_response.GetUnreadMessagesTotalResponse()  # noqa: E501
+        # model = TextMagic.models.get_unread_messages_total_response.GetUnreadMessagesTotalResponse()  # noqa: E501
         pass
 
 

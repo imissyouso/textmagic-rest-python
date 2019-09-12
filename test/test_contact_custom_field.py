@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.contact_custom_field import ContactCustomField  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.contact_custom_field import ContactCustomField  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestContactCustomField(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestContactCustomField(unittest.TestCase):
     def testContactCustomField(self):
         """Test ContactCustomField"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.contact_custom_field.ContactCustomField()  # noqa: E501
+        # model = TextMagic.models.contact_custom_field.ContactCustomField()  # noqa: E501
         pass
 
 

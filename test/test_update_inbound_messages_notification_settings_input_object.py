@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.update_inbound_messages_notification_settings_input_object import UpdateInboundMessagesNotificationSettingsInputObject  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.update_inbound_messages_notification_settings_input_object import UpdateInboundMessagesNotificationSettingsInputObject  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestUpdateInboundMessagesNotificationSettingsInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUpdateInboundMessagesNotificationSettingsInputObject(unittest.TestCase
     def testUpdateInboundMessagesNotificationSettingsInputObject(self):
         """Test UpdateInboundMessagesNotificationSettingsInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.update_inbound_messages_notification_settings_input_object.UpdateInboundMessagesNotificationSettingsInputObject()  # noqa: E501
+        # model = TextMagic.models.update_inbound_messages_notification_settings_input_object.UpdateInboundMessagesNotificationSettingsInputObject()  # noqa: E501
         pass
 
 

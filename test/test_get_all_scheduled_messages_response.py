@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_all_scheduled_messages_response import GetAllScheduledMessagesResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.get_all_scheduled_messages_response import GetAllScheduledMessagesResponse  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestGetAllScheduledMessagesResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetAllScheduledMessagesResponse(unittest.TestCase):
     def testGetAllScheduledMessagesResponse(self):
         """Test GetAllScheduledMessagesResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_all_scheduled_messages_response.GetAllScheduledMessagesResponse()  # noqa: E501
+        # model = TextMagic.models.get_all_scheduled_messages_response.GetAllScheduledMessagesResponse()  # noqa: E501
         pass
 
 

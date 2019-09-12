@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.not_found_response import NotFoundResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.not_found_response import NotFoundResponse  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestNotFoundResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestNotFoundResponse(unittest.TestCase):
     def testNotFoundResponse(self):
         """Test NotFoundResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.not_found_response.NotFoundResponse()  # noqa: E501
+        # model = TextMagic.models.not_found_response.NotFoundResponse()  # noqa: E501
         pass
 
 

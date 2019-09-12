@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.check_phone_verification_code_input_object import CheckPhoneVerificationCodeInputObject  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.check_phone_verification_code_input_object import CheckPhoneVerificationCodeInputObject  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestCheckPhoneVerificationCodeInputObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCheckPhoneVerificationCodeInputObject(unittest.TestCase):
     def testCheckPhoneVerificationCodeInputObject(self):
         """Test CheckPhoneVerificationCodeInputObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.check_phone_verification_code_input_object.CheckPhoneVerificationCodeInputObject()  # noqa: E501
+        # model = TextMagic.models.check_phone_verification_code_input_object.CheckPhoneVerificationCodeInputObject()  # noqa: E501
         pass
 
 

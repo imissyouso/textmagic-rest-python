@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.users_inbound import UsersInbound  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.users_inbound import UsersInbound  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestUsersInbound(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUsersInbound(unittest.TestCase):
     def testUsersInbound(self):
         """Test UsersInbound"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.users_inbound.UsersInbound()  # noqa: E501
+        # model = TextMagic.models.users_inbound.UsersInbound()  # noqa: E501
         pass
 
 

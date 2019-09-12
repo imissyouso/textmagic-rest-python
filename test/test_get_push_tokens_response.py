@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_push_tokens_response import GetPushTokensResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.get_push_tokens_response import GetPushTokensResponse  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestGetPushTokensResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetPushTokensResponse(unittest.TestCase):
     def testGetPushTokensResponse(self):
         """Test GetPushTokensResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_push_tokens_response.GetPushTokensResponse()  # noqa: E501
+        # model = TextMagic.models.get_push_tokens_response.GetPushTokensResponse()  # noqa: E501
         pass
 
 

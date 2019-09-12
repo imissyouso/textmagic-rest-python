@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.unauthorized_response import UnauthorizedResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.unauthorized_response import UnauthorizedResponse  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestUnauthorizedResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUnauthorizedResponse(unittest.TestCase):
     def testUnauthorizedResponse(self):
         """Test UnauthorizedResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.unauthorized_response.UnauthorizedResponse()  # noqa: E501
+        # model = TextMagic.models.unauthorized_response.UnauthorizedResponse()  # noqa: E501
         pass
 
 

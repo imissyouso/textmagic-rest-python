@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.get_unsubscribers_response import GetUnsubscribersResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import TextMagic
+from TextMagic.models.get_unsubscribers_response import GetUnsubscribersResponse  # noqa: E501
+from TextMagic.rest import ApiException
 
 
 class TestGetUnsubscribersResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestGetUnsubscribersResponse(unittest.TestCase):
     def testGetUnsubscribersResponse(self):
         """Test GetUnsubscribersResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.get_unsubscribers_response.GetUnsubscribersResponse()  # noqa: E501
+        # model = TextMagic.models.get_unsubscribers_response.GetUnsubscribersResponse()  # noqa: E501
         pass
 
 
