@@ -69,6 +69,7 @@ import six
             :type: str
             """
 
+
             self._type = type
 
             @property
@@ -89,6 +90,7 @@ import six
             :param token: The token of this PushToken.  # noqa: E501
             :type: str
             """
+
 
             self._token = token
 

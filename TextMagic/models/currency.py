@@ -73,6 +73,7 @@ import six
             :type: str
             """
 
+
             self._id = id
 
             @property
@@ -94,6 +95,7 @@ import six
             :type: str
             """
 
+
             self._unicode_symbol = unicode_symbol
 
             @property
@@ -114,6 +116,7 @@ import six
             :param html_symbol: The html_symbol of this Currency.  # noqa: E501
             :type: str
             """
+
 
             self._html_symbol = html_symbol
 

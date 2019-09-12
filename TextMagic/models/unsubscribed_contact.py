@@ -81,6 +81,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -101,6 +102,7 @@ import six
             :param phone: The phone of this UnsubscribedContact.  # noqa: E501
             :type: str
             """
+
 
             self._phone = phone
 
@@ -123,6 +125,7 @@ import six
             :type: datetime
             """
 
+
             self._unsubscribe_time = unsubscribe_time
 
             @property
@@ -144,6 +147,7 @@ import six
             :type: str
             """
 
+
             self._first_name = first_name
 
             @property
@@ -164,6 +168,7 @@ import six
             :param last_name: The last_name of this UnsubscribedContact.  # noqa: E501
             :type: str
             """
+
 
             self._last_name = last_name
 

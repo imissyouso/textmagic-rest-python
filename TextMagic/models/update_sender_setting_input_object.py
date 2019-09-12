@@ -76,6 +76,7 @@ import six
             :type: str
             """
 
+
             self._value = value
 
             @property
@@ -99,6 +100,7 @@ import six
             :type: str
             """
 
+
             self._country = country
 
             @property
@@ -121,6 +123,7 @@ import six
             :param chat_id: The chat_id of this UpdateSenderSettingInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._chat_id = chat_id
 

@@ -83,6 +83,7 @@ import six
             :type: str
             """
 
+
             self._label = label
 
             @property
@@ -105,6 +106,7 @@ import six
             :param is_end_node: The is_end_node of this UpdateSurveyNodeInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._is_end_node = is_end_node
 
@@ -129,6 +131,7 @@ import six
             :type: str
             """
 
+
             self._body = body
 
             @property
@@ -151,6 +154,7 @@ import six
             :param send_delay: The send_delay of this UpdateSurveyNodeInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._send_delay = send_delay
 

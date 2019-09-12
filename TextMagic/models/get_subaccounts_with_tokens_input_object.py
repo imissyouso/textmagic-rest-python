@@ -71,6 +71,7 @@ import six
             :type: str
             """
 
+
             self._app_name = app_name
 
             @property
@@ -93,6 +94,7 @@ import six
             :param password: The password of this GetSubaccountsWithTokensInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._password = password
 

@@ -71,6 +71,7 @@ import six
             :type: str
             """
 
+
             self._device_id = device_id
 
             @property
@@ -93,6 +94,7 @@ import six
             :param push_service_type: The push_service_type of this CreatePushTokenInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._push_service_type = push_service_type
 

@@ -75,6 +75,7 @@ import six
             :type: str
             """
 
+
             self._out_url = out_url
 
             @property
@@ -98,6 +99,7 @@ import six
             :type: str
             """
 
+
             self._in_url = in_url
 
             @property
@@ -120,6 +122,7 @@ import six
             :param format: The format of this UpdateCallbackSettingsInputObject.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["m", "u", "j"]  # noqa: E501
                     if format not in allowed_values:
                     raise ValueError(

@@ -71,6 +71,7 @@ import six
             :type: str
             """
 
+
             self._old_password = old_password
 
             @property
@@ -93,6 +94,7 @@ import six
             :param new_password: The new_password of this UpdatePasswordInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._new_password = new_password
 

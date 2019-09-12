@@ -66,6 +66,7 @@ import six
             :type: list[MessageOut]
             """
 
+
             self._messages = messages
 
         def to_dict(self):

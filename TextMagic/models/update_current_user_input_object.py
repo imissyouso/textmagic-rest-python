@@ -96,6 +96,7 @@ import six
             :type: str
             """
 
+
             self._username = username
 
             @property
@@ -116,6 +117,7 @@ import six
             :param first_name: The first_name of this UpdateCurrentUserInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._first_name = first_name
 
@@ -138,6 +140,7 @@ import six
             :type: str
             """
 
+
             self._last_name = last_name
 
             @property
@@ -158,6 +161,7 @@ import six
             :param email: The email of this UpdateCurrentUserInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._email = email
 
@@ -180,6 +184,7 @@ import six
             :type: str
             """
 
+
             self._phone = phone
 
             @property
@@ -200,6 +205,7 @@ import six
             :param company: The company of this UpdateCurrentUserInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._company = company
 
@@ -223,6 +229,7 @@ import six
             :param timezone: The timezone of this UpdateCurrentUserInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._timezone = timezone
 

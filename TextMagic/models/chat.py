@@ -121,6 +121,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -141,6 +142,7 @@ import six
             :param original_id: The original_id of this Chat.  # noqa: E501
             :type: int
             """
+
 
             self._original_id = original_id
 
@@ -163,6 +165,7 @@ import six
             :type: str
             """
 
+
             self._phone = phone
 
             @property
@@ -183,6 +186,7 @@ import six
             :param contact: The contact of this Chat.  # noqa: E501
             :type: Contact
             """
+
 
             self._contact = contact
 
@@ -205,6 +209,7 @@ import six
             :type: int
             """
 
+
             self._unsubscribed_contact_id = unsubscribed_contact_id
 
             @property
@@ -225,6 +230,7 @@ import six
             :param unread: The unread of this Chat.  # noqa: E501
             :type: int
             """
+
 
             self._unread = unread
 
@@ -247,6 +253,7 @@ import six
             :type: datetime
             """
 
+
             self._updated_at = updated_at
 
             @property
@@ -267,6 +274,7 @@ import six
             :param status: The status of this Chat.  # noqa: E501
             :type: str
             """
+
 
             self._status = status
 
@@ -289,6 +297,7 @@ import six
             :type: int
             """
 
+
             self._mute = mute
 
             @property
@@ -309,6 +318,7 @@ import six
             :param last_message: The last_message of this Chat.  # noqa: E501
             :type: str
             """
+
 
             self._last_message = last_message
 
@@ -331,6 +341,7 @@ import six
             :type: str
             """
 
+
             self._direction = direction
 
             @property
@@ -351,6 +362,7 @@ import six
             :param _from: The _from of this Chat.  # noqa: E501
             :type: str
             """
+
 
             self.__from = _from
 
@@ -373,6 +385,7 @@ import six
             :type: str
             """
 
+
             self._muted_until = muted_until
 
             @property
@@ -394,6 +407,7 @@ import six
             :type: int
             """
 
+
             self._time_left_mute = time_left_mute
 
             @property
@@ -414,6 +428,7 @@ import six
             :param country: The country of this Chat.  # noqa: E501
             :type: Country
             """
+
 
             self._country = country
 

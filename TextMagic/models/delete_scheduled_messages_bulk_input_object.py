@@ -78,6 +78,7 @@ import six
             :type: str
             """
 
+
             self._ids = ids
 
             @property
@@ -101,6 +102,7 @@ import six
             :type: int
             """
 
+
             self._all = all
 
             @property
@@ -123,6 +125,7 @@ import six
             :param status: The status of this DeleteScheduledMessagesBulkInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._status = status
 

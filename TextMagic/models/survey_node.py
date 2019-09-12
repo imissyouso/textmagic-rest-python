@@ -93,6 +93,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -113,6 +114,7 @@ import six
             :param label: The label of this SurveyNode.  # noqa: E501
             :type: str
             """
+
 
             self._label = label
 
@@ -135,6 +137,7 @@ import six
             :type: str
             """
 
+
             self._body = body
 
             @property
@@ -155,6 +158,7 @@ import six
             :param node_type: The node_type of this SurveyNode.  # noqa: E501
             :type: str
             """
+
 
             self._node_type = node_type
 
@@ -177,6 +181,7 @@ import six
             :type: bool
             """
 
+
             self._is_end_node = is_end_node
 
             @property
@@ -197,6 +202,7 @@ import six
             :param send_delay: The send_delay of this SurveyNode.  # noqa: E501
             :type: int
             """
+
 
             self._send_delay = send_delay
 
@@ -219,6 +225,7 @@ import six
             :type: list[str]
             """
 
+
             self._start_nodes = start_nodes
 
             @property
@@ -239,6 +246,7 @@ import six
             :param end_nodes: The end_nodes of this SurveyNode.  # noqa: E501
             :type: list[str]
             """
+
 
             self._end_nodes = end_nodes
 

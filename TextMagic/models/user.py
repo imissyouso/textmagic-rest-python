@@ -125,6 +125,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -145,6 +146,7 @@ import six
             :param username: The username of this User.  # noqa: E501
             :type: str
             """
+
 
             self._username = username
 
@@ -167,6 +169,7 @@ import six
             :type: str
             """
 
+
             self._first_name = first_name
 
             @property
@@ -187,6 +190,7 @@ import six
             :param last_name: The last_name of this User.  # noqa: E501
             :type: str
             """
+
 
             self._last_name = last_name
 
@@ -209,6 +213,7 @@ import six
             :type: str
             """
 
+
             self._email = email
 
             @property
@@ -229,6 +234,7 @@ import six
             :param status: The status of this User.  # noqa: E501
             :type: str
             """
+
 
             self._status = status
 
@@ -251,6 +257,7 @@ import six
             :type: float
             """
 
+
             self._balance = balance
 
             @property
@@ -271,6 +278,7 @@ import six
             :param phone: The phone of this User.  # noqa: E501
             :type: str
             """
+
 
             self._phone = phone
 
@@ -293,6 +301,7 @@ import six
             :type: str
             """
 
+
             self._company = company
 
             @property
@@ -313,6 +322,7 @@ import six
             :param currency: The currency of this User.  # noqa: E501
             :type: Currency
             """
+
 
             self._currency = currency
 
@@ -335,6 +345,7 @@ import six
             :type: Country
             """
 
+
             self._country = country
 
             @property
@@ -355,6 +366,7 @@ import six
             :param timezone: The timezone of this User.  # noqa: E501
             :type: Timezone
             """
+
 
             self._timezone = timezone
 
@@ -377,6 +389,7 @@ import six
             :type: str
             """
 
+
             self._subaccount_type = subaccount_type
 
             @property
@@ -397,6 +410,7 @@ import six
             :param email_accepted: The email_accepted of this User.  # noqa: E501
             :type: bool
             """
+
 
             self._email_accepted = email_accepted
 
@@ -419,6 +433,7 @@ import six
             :type: bool
             """
 
+
             self._phone_accepted = phone_accepted
 
             @property
@@ -439,6 +454,7 @@ import six
             :param avatar: The avatar of this User.  # noqa: E501
             :type: UserImage
             """
+
 
             self._avatar = avatar
 

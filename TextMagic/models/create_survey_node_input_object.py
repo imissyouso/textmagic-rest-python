@@ -87,6 +87,7 @@ import six
             :param node_type: The node_type of this CreateSurveyNodeInputObject.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["a", "q"]  # noqa: E501
                     if node_type not in allowed_values:
                     raise ValueError(
@@ -117,6 +118,7 @@ import six
             :type: str
             """
 
+
             self._label = label
 
             @property
@@ -139,6 +141,7 @@ import six
             :param body: The body of this CreateSurveyNodeInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._body = body
 
@@ -163,6 +166,7 @@ import six
             :type: int
             """
 
+
             self._start_node = start_node
 
             @property
@@ -185,6 +189,7 @@ import six
             :param send_delay: The send_delay of this CreateSurveyNodeInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._send_delay = send_delay
 

@@ -69,6 +69,7 @@ import six
             :type: str
             """
 
+
             self._id = id
 
             @property
@@ -89,6 +90,7 @@ import six
             :param name: The name of this Country.  # noqa: E501
             :type: str
             """
+
 
             self._name = name
 

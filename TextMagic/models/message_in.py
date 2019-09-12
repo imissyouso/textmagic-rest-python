@@ -100,6 +100,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -120,6 +121,7 @@ import six
             :param sender: The sender of this MessageIn.  # noqa: E501
             :type: str
             """
+
 
             self._sender = sender
 
@@ -142,6 +144,7 @@ import six
             :type: str
             """
 
+
             self._receiver = receiver
 
             @property
@@ -162,6 +165,7 @@ import six
             :param message_time: The message_time of this MessageIn.  # noqa: E501
             :type: datetime
             """
+
 
             self._message_time = message_time
 
@@ -184,6 +188,7 @@ import six
             :type: str
             """
 
+
             self._text = text
 
             @property
@@ -204,6 +209,7 @@ import six
             :param contact_id: The contact_id of this MessageIn.  # noqa: E501
             :type: int
             """
+
 
             self._contact_id = contact_id
 
@@ -226,6 +232,7 @@ import six
             :type: str
             """
 
+
             self._first_name = first_name
 
             @property
@@ -247,6 +254,7 @@ import six
             :type: str
             """
 
+
             self._last_name = last_name
 
             @property
@@ -267,6 +275,7 @@ import six
             :param avatar: The avatar of this MessageIn.  # noqa: E501
             :type: str
             """
+
 
             self._avatar = avatar
 

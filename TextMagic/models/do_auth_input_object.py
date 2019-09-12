@@ -101,6 +101,7 @@ import six
             :type: str
             """
 
+
             self._username = username
 
             @property
@@ -123,6 +124,7 @@ import six
             :param password: The password of this DoAuthInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._password = password
 
@@ -147,6 +149,7 @@ import six
             :type: str
             """
 
+
             self._app_name = app_name
 
             @property
@@ -169,6 +172,7 @@ import six
             :param app_version: The app_version of this DoAuthInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._app_version = app_version
 
@@ -193,6 +197,7 @@ import six
             :type: str
             """
 
+
             self._device_id = device_id
 
             @property
@@ -215,6 +220,7 @@ import six
             :param push_service_type: The push_service_type of this DoAuthInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._push_service_type = push_service_type
 
@@ -239,6 +245,7 @@ import six
             :type: str
             """
 
+
             self._tfa_code = tfa_code
 
             @property
@@ -261,6 +268,7 @@ import six
             :param tfa_id: The tfa_id of this DoAuthInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._tfa_id = tfa_id
 

@@ -69,6 +69,7 @@ import six
             :type: list[SurveyNode]
             """
 
+
             self._nodes = nodes
 
             @property
@@ -89,6 +90,7 @@ import six
             :param rows: The rows of this GetSurveyNodesResponse.  # noqa: E501
             :type: list[list[int]]
             """
+
 
             self._rows = rows
 

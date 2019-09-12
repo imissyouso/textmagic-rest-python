@@ -65,6 +65,7 @@ import six
             :type: int
             """
 
+
             self._code = code
 
         def to_dict(self):

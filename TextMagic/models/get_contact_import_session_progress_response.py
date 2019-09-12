@@ -69,6 +69,7 @@ import six
             :type: int
             """
 
+
             self._status = status
 
             @property
@@ -91,6 +92,7 @@ import six
             :param processed: The processed of this GetContactImportSessionProgressResponse.  # noqa: E501
             :type: int
             """
+
 
             self._processed = processed
 

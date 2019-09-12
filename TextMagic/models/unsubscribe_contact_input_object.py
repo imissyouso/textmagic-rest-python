@@ -73,6 +73,7 @@ import six
             :type: str
             """
 
+
             self._phone = phone
 
             @property
@@ -95,6 +96,7 @@ import six
             :param block_incoming: The block_incoming of this UnsubscribeContactInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._block_incoming = block_incoming
 

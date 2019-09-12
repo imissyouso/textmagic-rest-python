@@ -71,6 +71,7 @@ import six
             :type: int
             """
 
+
             self._first_node = first_node
 
             @property
@@ -93,6 +94,7 @@ import six
             :param second_node: The second_node of this MergeSurveyNodesInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._second_node = second_node
 

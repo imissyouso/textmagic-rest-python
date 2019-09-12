@@ -73,6 +73,7 @@ import six
             :type: int
             """
 
+
             self._contacts = contacts
 
             @property
@@ -94,6 +95,7 @@ import six
             :type: int
             """
 
+
             self._sent = sent
 
             @property
@@ -114,6 +116,7 @@ import six
             :param received: The received of this GetMessagingCountersResponse.  # noqa: E501
             :type: int
             """
+
 
             self._received = received
 

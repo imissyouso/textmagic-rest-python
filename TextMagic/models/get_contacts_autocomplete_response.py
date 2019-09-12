@@ -107,6 +107,7 @@ import six
             :type: int
             """
 
+
             self._entity_id = entity_id
 
             @property
@@ -129,6 +130,7 @@ import six
             :param entity_type: The entity_type of this GetContactsAutocompleteResponse.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["list", "contact", "reply"]  # noqa: E501
                     if entity_type not in allowed_values:
                     raise ValueError(
@@ -159,6 +161,7 @@ import six
             :type: str
             """
 
+
             self._value = value
 
             @property
@@ -181,6 +184,7 @@ import six
             :param label: The label of this GetContactsAutocompleteResponse.  # noqa: E501
             :type: str
             """
+
 
             self._label = label
 
@@ -205,6 +209,7 @@ import six
             :type: str
             """
 
+
             self._shared_by = shared_by
 
             @property
@@ -225,6 +230,7 @@ import six
             :param avatar: The avatar of this GetContactsAutocompleteResponse.  # noqa: E501
             :type: str
             """
+
 
             self._avatar = avatar
 
@@ -249,6 +255,7 @@ import six
             :type: bool
             """
 
+
             self._favorited = favorited
 
             @property
@@ -272,6 +279,7 @@ import six
             :type: int
             """
 
+
             self._user_id = user_id
 
             @property
@@ -292,6 +300,7 @@ import six
             :param country_name: The country_name of this GetContactsAutocompleteResponse.  # noqa: E501
             :type: str
             """
+
 
             self._country_name = country_name
 
@@ -314,6 +323,7 @@ import six
             :type: int
             """
 
+
             self._qposition = qposition
 
             @property
@@ -334,6 +344,7 @@ import six
             :param rposition: The rposition of this GetContactsAutocompleteResponse.  # noqa: E501
             :type: int
             """
+
 
             self._rposition = rposition
 

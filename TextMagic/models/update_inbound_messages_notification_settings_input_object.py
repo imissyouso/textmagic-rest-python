@@ -90,6 +90,7 @@ import six
             :type: bool
             """
 
+
             self._inbound_message_notification = inbound_message_notification
 
             @property
@@ -112,6 +113,7 @@ import six
             :param include_sms_history: The include_sms_history of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._include_sms_history = include_sms_history
 
@@ -136,6 +138,7 @@ import six
             :type: bool
             """
 
+
             self._send_in_html_format = send_in_html_format
 
             @property
@@ -158,6 +161,7 @@ import six
             :param alert_email1: The alert_email1 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._alert_email1 = alert_email1
 
@@ -182,6 +186,7 @@ import six
             :type: str
             """
 
+
             self._alert_email2 = alert_email2
 
             @property
@@ -204,6 +209,7 @@ import six
             :param alert_email3: The alert_email3 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._alert_email3 = alert_email3
 

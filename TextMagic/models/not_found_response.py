@@ -71,6 +71,7 @@ import six
             :type: int
             """
 
+
             self._code = code
 
             @property
@@ -91,6 +92,7 @@ import six
             :param message: The message of this NotFoundResponse.  # noqa: E501
             :type: str
             """
+
 
             self._message = message
 

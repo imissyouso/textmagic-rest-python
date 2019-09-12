@@ -73,6 +73,7 @@ import six
             :type: int
             """
 
+
             self._ios = ios
 
             @property
@@ -94,6 +95,7 @@ import six
             :type: int
             """
 
+
             self._android = android
 
             @property
@@ -114,6 +116,7 @@ import six
             :param desktop: The desktop of this GetVersionsResponse.  # noqa: E501
             :type: int
             """
+
 
             self._desktop = desktop
 

@@ -90,6 +90,7 @@ import six
             :type: float
             """
 
+
             self._cost = cost
 
             @property
@@ -110,6 +111,7 @@ import six
             :param country: The country of this DoCarrierLookupResponse.  # noqa: E501
             :type: Country
             """
+
 
             self._country = country
 
@@ -132,6 +134,7 @@ import six
             :type: str
             """
 
+
             self._local = local
 
             @property
@@ -152,6 +155,7 @@ import six
             :param type: The type of this DoCarrierLookupResponse.  # noqa: E501
             :type: str
             """
+
 
             self._type = type
 
@@ -174,6 +178,7 @@ import six
             :type: str
             """
 
+
             self._carrier = carrier
 
             @property
@@ -195,6 +200,7 @@ import six
             :type: str
             """
 
+
             self._number164 = number164
 
             @property
@@ -215,6 +221,7 @@ import six
             :param valid: The valid of this DoCarrierLookupResponse.  # noqa: E501
             :type: bool
             """
+
 
             self._valid = valid
 

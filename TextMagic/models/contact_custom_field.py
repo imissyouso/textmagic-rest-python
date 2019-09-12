@@ -71,6 +71,7 @@ import six
             :type: str
             """
 
+
             self._value = value
 
             @property
@@ -91,6 +92,7 @@ import six
             :param user_custom_field: The user_custom_field of this ContactCustomField.  # noqa: E501
             :type: UserCustomField
             """
+
 
             self._user_custom_field = user_custom_field
 

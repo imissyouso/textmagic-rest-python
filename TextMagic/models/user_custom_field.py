@@ -73,6 +73,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -94,6 +95,7 @@ import six
             :type: str
             """
 
+
             self._name = name
 
             @property
@@ -114,6 +116,7 @@ import six
             :param created_at: The created_at of this UserCustomField.  # noqa: E501
             :type: datetime
             """
+
 
             self._created_at = created_at
 

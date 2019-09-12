@@ -107,6 +107,7 @@ import six
             :type: str
             """
 
+
             self.__1 = _1
 
             @property
@@ -129,6 +130,7 @@ import six
             :param _2: The _2 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
             :type: str
             """
+
 
             self.__2 = _2
 
@@ -153,6 +155,7 @@ import six
             :type: str
             """
 
+
             self.__3 = _3
 
             @property
@@ -175,6 +178,7 @@ import six
             :param _5: The _5 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
             :type: str
             """
+
 
             self.__5 = _5
 
@@ -199,6 +203,7 @@ import six
             :type: str
             """
 
+
             self.__10 = _10
 
             @property
@@ -221,6 +226,7 @@ import six
             :param _20: The _20 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
             :type: str
             """
+
 
             self.__20 = _20
 
@@ -245,6 +251,7 @@ import six
             :type: str
             """
 
+
             self.__30 = _30
 
             @property
@@ -267,6 +274,7 @@ import six
             :param _50: The _50 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
             :type: str
             """
+
 
             self.__50 = _50
 
@@ -291,6 +299,7 @@ import six
             :type: str
             """
 
+
             self.__100 = _100
 
             @property
@@ -314,6 +323,7 @@ import six
             :type: str
             """
 
+
             self.__500 = _500
 
             @property
@@ -336,6 +346,7 @@ import six
             :param _1000: The _1000 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
             :type: str
             """
+
 
             self.__1000 = _1000
 

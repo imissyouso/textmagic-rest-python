@@ -71,6 +71,7 @@ import six
             :type: str
             """
 
+
             self._name = name
 
             @property
@@ -93,6 +94,7 @@ import six
             :param content: The content of this CreateTemplateInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._content = content
 

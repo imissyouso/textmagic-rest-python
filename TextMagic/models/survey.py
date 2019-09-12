@@ -91,6 +91,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -111,6 +112,7 @@ import six
             :param name: The name of this Survey.  # noqa: E501
             :type: str
             """
+
 
             self._name = name
 
@@ -133,6 +135,7 @@ import six
             :type: str
             """
 
+
             self._status = status
 
             @property
@@ -153,6 +156,7 @@ import six
             :param created_at: The created_at of this Survey.  # noqa: E501
             :type: datetime
             """
+
 
             self._created_at = created_at
 
@@ -175,6 +179,7 @@ import six
             :type: datetime
             """
 
+
             self._updated_at = updated_at
 
             @property
@@ -196,6 +201,7 @@ import six
             :type: list[SurveyRecipient]
             """
 
+
             self._receipents = receipents
 
             @property
@@ -216,6 +222,7 @@ import six
             :param countries: The countries of this Survey.  # noqa: E501
             :type: list[SurveySenderCountries]
             """
+
 
             self._countries = countries
 

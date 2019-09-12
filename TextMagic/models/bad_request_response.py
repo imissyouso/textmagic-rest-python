@@ -76,6 +76,7 @@ import six
             :type: int
             """
 
+
             self._code = code
 
             @property
@@ -97,6 +98,7 @@ import six
             :type: str
             """
 
+
             self._message = message
 
             @property
@@ -117,6 +119,7 @@ import six
             :param errors: The errors of this BadRequestResponse.  # noqa: E501
             :type: BadRequestResponseErrors
             """
+
 
             self._errors = errors
 

@@ -121,6 +121,7 @@ import six
             :type: str
             """
 
+
             self._first_name = first_name
 
             @property
@@ -143,6 +144,7 @@ import six
             :param last_name: The last_name of this UpdateContactInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._last_name = last_name
 
@@ -167,6 +169,7 @@ import six
             :type: str
             """
 
+
             self._phone = phone
 
             @property
@@ -189,6 +192,7 @@ import six
             :param email: The email of this UpdateContactInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._email = email
 
@@ -213,6 +217,7 @@ import six
             :type: str
             """
 
+
             self._company_name = company_name
 
             @property
@@ -235,6 +240,7 @@ import six
             :param lists: The lists of this UpdateContactInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._lists = lists
 
@@ -259,6 +265,7 @@ import six
             :type: bool
             """
 
+
             self._favorited = favorited
 
             @property
@@ -281,6 +288,7 @@ import six
             :param blocked: The blocked of this UpdateContactInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._blocked = blocked
 
@@ -305,6 +313,7 @@ import six
             :type: int
             """
 
+
             self._type = type
 
             @property
@@ -325,6 +334,7 @@ import six
             :param custom_field_values: The custom_field_values of this UpdateContactInputObject.  # noqa: E501
             :type: object
             """
+
 
             self._custom_field_values = custom_field_values
 
@@ -349,6 +359,7 @@ import six
             :type: int
             """
 
+
             self._local = local
 
             @property
@@ -371,6 +382,7 @@ import six
             :param country: The country of this UpdateContactInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._country = country
 

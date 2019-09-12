@@ -78,6 +78,7 @@ import six
             :type: str
             """
 
+
             self._ids = ids
 
             @property
@@ -101,6 +102,7 @@ import six
             :type: bool
             """
 
+
             self._all = all
 
             @property
@@ -123,6 +125,7 @@ import six
             :param _for: The _for of this MuteChatsBulkInputObject.  # noqa: E501
             :type: int
             """
+
 
             self.__for = _for
 

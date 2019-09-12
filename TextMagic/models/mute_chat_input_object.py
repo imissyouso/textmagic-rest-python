@@ -76,6 +76,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -99,6 +100,7 @@ import six
             :type: bool
             """
 
+
             self._mute = mute
 
             @property
@@ -121,6 +123,7 @@ import six
             :param _for: The _for of this MuteChatInputObject.  # noqa: E501
             :type: int
             """
+
 
             self.__for = _for
 

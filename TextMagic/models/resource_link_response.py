@@ -69,6 +69,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -89,6 +90,7 @@ import six
             :param href: The href of this ResourceLinkResponse.  # noqa: E501
             :type: str
             """
+
 
             self._href = href
 

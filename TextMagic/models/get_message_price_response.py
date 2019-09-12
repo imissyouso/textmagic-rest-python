@@ -73,6 +73,7 @@ import six
             :type: float
             """
 
+
             self._total = total
 
             @property
@@ -94,6 +95,7 @@ import six
             :type: int
             """
 
+
             self._parts = parts
 
             @property
@@ -114,6 +116,7 @@ import six
             :param countries: The countries of this GetMessagePriceResponse.  # noqa: E501
             :type: object
             """
+
 
             self._countries = countries
 

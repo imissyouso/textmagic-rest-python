@@ -73,6 +73,7 @@ import six
             :type: object
             """
 
+
             self._user = user
 
             @property
@@ -94,6 +95,7 @@ import six
             :type: object
             """
 
+
             self._special = special
 
             @property
@@ -114,6 +116,7 @@ import six
             :param other: The other of this GetSenderSettingsResponse.  # noqa: E501
             :type: object
             """
+
 
             self._other = other
 

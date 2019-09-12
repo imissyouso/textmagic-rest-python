@@ -89,6 +89,7 @@ import six
             :type: int
             """
 
+
             self._failed = failed
 
             @property
@@ -109,6 +110,7 @@ import six
             :param delivered: The delivered of this GetMessageSessionStatResponse.  # noqa: E501
             :type: int
             """
+
 
             self._delivered = delivered
 
@@ -131,6 +133,7 @@ import six
             :type: int
             """
 
+
             self._accepted = accepted
 
             @property
@@ -151,6 +154,7 @@ import six
             :param rejected: The rejected of this GetMessageSessionStatResponse.  # noqa: E501
             :type: int
             """
+
 
             self._rejected = rejected
 
@@ -173,6 +177,7 @@ import six
             :type: int
             """
 
+
             self._scheduled = scheduled
 
             @property
@@ -194,6 +199,7 @@ import six
             :type: int
             """
 
+
             self._all = all
 
             @property
@@ -214,6 +220,7 @@ import six
             :param sent: The sent of this GetMessageSessionStatResponse.  # noqa: E501
             :type: int
             """
+
 
             self._sent = sent
 

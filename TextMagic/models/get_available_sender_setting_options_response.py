@@ -77,6 +77,7 @@ import six
             :type: list[str]
             """
 
+
             self._dedicated = dedicated
 
             @property
@@ -97,6 +98,7 @@ import six
             :param user: The user of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
             :type: list[str]
             """
+
 
             self._user = user
 
@@ -119,6 +121,7 @@ import six
             :type: list[str]
             """
 
+
             self._shared = shared
 
             @property
@@ -139,6 +142,7 @@ import six
             :param sender_ids: The sender_ids of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
             :type: list[str]
             """
+
 
             self._sender_ids = sender_ids
 

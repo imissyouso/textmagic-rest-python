@@ -133,6 +133,7 @@ import six
             :type: str
             """
 
+
             self._address = address
 
             @property
@@ -153,6 +154,7 @@ import six
             :param address_type: The address_type of this DoEmailLookupResponse.  # noqa: E501
             :type: str
             """
+
 
             self._address_type = address_type
 
@@ -175,6 +177,7 @@ import six
             :type: str
             """
 
+
             self._email_role = email_role
 
             @property
@@ -196,6 +199,7 @@ import six
             :type: str
             """
 
+
             self._reason = reason
 
             @property
@@ -216,6 +220,7 @@ import six
             :param status: The status of this DoEmailLookupResponse.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["valid", "invalid"]  # noqa: E501
                     if status not in allowed_values:
                     raise ValueError(
@@ -244,6 +249,7 @@ import six
             :type: str
             """
 
+
             self._deliverability = deliverability
 
             @property
@@ -264,6 +270,7 @@ import six
             :param is_disposable_address: The is_disposable_address of this DoEmailLookupResponse.  # noqa: E501
             :type: bool
             """
+
 
             self._is_disposable_address = is_disposable_address
 
@@ -286,6 +293,7 @@ import six
             :type: str
             """
 
+
             self._local_part = local_part
 
             @property
@@ -306,6 +314,7 @@ import six
             :param domain_part: The domain_part of this DoEmailLookupResponse.  # noqa: E501
             :type: str
             """
+
 
             self._domain_part = domain_part
 
@@ -328,6 +337,7 @@ import six
             :type: str
             """
 
+
             self._exchange = exchange
 
             @property
@@ -348,6 +358,7 @@ import six
             :param is_in_white_list: The is_in_white_list of this DoEmailLookupResponse.  # noqa: E501
             :type: bool
             """
+
 
             self._is_in_white_list = is_in_white_list
 
@@ -370,6 +381,7 @@ import six
             :type: bool
             """
 
+
             self._is_in_black_list = is_in_black_list
 
             @property
@@ -390,6 +402,7 @@ import six
             :param has_mx: The has_mx of this DoEmailLookupResponse.  # noqa: E501
             :type: bool
             """
+
 
             self._has_mx = has_mx
 
@@ -412,6 +425,7 @@ import six
             :type: bool
             """
 
+
             self._has_aa = has_aa
 
             @property
@@ -432,6 +446,7 @@ import six
             :param has_aaaa: The has_aaaa of this DoEmailLookupResponse.  # noqa: E501
             :type: bool
             """
+
 
             self._has_aaaa = has_aaaa
 
@@ -454,6 +469,7 @@ import six
             :type: str
             """
 
+
             self._risk = risk
 
             @property
@@ -475,6 +491,7 @@ import six
             :type: int
             """
 
+
             self._preference = preference
 
             @property
@@ -495,6 +512,7 @@ import six
             :param suggestion: The suggestion of this DoEmailLookupResponse.  # noqa: E501
             :type: str
             """
+
 
             self._suggestion = suggestion
 

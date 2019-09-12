@@ -65,6 +65,7 @@ import six
             :type: int
             """
 
+
             self._total = total
 
         def to_dict(self):

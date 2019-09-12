@@ -90,6 +90,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -110,6 +111,7 @@ import six
             :param user: The user of this UsersInbound.  # noqa: E501
             :type: User
             """
+
 
             self._user = user
 
@@ -132,6 +134,7 @@ import six
             :type: datetime
             """
 
+
             self._purchased_at = purchased_at
 
             @property
@@ -152,6 +155,7 @@ import six
             :param expire_at: The expire_at of this UsersInbound.  # noqa: E501
             :type: datetime
             """
+
 
             self._expire_at = expire_at
 
@@ -175,6 +179,7 @@ import six
             :param status: The status of this UsersInbound.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["U", "A"]  # noqa: E501
                     if status not in allowed_values:
                     raise ValueError(
@@ -203,6 +208,7 @@ import six
             :type: Country
             """
 
+
             self._country = country
 
             @property
@@ -223,6 +229,7 @@ import six
             :param phone: The phone of this UsersInbound.  # noqa: E501
             :type: str
             """
+
 
             self._phone = phone
 

@@ -69,6 +69,7 @@ import six
             :type: str
             """
 
+
             self._text = text
 
             @property
@@ -89,6 +90,7 @@ import six
             :param recipients: The recipients of this MessagesIcsParameters.  # noqa: E501
             :type: MessagesIcsParametersRecipients
             """
+
 
             self._recipients = recipients
 

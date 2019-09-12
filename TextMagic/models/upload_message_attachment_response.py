@@ -77,6 +77,7 @@ import six
             :type: int
             """
 
+
             self._chars = chars
 
             @property
@@ -97,6 +98,7 @@ import six
             :param href: The href of this UploadMessageAttachmentResponse.  # noqa: E501
             :type: str
             """
+
 
             self._href = href
 
@@ -119,6 +121,7 @@ import six
             :type: str
             """
 
+
             self._name = name
 
             @property
@@ -139,6 +142,7 @@ import six
             :param size: The size of this UploadMessageAttachmentResponse.  # noqa: E501
             :type: int
             """
+
 
             self._size = size
 

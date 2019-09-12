@@ -77,6 +77,7 @@ import six
             :type: int
             """
 
+
             self._last_id = last_id
 
             @property
@@ -97,6 +98,7 @@ import six
             :param next_last_id: The next_last_id of this GetOutboundMessagesHistoryResponse.  # noqa: E501
             :type: int
             """
+
 
             self._next_last_id = next_last_id
 
@@ -119,6 +121,7 @@ import six
             :type: int
             """
 
+
             self._limit = limit
 
             @property
@@ -139,6 +142,7 @@ import six
             :param resources: The resources of this GetOutboundMessagesHistoryResponse.  # noqa: E501
             :type: list[MessageOut]
             """
+
 
             self._resources = resources
 

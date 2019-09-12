@@ -81,6 +81,7 @@ import six
             :type: str
             """
 
+
             self._name = name
 
             @property
@@ -103,6 +104,7 @@ import six
             :param shared: The shared of this CreateListInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._shared = shared
 
@@ -127,6 +129,7 @@ import six
             :type: bool
             """
 
+
             self._favorited = favorited
 
             @property
@@ -149,6 +152,7 @@ import six
             :param is_default: The is_default of this CreateListInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._is_default = is_default
 

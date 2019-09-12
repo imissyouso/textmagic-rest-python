@@ -105,6 +105,7 @@ import six
             :type: float
             """
 
+
             self._reply_rate = reply_rate
 
             @property
@@ -125,6 +126,7 @@ import six
             :param _date: The _date of this MessagingStatItem.  # noqa: E501
             :type: datetime
             """
+
 
             self.__date = _date
 
@@ -147,6 +149,7 @@ import six
             :type: float
             """
 
+
             self._delivery_rate = delivery_rate
 
             @property
@@ -167,6 +170,7 @@ import six
             :param costs: The costs of this MessagingStatItem.  # noqa: E501
             :type: float
             """
+
 
             self._costs = costs
 
@@ -189,6 +193,7 @@ import six
             :type: int
             """
 
+
             self._messages_received = messages_received
 
             @property
@@ -209,6 +214,7 @@ import six
             :param messages_sent_delivered: The messages_sent_delivered of this MessagingStatItem.  # noqa: E501
             :type: int
             """
+
 
             self._messages_sent_delivered = messages_sent_delivered
 
@@ -231,6 +237,7 @@ import six
             :type: int
             """
 
+
             self._messages_sent_accepted = messages_sent_accepted
 
             @property
@@ -251,6 +258,7 @@ import six
             :param messages_sent_buffered: The messages_sent_buffered of this MessagingStatItem.  # noqa: E501
             :type: int
             """
+
 
             self._messages_sent_buffered = messages_sent_buffered
 
@@ -273,6 +281,7 @@ import six
             :type: int
             """
 
+
             self._messages_sent_failed = messages_sent_failed
 
             @property
@@ -294,6 +303,7 @@ import six
             :type: int
             """
 
+
             self._messages_sent_rejected = messages_sent_rejected
 
             @property
@@ -314,6 +324,7 @@ import six
             :param messages_sent_parts: The messages_sent_parts of this MessagingStatItem.  # noqa: E501
             :type: int
             """
+
 
             self._messages_sent_parts = messages_sent_parts
 

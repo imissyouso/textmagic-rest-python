@@ -71,6 +71,7 @@ import six
             :type: str
             """
 
+
             self._sender_id = sender_id
 
             @property
@@ -93,6 +94,7 @@ import six
             :param explanation: The explanation of this RequestSenderIdInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._explanation = explanation
 

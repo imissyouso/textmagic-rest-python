@@ -73,6 +73,7 @@ import six
             :type: str
             """
 
+
             self._ids = ids
 
             @property
@@ -95,6 +96,7 @@ import six
             :param all: The all of this UnmuteChatsBulkInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._all = all
 

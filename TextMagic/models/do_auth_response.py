@@ -81,6 +81,7 @@ import six
             :type: str
             """
 
+
             self._username = username
 
             @property
@@ -101,6 +102,7 @@ import six
             :param token: The token of this DoAuthResponse.  # noqa: E501
             :type: str
             """
+
 
             self._token = token
 
@@ -123,6 +125,7 @@ import six
             :type: datetime
             """
 
+
             self._expires = expires
 
             @property
@@ -144,6 +147,7 @@ import six
             :type: DoAuthResponseMinVersions
             """
 
+
             self._min_versions = min_versions
 
             @property
@@ -164,6 +168,7 @@ import six
             :param disallowed_rules: The disallowed_rules of this DoAuthResponse.  # noqa: E501
             :type: list[str]
             """
+
 
             self._disallowed_rules = disallowed_rules
 

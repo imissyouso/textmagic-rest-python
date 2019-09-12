@@ -81,6 +81,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -101,6 +102,7 @@ import six
             :param area: The area of this Timezone.  # noqa: E501
             :type: str
             """
+
 
             self._area = area
 
@@ -123,6 +125,7 @@ import six
             :type: int
             """
 
+
             self._dst = dst
 
             @property
@@ -144,6 +147,7 @@ import six
             :type: int
             """
 
+
             self._offset = offset
 
             @property
@@ -164,6 +168,7 @@ import six
             :param timezone: The timezone of this Timezone.  # noqa: E501
             :type: str
             """
+
 
             self._timezone = timezone
 

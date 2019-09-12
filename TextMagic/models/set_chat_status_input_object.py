@@ -71,6 +71,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -93,6 +94,7 @@ import six
             :param status: The status of this SetChatStatusInputObject.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["a", "c", "d"]  # noqa: E501
                     if status not in allowed_values:
                     raise ValueError(

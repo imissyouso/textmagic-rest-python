@@ -71,6 +71,7 @@ import six
             :type: str
             """
 
+
             self._email = email
 
             @property
@@ -93,6 +94,7 @@ import six
             :param role: The role of this InviteSubaccountInputObject.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["A", "U"]  # noqa: E501
                     if role not in allowed_values:
                     raise ValueError(

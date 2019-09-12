@@ -101,6 +101,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -121,6 +122,7 @@ import six
             :param direction: The direction of this Conversation.  # noqa: E501
             :type: str
             """
+
 
             self._direction = direction
 
@@ -143,6 +145,7 @@ import six
             :type: str
             """
 
+
             self._sender = sender
 
             @property
@@ -163,6 +166,7 @@ import six
             :param message_time: The message_time of this Conversation.  # noqa: E501
             :type: datetime
             """
+
 
             self._message_time = message_time
 
@@ -185,6 +189,7 @@ import six
             :type: str
             """
 
+
             self._text = text
 
             @property
@@ -205,6 +210,7 @@ import six
             :param receiver: The receiver of this Conversation.  # noqa: E501
             :type: str
             """
+
 
             self._receiver = receiver
 
@@ -227,6 +233,7 @@ import six
             :type: str
             """
 
+
             self._status = status
 
             @property
@@ -247,6 +254,7 @@ import six
             :param first_name: The first_name of this Conversation.  # noqa: E501
             :type: str
             """
+
 
             self._first_name = first_name
 
@@ -269,6 +277,7 @@ import six
             :type: str
             """
 
+
             self._last_name = last_name
 
             @property
@@ -289,6 +298,7 @@ import six
             :param session_id: The session_id of this Conversation.  # noqa: E501
             :type: int
             """
+
 
             self._session_id = session_id
 

@@ -87,6 +87,7 @@ import six
             :type: str
             """
 
+
             self._name = name
 
             @property
@@ -109,6 +110,7 @@ import six
             :param contacts: The contacts of this UpdateSurveyInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._contacts = contacts
 
@@ -133,6 +135,7 @@ import six
             :type: str
             """
 
+
             self._lists = lists
 
             @property
@@ -156,6 +159,7 @@ import six
             :type: str
             """
 
+
             self._phones = phones
 
             @property
@@ -178,6 +182,7 @@ import six
             :param country: The country of this UpdateSurveyInputObject.  # noqa: E501
             :type: object
             """
+
 
             self._country = country
 

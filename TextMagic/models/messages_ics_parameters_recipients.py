@@ -73,6 +73,7 @@ import six
             :type: list[int]
             """
 
+
             self._contacts = contacts
 
             @property
@@ -94,6 +95,7 @@ import six
             :type: list[int]
             """
 
+
             self._groups = groups
 
             @property
@@ -114,6 +116,7 @@ import six
             :param numbers: The numbers of this MessagesIcsParametersRecipients.  # noqa: E501
             :type: list[str]
             """
+
 
             self._numbers = numbers
 

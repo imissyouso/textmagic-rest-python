@@ -68,6 +68,7 @@ import six
             :type: str
             """
 
+
             self._phone = phone
 
         def to_dict(self):

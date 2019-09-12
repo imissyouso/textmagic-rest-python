@@ -71,6 +71,7 @@ import six
             :type: str
             """
 
+
             self._ping = ping
 
             @property
@@ -93,6 +94,7 @@ import six
             :param utc_date_time: The utc_date_time of this PingResponse.  # noqa: E501
             :type: str
             """
+
 
             self._utc_date_time = utc_date_time
 

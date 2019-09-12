@@ -83,6 +83,7 @@ import six
             :type: str
             """
 
+
             self._inbound_ids = inbound_ids
 
             @property
@@ -105,6 +106,7 @@ import six
             :param sent_ids: The sent_ids of this DeleteChatMessagesBulkInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._sent_ids = sent_ids
 
@@ -129,6 +131,7 @@ import six
             :type: str
             """
 
+
             self._calls_ids = calls_ids
 
             @property
@@ -151,6 +154,7 @@ import six
             :param all: The all of this DeleteChatMessagesBulkInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._all = all
 

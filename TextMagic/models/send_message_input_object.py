@@ -148,6 +148,7 @@ import six
             :type: str
             """
 
+
             self._text = text
 
             @property
@@ -170,6 +171,7 @@ import six
             :param template_id: The template_id of this SendMessageInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._template_id = template_id
 
@@ -194,6 +196,7 @@ import six
             :type: int
             """
 
+
             self._sending_time = sending_time
 
             @property
@@ -216,6 +219,7 @@ import six
             :param sending_date_time: The sending_date_time of this SendMessageInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._sending_date_time = sending_date_time
 
@@ -240,6 +244,7 @@ import six
             :type: str
             """
 
+
             self._sending_timezone = sending_timezone
 
             @property
@@ -262,6 +267,7 @@ import six
             :param contacts: The contacts of this SendMessageInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._contacts = contacts
 
@@ -286,6 +292,7 @@ import six
             :type: str
             """
 
+
             self._lists = lists
 
             @property
@@ -308,6 +315,7 @@ import six
             :param phones: The phones of this SendMessageInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._phones = phones
 
@@ -332,6 +340,7 @@ import six
             :type: bool
             """
 
+
             self._cut_extra = cut_extra
 
             @property
@@ -354,6 +363,7 @@ import six
             :param parts_count: The parts_count of this SendMessageInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._parts_count = parts_count
 
@@ -378,6 +388,7 @@ import six
             :type: int
             """
 
+
             self._reference_id = reference_id
 
             @property
@@ -400,6 +411,7 @@ import six
             :param _from: The _from of this SendMessageInputObject.  # noqa: E501
             :type: str
             """
+
 
             self.__from = _from
 
@@ -424,6 +436,7 @@ import six
             :type: str
             """
 
+
             self._rule = rule
 
             @property
@@ -446,6 +459,7 @@ import six
             :param create_chat: The create_chat of this SendMessageInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._create_chat = create_chat
 
@@ -470,6 +484,7 @@ import six
             :type: bool
             """
 
+
             self._tts = tts
 
             @property
@@ -493,6 +508,7 @@ import six
             :type: bool
             """
 
+
             self._local = local
 
             @property
@@ -515,6 +531,7 @@ import six
             :param local_country: The local_country of this SendMessageInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._local_country = local_country
 

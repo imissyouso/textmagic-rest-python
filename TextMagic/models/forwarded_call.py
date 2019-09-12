@@ -81,6 +81,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -102,6 +103,7 @@ import six
             :type: datetime
             """
 
+
             self._call_time = call_time
 
             @property
@@ -122,6 +124,7 @@ import six
             :param caller: The caller of this ForwardedCall.  # noqa: E501
             :type: str
             """
+
 
             self._caller = caller
 
@@ -146,6 +149,7 @@ import six
             :type: str
             """
 
+
             self._via = via
 
             @property
@@ -166,6 +170,7 @@ import six
             :param receiver: The receiver of this ForwardedCall.  # noqa: E501
             :type: str
             """
+
 
             self._receiver = receiver
 

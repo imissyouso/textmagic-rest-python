@@ -217,6 +217,7 @@ import six
             :type: int
             """
 
+
             self._system_cache_clear = system_cache_clear
 
             @property
@@ -237,6 +238,7 @@ import six
             :param system_exit: The system_exit of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._system_exit = system_exit
 
@@ -259,6 +261,7 @@ import six
             :type: int
             """
 
+
             self._system_alert = system_alert
 
             @property
@@ -279,6 +282,7 @@ import six
             :param system_account_state_changed: The system_account_state_changed of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._system_account_state_changed = system_account_state_changed
 
@@ -301,6 +305,7 @@ import six
             :type: int
             """
 
+
             self._message_deleted = message_deleted
 
             @property
@@ -321,6 +326,7 @@ import six
             :param message_incoming: The message_incoming of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._message_incoming = message_incoming
 
@@ -343,6 +349,7 @@ import six
             :type: int
             """
 
+
             self._message_incoming_deleted = message_incoming_deleted
 
             @property
@@ -363,6 +370,7 @@ import six
             :param message_state_changed: The message_state_changed of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._message_state_changed = message_state_changed
 
@@ -385,6 +393,7 @@ import six
             :type: int
             """
 
+
             self._message_bulk_end = message_bulk_end
 
             @property
@@ -405,6 +414,7 @@ import six
             :param message_wipe_end: The message_wipe_end of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._message_wipe_end = message_wipe_end
 
@@ -427,6 +437,7 @@ import six
             :type: int
             """
 
+
             self._message_sent = message_sent
 
             @property
@@ -447,6 +458,7 @@ import six
             :param message_session_deleted: The message_session_deleted of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._message_session_deleted = message_session_deleted
 
@@ -469,6 +481,7 @@ import six
             :type: int
             """
 
+
             self._message_cache_clear = message_cache_clear
 
             @property
@@ -489,6 +502,7 @@ import six
             :param message_incoming_cache_clear: The message_incoming_cache_clear of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._message_incoming_cache_clear = message_incoming_cache_clear
 
@@ -511,6 +525,7 @@ import six
             :type: int
             """
 
+
             self._message_schedule_added = message_schedule_added
 
             @property
@@ -531,6 +546,7 @@ import six
             :param message_schedule_state_changed: The message_schedule_state_changed of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._message_schedule_state_changed = message_schedule_state_changed
 
@@ -553,6 +569,7 @@ import six
             :type: int
             """
 
+
             self._message_schedule_deleted = message_schedule_deleted
 
             @property
@@ -573,6 +590,7 @@ import six
             :param message_schedule_cache_clear: The message_schedule_cache_clear of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._message_schedule_cache_clear = message_schedule_cache_clear
 
@@ -595,6 +613,7 @@ import six
             :type: int
             """
 
+
             self._message_template_cache_clear = message_template_cache_clear
 
             @property
@@ -615,6 +634,7 @@ import six
             :param call_finished: The call_finished of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._call_finished = call_finished
 
@@ -637,6 +657,7 @@ import six
             :type: int
             """
 
+
             self._chat_created = chat_created
 
             @property
@@ -657,6 +678,7 @@ import six
             :param chat_marked_as_read: The chat_marked_as_read of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._chat_marked_as_read = chat_marked_as_read
 
@@ -679,6 +701,7 @@ import six
             :type: int
             """
 
+
             self._chat_muted = chat_muted
 
             @property
@@ -699,6 +722,7 @@ import six
             :param chat_unmuted: The chat_unmuted of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._chat_unmuted = chat_unmuted
 
@@ -721,6 +745,7 @@ import six
             :type: int
             """
 
+
             self._chat_deleted = chat_deleted
 
             @property
@@ -741,6 +766,7 @@ import six
             :param chat_closed: The chat_closed of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._chat_closed = chat_closed
 
@@ -763,6 +789,7 @@ import six
             :type: int
             """
 
+
             self._chat_reopened = chat_reopened
 
             @property
@@ -783,6 +810,7 @@ import six
             :param chat_cache_clear: The chat_cache_clear of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._chat_cache_clear = chat_cache_clear
 
@@ -805,6 +833,7 @@ import six
             :type: int
             """
 
+
             self._contact_added = contact_added
 
             @property
@@ -825,6 +854,7 @@ import six
             :param contact_deleted: The contact_deleted of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._contact_deleted = contact_deleted
 
@@ -847,6 +877,7 @@ import six
             :type: int
             """
 
+
             self._contact_state_changed = contact_state_changed
 
             @property
@@ -867,6 +898,7 @@ import six
             :param list_added: The list_added of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._list_added = list_added
 
@@ -889,6 +921,7 @@ import six
             :type: int
             """
 
+
             self._list_deleted = list_deleted
 
             @property
@@ -909,6 +942,7 @@ import six
             :param list_state_changed: The list_state_changed of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._list_state_changed = list_state_changed
 
@@ -931,6 +965,7 @@ import six
             :type: int
             """
 
+
             self._contact_wipe_end = contact_wipe_end
 
             @property
@@ -951,6 +986,7 @@ import six
             :param contact_import_end: The contact_import_end of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._contact_import_end = contact_import_end
 
@@ -973,6 +1009,7 @@ import six
             :type: int
             """
 
+
             self._contact_cache_clear = contact_cache_clear
 
             @property
@@ -994,6 +1031,7 @@ import six
             :type: int
             """
 
+
             self._list_cache_clear = list_cache_clear
 
             @property
@@ -1014,6 +1052,7 @@ import six
             :param custom_fields_cache_clear: The custom_fields_cache_clear of this GetStateResponse.  # noqa: E501
             :type: int
             """
+
 
             self._custom_fields_cache_clear = custom_fields_cache_clear
 

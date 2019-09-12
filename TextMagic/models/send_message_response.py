@@ -93,6 +93,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -113,6 +114,7 @@ import six
             :param href: The href of this SendMessageResponse.  # noqa: E501
             :type: str
             """
+
 
             self._href = href
 
@@ -135,6 +137,7 @@ import six
             :type: str
             """
 
+
             self._type = type
 
             @property
@@ -155,6 +158,7 @@ import six
             :param session_id: The session_id of this SendMessageResponse.  # noqa: E501
             :type: int
             """
+
 
             self._session_id = session_id
 
@@ -177,6 +181,7 @@ import six
             :type: int
             """
 
+
             self._bulk_id = bulk_id
 
             @property
@@ -197,6 +202,7 @@ import six
             :param message_id: The message_id of this SendMessageResponse.  # noqa: E501
             :type: int
             """
+
 
             self._message_id = message_id
 
@@ -219,6 +225,7 @@ import six
             :type: int
             """
 
+
             self._schedule_id = schedule_id
 
             @property
@@ -239,6 +246,7 @@ import six
             :param chat_id: The chat_id of this SendMessageResponse.  # noqa: E501
             :type: int
             """
+
 
             self._chat_id = chat_id
 

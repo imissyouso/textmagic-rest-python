@@ -69,6 +69,7 @@ import six
             :type: list[str]
             """
 
+
             self._numbers = numbers
 
             @property
@@ -89,6 +90,7 @@ import six
             :param price: The price of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
             :type: float
             """
+
 
             self._price = price
 

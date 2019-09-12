@@ -77,6 +77,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -97,6 +98,7 @@ import six
             :param country_name: The country_name of this SurveySenderCountries.  # noqa: E501
             :type: str
             """
+
 
             self._country_name = country_name
 
@@ -119,6 +121,7 @@ import six
             :type: str
             """
 
+
             self._from_number = from_number
 
             @property
@@ -139,6 +142,7 @@ import six
             :param allow_dedicated: The allow_dedicated of this SurveySenderCountries.  # noqa: E501
             :type: bool
             """
+
 
             self._allow_dedicated = allow_dedicated
 

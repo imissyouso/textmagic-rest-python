@@ -85,6 +85,7 @@ import six
             :type: float
             """
 
+
             self._cost = cost
 
             @property
@@ -105,6 +106,7 @@ import six
             :param parts: The parts of this MessagesIcsTextParameters.  # noqa: E501
             :type: int
             """
+
 
             self._parts = parts
 
@@ -127,6 +129,7 @@ import six
             :type: int
             """
 
+
             self._chars = chars
 
             @property
@@ -147,6 +150,7 @@ import six
             :param encoding: The encoding of this MessagesIcsTextParameters.  # noqa: E501
             :type: str
             """
+
 
             self._encoding = encoding
 
@@ -169,6 +173,7 @@ import six
             :type: list[str]
             """
 
+
             self._countries = countries
 
             @property
@@ -189,6 +194,7 @@ import six
             :param charset_label: The charset_label of this MessagesIcsTextParameters.  # noqa: E501
             :type: str
             """
+
 
             self._charset_label = charset_label
 

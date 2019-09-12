@@ -81,6 +81,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -101,6 +102,7 @@ import six
             :param bundle: The bundle of this Invoice.  # noqa: E501
             :type: int
             """
+
 
             self._bundle = bundle
 
@@ -123,6 +125,7 @@ import six
             :type: str
             """
 
+
             self._currency = currency
 
             @property
@@ -144,6 +147,7 @@ import six
             :type: float
             """
 
+
             self._vat = vat
 
             @property
@@ -164,6 +168,7 @@ import six
             :param payment_method: The payment_method of this Invoice.  # noqa: E501
             :type: str
             """
+
 
             self._payment_method = payment_method
 

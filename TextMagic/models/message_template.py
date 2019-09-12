@@ -77,6 +77,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -97,6 +98,7 @@ import six
             :param name: The name of this MessageTemplate.  # noqa: E501
             :type: str
             """
+
 
             self._name = name
 
@@ -119,6 +121,7 @@ import six
             :type: str
             """
 
+
             self._content = content
 
             @property
@@ -139,6 +142,7 @@ import six
             :param last_modified: The last_modified of this MessageTemplate.  # noqa: E501
             :type: datetime
             """
+
 
             self._last_modified = last_modified
 

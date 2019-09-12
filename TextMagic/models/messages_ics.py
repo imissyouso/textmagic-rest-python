@@ -129,6 +129,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -149,6 +150,7 @@ import six
             :param next_send: The next_send of this MessagesIcs.  # noqa: E501
             :type: datetime
             """
+
 
             self._next_send = next_send
 
@@ -171,6 +173,7 @@ import six
             :type: str
             """
 
+
             self._rrule = rrule
 
             @property
@@ -191,6 +194,7 @@ import six
             :param session: The session of this MessagesIcs.  # noqa: E501
             :type: MessageSession
             """
+
 
             self._session = session
 
@@ -213,6 +217,7 @@ import six
             :type: datetime
             """
 
+
             self._last_sent = last_sent
 
             @property
@@ -233,6 +238,7 @@ import six
             :param contact_name: The contact_name of this MessagesIcs.  # noqa: E501
             :type: str
             """
+
 
             self._contact_name = contact_name
 
@@ -255,6 +261,7 @@ import six
             :type: MessagesIcsParameters
             """
 
+
             self._parameters = parameters
 
             @property
@@ -275,6 +282,7 @@ import six
             :param type: The type of this MessagesIcs.  # noqa: E501
             :type: str
             """
+
 
             self._type = type
 
@@ -297,6 +305,7 @@ import six
             :type: str
             """
 
+
             self._summary = summary
 
             @property
@@ -317,6 +326,7 @@ import six
             :param text_parameters: The text_parameters of this MessagesIcs.  # noqa: E501
             :type: MessagesIcsTextParameters
             """
+
 
             self._text_parameters = text_parameters
 
@@ -339,6 +349,7 @@ import six
             :type: datetime
             """
 
+
             self._first_occurrence = first_occurrence
 
             @property
@@ -359,6 +370,7 @@ import six
             :param last_occurrence: The last_occurrence of this MessagesIcs.  # noqa: E501
             :type: datetime
             """
+
 
             self._last_occurrence = last_occurrence
 
@@ -381,6 +393,7 @@ import six
             :type: int
             """
 
+
             self._recipients_count = recipients_count
 
             @property
@@ -401,6 +414,7 @@ import six
             :param timezone: The timezone of this MessagesIcs.  # noqa: E501
             :type: str
             """
+
 
             self._timezone = timezone
 
@@ -423,6 +437,7 @@ import six
             :type: bool
             """
 
+
             self._completed = completed
 
             @property
@@ -444,6 +459,7 @@ import six
             :type: str
             """
 
+
             self._avatar = avatar
 
             @property
@@ -464,6 +480,7 @@ import six
             :param created_at: The created_at of this MessagesIcs.  # noqa: E501
             :type: datetime
             """
+
 
             self._created_at = created_at
 

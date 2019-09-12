@@ -77,6 +77,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -97,6 +98,7 @@ import six
             :param created_at: The created_at of this ContactNote.  # noqa: E501
             :type: datetime
             """
+
 
             self._created_at = created_at
 
@@ -119,6 +121,7 @@ import six
             :type: str
             """
 
+
             self._note = note
 
             @property
@@ -139,6 +142,7 @@ import six
             :param user: The user of this ContactNote.  # noqa: E501
             :type: User
             """
+
 
             self._user = user
 

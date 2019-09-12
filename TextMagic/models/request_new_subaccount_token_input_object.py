@@ -76,6 +76,7 @@ import six
             :type: int
             """
 
+
             self._user_id = user_id
 
             @property
@@ -99,6 +100,7 @@ import six
             :type: str
             """
 
+
             self._password = password
 
             @property
@@ -121,6 +123,7 @@ import six
             :param app_name: The app_name of this RequestNewSubaccountTokenInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._app_name = app_name
 

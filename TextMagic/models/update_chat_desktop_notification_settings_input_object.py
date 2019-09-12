@@ -81,6 +81,7 @@ import six
             :type: bool
             """
 
+
             self._play_sound = play_sound
 
             @property
@@ -103,6 +104,7 @@ import six
             :param show_notifications: The show_notifications of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
             :type: bool
             """
+
 
             self._show_notifications = show_notifications
 
@@ -127,6 +129,7 @@ import six
             :type: bool
             """
 
+
             self._show_text = show_text
 
             @property
@@ -149,6 +152,7 @@ import six
             :param sound_id: The sound_id of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._sound_id = sound_id
 

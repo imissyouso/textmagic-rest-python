@@ -71,6 +71,7 @@ import six
             :type: int
             """
 
+
             self._contact_id = contact_id
 
             @property
@@ -91,6 +92,7 @@ import six
             :param value: The value of this UpdateCustomFieldValueInputObject.  # noqa: E501
             :type: str
             """
+
 
             self._value = value
 

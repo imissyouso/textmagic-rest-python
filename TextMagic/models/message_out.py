@@ -188,6 +188,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -208,6 +209,7 @@ import six
             :param contact_id: The contact_id of this MessageOut.  # noqa: E501
             :type: int
             """
+
 
             self._contact_id = contact_id
 
@@ -230,6 +232,7 @@ import six
             :type: int
             """
 
+
             self._session_id = session_id
 
             @property
@@ -251,6 +254,7 @@ import six
             :type: str
             """
 
+
             self._receiver = receiver
 
             @property
@@ -271,6 +275,7 @@ import six
             :param message_time: The message_time of this MessageOut.  # noqa: E501
             :type: datetime
             """
+
 
             self._message_time = message_time
 
@@ -294,6 +299,7 @@ import six
             :param status: The status of this MessageOut.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["q", "s", "e", "r", "a", "d", "b", "f", "u", "j", "i", "p", "h"]  # noqa: E501
                     if status not in allowed_values:
                     raise ValueError(
@@ -322,6 +328,7 @@ import six
             :type: str
             """
 
+
             self._avatar = avatar
 
             @property
@@ -342,6 +349,7 @@ import six
             :param text: The text of this MessageOut.  # noqa: E501
             :type: str
             """
+
 
             self._text = text
 
@@ -364,6 +372,7 @@ import six
             :type: bool
             """
 
+
             self._deleted = deleted
 
             @property
@@ -384,6 +393,7 @@ import six
             :param charset: The charset of this MessageOut.  # noqa: E501
             :type: str
             """
+
 
             self._charset = charset
 
@@ -406,6 +416,7 @@ import six
             :type: str
             """
 
+
             self._charset_label = charset_label
 
             @property
@@ -426,6 +437,7 @@ import six
             :param first_name: The first_name of this MessageOut.  # noqa: E501
             :type: str
             """
+
 
             self._first_name = first_name
 
@@ -448,6 +460,7 @@ import six
             :type: str
             """
 
+
             self._last_name = last_name
 
             @property
@@ -468,6 +481,7 @@ import six
             :param country: The country of this MessageOut.  # noqa: E501
             :type: str
             """
+
 
             self._country = country
 
@@ -490,6 +504,7 @@ import six
             :type: str
             """
 
+
             self._sender = sender
 
             @property
@@ -510,6 +525,7 @@ import six
             :param phone: The phone of this MessageOut.  # noqa: E501
             :type: str
             """
+
 
             self._phone = phone
 
@@ -532,6 +548,7 @@ import six
             :type: float
             """
 
+
             self._price = price
 
             @property
@@ -552,6 +569,7 @@ import six
             :param parts_count: The parts_count of this MessageOut.  # noqa: E501
             :type: int
             """
+
 
             self._parts_count = parts_count
 
@@ -574,6 +592,7 @@ import six
             :type: str
             """
 
+
             self._from_email = from_email
 
             @property
@@ -594,6 +613,7 @@ import six
             :param from_number: The from_number of this MessageOut.  # noqa: E501
             :type: str
             """
+
 
             self._from_number = from_number
 
@@ -616,6 +636,7 @@ import six
             :type: str
             """
 
+
             self._smsc_id = smsc_id
 
             @property
@@ -636,6 +657,7 @@ import six
             :param contact: The contact of this MessageOut.  # noqa: E501
             :type: str
             """
+
 
             self._contact = contact
 
@@ -658,6 +680,7 @@ import six
             :type: str
             """
 
+
             self._source = source
 
             @property
@@ -678,6 +701,7 @@ import six
             :param delivered_count: The delivered_count of this MessageOut.  # noqa: E501
             :type: int
             """
+
 
             self._delivered_count = delivered_count
 
@@ -700,6 +724,7 @@ import six
             :type: int
             """
 
+
             self._numbers_count = numbers_count
 
             @property
@@ -720,6 +745,7 @@ import six
             :param user_id: The user_id of this MessageOut.  # noqa: E501
             :type: int
             """
+
 
             self._user_id = user_id
 
@@ -742,6 +768,7 @@ import six
             :type: str
             """
 
+
             self._credits_price = credits_price
 
             @property
@@ -762,6 +789,7 @@ import six
             :param chars: The chars of this MessageOut.  # noqa: E501
             :type: int
             """
+
 
             self._chars = chars
 

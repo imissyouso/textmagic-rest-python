@@ -101,6 +101,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -121,6 +122,7 @@ import six
             :param name: The name of this Group.  # noqa: E501
             :type: str
             """
+
 
             self._name = name
 
@@ -143,6 +145,7 @@ import six
             :type: str
             """
 
+
             self._description = description
 
             @property
@@ -163,6 +166,7 @@ import six
             :param favorited: The favorited of this Group.  # noqa: E501
             :type: bool
             """
+
 
             self._favorited = favorited
 
@@ -185,6 +189,7 @@ import six
             :type: int
             """
 
+
             self._members_count = members_count
 
             @property
@@ -205,6 +210,7 @@ import six
             :param user: The user of this Group.  # noqa: E501
             :type: User
             """
+
 
             self._user = user
 
@@ -227,6 +233,7 @@ import six
             :type: bool
             """
 
+
             self._service = service
 
             @property
@@ -247,6 +254,7 @@ import six
             :param shared: The shared of this Group.  # noqa: E501
             :type: bool
             """
+
 
             self._shared = shared
 
@@ -269,6 +277,7 @@ import six
             :type: GroupImage
             """
 
+
             self._avatar = avatar
 
             @property
@@ -289,6 +298,7 @@ import six
             :param is_default: The is_default of this Group.  # noqa: E501
             :type: bool
             """
+
 
             self._is_default = is_default
 

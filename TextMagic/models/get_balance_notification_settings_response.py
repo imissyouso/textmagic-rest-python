@@ -87,6 +87,7 @@ import six
             :type: bool
             """
 
+
             self._low_balance_notification = low_balance_notification
 
             @property
@@ -109,6 +110,7 @@ import six
             :param alert_balance: The alert_balance of this GetBalanceNotificationSettingsResponse.  # noqa: E501
             :type: str
             """
+
 
             self._alert_balance = alert_balance
 
@@ -133,6 +135,7 @@ import six
             :type: str
             """
 
+
             self._alert_phone = alert_phone
 
             @property
@@ -155,6 +158,7 @@ import six
             :param alert_email1: The alert_email1 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
             :type: str
             """
+
 
             self._alert_email1 = alert_email1
 
@@ -179,6 +183,7 @@ import six
             :type: str
             """
 
+
             self._alert_email2 = alert_email2
 
             @property
@@ -201,6 +206,7 @@ import six
             :param alert_email3: The alert_email3 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
             :type: str
             """
+
 
             self._alert_email3 = alert_email3
 

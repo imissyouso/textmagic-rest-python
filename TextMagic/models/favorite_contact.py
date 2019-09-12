@@ -85,6 +85,7 @@ import six
             :type: int
             """
 
+
             self._entity_id = entity_id
 
             @property
@@ -107,6 +108,7 @@ import six
             :param entity_type: The entity_type of this FavoriteContact.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["list", "contact"]  # noqa: E501
                     if entity_type not in allowed_values:
                     raise ValueError(
@@ -137,6 +139,7 @@ import six
             :type: str
             """
 
+
             self._primary_label = primary_label
 
             @property
@@ -159,6 +162,7 @@ import six
             :param secondary_label: The secondary_label of this FavoriteContact.  # noqa: E501
             :type: str
             """
+
 
             self._secondary_label = secondary_label
 
@@ -183,6 +187,7 @@ import six
             :type: str
             """
 
+
             self._tertiary_label = tertiary_label
 
             @property
@@ -203,6 +208,7 @@ import six
             :param avatar: The avatar of this FavoriteContact.  # noqa: E501
             :type: str
             """
+
 
             self._avatar = avatar
 

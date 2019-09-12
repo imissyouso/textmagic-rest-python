@@ -71,6 +71,7 @@ import six
             :type: list[str]
             """
 
+
             self._common = common
 
             @property
@@ -91,6 +92,7 @@ import six
             :param fields: The fields of this BadRequestResponseErrors.  # noqa: E501
             :type: object
             """
+
 
             self._fields = fields
 

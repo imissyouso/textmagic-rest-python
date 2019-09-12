@@ -78,6 +78,7 @@ import six
             :type: str
             """
 
+
             self._ids = ids
 
             @property
@@ -101,6 +102,7 @@ import six
             :type: bool
             """
 
+
             self._all = all
 
             @property
@@ -123,6 +125,7 @@ import six
             :param status: The status of this DeleteChatsBulkInputObject.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["a", "c", "d"]  # noqa: E501
                     if status not in allowed_values:
                     raise ValueError(

@@ -75,6 +75,7 @@ import six
             :type: str
             """
 
+
             self._phone = phone
 
             @property
@@ -98,6 +99,7 @@ import six
             :type: str
             """
 
+
             self._country = country
 
             @property
@@ -120,6 +122,7 @@ import six
             :param user_id: The user_id of this BuyDedicatedNumberInputObject.  # noqa: E501
             :type: int
             """
+
 
             self._user_id = user_id
 

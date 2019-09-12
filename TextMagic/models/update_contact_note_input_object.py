@@ -65,6 +65,7 @@ import six
             :type: str
             """
 
+
             self._note = note
 
         def to_dict(self):

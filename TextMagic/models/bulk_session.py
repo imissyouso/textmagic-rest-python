@@ -89,6 +89,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -109,6 +110,7 @@ import six
             :param status: The status of this BulkSession.  # noqa: E501
             :type: str
             """
+
 
             self._status = status
 
@@ -131,6 +133,7 @@ import six
             :type: int
             """
 
+
             self._items_processed = items_processed
 
             @property
@@ -151,6 +154,7 @@ import six
             :param items_total: The items_total of this BulkSession.  # noqa: E501
             :type: int
             """
+
 
             self._items_total = items_total
 
@@ -173,6 +177,7 @@ import six
             :type: datetime
             """
 
+
             self._created_at = created_at
 
             @property
@@ -194,6 +199,7 @@ import six
             :type: MessageSession
             """
 
+
             self._session = session
 
             @property
@@ -214,6 +220,7 @@ import six
             :param text: The text of this BulkSession.  # noqa: E501
             :type: str
             """
+
 
             self._text = text
 

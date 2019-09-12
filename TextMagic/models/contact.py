@@ -121,6 +121,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -141,6 +142,7 @@ import six
             :param favorited: The favorited of this Contact.  # noqa: E501
             :type: bool
             """
+
 
             self._favorited = favorited
 
@@ -163,6 +165,7 @@ import six
             :type: bool
             """
 
+
             self._blocked = blocked
 
             @property
@@ -183,6 +186,7 @@ import six
             :param first_name: The first_name of this Contact.  # noqa: E501
             :type: str
             """
+
 
             self._first_name = first_name
 
@@ -205,6 +209,7 @@ import six
             :type: str
             """
 
+
             self._last_name = last_name
 
             @property
@@ -225,6 +230,7 @@ import six
             :param company_name: The company_name of this Contact.  # noqa: E501
             :type: str
             """
+
 
             self._company_name = company_name
 
@@ -247,6 +253,7 @@ import six
             :type: str
             """
 
+
             self._phone = phone
 
             @property
@@ -267,6 +274,7 @@ import six
             :param email: The email of this Contact.  # noqa: E501
             :type: str
             """
+
 
             self._email = email
 
@@ -289,6 +297,7 @@ import six
             :type: Country
             """
 
+
             self._country = country
 
             @property
@@ -309,6 +318,7 @@ import six
             :param custom_fields: The custom_fields of this Contact.  # noqa: E501
             :type: list[ContactCustomField]
             """
+
 
             self._custom_fields = custom_fields
 
@@ -331,6 +341,7 @@ import six
             :type: User
             """
 
+
             self._user = user
 
             @property
@@ -351,6 +362,7 @@ import six
             :param lists: The lists of this Contact.  # noqa: E501
             :type: list[Group]
             """
+
 
             self._lists = lists
 
@@ -373,6 +385,7 @@ import six
             :type: str
             """
 
+
             self._phone_type = phone_type
 
             @property
@@ -394,6 +407,7 @@ import six
             :type: ContactImage
             """
 
+
             self._avatar = avatar
 
             @property
@@ -414,6 +428,7 @@ import six
             :param notes: The notes of this Contact.  # noqa: E501
             :type: list[ContactNote]
             """
+
 
             self._notes = notes
 

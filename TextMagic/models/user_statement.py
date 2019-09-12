@@ -93,6 +93,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -113,6 +114,7 @@ import six
             :param user_id: The user_id of this UserStatement.  # noqa: E501
             :type: int
             """
+
 
             self._user_id = user_id
 
@@ -135,6 +137,7 @@ import six
             :type: datetime
             """
 
+
             self.__date = _date
 
             @property
@@ -155,6 +158,7 @@ import six
             :param balance: The balance of this UserStatement.  # noqa: E501
             :type: float
             """
+
 
             self._balance = balance
 
@@ -177,6 +181,7 @@ import six
             :type: float
             """
 
+
             self._delta = delta
 
             @property
@@ -197,6 +202,7 @@ import six
             :param type: The type of this UserStatement.  # noqa: E501
             :type: str
             """
+
 
             self._type = type
 
@@ -219,6 +225,7 @@ import six
             :type: str
             """
 
+
             self._value = value
 
             @property
@@ -239,6 +246,7 @@ import six
             :param comment: The comment of this UserStatement.  # noqa: E501
             :type: str
             """
+
 
             self._comment = comment
 

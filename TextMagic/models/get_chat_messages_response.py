@@ -77,6 +77,7 @@ import six
             :type: int
             """
 
+
             self._page = page
 
             @property
@@ -97,6 +98,7 @@ import six
             :param page_count: The page_count of this GetChatMessagesResponse.  # noqa: E501
             :type: int
             """
+
 
             self._page_count = page_count
 
@@ -119,6 +121,7 @@ import six
             :type: int
             """
 
+
             self._limit = limit
 
             @property
@@ -139,6 +142,7 @@ import six
             :param resources: The resources of this GetChatMessagesResponse.  # noqa: E501
             :type: list[Conversation]
             """
+
 
             self._resources = resources
 

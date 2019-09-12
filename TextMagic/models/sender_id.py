@@ -77,6 +77,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -98,6 +99,7 @@ import six
             :type: str
             """
 
+
             self._sender_id = sender_id
 
             @property
@@ -118,6 +120,7 @@ import six
             :param user: The user of this SenderId.  # noqa: E501
             :type: User
             """
+
 
             self._user = user
 
@@ -141,6 +144,7 @@ import six
             :param status: The status of this SenderId.  # noqa: E501
             :type: str
             """
+
                     allowed_values = ["A", "R", "P"]  # noqa: E501
                     if status not in allowed_values:
                     raise ValueError(

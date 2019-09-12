@@ -65,6 +65,7 @@ import six
             :type: str
             """
 
+
             self._contacts = contacts
 
         def to_dict(self):

@@ -93,6 +93,7 @@ import six
             :type: int
             """
 
+
             self._id = id
 
             @property
@@ -113,6 +114,7 @@ import six
             :param start_time: The start_time of this MessageSession.  # noqa: E501
             :type: str
             """
+
 
             self._start_time = start_time
 
@@ -135,6 +137,7 @@ import six
             :type: str
             """
 
+
             self._text = text
 
             @property
@@ -155,6 +158,7 @@ import six
             :param source: The source of this MessageSession.  # noqa: E501
             :type: str
             """
+
 
             self._source = source
 
@@ -177,6 +181,7 @@ import six
             :type: str
             """
 
+
             self._reference_id = reference_id
 
             @property
@@ -197,6 +202,7 @@ import six
             :param price: The price of this MessageSession.  # noqa: E501
             :type: float
             """
+
 
             self._price = price
 
@@ -219,6 +225,7 @@ import six
             :type: int
             """
 
+
             self._numbers_count = numbers_count
 
             @property
@@ -239,6 +246,7 @@ import six
             :param destination: The destination of this MessageSession.  # noqa: E501
             :type: str
             """
+
 
             self._destination = destination
 

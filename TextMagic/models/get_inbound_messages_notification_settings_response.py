@@ -91,6 +91,7 @@ import six
             :type: bool
             """
 
+
             self._inbound_message_notification = inbound_message_notification
 
             @property
@@ -113,6 +114,7 @@ import six
             :param forwarded_call_notification: The forwarded_call_notification of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
             :type: bool
             """
+
 
             self._forwarded_call_notification = forwarded_call_notification
 
@@ -137,6 +139,7 @@ import six
             :type: bool
             """
 
+
             self._include_sms_history = include_sms_history
 
             @property
@@ -159,6 +162,7 @@ import six
             :param send_in_html_format: The send_in_html_format of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
             :type: bool
             """
+
 
             self._send_in_html_format = send_in_html_format
 
@@ -183,6 +187,7 @@ import six
             :type: str
             """
 
+
             self._alert_email1 = alert_email1
 
             @property
@@ -206,6 +211,7 @@ import six
             :type: str
             """
 
+
             self._alert_email2 = alert_email2
 
             @property
@@ -228,6 +234,7 @@ import six
             :param alert_email3: The alert_email3 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
             :type: str
             """
+
 
             self._alert_email3 = alert_email3
 
