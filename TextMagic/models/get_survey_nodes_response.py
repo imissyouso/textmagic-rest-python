@@ -31,8 +31,8 @@ class GetSurveyNodesResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'nodes': 'list[SurveyNode]',
-        'rows': 'list[list[int]]'
+        'nodes': 'object',
+        'rows': 'object'
     }
 
     attribute_map = {
@@ -56,7 +56,7 @@ class GetSurveyNodesResponse(object):
 
 
         :return: The nodes of this GetSurveyNodesResponse.  # noqa: E501
-        :rtype: list[SurveyNode]
+        :rtype: object
         """
         return self._nodes
 
@@ -66,7 +66,7 @@ class GetSurveyNodesResponse(object):
 
 
         :param nodes: The nodes of this GetSurveyNodesResponse.  # noqa: E501
-        :type: list[SurveyNode]
+        :type: object
         """
 
         self._nodes = nodes
@@ -77,7 +77,7 @@ class GetSurveyNodesResponse(object):
 
 
         :return: The rows of this GetSurveyNodesResponse.  # noqa: E501
-        :rtype: list[list[int]]
+        :rtype: object
         """
         return self._rows
 
@@ -87,7 +87,7 @@ class GetSurveyNodesResponse(object):
 
 
         :param rows: The rows of this GetSurveyNodesResponse.  # noqa: E501
-        :type: list[list[int]]
+        :type: object
         """
 
         self._rows = rows
