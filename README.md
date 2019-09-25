@@ -1,10 +1,10 @@
 # TextMagic Python SDK
-This library provides you with an easy solution to send SMS and receive replies by integrating TextMagic SMS Gateway to your Python application.
+This library provides you with an easy way of sending SMS and receiving replies by integrating TextMagic SMS Gateway into your Python application.
 
-## What is TextMagic?
-TextMagic's application programming interface (API) provides the communication link between your application and TextMagic’s SMS Gateway, allowing you to send and receive text messages and to check the delivery status of text messages you’ve already sent.
+## What Is TextMagic?
+TextMagic’s application programming interface (API) provides the communication link between your application and TextMagic’s SMS Gateway, allowing you to send and receive text messages and to check the delivery status of text messages you’ve already sent.
 
-For detailed documentation, please visit [http://docs.textmagictesting.com/](http://docs.textmagictesting.com/)
+For detailed documentation, please visit [http://docs.textmagictesting.com/](http://docs.textmagictesting.com/).
 
 ## Requirements
 Python 2.7 and 3.4+
@@ -12,7 +12,7 @@ Python 2.7 and 3.4+
 ## Installation
 
 ```shell
-pip install git+https://github.com/imissyouso/textmagic-rest-python.git@v2.0.393
+pip install git+https://github.com/imissyouso/textmagic-rest-python.git@v2.0.401
 ```
 
 ## Usage Example
