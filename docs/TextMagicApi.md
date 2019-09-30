@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **block_contact**
-> ResourceLinkResponse block_contact(block_contact_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse block_contact(block_contact_input_object)
 
 Block contact from inbound and outbound communication by phone number.
 
@@ -253,11 +253,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 block_contact_input_object = TextMagic.BlockContactInputObject() # BlockContactInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Block contact from inbound and outbound communication by phone number.
-    api_response = api_instance.block_contact(block_contact_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.block_contact(block_contact_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->block_contact: %s\n" % e)
@@ -268,7 +267,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **block_contact_input_object** | [**BlockContactInputObject**](BlockContactInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -286,7 +284,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **buy_dedicated_number**
-> buy_dedicated_number(buy_dedicated_number_input_object, x_ignore_null_values=x_ignore_null_values)
+> buy_dedicated_number(buy_dedicated_number_input_object)
 
 Buy a dedicated number and assign it to the specified account.
 
@@ -306,11 +304,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 buy_dedicated_number_input_object = TextMagic.BuyDedicatedNumberInputObject() # BuyDedicatedNumberInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Buy a dedicated number and assign it to the specified account.
-    api_instance.buy_dedicated_number(buy_dedicated_number_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.buy_dedicated_number(buy_dedicated_number_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->buy_dedicated_number: %s\n" % e)
 ```
@@ -320,7 +317,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **buy_dedicated_number_input_object** | [**BuyDedicatedNumberInputObject**](BuyDedicatedNumberInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -389,7 +385,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **check_phone_verification_code**
-> check_phone_verification_code(check_phone_verification_code_input_object, x_ignore_null_values=x_ignore_null_values)
+> check_phone_verification_code(check_phone_verification_code_input_object)
 
 Check user phone verification code
 
@@ -409,11 +405,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 check_phone_verification_code_input_object = TextMagic.CheckPhoneVerificationCodeInputObject() # CheckPhoneVerificationCodeInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Check user phone verification code
-    api_instance.check_phone_verification_code(check_phone_verification_code_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.check_phone_verification_code(check_phone_verification_code_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->check_phone_verification_code: %s\n" % e)
 ```
@@ -423,7 +418,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **check_phone_verification_code_input_object** | [**CheckPhoneVerificationCodeInputObject**](CheckPhoneVerificationCodeInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -494,7 +488,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **close_chats_bulk**
-> close_chats_bulk(close_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> close_chats_bulk(close_chats_bulk_input_object)
 
 Close chats by chat ids or close all chats
 
@@ -514,11 +508,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 close_chats_bulk_input_object = TextMagic.CloseChatsBulkInputObject() # CloseChatsBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Close chats by chat ids or close all chats
-    api_instance.close_chats_bulk(close_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.close_chats_bulk(close_chats_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->close_chats_bulk: %s\n" % e)
 ```
@@ -528,7 +521,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **close_chats_bulk_input_object** | [**CloseChatsBulkInputObject**](CloseChatsBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -642,7 +634,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_contact**
-> ResourceLinkResponse create_contact(create_contact_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse create_contact(create_contact_input_object)
 
 Create a new contact from the submitted data.
 
@@ -662,11 +654,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_contact_input_object = TextMagic.CreateContactInputObject() # CreateContactInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Create a new contact from the submitted data.
-    api_response = api_instance.create_contact(create_contact_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.create_contact(create_contact_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->create_contact: %s\n" % e)
@@ -677,7 +668,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_contact_input_object** | [**CreateContactInputObject**](CreateContactInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -695,7 +685,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_contact_note**
-> ResourceLinkResponse create_contact_note(create_contact_note_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse create_contact_note(create_contact_note_input_object, id)
 
 Create a new contact note.
 
@@ -716,11 +706,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_contact_note_input_object = TextMagic.CreateContactNoteInputObject() # CreateContactNoteInputObject | 
 id = 56 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Create a new contact note.
-    api_response = api_instance.create_contact_note(create_contact_note_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.create_contact_note(create_contact_note_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->create_contact_note: %s\n" % e)
@@ -732,7 +721,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_contact_note_input_object** | [**CreateContactNoteInputObject**](CreateContactNoteInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -750,7 +738,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_custom_field**
-> ResourceLinkResponse create_custom_field(create_custom_field_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse create_custom_field(create_custom_field_input_object)
 
 Create a new custom field from the submitted data.
 
@@ -770,11 +758,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_custom_field_input_object = TextMagic.CreateCustomFieldInputObject() # CreateCustomFieldInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Create a new custom field from the submitted data.
-    api_response = api_instance.create_custom_field(create_custom_field_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.create_custom_field(create_custom_field_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->create_custom_field: %s\n" % e)
@@ -785,7 +772,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_custom_field_input_object** | [**CreateCustomFieldInputObject**](CreateCustomFieldInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -803,7 +789,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_list**
-> ResourceLinkResponse create_list(create_list_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse create_list(create_list_input_object)
 
 Create a new list from the submitted data.
 
@@ -823,11 +809,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_list_input_object = TextMagic.CreateListInputObject() # CreateListInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Create a new list from the submitted data.
-    api_response = api_instance.create_list(create_list_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.create_list(create_list_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->create_list: %s\n" % e)
@@ -838,7 +823,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_list_input_object** | [**CreateListInputObject**](CreateListInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -856,7 +840,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_push_token**
-> create_push_token(create_push_token_input_object, x_ignore_null_values=x_ignore_null_values)
+> create_push_token(create_push_token_input_object)
 
 Add or update a device token.
 
@@ -876,11 +860,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_push_token_input_object = TextMagic.CreatePushTokenInputObject() # CreatePushTokenInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Add or update a device token.
-    api_instance.create_push_token(create_push_token_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.create_push_token(create_push_token_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->create_push_token: %s\n" % e)
 ```
@@ -890,7 +873,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_push_token_input_object** | [**CreatePushTokenInputObject**](CreatePushTokenInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -908,7 +890,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_survey**
-> ResourceLinkResponse create_survey(create_survey_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse create_survey(create_survey_input_object)
 
 Create a new survey from the submitted data.
 
@@ -928,11 +910,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_survey_input_object = TextMagic.CreateSurveyInputObject() # CreateSurveyInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Create a new survey from the submitted data.
-    api_response = api_instance.create_survey(create_survey_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.create_survey(create_survey_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->create_survey: %s\n" % e)
@@ -943,7 +924,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_survey_input_object** | [**CreateSurveyInputObject**](CreateSurveyInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -961,7 +941,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_survey_node**
-> ResourceLinkResponse create_survey_node(create_survey_node_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse create_survey_node(create_survey_node_input_object, id)
 
 Create a new node from the submitted data.
 
@@ -982,11 +962,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_survey_node_input_object = TextMagic.CreateSurveyNodeInputObject() # CreateSurveyNodeInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Create a new node from the submitted data.
-    api_response = api_instance.create_survey_node(create_survey_node_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.create_survey_node(create_survey_node_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->create_survey_node: %s\n" % e)
@@ -998,7 +977,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_survey_node_input_object** | [**CreateSurveyNodeInputObject**](CreateSurveyNodeInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1016,7 +994,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_template**
-> ResourceLinkResponse create_template(create_template_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse create_template(create_template_input_object)
 
 Create a new template from the submitted data.
 
@@ -1036,11 +1014,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_template_input_object = TextMagic.CreateTemplateInputObject() # CreateTemplateInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Create a new template from the submitted data.
-    api_response = api_instance.create_template(create_template_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.create_template(create_template_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->create_template: %s\n" % e)
@@ -1051,7 +1028,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **create_template_input_object** | [**CreateTemplateInputObject**](CreateTemplateInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1209,7 +1185,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_chat_messages**
-> delete_chat_messages(delete_chat_messages_bulk_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> delete_chat_messages(delete_chat_messages_bulk_input_object, id)
 
 Delete messages from chat by given messages ID(s).
 
@@ -1230,11 +1206,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_chat_messages_bulk_input_object = TextMagic.DeleteChatMessagesBulkInputObject() # DeleteChatMessagesBulkInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete messages from chat by given messages ID(s).
-    api_instance.delete_chat_messages(delete_chat_messages_bulk_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_chat_messages(delete_chat_messages_bulk_input_object, id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_chat_messages: %s\n" % e)
 ```
@@ -1245,7 +1220,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_chat_messages_bulk_input_object** | [**DeleteChatMessagesBulkInputObject**](DeleteChatMessagesBulkInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1263,7 +1237,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_chats_bulk**
-> delete_chats_bulk(delete_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_chats_bulk(delete_chats_bulk_input_object)
 
 Delete chats by given ID(s) or delete all chats.
 
@@ -1283,11 +1257,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_chats_bulk_input_object = TextMagic.DeleteChatsBulkInputObject() # DeleteChatsBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete chats by given ID(s) or delete all chats.
-    api_instance.delete_chats_bulk(delete_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_chats_bulk(delete_chats_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_chats_bulk: %s\n" % e)
 ```
@@ -1297,7 +1270,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_chats_bulk_input_object** | [**DeleteChatsBulkInputObject**](DeleteChatsBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1465,7 +1437,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_contact_notes_bulk**
-> delete_contact_notes_bulk(id, delete_contact_notes_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_contact_notes_bulk(id, delete_contact_notes_bulk_input_object)
 
 Delete contact note by given ID(s) or delete all contact notes.
 
@@ -1486,11 +1458,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 delete_contact_notes_bulk_input_object = TextMagic.DeleteContactNotesBulkInputObject() # DeleteContactNotesBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete contact note by given ID(s) or delete all contact notes.
-    api_instance.delete_contact_notes_bulk(id, delete_contact_notes_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_contact_notes_bulk(id, delete_contact_notes_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_contact_notes_bulk: %s\n" % e)
 ```
@@ -1501,7 +1472,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  | 
  **delete_contact_notes_bulk_input_object** | [**DeleteContactNotesBulkInputObject**](DeleteContactNotesBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1519,7 +1489,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_contacts_by_ids**
-> delete_contacts_by_ids(delete_contacts_by_ids_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_contacts_by_ids(delete_contacts_by_ids_input_object)
 
 Delete contact by given ID(s) or delete all contacts.
 
@@ -1539,11 +1509,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_contacts_by_ids_input_object = TextMagic.DeleteContactsByIdsInputObject() # DeleteContactsByIdsInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete contact by given ID(s) or delete all contacts.
-    api_instance.delete_contacts_by_ids(delete_contacts_by_ids_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_contacts_by_ids(delete_contacts_by_ids_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_contacts_by_ids: %s\n" % e)
 ```
@@ -1553,7 +1522,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_contacts_by_ids_input_object** | [**DeleteContactsByIdsInputObject**](DeleteContactsByIdsInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1773,7 +1741,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_inbound_messages_bulk**
-> delete_inbound_messages_bulk(delete_inbound_messages_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_inbound_messages_bulk(delete_inbound_messages_bulk_input_object)
 
 Delete inbound messages by given ID(s) or delete all inbound messages.
 
@@ -1793,11 +1761,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_inbound_messages_bulk_input_object = TextMagic.DeleteInboundMessagesBulkInputObject() # DeleteInboundMessagesBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete inbound messages by given ID(s) or delete all inbound messages.
-    api_instance.delete_inbound_messages_bulk(delete_inbound_messages_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_inbound_messages_bulk(delete_inbound_messages_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_inbound_messages_bulk: %s\n" % e)
 ```
@@ -1807,7 +1774,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_inbound_messages_bulk_input_object** | [**DeleteInboundMessagesBulkInputObject**](DeleteInboundMessagesBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1925,7 +1891,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_list_contacts_bulk**
-> delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id)
 
 Delete contact from list by given ID(s) or all contacts from list.
 
@@ -1946,11 +1912,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_list_contacts_bulk_input_object = TextMagic.DeleteListContactsBulkInputObject() # DeleteListContactsBulkInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete contact from list by given ID(s) or all contacts from list.
-    api_instance.delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_list_contacts_bulk: %s\n" % e)
 ```
@@ -1961,7 +1926,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_list_contacts_bulk_input_object** | [**DeleteListContactsBulkInputObject**](DeleteListContactsBulkInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1979,7 +1943,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_lists_bulk**
-> delete_lists_bulk(delete_lists_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_lists_bulk(delete_lists_bulk_input_object)
 
 Delete list by given ID(s) or delete all lists.
 
@@ -1999,11 +1963,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_lists_bulk_input_object = TextMagic.DeleteListsBulkInputObject() # DeleteListsBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete list by given ID(s) or delete all lists.
-    api_instance.delete_lists_bulk(delete_lists_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_lists_bulk(delete_lists_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_lists_bulk: %s\n" % e)
 ```
@@ -2013,7 +1976,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_lists_bulk_input_object** | [**DeleteListsBulkInputObject**](DeleteListsBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2081,7 +2043,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_message_sessions_bulk**
-> delete_message_sessions_bulk(delete_message_sessions_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_message_sessions_bulk(delete_message_sessions_bulk_input_object)
 
 Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
 
@@ -2101,11 +2063,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_message_sessions_bulk_input_object = TextMagic.DeleteMessageSessionsBulkInputObject() # DeleteMessageSessionsBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
-    api_instance.delete_message_sessions_bulk(delete_message_sessions_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_message_sessions_bulk(delete_message_sessions_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_message_sessions_bulk: %s\n" % e)
 ```
@@ -2115,7 +2076,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_message_sessions_bulk_input_object** | [**DeleteMessageSessionsBulkInputObject**](DeleteMessageSessionsBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2185,7 +2145,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_outbound_messages_bulk**
-> delete_outbound_messages_bulk(delete_outbound_messages_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_outbound_messages_bulk(delete_outbound_messages_bulk_input_object)
 
 Delete messages by IDs
 
@@ -2207,11 +2167,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_outbound_messages_bulk_input_object = TextMagic.DeleteOutboundMessagesBulkInputObject() # DeleteOutboundMessagesBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete messages by IDs
-    api_instance.delete_outbound_messages_bulk(delete_outbound_messages_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_outbound_messages_bulk(delete_outbound_messages_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_outbound_messages_bulk: %s\n" % e)
 ```
@@ -2221,7 +2180,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_outbound_messages_bulk_input_object** | [**DeleteOutboundMessagesBulkInputObject**](DeleteOutboundMessagesBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2341,7 +2299,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_scheduled_messages_bulk**
-> delete_scheduled_messages_bulk(delete_scheduled_messages_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_scheduled_messages_bulk(delete_scheduled_messages_bulk_input_object)
 
 Delete scheduled messages by given ID(s) or delete all scheduled messages.
 
@@ -2361,11 +2319,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_scheduled_messages_bulk_input_object = TextMagic.DeleteScheduledMessagesBulkInputObject() # DeleteScheduledMessagesBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete scheduled messages by given ID(s) or delete all scheduled messages.
-    api_instance.delete_scheduled_messages_bulk(delete_scheduled_messages_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_scheduled_messages_bulk(delete_scheduled_messages_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_scheduled_messages_bulk: %s\n" % e)
 ```
@@ -2375,7 +2332,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_scheduled_messages_bulk_input_object** | [**DeleteScheduledMessagesBulkInputObject**](DeleteScheduledMessagesBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2593,7 +2549,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_templates_bulk**
-> delete_templates_bulk(delete_templates_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> delete_templates_bulk(delete_templates_bulk_input_object)
 
 Delete template by given ID(s) or delete all templates.
 
@@ -2613,11 +2569,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_templates_bulk_input_object = TextMagic.DeleteTemplatesBulkInputObject() # DeleteTemplatesBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Delete template by given ID(s) or delete all templates.
-    api_instance.delete_templates_bulk(delete_templates_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.delete_templates_bulk(delete_templates_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_templates_bulk: %s\n" % e)
 ```
@@ -2627,7 +2582,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **delete_templates_bulk_input_object** | [**DeleteTemplatesBulkInputObject**](DeleteTemplatesBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2645,7 +2599,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **do_auth**
-> DoAuthResponse do_auth(do_auth_input_object, x_ignore_null_values=x_ignore_null_values)
+> DoAuthResponse do_auth(do_auth_input_object)
 
 Authenticate user by given username and password.
 
@@ -2662,11 +2616,10 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi()
 do_auth_input_object = TextMagic.DoAuthInputObject() # DoAuthInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Authenticate user by given username and password.
-    api_response = api_instance.do_auth(do_auth_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.do_auth(do_auth_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->do_auth: %s\n" % e)
@@ -2677,7 +2630,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **do_auth_input_object** | [**DoAuthInputObject**](DoAuthInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6078,7 +6030,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_subaccounts_with_tokens**
-> GetSubaccountsWithTokensResponse get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, page=page, limit=limit, x_ignore_null_values=x_ignore_null_values)
+> GetSubaccountsWithTokensResponse get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, page=page, limit=limit)
 
 Get all subaccounts with their REST API tokens associated with specified app name.
 
@@ -6102,11 +6054,10 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 get_subaccounts_with_tokens_input_object = TextMagic.GetSubaccountsWithTokensInputObject() # GetSubaccountsWithTokensInputObject | 
 page = 1 # float | Fetch specified results page (optional) (default to 1)
 limit = 10 # int | How many results to return (optional) (default to 10)
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Get all subaccounts with their REST API tokens associated with specified app name.
-    api_response = api_instance.get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, page=page, limit=limit, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, page=page, limit=limit)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->get_subaccounts_with_tokens: %s\n" % e)
@@ -6119,7 +6070,6 @@ Name | Type | Description  | Notes
  **get_subaccounts_with_tokens_input_object** | [**GetSubaccountsWithTokensInputObject**](GetSubaccountsWithTokensInputObject.md)|  | 
  **page** | **float**| Fetch specified results page | [optional] [default to 1]
  **limit** | **int**| How many results to return | [optional] [default to 10]
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6759,7 +6709,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **invite_subaccount**
-> invite_subaccount(invite_subaccount_input_object, x_ignore_null_values=x_ignore_null_values)
+> invite_subaccount(invite_subaccount_input_object)
 
 Invite new subaccount.
 
@@ -6779,11 +6729,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 invite_subaccount_input_object = TextMagic.InviteSubaccountInputObject() # InviteSubaccountInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Invite new subaccount.
-    api_instance.invite_subaccount(invite_subaccount_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.invite_subaccount(invite_subaccount_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->invite_subaccount: %s\n" % e)
 ```
@@ -6793,7 +6742,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **invite_subaccount_input_object** | [**InviteSubaccountInputObject**](InviteSubaccountInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6811,7 +6759,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **mark_chats_read_bulk**
-> mark_chats_read_bulk(mark_chats_read_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> mark_chats_read_bulk(mark_chats_read_bulk_input_object)
 
 Mark several chats as read by chat ids or mark all chats as read
 
@@ -6831,11 +6779,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 mark_chats_read_bulk_input_object = TextMagic.MarkChatsReadBulkInputObject() # MarkChatsReadBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Mark several chats as read by chat ids or mark all chats as read
-    api_instance.mark_chats_read_bulk(mark_chats_read_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.mark_chats_read_bulk(mark_chats_read_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->mark_chats_read_bulk: %s\n" % e)
 ```
@@ -6845,7 +6792,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **mark_chats_read_bulk_input_object** | [**MarkChatsReadBulkInputObject**](MarkChatsReadBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6863,7 +6809,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **mark_chats_unread_bulk**
-> mark_chats_unread_bulk(mark_chats_unread_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> mark_chats_unread_bulk(mark_chats_unread_bulk_input_object)
 
 Mark several chats as UNread by chat ids or mark all chats as UNread
 
@@ -6883,11 +6829,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 mark_chats_unread_bulk_input_object = TextMagic.MarkChatsUnreadBulkInputObject() # MarkChatsUnreadBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Mark several chats as UNread by chat ids or mark all chats as UNread
-    api_instance.mark_chats_unread_bulk(mark_chats_unread_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.mark_chats_unread_bulk(mark_chats_unread_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->mark_chats_unread_bulk: %s\n" % e)
 ```
@@ -6897,7 +6842,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **mark_chats_unread_bulk_input_object** | [**MarkChatsUnreadBulkInputObject**](MarkChatsUnreadBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6915,7 +6859,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **merge_survey_nodes**
-> merge_survey_nodes(merge_survey_nodes_input_object, x_ignore_null_values=x_ignore_null_values)
+> merge_survey_nodes(merge_survey_nodes_input_object)
 
 Merge two question nodes.
 
@@ -6935,11 +6879,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 merge_survey_nodes_input_object = TextMagic.MergeSurveyNodesInputObject() # MergeSurveyNodesInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Merge two question nodes.
-    api_instance.merge_survey_nodes(merge_survey_nodes_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.merge_survey_nodes(merge_survey_nodes_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->merge_survey_nodes: %s\n" % e)
 ```
@@ -6949,7 +6892,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **merge_survey_nodes_input_object** | [**MergeSurveyNodesInputObject**](MergeSurveyNodesInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6967,7 +6909,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **mute_chat**
-> ResourceLinkResponse mute_chat(mute_chat_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse mute_chat(mute_chat_input_object)
 
 Set mute mode.
 
@@ -6987,11 +6929,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 mute_chat_input_object = TextMagic.MuteChatInputObject() # MuteChatInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Set mute mode.
-    api_response = api_instance.mute_chat(mute_chat_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.mute_chat(mute_chat_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->mute_chat: %s\n" % e)
@@ -7002,7 +6943,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **mute_chat_input_object** | [**MuteChatInputObject**](MuteChatInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7020,7 +6960,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **mute_chats_bulk**
-> mute_chats_bulk(mute_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> mute_chats_bulk(mute_chats_bulk_input_object)
 
 Mute several chats by chat ids or mute all chats
 
@@ -7040,11 +6980,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 mute_chats_bulk_input_object = TextMagic.MuteChatsBulkInputObject() # MuteChatsBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Mute several chats by chat ids or mute all chats
-    api_instance.mute_chats_bulk(mute_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.mute_chats_bulk(mute_chats_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->mute_chats_bulk: %s\n" % e)
 ```
@@ -7054,7 +6993,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **mute_chats_bulk_input_object** | [**MuteChatsBulkInputObject**](MuteChatsBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7119,7 +7057,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **reopen_chats_bulk**
-> reopen_chats_bulk(reopen_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> reopen_chats_bulk(reopen_chats_bulk_input_object)
 
 Reopen chats by chat ids or reopen all chats
 
@@ -7139,11 +7077,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 reopen_chats_bulk_input_object = TextMagic.ReopenChatsBulkInputObject() # ReopenChatsBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Reopen chats by chat ids or reopen all chats
-    api_instance.reopen_chats_bulk(reopen_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.reopen_chats_bulk(reopen_chats_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->reopen_chats_bulk: %s\n" % e)
 ```
@@ -7153,7 +7090,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **reopen_chats_bulk_input_object** | [**ReopenChatsBulkInputObject**](ReopenChatsBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7171,7 +7107,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **request_new_subaccount_token**
-> User request_new_subaccount_token(request_new_subaccount_token_input_object, x_ignore_null_values=x_ignore_null_values)
+> User request_new_subaccount_token(request_new_subaccount_token_input_object)
 
 Request a new REST API token for subaccount.
 
@@ -7193,11 +7129,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 request_new_subaccount_token_input_object = TextMagic.RequestNewSubaccountTokenInputObject() # RequestNewSubaccountTokenInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Request a new REST API token for subaccount.
-    api_response = api_instance.request_new_subaccount_token(request_new_subaccount_token_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.request_new_subaccount_token(request_new_subaccount_token_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->request_new_subaccount_token: %s\n" % e)
@@ -7208,7 +7143,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request_new_subaccount_token_input_object** | [**RequestNewSubaccountTokenInputObject**](RequestNewSubaccountTokenInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7226,7 +7160,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **request_sender_id**
-> ResourceLinkResponse request_sender_id(request_sender_id_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse request_sender_id(request_sender_id_input_object)
 
 Request for a new Sender ID.
 
@@ -7246,11 +7180,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 request_sender_id_input_object = TextMagic.RequestSenderIdInputObject() # RequestSenderIdInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Request for a new Sender ID.
-    api_response = api_instance.request_sender_id(request_sender_id_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.request_sender_id(request_sender_id_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->request_sender_id: %s\n" % e)
@@ -7261,7 +7194,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request_sender_id_input_object** | [**RequestSenderIdInputObject**](RequestSenderIdInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7931,7 +7863,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **send_message**
-> SendMessageResponse send_message(send_message_input_object, x_ignore_null_values=x_ignore_null_values)
+> SendMessageResponse send_message(send_message_input_object)
 
 Send message
 
@@ -7953,11 +7885,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 send_message_input_object = TextMagic.SendMessageInputObject() # SendMessageInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Send message
-    api_response = api_instance.send_message(send_message_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.send_message(send_message_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->send_message: %s\n" % e)
@@ -7968,7 +7899,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **send_message_input_object** | [**SendMessageInputObject**](SendMessageInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8032,7 +7962,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **set_chat_status**
-> ResourceLinkResponse set_chat_status(set_chat_status_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse set_chat_status(set_chat_status_input_object)
 
 Set status of the chat given by ID.
 
@@ -8052,11 +7982,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 set_chat_status_input_object = TextMagic.SetChatStatusInputObject() # SetChatStatusInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Set status of the chat given by ID.
-    api_response = api_instance.set_chat_status(set_chat_status_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.set_chat_status(set_chat_status_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->set_chat_status: %s\n" % e)
@@ -8067,7 +7996,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **set_chat_status_input_object** | [**SetChatStatusInputObject**](SetChatStatusInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8136,7 +8064,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **unblock_contact**
-> unblock_contact(unblock_contact_input_object, x_ignore_null_values=x_ignore_null_values)
+> unblock_contact(unblock_contact_input_object)
 
 Unblock contact by phone number.
 
@@ -8156,11 +8084,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 unblock_contact_input_object = TextMagic.UnblockContactInputObject() # UnblockContactInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Unblock contact by phone number.
-    api_instance.unblock_contact(unblock_contact_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.unblock_contact(unblock_contact_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->unblock_contact: %s\n" % e)
 ```
@@ -8170,7 +8097,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unblock_contact_input_object** | [**UnblockContactInputObject**](UnblockContactInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8188,7 +8114,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **unblock_contacts_bulk**
-> unblock_contacts_bulk(unblock_contacts_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> unblock_contacts_bulk(unblock_contacts_bulk_input_object)
 
 Unblock several contacts by blocked contact ids or unblock all contacts
 
@@ -8208,11 +8134,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 unblock_contacts_bulk_input_object = TextMagic.UnblockContactsBulkInputObject() # UnblockContactsBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Unblock several contacts by blocked contact ids or unblock all contacts
-    api_instance.unblock_contacts_bulk(unblock_contacts_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.unblock_contacts_bulk(unblock_contacts_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->unblock_contacts_bulk: %s\n" % e)
 ```
@@ -8222,7 +8147,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unblock_contacts_bulk_input_object** | [**UnblockContactsBulkInputObject**](UnblockContactsBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8240,7 +8164,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **unmute_chats_bulk**
-> unmute_chats_bulk(unmute_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+> unmute_chats_bulk(unmute_chats_bulk_input_object)
 
 Unmute several chats by chat ids or unmute all chats
 
@@ -8260,11 +8184,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 unmute_chats_bulk_input_object = TextMagic.UnmuteChatsBulkInputObject() # UnmuteChatsBulkInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Unmute several chats by chat ids or unmute all chats
-    api_instance.unmute_chats_bulk(unmute_chats_bulk_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.unmute_chats_bulk(unmute_chats_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->unmute_chats_bulk: %s\n" % e)
 ```
@@ -8274,7 +8197,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unmute_chats_bulk_input_object** | [**UnmuteChatsBulkInputObject**](UnmuteChatsBulkInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8292,7 +8214,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **unsubscribe_contact**
-> ResourceLinkResponse unsubscribe_contact(unsubscribe_contact_input_object, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse unsubscribe_contact(unsubscribe_contact_input_object)
 
 Unsubscribe contact from your communication by phone number.
 
@@ -8312,11 +8234,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 unsubscribe_contact_input_object = TextMagic.UnsubscribeContactInputObject() # UnsubscribeContactInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Unsubscribe contact from your communication by phone number.
-    api_response = api_instance.unsubscribe_contact(unsubscribe_contact_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.unsubscribe_contact(unsubscribe_contact_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->unsubscribe_contact: %s\n" % e)
@@ -8327,7 +8248,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unsubscribe_contact_input_object** | [**UnsubscribeContactInputObject**](UnsubscribeContactInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8345,7 +8265,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_balance_notification_settings**
-> update_balance_notification_settings(update_balance_notification_settings_input_object, x_ignore_null_values=x_ignore_null_values)
+> update_balance_notification_settings(update_balance_notification_settings_input_object)
 
 Update balance notification settings
 
@@ -8365,11 +8285,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_balance_notification_settings_input_object = TextMagic.UpdateBalanceNotificationSettingsInputObject() # UpdateBalanceNotificationSettingsInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update balance notification settings
-    api_instance.update_balance_notification_settings(update_balance_notification_settings_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.update_balance_notification_settings(update_balance_notification_settings_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_balance_notification_settings: %s\n" % e)
 ```
@@ -8379,7 +8298,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_balance_notification_settings_input_object** | [**UpdateBalanceNotificationSettingsInputObject**](UpdateBalanceNotificationSettingsInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8397,7 +8315,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_callback_settings**
-> update_callback_settings(update_callback_settings_input_object, x_ignore_null_values=x_ignore_null_values)
+> update_callback_settings(update_callback_settings_input_object)
 
 Update callback URL settings
 
@@ -8417,11 +8335,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_callback_settings_input_object = TextMagic.UpdateCallbackSettingsInputObject() # UpdateCallbackSettingsInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update callback URL settings
-    api_instance.update_callback_settings(update_callback_settings_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.update_callback_settings(update_callback_settings_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_callback_settings: %s\n" % e)
 ```
@@ -8431,7 +8348,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_callback_settings_input_object** | [**UpdateCallbackSettingsInputObject**](UpdateCallbackSettingsInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8449,7 +8365,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_chat_desktop_notification_settings**
-> update_chat_desktop_notification_settings(update_chat_desktop_notification_settings_input_object, x_ignore_null_values=x_ignore_null_values)
+> update_chat_desktop_notification_settings(update_chat_desktop_notification_settings_input_object)
 
 Update chat desktop notification settings
 
@@ -8469,11 +8385,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_chat_desktop_notification_settings_input_object = TextMagic.UpdateChatDesktopNotificationSettingsInputObject() # UpdateChatDesktopNotificationSettingsInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update chat desktop notification settings
-    api_instance.update_chat_desktop_notification_settings(update_chat_desktop_notification_settings_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.update_chat_desktop_notification_settings(update_chat_desktop_notification_settings_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_chat_desktop_notification_settings: %s\n" % e)
 ```
@@ -8483,7 +8398,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_chat_desktop_notification_settings_input_object** | [**UpdateChatDesktopNotificationSettingsInputObject**](UpdateChatDesktopNotificationSettingsInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8501,7 +8415,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_contact**
-> ResourceLinkResponse update_contact(update_contact_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse update_contact(update_contact_input_object, id)
 
 Update existing contact.
 
@@ -8522,11 +8436,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_contact_input_object = TextMagic.UpdateContactInputObject() # UpdateContactInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update existing contact.
-    api_response = api_instance.update_contact(update_contact_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.update_contact(update_contact_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_contact: %s\n" % e)
@@ -8538,7 +8451,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_contact_input_object** | [**UpdateContactInputObject**](UpdateContactInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8556,7 +8468,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_contact_note**
-> ResourceLinkResponse update_contact_note(update_contact_note_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse update_contact_note(update_contact_note_input_object, id)
 
 Update existing contact note.
 
@@ -8577,11 +8489,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_contact_note_input_object = TextMagic.UpdateContactNoteInputObject() # UpdateContactNoteInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update existing contact note.
-    api_response = api_instance.update_contact_note(update_contact_note_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.update_contact_note(update_contact_note_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_contact_note: %s\n" % e)
@@ -8593,7 +8504,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_contact_note_input_object** | [**UpdateContactNoteInputObject**](UpdateContactNoteInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8611,7 +8521,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_current_user**
-> UpdateCurrentUserResponse update_current_user(update_current_user_input_object, x_ignore_null_values=x_ignore_null_values)
+> UpdateCurrentUserResponse update_current_user(update_current_user_input_object)
 
 Update current user info.
 
@@ -8631,11 +8541,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_current_user_input_object = TextMagic.UpdateCurrentUserInputObject() # UpdateCurrentUserInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update current user info.
-    api_response = api_instance.update_current_user(update_current_user_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.update_current_user(update_current_user_input_object)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_current_user: %s\n" % e)
@@ -8646,7 +8555,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_current_user_input_object** | [**UpdateCurrentUserInputObject**](UpdateCurrentUserInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8664,7 +8572,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_custom_field**
-> ResourceLinkResponse update_custom_field(update_custom_field_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse update_custom_field(update_custom_field_input_object, id)
 
 Update existing custom field.
 
@@ -8685,11 +8593,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_custom_field_input_object = TextMagic.UpdateCustomFieldInputObject() # UpdateCustomFieldInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update existing custom field.
-    api_response = api_instance.update_custom_field(update_custom_field_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.update_custom_field(update_custom_field_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_custom_field: %s\n" % e)
@@ -8701,7 +8608,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_custom_field_input_object** | [**UpdateCustomFieldInputObject**](UpdateCustomFieldInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8719,7 +8625,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_custom_field_value**
-> ResourceLinkResponse update_custom_field_value(update_custom_field_value_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse update_custom_field_value(update_custom_field_value_input_object, id)
 
 Update contact's custom field value.
 
@@ -8740,11 +8646,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_custom_field_value_input_object = TextMagic.UpdateCustomFieldValueInputObject() # UpdateCustomFieldValueInputObject | 
 id = 'id_example' # str | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update contact's custom field value.
-    api_response = api_instance.update_custom_field_value(update_custom_field_value_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.update_custom_field_value(update_custom_field_value_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_custom_field_value: %s\n" % e)
@@ -8756,7 +8661,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_custom_field_value_input_object** | [**UpdateCustomFieldValueInputObject**](UpdateCustomFieldValueInputObject.md)|  | 
  **id** | **str**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8774,7 +8678,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_inbound_messages_notification_settings**
-> update_inbound_messages_notification_settings(update_inbound_messages_notification_settings_input_object, x_ignore_null_values=x_ignore_null_values)
+> update_inbound_messages_notification_settings(update_inbound_messages_notification_settings_input_object)
 
 Update inbound messages notification settings
 
@@ -8794,11 +8698,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_inbound_messages_notification_settings_input_object = TextMagic.UpdateInboundMessagesNotificationSettingsInputObject() # UpdateInboundMessagesNotificationSettingsInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update inbound messages notification settings
-    api_instance.update_inbound_messages_notification_settings(update_inbound_messages_notification_settings_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.update_inbound_messages_notification_settings(update_inbound_messages_notification_settings_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_inbound_messages_notification_settings: %s\n" % e)
 ```
@@ -8808,7 +8711,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_inbound_messages_notification_settings_input_object** | [**UpdateInboundMessagesNotificationSettingsInputObject**](UpdateInboundMessagesNotificationSettingsInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8879,7 +8781,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_password**
-> update_password(update_password_input_object, x_ignore_null_values=x_ignore_null_values)
+> update_password(update_password_input_object)
 
 Change user password.
 
@@ -8899,11 +8801,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_password_input_object = TextMagic.UpdatePasswordInputObject() # UpdatePasswordInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Change user password.
-    api_instance.update_password(update_password_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.update_password(update_password_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_password: %s\n" % e)
 ```
@@ -8913,7 +8814,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_password_input_object** | [**UpdatePasswordInputObject**](UpdatePasswordInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8931,7 +8831,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_sender_setting**
-> update_sender_setting(update_sender_setting_input_object, x_ignore_null_values=x_ignore_null_values)
+> update_sender_setting(update_sender_setting_input_object)
 
 Change sender settings for specified country.
 
@@ -8951,11 +8851,10 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_sender_setting_input_object = TextMagic.UpdateSenderSettingInputObject() # UpdateSenderSettingInputObject | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Change sender settings for specified country.
-    api_instance.update_sender_setting(update_sender_setting_input_object, x_ignore_null_values=x_ignore_null_values)
+    api_instance.update_sender_setting(update_sender_setting_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_sender_setting: %s\n" % e)
 ```
@@ -8965,7 +8864,6 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_sender_setting_input_object** | [**UpdateSenderSettingInputObject**](UpdateSenderSettingInputObject.md)|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8983,7 +8881,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_survey**
-> ResourceLinkResponse update_survey(update_survey_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse update_survey(update_survey_input_object, id)
 
 Update existing survey.
 
@@ -9004,11 +8902,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_survey_input_object = TextMagic.UpdateSurveyInputObject() # UpdateSurveyInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update existing survey.
-    api_response = api_instance.update_survey(update_survey_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.update_survey(update_survey_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_survey: %s\n" % e)
@@ -9020,7 +8917,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_survey_input_object** | [**UpdateSurveyInputObject**](UpdateSurveyInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -9038,7 +8934,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_survey_node**
-> ResourceLinkResponse update_survey_node(update_survey_node_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse update_survey_node(update_survey_node_input_object, id)
 
 Update existing node.
 
@@ -9059,11 +8955,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_survey_node_input_object = TextMagic.UpdateSurveyNodeInputObject() # UpdateSurveyNodeInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update existing node.
-    api_response = api_instance.update_survey_node(update_survey_node_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.update_survey_node(update_survey_node_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_survey_node: %s\n" % e)
@@ -9075,7 +8970,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_survey_node_input_object** | [**UpdateSurveyNodeInputObject**](UpdateSurveyNodeInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 
@@ -9093,7 +8987,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_template**
-> ResourceLinkResponse update_template(update_template_input_object, id, x_ignore_null_values=x_ignore_null_values)
+> ResourceLinkResponse update_template(update_template_input_object, id)
 
 Update existing template.
 
@@ -9114,11 +9008,10 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_template_input_object = TextMagic.UpdateTemplateInputObject() # UpdateTemplateInputObject | 
 id = 1 # int | 
-x_ignore_null_values = true # bool |  (optional) (default to true)
 
 try:
     # Update existing template.
-    api_response = api_instance.update_template(update_template_input_object, id, x_ignore_null_values=x_ignore_null_values)
+    api_response = api_instance.update_template(update_template_input_object, id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_template: %s\n" % e)
@@ -9130,7 +9023,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_template_input_object** | [**UpdateTemplateInputObject**](UpdateTemplateInputObject.md)|  | 
  **id** | **int**|  | 
- **x_ignore_null_values** | **bool**|  | [optional] [default to true]
 
 ### Return type
 

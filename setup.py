@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "TextMagic"
-VERSION = "2.0.406"
+VERSION = "2.0.420"
 # To install the library, run the following
 #
 # python setup.py install

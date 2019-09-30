@@ -148,7 +148,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param BlockContactInputObject block_contact_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -170,13 +169,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param BlockContactInputObject block_contact_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['block_contact_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['block_contact_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -203,8 +201,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -249,7 +245,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param BuyDedicatedNumberInputObject buy_dedicated_number_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -271,13 +266,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param BuyDedicatedNumberInputObject buy_dedicated_number_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['buy_dedicated_number_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['buy_dedicated_number_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -304,8 +298,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -447,7 +439,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CheckPhoneVerificationCodeInputObject check_phone_verification_code_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -469,13 +460,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CheckPhoneVerificationCodeInputObject check_phone_verification_code_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['check_phone_verification_code_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['check_phone_verification_code_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -502,8 +492,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -653,7 +641,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CloseChatsBulkInputObject close_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -675,13 +662,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CloseChatsBulkInputObject close_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['close_chats_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['close_chats_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -708,8 +694,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -928,7 +912,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateContactInputObject create_contact_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -950,13 +933,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateContactInputObject create_contact_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['create_contact_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['create_contact_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -983,8 +965,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -1030,7 +1010,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param CreateContactNoteInputObject create_contact_note_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1053,13 +1032,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param CreateContactNoteInputObject create_contact_note_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['create_contact_note_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['create_contact_note_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1092,8 +1070,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -1138,7 +1114,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateCustomFieldInputObject create_custom_field_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1160,13 +1135,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateCustomFieldInputObject create_custom_field_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['create_custom_field_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['create_custom_field_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1193,8 +1167,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -1239,7 +1211,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateListInputObject create_list_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1261,13 +1232,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateListInputObject create_list_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['create_list_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['create_list_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1294,8 +1264,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -1340,7 +1308,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreatePushTokenInputObject create_push_token_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1362,13 +1329,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreatePushTokenInputObject create_push_token_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['create_push_token_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['create_push_token_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1395,8 +1361,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -1441,7 +1405,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateSurveyInputObject create_survey_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1463,13 +1426,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateSurveyInputObject create_survey_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['create_survey_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['create_survey_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1496,8 +1458,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -1543,7 +1503,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param CreateSurveyNodeInputObject create_survey_node_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1566,13 +1525,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param CreateSurveyNodeInputObject create_survey_node_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['create_survey_node_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['create_survey_node_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1605,8 +1563,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -1651,7 +1607,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateTemplateInputObject create_template_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1673,13 +1628,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param CreateTemplateInputObject create_template_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['create_template_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['create_template_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1706,8 +1660,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -2010,7 +1962,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param DeleteChatMessagesBulkInputObject delete_chat_messages_bulk_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2033,13 +1984,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param DeleteChatMessagesBulkInputObject delete_chat_messages_bulk_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_chat_messages_bulk_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_chat_messages_bulk_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2072,8 +2022,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -2114,7 +2062,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteChatsBulkInputObject delete_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2136,13 +2083,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteChatsBulkInputObject delete_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_chats_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_chats_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2169,8 +2115,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -2495,7 +2439,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param int id: (required)
         :param DeleteContactNotesBulkInputObject delete_contact_notes_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2518,13 +2461,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param int id: (required)
         :param DeleteContactNotesBulkInputObject delete_contact_notes_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'delete_contact_notes_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['id', 'delete_contact_notes_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2557,8 +2499,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -2599,7 +2539,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteContactsByIdsInputObject delete_contacts_by_ids_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2621,13 +2560,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteContactsByIdsInputObject delete_contacts_by_ids_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_contacts_by_ids_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_contacts_by_ids_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2654,8 +2592,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -3076,7 +3012,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteInboundMessagesBulkInputObject delete_inbound_messages_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -3098,13 +3033,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteInboundMessagesBulkInputObject delete_inbound_messages_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_inbound_messages_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_inbound_messages_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -3131,8 +3065,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -3364,7 +3296,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param DeleteListContactsBulkInputObject delete_list_contacts_bulk_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -3387,13 +3318,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param DeleteListContactsBulkInputObject delete_list_contacts_bulk_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_list_contacts_bulk_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_list_contacts_bulk_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -3426,8 +3356,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -3468,7 +3396,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteListsBulkInputObject delete_lists_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -3490,13 +3417,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteListsBulkInputObject delete_lists_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_lists_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_lists_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -3523,8 +3449,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -3658,7 +3582,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteMessageSessionsBulkInputObject delete_message_sessions_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -3680,13 +3603,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteMessageSessionsBulkInputObject delete_message_sessions_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_message_sessions_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_message_sessions_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -3713,8 +3635,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -3851,7 +3771,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteOutboundMessagesBulkInputObject delete_outbound_messages_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -3874,13 +3793,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteOutboundMessagesBulkInputObject delete_outbound_messages_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_outbound_messages_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_outbound_messages_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -3907,8 +3825,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -4143,7 +4059,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteScheduledMessagesBulkInputObject delete_scheduled_messages_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4165,13 +4080,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteScheduledMessagesBulkInputObject delete_scheduled_messages_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_scheduled_messages_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_scheduled_messages_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -4198,8 +4112,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -4612,7 +4524,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteTemplatesBulkInputObject delete_templates_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4634,13 +4545,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DeleteTemplatesBulkInputObject delete_templates_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['delete_templates_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['delete_templates_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -4667,8 +4577,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -4710,7 +4618,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DoAuthInputObject do_auth_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: DoAuthResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -4733,13 +4640,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param DoAuthInputObject do_auth_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: DoAuthResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['do_auth_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['do_auth_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -4766,8 +4672,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -11162,7 +11066,6 @@ class TextMagicApi(object):
         :param GetSubaccountsWithTokensInputObject get_subaccounts_with_tokens_input_object: (required)
         :param float page: Fetch specified results page
         :param int limit: How many results to return
-        :param bool x_ignore_null_values:
         :return: GetSubaccountsWithTokensResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11187,13 +11090,12 @@ class TextMagicApi(object):
         :param GetSubaccountsWithTokensInputObject get_subaccounts_with_tokens_input_object: (required)
         :param float page: Fetch specified results page
         :param int limit: How many results to return
-        :param bool x_ignore_null_values:
         :return: GetSubaccountsWithTokensResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['get_subaccounts_with_tokens_input_object', 'page', 'limit', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['get_subaccounts_with_tokens_input_object', 'page', 'limit']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -11224,8 +11126,6 @@ class TextMagicApi(object):
             query_params.append(('limit', params['limit']))  # noqa: E501
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -12434,7 +12334,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param InviteSubaccountInputObject invite_subaccount_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12456,13 +12355,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param InviteSubaccountInputObject invite_subaccount_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['invite_subaccount_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['invite_subaccount_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -12489,8 +12387,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -12531,7 +12427,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MarkChatsReadBulkInputObject mark_chats_read_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12553,13 +12448,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MarkChatsReadBulkInputObject mark_chats_read_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['mark_chats_read_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['mark_chats_read_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -12586,8 +12480,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -12628,7 +12520,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MarkChatsUnreadBulkInputObject mark_chats_unread_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12650,13 +12541,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MarkChatsUnreadBulkInputObject mark_chats_unread_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['mark_chats_unread_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['mark_chats_unread_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -12683,8 +12573,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -12725,7 +12613,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MergeSurveyNodesInputObject merge_survey_nodes_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12747,13 +12634,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MergeSurveyNodesInputObject merge_survey_nodes_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['merge_survey_nodes_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['merge_survey_nodes_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -12780,8 +12666,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -12822,7 +12706,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MuteChatInputObject mute_chat_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12844,13 +12727,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MuteChatInputObject mute_chat_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['mute_chat_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['mute_chat_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -12877,8 +12759,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -12923,7 +12803,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MuteChatsBulkInputObject mute_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12945,13 +12824,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param MuteChatsBulkInputObject mute_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['mute_chats_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['mute_chats_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -12978,8 +12856,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -13109,7 +12985,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param ReopenChatsBulkInputObject reopen_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -13131,13 +13006,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param ReopenChatsBulkInputObject reopen_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['reopen_chats_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['reopen_chats_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -13164,8 +13038,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -13207,7 +13079,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param RequestNewSubaccountTokenInputObject request_new_subaccount_token_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: User
                  If the method is called asynchronously,
                  returns the request thread.
@@ -13230,13 +13101,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param RequestNewSubaccountTokenInputObject request_new_subaccount_token_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: User
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['request_new_subaccount_token_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['request_new_subaccount_token_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -13263,8 +13133,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -13309,7 +13177,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param RequestSenderIdInputObject request_sender_id_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -13331,13 +13198,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param RequestSenderIdInputObject request_sender_id_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['request_sender_id_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['request_sender_id_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -13364,8 +13230,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -14634,7 +14498,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param SendMessageInputObject send_message_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: SendMessageResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -14657,13 +14520,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param SendMessageInputObject send_message_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: SendMessageResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['send_message_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['send_message_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -14690,8 +14552,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -14825,7 +14685,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param SetChatStatusInputObject set_chat_status_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -14847,13 +14706,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param SetChatStatusInputObject set_chat_status_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['set_chat_status_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['set_chat_status_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -14880,8 +14738,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15023,7 +14879,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UnblockContactInputObject unblock_contact_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15045,13 +14900,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UnblockContactInputObject unblock_contact_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['unblock_contact_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['unblock_contact_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15078,8 +14932,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15120,7 +14972,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UnblockContactsBulkInputObject unblock_contacts_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15142,13 +14993,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UnblockContactsBulkInputObject unblock_contacts_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['unblock_contacts_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['unblock_contacts_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15175,8 +15025,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15217,7 +15065,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UnmuteChatsBulkInputObject unmute_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15239,13 +15086,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UnmuteChatsBulkInputObject unmute_chats_bulk_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['unmute_chats_bulk_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['unmute_chats_bulk_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15272,8 +15118,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15314,7 +15158,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UnsubscribeContactInputObject unsubscribe_contact_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15336,13 +15179,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UnsubscribeContactInputObject unsubscribe_contact_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['unsubscribe_contact_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['unsubscribe_contact_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15369,8 +15211,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15415,7 +15255,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateBalanceNotificationSettingsInputObject update_balance_notification_settings_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15437,13 +15276,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateBalanceNotificationSettingsInputObject update_balance_notification_settings_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_balance_notification_settings_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_balance_notification_settings_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15470,8 +15308,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15512,7 +15348,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateCallbackSettingsInputObject update_callback_settings_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15534,13 +15369,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateCallbackSettingsInputObject update_callback_settings_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_callback_settings_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_callback_settings_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15567,8 +15401,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15613,7 +15445,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateChatDesktopNotificationSettingsInputObject update_chat_desktop_notification_settings_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15635,13 +15466,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateChatDesktopNotificationSettingsInputObject update_chat_desktop_notification_settings_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_chat_desktop_notification_settings_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_chat_desktop_notification_settings_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15668,8 +15498,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15715,7 +15543,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateContactInputObject update_contact_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15738,13 +15565,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateContactInputObject update_contact_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_contact_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_contact_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15777,8 +15603,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15824,7 +15648,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateContactNoteInputObject update_contact_note_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15847,13 +15670,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateContactNoteInputObject update_contact_note_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_contact_note_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_contact_note_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15886,8 +15708,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -15932,7 +15752,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateCurrentUserInputObject update_current_user_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: UpdateCurrentUserResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -15954,13 +15773,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateCurrentUserInputObject update_current_user_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: UpdateCurrentUserResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_current_user_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_current_user_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -15987,8 +15805,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -16034,7 +15850,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateCustomFieldInputObject update_custom_field_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -16057,13 +15872,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateCustomFieldInputObject update_custom_field_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_custom_field_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_custom_field_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -16096,8 +15910,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -16143,7 +15955,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateCustomFieldValueInputObject update_custom_field_value_input_object: (required)
         :param str id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -16166,13 +15977,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateCustomFieldValueInputObject update_custom_field_value_input_object: (required)
         :param str id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_custom_field_value_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_custom_field_value_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -16205,8 +16015,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -16251,7 +16059,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateInboundMessagesNotificationSettingsInputObject update_inbound_messages_notification_settings_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -16273,13 +16080,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateInboundMessagesNotificationSettingsInputObject update_inbound_messages_notification_settings_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_inbound_messages_notification_settings_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_inbound_messages_notification_settings_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -16306,8 +16112,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -16449,7 +16253,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdatePasswordInputObject update_password_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -16471,13 +16274,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdatePasswordInputObject update_password_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_password_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_password_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -16504,8 +16306,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -16546,7 +16346,6 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateSenderSettingInputObject update_sender_setting_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -16568,13 +16367,12 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param UpdateSenderSettingInputObject update_sender_setting_input_object: (required)
-        :param bool x_ignore_null_values:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_sender_setting_input_object', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_sender_setting_input_object']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -16601,8 +16399,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -16644,7 +16440,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateSurveyInputObject update_survey_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -16667,13 +16462,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateSurveyInputObject update_survey_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_survey_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_survey_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -16706,8 +16500,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -16753,7 +16545,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateSurveyNodeInputObject update_survey_node_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -16776,13 +16567,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateSurveyNodeInputObject update_survey_node_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_survey_node_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_survey_node_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -16815,8 +16605,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
@@ -16862,7 +16650,6 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateTemplateInputObject update_template_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -16885,13 +16672,12 @@ class TextMagicApi(object):
         :param async_req bool
         :param UpdateTemplateInputObject update_template_input_object: (required)
         :param int id: (required)
-        :param bool x_ignore_null_values:
         :return: ResourceLinkResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['update_template_input_object', 'id', 'x_ignore_null_values']  # noqa: E501
+        all_params = ['update_template_input_object', 'id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -16924,8 +16710,6 @@ class TextMagicApi(object):
         query_params = []
 
         header_params = {}
-        if 'x_ignore_null_values' in params:
-            header_params['X-Ignore-Null-Values'] = params['x_ignore_null_values']  # noqa: E501
 
         form_params = []
         local_var_files = {}
