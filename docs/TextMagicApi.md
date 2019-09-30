@@ -2802,7 +2802,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_bulk_sessions**
-> GetAllBulkSessionsResponse get_all_bulk_sessions(page=page, limit=limit)
+> GetAllBulkSessionsPaginatedResponse get_all_bulk_sessions(page=page, limit=limit)
 
 Get all bulk sending sessions.
 
@@ -2841,7 +2841,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllBulkSessionsResponse**](GetAllBulkSessionsResponse.md)
+[**GetAllBulkSessionsPaginatedResponse**](GetAllBulkSessionsPaginatedResponse.md)
 
 ### Authorization
 
@@ -2855,7 +2855,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_chats**
-> GetAllChatsResponse get_all_chats(status=status, page=page, limit=limit, order_by=order_by, voice=voice, flat=flat)
+> GetAllChatsPaginatedResponse get_all_chats(status=status, page=page, limit=limit, order_by=order_by, voice=voice, flat=flat)
 
 Get all user chats.
 
@@ -2902,7 +2902,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllChatsResponse**](GetAllChatsResponse.md)
+[**GetAllChatsPaginatedResponse**](GetAllChatsPaginatedResponse.md)
 
 ### Authorization
 
@@ -2916,7 +2916,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_inbound_messages**
-> GetAllInboundMessagesResponse get_all_inbound_messages(page=page, limit=limit, order_by=order_by, direction=direction)
+> GetAllInboundMessagesPaginatedResponse get_all_inbound_messages(page=page, limit=limit, order_by=order_by, direction=direction)
 
 Get all inbox messages.
 
@@ -2959,7 +2959,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllInboundMessagesResponse**](GetAllInboundMessagesResponse.md)
+[**GetAllInboundMessagesPaginatedResponse**](GetAllInboundMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -2973,7 +2973,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_message_sessions**
-> GetAllMessageSessionsResponse get_all_message_sessions(page=page, limit=limit)
+> GetAllMessageSessionsPaginatedResponse get_all_message_sessions(page=page, limit=limit)
 
 Get all message sending sessions.
 
@@ -3012,7 +3012,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllMessageSessionsResponse**](GetAllMessageSessionsResponse.md)
+[**GetAllMessageSessionsPaginatedResponse**](GetAllMessageSessionsPaginatedResponse.md)
 
 ### Authorization
 
@@ -3026,7 +3026,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_outbound_messages**
-> GetAllOutboundMessagesResponse get_all_outbound_messages(page=page, limit=limit, last_id=last_id)
+> GetAllOutboundMessagesPaginatedResponse get_all_outbound_messages(page=page, limit=limit, last_id=last_id)
 
 Get all messages
 
@@ -3069,7 +3069,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllOutboundMessagesResponse**](GetAllOutboundMessagesResponse.md)
+[**GetAllOutboundMessagesPaginatedResponse**](GetAllOutboundMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -3083,7 +3083,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_scheduled_messages**
-> GetAllScheduledMessagesResponse get_all_scheduled_messages(page=page, limit=limit, status=status, order_by=order_by, direction=direction)
+> GetAllScheduledMessagesPaginatedResponse get_all_scheduled_messages(page=page, limit=limit, status=status, order_by=order_by, direction=direction)
 
 Get all scheduled messages.
 
@@ -3128,7 +3128,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllScheduledMessagesResponse**](GetAllScheduledMessagesResponse.md)
+[**GetAllScheduledMessagesPaginatedResponse**](GetAllScheduledMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -3142,7 +3142,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_templates**
-> GetAllTemplatesResponse get_all_templates(page=page, limit=limit)
+> GetAllTemplatesPaginatedResponse get_all_templates(page=page, limit=limit)
 
 Get all user templates.
 
@@ -3181,7 +3181,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllTemplatesResponse**](GetAllTemplatesResponse.md)
+[**GetAllTemplatesPaginatedResponse**](GetAllTemplatesPaginatedResponse.md)
 
 ### Authorization
 
@@ -3395,7 +3395,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_blocked_contacts**
-> GetBlockedContactsResponse get_blocked_contacts(page=page, limit=limit, query=query, order_by=order_by, direction=direction)
+> GetBlockedContactsPaginatedResponse get_blocked_contacts(page=page, limit=limit, query=query, order_by=order_by, direction=direction)
 
 Get blocked contacts.
 
@@ -3440,7 +3440,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetBlockedContactsResponse**](GetBlockedContactsResponse.md)
+[**GetBlockedContactsPaginatedResponse**](GetBlockedContactsPaginatedResponse.md)
 
 ### Authorization
 
@@ -3552,7 +3552,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_calls_prices**
-> dict(str, object) get_calls_prices()
+> GetCallsPricesResponse get_calls_prices()
 
 Check pricing for a inbound/outbound call.
 
@@ -3585,7 +3585,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**dict(str, object)**
+[**GetCallsPricesResponse**](GetCallsPricesResponse.md)
 
 ### Authorization
 
@@ -3705,7 +3705,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_chat_messages**
-> GetChatMessagesResponse get_chat_messages(id, page=page, limit=limit, query=query, start=start, end=end, direction=direction, voice=voice)
+> GetChatMessagesPaginatedResponse get_chat_messages(id, page=page, limit=limit, query=query, start=start, end=end, direction=direction, voice=voice)
 
 Fetch messages from chat with specified chat id.
 
@@ -3756,7 +3756,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetChatMessagesResponse**](GetChatMessagesResponse.md)
+[**GetChatMessagesPaginatedResponse**](GetChatMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -4025,7 +4025,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_contact_notes**
-> GetContactNotesResponse get_contact_notes(id, page=page, limit=limit)
+> GetContactNotesPaginatedResponse get_contact_notes(id, page=page, limit=limit)
 
 Fetch notes assigned to the given contact.
 
@@ -4066,7 +4066,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetContactNotesResponse**](GetContactNotesResponse.md)
+[**GetContactNotesPaginatedResponse**](GetContactNotesPaginatedResponse.md)
 
 ### Authorization
 
@@ -4080,7 +4080,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_contacts**
-> GetContactsResponse get_contacts(page=page, limit=limit, shared=shared, order_by=order_by, direction=direction)
+> GetContactsPaginatedResponse get_contacts(page=page, limit=limit, shared=shared, order_by=order_by, direction=direction)
 
 Get all user contacts.
 
@@ -4125,7 +4125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetContactsResponse**](GetContactsResponse.md)
+[**GetContactsPaginatedResponse**](GetContactsPaginatedResponse.md)
 
 ### Authorization
 
@@ -4139,7 +4139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_contacts_autocomplete**
-> list[GetContactsAutocompleteResponse] get_contacts_autocomplete(query, limit=limit, lists=lists)
+> GetContactsAutocompleteResponse get_contacts_autocomplete(query, limit=limit, lists=lists)
 
 Get contacts autocomplete suggestions by given search term.
 
@@ -4180,7 +4180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[GetContactsAutocompleteResponse]**](GetContactsAutocompleteResponse.md)
+[**GetContactsAutocompleteResponse**](GetContactsAutocompleteResponse.md)
 
 ### Authorization
 
@@ -4194,7 +4194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_contacts_by_list_id**
-> GetContactsByListIdResponse get_contacts_by_list_id(id, page=page, limit=limit, order_by=order_by, direction=direction)
+> GetContactsByListIdPaginatedResponse get_contacts_by_list_id(id, page=page, limit=limit, order_by=order_by, direction=direction)
 
 Fetch user contacts by given group id.
 
@@ -4241,7 +4241,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetContactsByListIdResponse**](GetContactsByListIdResponse.md)
+[**GetContactsByListIdPaginatedResponse**](GetContactsByListIdPaginatedResponse.md)
 
 ### Authorization
 
@@ -4255,7 +4255,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_countries**
-> list[Country] get_countries()
+> GetCountriesResponse get_countries()
 
 Return list of countries.
 
@@ -4288,7 +4288,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[Country]**](Country.md)
+[**GetCountriesResponse**](GetCountriesResponse.md)
 
 ### Authorization
 
@@ -4400,7 +4400,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_custom_fields**
-> GetCustomFieldsResponse get_custom_fields(page=page, limit=limit)
+> GetCustomFieldsPaginatedResponse get_custom_fields(page=page, limit=limit)
 
 Get all contact custom fields.
 
@@ -4439,7 +4439,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCustomFieldsResponse**](GetCustomFieldsResponse.md)
+[**GetCustomFieldsPaginatedResponse**](GetCustomFieldsPaginatedResponse.md)
 
 ### Authorization
 
@@ -4504,7 +4504,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_disallowed_rules**
-> list[str] get_disallowed_rules()
+> GetDisallowedRulesResponse get_disallowed_rules()
 
 Get an array of all rules that are disallowed to the current account.
 
@@ -4537,7 +4537,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**list[str]**
+[**GetDisallowedRulesResponse**](GetDisallowedRulesResponse.md)
 
 ### Authorization
 
@@ -4551,7 +4551,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_favourites**
-> GetFavouritesResponse get_favourites(page=page, limit=limit, query=query)
+> GetFavouritesPaginatedResponse get_favourites(page=page, limit=limit, query=query)
 
 Get favorite contacts and lists.
 
@@ -4592,7 +4592,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetFavouritesResponse**](GetFavouritesResponse.md)
+[**GetFavouritesPaginatedResponse**](GetFavouritesPaginatedResponse.md)
 
 ### Authorization
 
@@ -4606,7 +4606,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_forwarded_calls**
-> GetForwardedCallsResponse get_forwarded_calls(page=page, limit=limit)
+> GetForwardedCallsPaginatedResponse get_forwarded_calls(page=page, limit=limit)
 
 Get all forwarded calls.
 
@@ -4645,7 +4645,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetForwardedCallsResponse**](GetForwardedCallsResponse.md)
+[**GetForwardedCallsPaginatedResponse**](GetForwardedCallsPaginatedResponse.md)
 
 ### Authorization
 
@@ -4757,7 +4757,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_invoices**
-> GetInvoicesResponse get_invoices(page=page, limit=limit)
+> GetInvoicesPaginatedResponse get_invoices(page=page, limit=limit)
 
 Return account invoices.
 
@@ -4796,7 +4796,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetInvoicesResponse**](GetInvoicesResponse.md)
+[**GetInvoicesPaginatedResponse**](GetInvoicesPaginatedResponse.md)
 
 ### Authorization
 
@@ -4912,7 +4912,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_lists_of_contact**
-> GetListsOfContactResponse get_lists_of_contact(id, page=page, limit=limit)
+> GetListsOfContactPaginatedResponse get_lists_of_contact(id, page=page, limit=limit)
 
 Return lists which contact belongs to.
 
@@ -4953,7 +4953,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetListsOfContactResponse**](GetListsOfContactResponse.md)
+[**GetListsOfContactPaginatedResponse**](GetListsOfContactPaginatedResponse.md)
 
 ### Authorization
 
@@ -5292,7 +5292,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_messages_by_session_id**
-> GetMessagesBySessionIdResponse get_messages_by_session_id(id, page=page, limit=limit, statuses=statuses, include_deleted=include_deleted)
+> GetMessagesBySessionIdPaginatedResponse get_messages_by_session_id(id, page=page, limit=limit, statuses=statuses, include_deleted=include_deleted)
 
 Fetch messages by given session id.
 
@@ -5339,7 +5339,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetMessagesBySessionIdResponse**](GetMessagesBySessionIdResponse.md)
+[**GetMessagesBySessionIdPaginatedResponse**](GetMessagesBySessionIdPaginatedResponse.md)
 
 ### Authorization
 
@@ -5508,7 +5508,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_outbound_messages_history**
-> GetOutboundMessagesHistoryResponse get_outbound_messages_history(limit=limit, last_id=last_id, query=query, order_by=order_by, direction=direction)
+> GetOutboundMessagesHistoryPaginatedResponse get_outbound_messages_history(limit=limit, last_id=last_id, query=query, order_by=order_by, direction=direction)
 
 Get history
 
@@ -5555,7 +5555,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetOutboundMessagesHistoryResponse**](GetOutboundMessagesHistoryResponse.md)
+[**GetOutboundMessagesHistoryPaginatedResponse**](GetOutboundMessagesHistoryPaginatedResponse.md)
 
 ### Authorization
 
@@ -5718,7 +5718,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_sender_ids**
-> GetSenderIdsResponse get_sender_ids(page=page, limit=limit)
+> GetSenderIdsPaginatedResponse get_sender_ids(page=page, limit=limit)
 
 Get all sender IDs of current user.
 
@@ -5757,7 +5757,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetSenderIdsResponse**](GetSenderIdsResponse.md)
+[**GetSenderIdsPaginatedResponse**](GetSenderIdsPaginatedResponse.md)
 
 ### Authorization
 
@@ -5822,7 +5822,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_spending_stat**
-> GetSpendingStatResponse get_spending_stat(page=page, limit=limit, start=start, end=end)
+> GetSpendingStatPaginatedResponse get_spending_stat(page=page, limit=limit, start=start, end=end)
 
 Return account spending statistics.
 
@@ -5865,7 +5865,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetSpendingStatResponse**](GetSpendingStatResponse.md)
+[**GetSpendingStatPaginatedResponse**](GetSpendingStatPaginatedResponse.md)
 
 ### Authorization
 
@@ -6240,7 +6240,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_surveys**
-> GetSurveysResponse get_surveys(page=page, limit=limit)
+> GetSurveysPaginatedResponse get_surveys(page=page, limit=limit)
 
 Get all user surveys.
 
@@ -6279,7 +6279,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetSurveysResponse**](GetSurveysResponse.md)
+[**GetSurveysPaginatedResponse**](GetSurveysPaginatedResponse.md)
 
 ### Authorization
 
@@ -6344,7 +6344,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_timezones**
-> object get_timezones(full=full)
+> GetTimezonesResponse get_timezones(full=full)
 
 Return all available timezone IDs.
 
@@ -6381,7 +6381,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**object**
+[**GetTimezonesResponse**](GetTimezonesResponse.md)
 
 ### Authorization
 
@@ -6493,7 +6493,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_unsubscribers**
-> GetUnsubscribersResponse get_unsubscribers(page=page, limit=limit)
+> GetUnsubscribersPaginatedResponse get_unsubscribers(page=page, limit=limit)
 
 Get all contact have unsubscribed from your communication.
 
@@ -6532,7 +6532,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUnsubscribersResponse**](GetUnsubscribersResponse.md)
+[**GetUnsubscribersPaginatedResponse**](GetUnsubscribersPaginatedResponse.md)
 
 ### Authorization
 
@@ -6546,7 +6546,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_dedicated_numbers**
-> GetUserDedicatedNumbersResponse get_user_dedicated_numbers(page=page, limit=limit, survey_id=survey_id)
+> GetUserDedicatedNumbersPaginatedResponse get_user_dedicated_numbers(page=page, limit=limit, survey_id=survey_id)
 
 Get user's dedicated numbers.
 
@@ -6587,7 +6587,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUserDedicatedNumbersResponse**](GetUserDedicatedNumbersResponse.md)
+[**GetUserDedicatedNumbersPaginatedResponse**](GetUserDedicatedNumbersPaginatedResponse.md)
 
 ### Authorization
 
@@ -6601,7 +6601,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_lists**
-> GetUserListsResponse get_user_lists(page=page, limit=limit, order_by=order_by, direction=direction, favorite_only=favorite_only, only_mine=only_mine)
+> GetUserListsPaginatedResponse get_user_lists(page=page, limit=limit, order_by=order_by, direction=direction, favorite_only=favorite_only, only_mine=only_mine)
 
 Get all user lists.
 
@@ -6648,7 +6648,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUserListsResponse**](GetUserListsResponse.md)
+[**GetUserListsPaginatedResponse**](GetUserListsPaginatedResponse.md)
 
 ### Authorization
 
@@ -7262,7 +7262,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_chats**
-> SearchChatsResponse search_chats(page=page, limit=limit, query=query)
+> SearchChatsPaginatedResponse search_chats(page=page, limit=limit, query=query)
 
 Find chats by inbound or outbound messages text.
 
@@ -7303,7 +7303,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchChatsResponse**](SearchChatsResponse.md)
+[**SearchChatsPaginatedResponse**](SearchChatsPaginatedResponse.md)
 
 ### Authorization
 
@@ -7317,7 +7317,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_chats_by_ids**
-> SearchChatsByIdsResponse search_chats_by_ids(page=page, limit=limit, ids=ids)
+> SearchChatsByIdsPaginatedResponse search_chats_by_ids(page=page, limit=limit, ids=ids)
 
 Find chats by IDs.
 
@@ -7358,7 +7358,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchChatsByIdsResponse**](SearchChatsByIdsResponse.md)
+[**SearchChatsByIdsPaginatedResponse**](SearchChatsByIdsPaginatedResponse.md)
 
 ### Authorization
 
@@ -7372,7 +7372,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_chats_by_receipent**
-> SearchChatsByReceipentResponse search_chats_by_receipent(page=page, limit=limit, query=query, order_by=order_by)
+> SearchChatsByReceipentPaginatedResponse search_chats_by_receipent(page=page, limit=limit, query=query, order_by=order_by)
 
 Find chats by recipient (contact, list name or phone number).
 
@@ -7415,7 +7415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchChatsByReceipentResponse**](SearchChatsByReceipentResponse.md)
+[**SearchChatsByReceipentPaginatedResponse**](SearchChatsByReceipentPaginatedResponse.md)
 
 ### Authorization
 
@@ -7429,7 +7429,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_contacts**
-> SearchContactsResponse search_contacts(page=page, limit=limit, shared=shared, ids=ids, list_id=list_id, include_blocked=include_blocked, query=query, local=local, country=country, order_by=order_by, direction=direction)
+> SearchContactsPaginatedResponse search_contacts(page=page, limit=limit, shared=shared, ids=ids, list_id=list_id, include_blocked=include_blocked, query=query, local=local, country=country, order_by=order_by, direction=direction)
 
 Find user contacts by given parameters.
 
@@ -7486,7 +7486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchContactsResponse**](SearchContactsResponse.md)
+[**SearchContactsPaginatedResponse**](SearchContactsPaginatedResponse.md)
 
 ### Authorization
 
@@ -7500,7 +7500,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_inbound_messages**
-> SearchInboundMessagesResponse search_inbound_messages(page=page, limit=limit, ids=ids, query=query, order_by=order_by, direction=direction, expand=expand)
+> SearchInboundMessagesPaginatedResponse search_inbound_messages(page=page, limit=limit, ids=ids, query=query, order_by=order_by, direction=direction, expand=expand)
 
 Find inbound messages by given parameters.
 
@@ -7549,7 +7549,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchInboundMessagesResponse**](SearchInboundMessagesResponse.md)
+[**SearchInboundMessagesPaginatedResponse**](SearchInboundMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -7563,7 +7563,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_lists**
-> SearchListsResponse search_lists(page=page, limit=limit, ids=ids, query=query, only_mine=only_mine, only_default=only_default, order_by=order_by, direction=direction)
+> SearchListsPaginatedResponse search_lists(page=page, limit=limit, ids=ids, query=query, only_mine=only_mine, only_default=only_default, order_by=order_by, direction=direction)
 
 Find contact lists by given parameters.
 
@@ -7614,7 +7614,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchListsResponse**](SearchListsResponse.md)
+[**SearchListsPaginatedResponse**](SearchListsPaginatedResponse.md)
 
 ### Authorization
 
@@ -7628,7 +7628,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_outbound_messages**
-> SearchOutboundMessagesResponse search_outbound_messages(page=page, limit=limit, last_id=last_id, ids=ids, session_id=session_id, statuses=statuses, include_deleted=include_deleted, query=query)
+> SearchOutboundMessagesPaginatedResponse search_outbound_messages(page=page, limit=limit, last_id=last_id, ids=ids, session_id=session_id, statuses=statuses, include_deleted=include_deleted, query=query)
 
 Find messages
 
@@ -7681,7 +7681,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchOutboundMessagesResponse**](SearchOutboundMessagesResponse.md)
+[**SearchOutboundMessagesPaginatedResponse**](SearchOutboundMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -7695,7 +7695,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_scheduled_messages**
-> SearchScheduledMessagesResponse search_scheduled_messages(page=page, limit=limit, query=query, ids=ids, status=status, order_by=order_by, direction=direction)
+> SearchScheduledMessagesPaginatedResponse search_scheduled_messages(page=page, limit=limit, query=query, ids=ids, status=status, order_by=order_by, direction=direction)
 
 Find scheduled messages by given parameters.
 
@@ -7744,7 +7744,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchScheduledMessagesResponse**](SearchScheduledMessagesResponse.md)
+[**SearchScheduledMessagesPaginatedResponse**](SearchScheduledMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -7758,7 +7758,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_templates**
-> SearchTemplatesResponse search_templates(page=page, limit=limit, ids=ids, name=name, content=content)
+> SearchTemplatesPaginatedResponse search_templates(page=page, limit=limit, ids=ids, name=name, content=content)
 
 Find user templates by given parameters.
 
@@ -7803,7 +7803,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchTemplatesResponse**](SearchTemplatesResponse.md)
+[**SearchTemplatesPaginatedResponse**](SearchTemplatesPaginatedResponse.md)
 
 ### Authorization
 

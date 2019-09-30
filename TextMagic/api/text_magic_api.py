@@ -5012,7 +5012,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetAllBulkSessionsResponse
+        :return: GetAllBulkSessionsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5034,7 +5034,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetAllBulkSessionsResponse
+        :return: GetAllBulkSessionsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5090,7 +5090,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetAllBulkSessionsResponse',  # noqa: E501
+            response_type='GetAllBulkSessionsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -5113,7 +5113,7 @@ class TextMagicApi(object):
         :param str order_by: Order results by some field. Default is id
         :param int voice: Fetch results with voice calls
         :param int flat: Should additional contact info be included
-        :return: GetAllChatsResponse
+        :return: GetAllChatsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5139,7 +5139,7 @@ class TextMagicApi(object):
         :param str order_by: Order results by some field. Default is id
         :param int voice: Fetch results with voice calls
         :param int flat: Should additional contact info be included
-        :return: GetAllChatsResponse
+        :return: GetAllChatsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5203,7 +5203,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetAllChatsResponse',  # noqa: E501
+            response_type='GetAllChatsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -5224,7 +5224,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetAllInboundMessagesResponse
+        :return: GetAllInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5248,7 +5248,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetAllInboundMessagesResponse
+        :return: GetAllInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5308,7 +5308,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetAllInboundMessagesResponse',  # noqa: E501
+            response_type='GetAllInboundMessagesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -5327,7 +5327,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetAllMessageSessionsResponse
+        :return: GetAllMessageSessionsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5349,7 +5349,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetAllMessageSessionsResponse
+        :return: GetAllMessageSessionsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5405,7 +5405,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetAllMessageSessionsResponse',  # noqa: E501
+            response_type='GetAllMessageSessionsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -5426,7 +5426,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
-        :return: GetAllOutboundMessagesResponse
+        :return: GetAllOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5450,7 +5450,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
-        :return: GetAllOutboundMessagesResponse
+        :return: GetAllOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5508,7 +5508,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetAllOutboundMessagesResponse',  # noqa: E501
+            response_type='GetAllOutboundMessagesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -5530,7 +5530,7 @@ class TextMagicApi(object):
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetAllScheduledMessagesResponse
+        :return: GetAllScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5555,7 +5555,7 @@ class TextMagicApi(object):
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetAllScheduledMessagesResponse
+        :return: GetAllScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5617,7 +5617,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetAllScheduledMessagesResponse',  # noqa: E501
+            response_type='GetAllScheduledMessagesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -5636,7 +5636,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetAllTemplatesResponse
+        :return: GetAllTemplatesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5658,7 +5658,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetAllTemplatesResponse
+        :return: GetAllTemplatesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -5714,7 +5714,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetAllTemplatesResponse',  # noqa: E501
+            response_type='GetAllTemplatesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -6112,7 +6112,7 @@ class TextMagicApi(object):
         :param str query: Find blocked contacts by specified search query
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetBlockedContactsResponse
+        :return: GetBlockedContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -6137,7 +6137,7 @@ class TextMagicApi(object):
         :param str query: Find blocked contacts by specified search query
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetBlockedContactsResponse
+        :return: GetBlockedContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -6199,7 +6199,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetBlockedContactsResponse',  # noqa: E501
+            response_type='GetBlockedContactsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -6402,7 +6402,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: dict(str, object)
+        :return: GetCallsPricesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -6422,7 +6422,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: dict(str, object)
+        :return: GetCallsPricesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -6474,7 +6474,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='dict(str, object)',  # noqa: E501
+            response_type='GetCallsPricesResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -6701,7 +6701,7 @@ class TextMagicApi(object):
         :param int end: Return messages up to specified timestamp only
         :param str direction: Order direction. Default is desc
         :param int voice: Fetch results with voice calls
-        :return: GetChatMessagesResponse
+        :return: GetChatMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -6729,7 +6729,7 @@ class TextMagicApi(object):
         :param int end: Return messages up to specified timestamp only
         :param str direction: Order direction. Default is desc
         :param int voice: Fetch results with voice calls
-        :return: GetChatMessagesResponse
+        :return: GetChatMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -6801,7 +6801,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetChatMessagesResponse',  # noqa: E501
+            response_type='GetChatMessagesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -7306,7 +7306,7 @@ class TextMagicApi(object):
         :param int id: (required)
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetContactNotesResponse
+        :return: GetContactNotesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7329,7 +7329,7 @@ class TextMagicApi(object):
         :param int id: (required)
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetContactNotesResponse
+        :return: GetContactNotesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7391,7 +7391,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetContactNotesResponse',  # noqa: E501
+            response_type='GetContactNotesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -7413,7 +7413,7 @@ class TextMagicApi(object):
         :param int shared: Should shared contacts to be included
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetContactsResponse
+        :return: GetContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7438,7 +7438,7 @@ class TextMagicApi(object):
         :param int shared: Should shared contacts to be included
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetContactsResponse
+        :return: GetContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7500,7 +7500,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetContactsResponse',  # noqa: E501
+            response_type='GetContactsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -7520,7 +7520,7 @@ class TextMagicApi(object):
         :param str query: Find recipients by specified search query (required)
         :param int limit: How many results to return
         :param int lists: Should lists be returned or not
-        :return: list[GetContactsAutocompleteResponse]
+        :return: GetContactsAutocompleteResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7543,7 +7543,7 @@ class TextMagicApi(object):
         :param str query: Find recipients by specified search query (required)
         :param int limit: How many results to return
         :param int lists: Should lists be returned or not
-        :return: list[GetContactsAutocompleteResponse]
+        :return: GetContactsAutocompleteResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7605,7 +7605,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[GetContactsAutocompleteResponse]',  # noqa: E501
+            response_type='GetContactsAutocompleteResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -7628,7 +7628,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetContactsByListIdResponse
+        :return: GetContactsByListIdPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7654,7 +7654,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetContactsByListIdResponse
+        :return: GetContactsByListIdPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7720,7 +7720,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetContactsByListIdResponse',  # noqa: E501
+            response_type='GetContactsByListIdPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -7737,7 +7737,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: list[Country]
+        :return: GetCountriesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7757,7 +7757,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: list[Country]
+        :return: GetCountriesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7809,7 +7809,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Country]',  # noqa: E501
+            response_type='GetCountriesResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -8014,7 +8014,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetCustomFieldsResponse
+        :return: GetCustomFieldsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8036,7 +8036,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetCustomFieldsResponse
+        :return: GetCustomFieldsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8092,7 +8092,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetCustomFieldsResponse',  # noqa: E501
+            response_type='GetCustomFieldsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -8206,7 +8206,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: list[str]
+        :return: GetDisallowedRulesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8226,7 +8226,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: list[str]
+        :return: GetDisallowedRulesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8278,7 +8278,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[str]',  # noqa: E501
+            response_type='GetDisallowedRulesResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -8298,7 +8298,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param str query: Find contacts or lists by specified search query
-        :return: GetFavouritesResponse
+        :return: GetFavouritesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8321,7 +8321,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param str query: Find contacts or lists by specified search query
-        :return: GetFavouritesResponse
+        :return: GetFavouritesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8379,7 +8379,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetFavouritesResponse',  # noqa: E501
+            response_type='GetFavouritesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -8398,7 +8398,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetForwardedCallsResponse
+        :return: GetForwardedCallsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8420,7 +8420,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetForwardedCallsResponse
+        :return: GetForwardedCallsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8476,7 +8476,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetForwardedCallsResponse',  # noqa: E501
+            response_type='GetForwardedCallsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -8681,7 +8681,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetInvoicesResponse
+        :return: GetInvoicesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8703,7 +8703,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetInvoicesResponse
+        :return: GetInvoicesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8759,7 +8759,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetInvoicesResponse',  # noqa: E501
+            response_type='GetInvoicesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -8973,7 +8973,7 @@ class TextMagicApi(object):
         :param int id: (required)
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetListsOfContactResponse
+        :return: GetListsOfContactPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8996,7 +8996,7 @@ class TextMagicApi(object):
         :param int id: (required)
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetListsOfContactResponse
+        :return: GetListsOfContactPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -9058,7 +9058,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetListsOfContactResponse',  # noqa: E501
+            response_type='GetListsOfContactPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -9692,7 +9692,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param str statuses: Find messages by status
         :param int include_deleted: Search also in deleted messages
-        :return: GetMessagesBySessionIdResponse
+        :return: GetMessagesBySessionIdPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -9718,7 +9718,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param str statuses: Find messages by status
         :param int include_deleted: Search also in deleted messages
-        :return: GetMessagesBySessionIdResponse
+        :return: GetMessagesBySessionIdPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -9784,7 +9784,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetMessagesBySessionIdResponse',  # noqa: E501
+            response_type='GetMessagesBySessionIdPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -10096,7 +10096,7 @@ class TextMagicApi(object):
         :param str query: Find message by specified search query
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetOutboundMessagesHistoryResponse
+        :return: GetOutboundMessagesHistoryPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -10122,7 +10122,7 @@ class TextMagicApi(object):
         :param str query: Find message by specified search query
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: GetOutboundMessagesHistoryResponse
+        :return: GetOutboundMessagesHistoryPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -10184,7 +10184,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetOutboundMessagesHistoryResponse',  # noqa: E501
+            response_type='GetOutboundMessagesHistoryPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -10486,7 +10486,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetSenderIdsResponse
+        :return: GetSenderIdsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -10508,7 +10508,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetSenderIdsResponse
+        :return: GetSenderIdsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -10564,7 +10564,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetSenderIdsResponse',  # noqa: E501
+            response_type='GetSenderIdsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -10678,7 +10678,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param int start: Optional. Start date in unix timestamp format. Default is 7 days ago
         :param int end: Optional. End date in unix timestamp format. Default is now
-        :return: GetSpendingStatResponse
+        :return: GetSpendingStatPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -10702,7 +10702,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param int start: Optional. Start date in unix timestamp format. Default is 7 days ago
         :param int end: Optional. End date in unix timestamp format. Default is now
-        :return: GetSpendingStatResponse
+        :return: GetSpendingStatPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -10762,7 +10762,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetSpendingStatResponse',  # noqa: E501
+            response_type='GetSpendingStatPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -11462,7 +11462,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetSurveysResponse
+        :return: GetSurveysPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -11484,7 +11484,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetSurveysResponse
+        :return: GetSurveysPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -11540,7 +11540,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetSurveysResponse',  # noqa: E501
+            response_type='GetSurveysPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -11655,7 +11655,7 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int full: Return full info about timezones in array (0 or 1). Default is 0
-        :return: object
+        :return: GetTimezonesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -11676,7 +11676,7 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int full: Return full info about timezones in array (0 or 1). Default is 0
-        :return: object
+        :return: GetTimezonesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -11730,7 +11730,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='object',  # noqa: E501
+            response_type='GetTimezonesResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -11935,7 +11935,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetUnsubscribersResponse
+        :return: GetUnsubscribersPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -11957,7 +11957,7 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page
         :param int limit: How many results to return
-        :return: GetUnsubscribersResponse
+        :return: GetUnsubscribersPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -12013,7 +12013,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetUnsubscribersResponse',  # noqa: E501
+            response_type='GetUnsubscribersPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -12033,7 +12033,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param int survey_id: Fetch only that numbers which are ready for the survey
-        :return: GetUserDedicatedNumbersResponse
+        :return: GetUserDedicatedNumbersPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -12056,7 +12056,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param int survey_id: Fetch only that numbers which are ready for the survey
-        :return: GetUserDedicatedNumbersResponse
+        :return: GetUserDedicatedNumbersPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -12114,7 +12114,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetUserDedicatedNumbersResponse',  # noqa: E501
+            response_type='GetUserDedicatedNumbersPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -12137,7 +12137,7 @@ class TextMagicApi(object):
         :param str direction: Order direction. Default is desc
         :param int favorite_only: Return only favorite lists
         :param int only_mine: Return only current user lists
-        :return: GetUserListsResponse
+        :return: GetUserListsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -12163,7 +12163,7 @@ class TextMagicApi(object):
         :param str direction: Order direction. Default is desc
         :param int favorite_only: Return only favorite lists
         :param int only_mine: Return only current user lists
-        :return: GetUserListsResponse
+        :return: GetUserListsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -12227,7 +12227,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetUserListsResponse',  # noqa: E501
+            response_type='GetUserListsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -13373,7 +13373,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param str query: Find chats by specified search query
-        :return: SearchChatsResponse
+        :return: SearchChatsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13396,7 +13396,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param str query: Find chats by specified search query
-        :return: SearchChatsResponse
+        :return: SearchChatsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13454,7 +13454,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchChatsResponse',  # noqa: E501
+            response_type='SearchChatsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -13474,7 +13474,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param str ids: Find chats by ID(s)
-        :return: SearchChatsByIdsResponse
+        :return: SearchChatsByIdsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13497,7 +13497,7 @@ class TextMagicApi(object):
         :param int page: Fetch specified results page
         :param int limit: How many results to return
         :param str ids: Find chats by ID(s)
-        :return: SearchChatsByIdsResponse
+        :return: SearchChatsByIdsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13557,7 +13557,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchChatsByIdsResponse',  # noqa: E501
+            response_type='SearchChatsByIdsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -13578,7 +13578,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param str query: Find chats by specified search query
         :param str order_by: Order results by some field. Default is id
-        :return: SearchChatsByReceipentResponse
+        :return: SearchChatsByReceipentPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13602,7 +13602,7 @@ class TextMagicApi(object):
         :param int limit: How many results to return
         :param str query: Find chats by specified search query
         :param str order_by: Order results by some field. Default is id
-        :return: SearchChatsByReceipentResponse
+        :return: SearchChatsByReceipentPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13662,7 +13662,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchChatsByReceipentResponse',  # noqa: E501
+            response_type='SearchChatsByReceipentPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -13690,7 +13690,7 @@ class TextMagicApi(object):
         :param str country: 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: SearchContactsResponse
+        :return: SearchContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13721,7 +13721,7 @@ class TextMagicApi(object):
         :param str country: 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: SearchContactsResponse
+        :return: SearchContactsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13797,7 +13797,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchContactsResponse',  # noqa: E501
+            response_type='SearchContactsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -13821,7 +13821,7 @@ class TextMagicApi(object):
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
         :param int expand: Expand by adding firstName, lastName and contactId
-        :return: SearchInboundMessagesResponse
+        :return: SearchInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13848,7 +13848,7 @@ class TextMagicApi(object):
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
         :param int expand: Expand by adding firstName, lastName and contactId
-        :return: SearchInboundMessagesResponse
+        :return: SearchInboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13916,7 +13916,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchInboundMessagesResponse',  # noqa: E501
+            response_type='SearchInboundMessagesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -13941,7 +13941,7 @@ class TextMagicApi(object):
         :param int only_default: Return only default lists
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: SearchListsResponse
+        :return: SearchListsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -13969,7 +13969,7 @@ class TextMagicApi(object):
         :param int only_default: Return only default lists
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: SearchListsResponse
+        :return: SearchListsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -14037,7 +14037,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchListsResponse',  # noqa: E501
+            response_type='SearchListsPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -14063,7 +14063,7 @@ class TextMagicApi(object):
         :param str statuses: Find messages by status
         :param int include_deleted: Search also in deleted messages
         :param str query: Find messages by specified search query
-        :return: SearchOutboundMessagesResponse
+        :return: SearchOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -14092,7 +14092,7 @@ class TextMagicApi(object):
         :param str statuses: Find messages by status
         :param int include_deleted: Search also in deleted messages
         :param str query: Find messages by specified search query
-        :return: SearchOutboundMessagesResponse
+        :return: SearchOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -14162,7 +14162,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchOutboundMessagesResponse',  # noqa: E501
+            response_type='SearchOutboundMessagesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -14186,7 +14186,7 @@ class TextMagicApi(object):
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: SearchScheduledMessagesResponse
+        :return: SearchScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -14213,7 +14213,7 @@ class TextMagicApi(object):
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
-        :return: SearchScheduledMessagesResponse
+        :return: SearchScheduledMessagesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -14281,7 +14281,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchScheduledMessagesResponse',  # noqa: E501
+            response_type='SearchScheduledMessagesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -14303,7 +14303,7 @@ class TextMagicApi(object):
         :param str ids: Find template by ID(s)
         :param str name: Find template by name
         :param str content: Find template by content
-        :return: SearchTemplatesResponse
+        :return: SearchTemplatesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -14328,7 +14328,7 @@ class TextMagicApi(object):
         :param str ids: Find template by ID(s)
         :param str name: Find template by name
         :param str content: Find template by content
-        :return: SearchTemplatesResponse
+        :return: SearchTemplatesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -14390,7 +14390,7 @@ class TextMagicApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SearchTemplatesResponse',  # noqa: E501
+            response_type='SearchTemplatesPaginatedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
