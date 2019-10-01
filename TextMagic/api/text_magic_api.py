@@ -36,6 +36,7 @@ class TextMagicApi(object):
     def assign_contacts_to_list(self, assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Assign contacts to the specified list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.assign_contacts_to_list(assign_contacts_to_list_input_object, id, async_req=True)
@@ -58,6 +59,7 @@ class TextMagicApi(object):
     def assign_contacts_to_list_with_http_info(self, assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Assign contacts to the specified list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.assign_contacts_to_list_with_http_info(assign_contacts_to_list_input_object, id, async_req=True)
@@ -141,6 +143,7 @@ class TextMagicApi(object):
     def block_contact(self, block_contact_input_object, **kwargs):  # noqa: E501
         """Block contact from inbound and outbound communication by phone number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.block_contact(block_contact_input_object, async_req=True)
@@ -162,6 +165,7 @@ class TextMagicApi(object):
     def block_contact_with_http_info(self, block_contact_input_object, **kwargs):  # noqa: E501
         """Block contact from inbound and outbound communication by phone number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.block_contact_with_http_info(block_contact_input_object, async_req=True)
@@ -238,6 +242,7 @@ class TextMagicApi(object):
     def buy_dedicated_number(self, buy_dedicated_number_input_object, **kwargs):  # noqa: E501
         """Buy a dedicated number and assign it to the specified account.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.buy_dedicated_number(buy_dedicated_number_input_object, async_req=True)
@@ -259,6 +264,7 @@ class TextMagicApi(object):
     def buy_dedicated_number_with_http_info(self, buy_dedicated_number_input_object, **kwargs):  # noqa: E501
         """Buy a dedicated number and assign it to the specified account.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.buy_dedicated_number_with_http_info(buy_dedicated_number_input_object, async_req=True)
@@ -335,6 +341,7 @@ class TextMagicApi(object):
     def cancel_survey(self, id, **kwargs):  # noqa: E501
         """Cancel a survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.cancel_survey(id, async_req=True)
@@ -356,6 +363,7 @@ class TextMagicApi(object):
     def cancel_survey_with_http_info(self, id, **kwargs):  # noqa: E501
         """Cancel a survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.cancel_survey_with_http_info(id, async_req=True)
@@ -432,6 +440,7 @@ class TextMagicApi(object):
     def check_phone_verification_code(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Check user phone verification code  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.check_phone_verification_code(check_phone_verification_code_input_object, async_req=True)
@@ -453,6 +462,7 @@ class TextMagicApi(object):
     def check_phone_verification_code_with_http_info(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Check user phone verification code  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.check_phone_verification_code_with_http_info(check_phone_verification_code_input_object, async_req=True)
@@ -529,6 +539,7 @@ class TextMagicApi(object):
     def clear_and_assign_contacts_to_list(self, clear_and_assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Reset list members to the specified contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.clear_and_assign_contacts_to_list(clear_and_assign_contacts_to_list_input_object, id, async_req=True)
@@ -551,6 +562,7 @@ class TextMagicApi(object):
     def clear_and_assign_contacts_to_list_with_http_info(self, clear_and_assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
         """Reset list members to the specified contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.clear_and_assign_contacts_to_list_with_http_info(clear_and_assign_contacts_to_list_input_object, id, async_req=True)
@@ -634,6 +646,7 @@ class TextMagicApi(object):
     def close_chats_bulk(self, close_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Close chats by chat ids or close all chats  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_chats_bulk(close_chats_bulk_input_object, async_req=True)
@@ -655,6 +668,7 @@ class TextMagicApi(object):
     def close_chats_bulk_with_http_info(self, close_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Close chats by chat ids or close all chats  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_chats_bulk_with_http_info(close_chats_bulk_input_object, async_req=True)
@@ -727,6 +741,7 @@ class TextMagicApi(object):
     def close_read_chats(self, **kwargs):  # noqa: E501
         """Close all chats that have no unread messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_read_chats(async_req=True)
@@ -747,6 +762,7 @@ class TextMagicApi(object):
     def close_read_chats_with_http_info(self, **kwargs):  # noqa: E501
         """Close all chats that have no unread messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_read_chats_with_http_info(async_req=True)
@@ -812,6 +828,7 @@ class TextMagicApi(object):
     def close_subaccount(self, id, **kwargs):  # noqa: E501
         """Close subaccount.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_subaccount(id, async_req=True)
@@ -833,6 +850,7 @@ class TextMagicApi(object):
     def close_subaccount_with_http_info(self, id, **kwargs):  # noqa: E501
         """Close subaccount.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_subaccount_with_http_info(id, async_req=True)
@@ -905,6 +923,7 @@ class TextMagicApi(object):
     def create_contact(self, create_contact_input_object, **kwargs):  # noqa: E501
         """Create a new contact from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_contact(create_contact_input_object, async_req=True)
@@ -926,6 +945,7 @@ class TextMagicApi(object):
     def create_contact_with_http_info(self, create_contact_input_object, **kwargs):  # noqa: E501
         """Create a new contact from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_contact_with_http_info(create_contact_input_object, async_req=True)
@@ -1002,6 +1022,7 @@ class TextMagicApi(object):
     def create_contact_note(self, create_contact_note_input_object, id, **kwargs):  # noqa: E501
         """Create a new contact note.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_contact_note(create_contact_note_input_object, id, async_req=True)
@@ -1024,6 +1045,7 @@ class TextMagicApi(object):
     def create_contact_note_with_http_info(self, create_contact_note_input_object, id, **kwargs):  # noqa: E501
         """Create a new contact note.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_contact_note_with_http_info(create_contact_note_input_object, id, async_req=True)
@@ -1107,6 +1129,7 @@ class TextMagicApi(object):
     def create_custom_field(self, create_custom_field_input_object, **kwargs):  # noqa: E501
         """Create a new custom field from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_custom_field(create_custom_field_input_object, async_req=True)
@@ -1128,6 +1151,7 @@ class TextMagicApi(object):
     def create_custom_field_with_http_info(self, create_custom_field_input_object, **kwargs):  # noqa: E501
         """Create a new custom field from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_custom_field_with_http_info(create_custom_field_input_object, async_req=True)
@@ -1204,6 +1228,7 @@ class TextMagicApi(object):
     def create_list(self, create_list_input_object, **kwargs):  # noqa: E501
         """Create a new list from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_list(create_list_input_object, async_req=True)
@@ -1225,6 +1250,7 @@ class TextMagicApi(object):
     def create_list_with_http_info(self, create_list_input_object, **kwargs):  # noqa: E501
         """Create a new list from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_list_with_http_info(create_list_input_object, async_req=True)
@@ -1301,6 +1327,7 @@ class TextMagicApi(object):
     def create_push_token(self, create_push_token_input_object, **kwargs):  # noqa: E501
         """Add or update a device token.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_push_token(create_push_token_input_object, async_req=True)
@@ -1322,6 +1349,7 @@ class TextMagicApi(object):
     def create_push_token_with_http_info(self, create_push_token_input_object, **kwargs):  # noqa: E501
         """Add or update a device token.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_push_token_with_http_info(create_push_token_input_object, async_req=True)
@@ -1398,6 +1426,7 @@ class TextMagicApi(object):
     def create_survey(self, create_survey_input_object, **kwargs):  # noqa: E501
         """Create a new survey from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_survey(create_survey_input_object, async_req=True)
@@ -1419,6 +1448,7 @@ class TextMagicApi(object):
     def create_survey_with_http_info(self, create_survey_input_object, **kwargs):  # noqa: E501
         """Create a new survey from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_survey_with_http_info(create_survey_input_object, async_req=True)
@@ -1495,6 +1525,7 @@ class TextMagicApi(object):
     def create_survey_node(self, create_survey_node_input_object, id, **kwargs):  # noqa: E501
         """Create a new node from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_survey_node(create_survey_node_input_object, id, async_req=True)
@@ -1517,6 +1548,7 @@ class TextMagicApi(object):
     def create_survey_node_with_http_info(self, create_survey_node_input_object, id, **kwargs):  # noqa: E501
         """Create a new node from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_survey_node_with_http_info(create_survey_node_input_object, id, async_req=True)
@@ -1600,6 +1632,7 @@ class TextMagicApi(object):
     def create_template(self, create_template_input_object, **kwargs):  # noqa: E501
         """Create a new template from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_template(create_template_input_object, async_req=True)
@@ -1621,6 +1654,7 @@ class TextMagicApi(object):
     def create_template_with_http_info(self, create_template_input_object, **kwargs):  # noqa: E501
         """Create a new template from the submitted data.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_template_with_http_info(create_template_input_object, async_req=True)
@@ -1697,6 +1731,7 @@ class TextMagicApi(object):
     def delete_all_contacts(self, **kwargs):  # noqa: E501
         """Delete all contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_contacts(async_req=True)
@@ -1717,6 +1752,7 @@ class TextMagicApi(object):
     def delete_all_contacts_with_http_info(self, **kwargs):  # noqa: E501
         """Delete all contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_contacts_with_http_info(async_req=True)
@@ -1782,7 +1818,7 @@ class TextMagicApi(object):
     def delete_all_outbound_messages(self, **kwargs):  # noqa: E501
         """Delete all messages  # noqa: E501
 
-        Delete all messages.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_outbound_messages(async_req=True)
@@ -1803,7 +1839,7 @@ class TextMagicApi(object):
     def delete_all_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Delete all messages  # noqa: E501
 
-        Delete all messages.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_outbound_messages_with_http_info(async_req=True)
@@ -1869,6 +1905,7 @@ class TextMagicApi(object):
     def delete_avatar(self, **kwargs):  # noqa: E501
         """Delete an avatar for the current user.\\  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_avatar(async_req=True)
@@ -1889,6 +1926,7 @@ class TextMagicApi(object):
     def delete_avatar_with_http_info(self, **kwargs):  # noqa: E501
         """Delete an avatar for the current user.\\  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_avatar_with_http_info(async_req=True)
@@ -1954,6 +1992,7 @@ class TextMagicApi(object):
     def delete_chat_messages(self, delete_chat_messages_bulk_input_object, id, **kwargs):  # noqa: E501
         """Delete messages from chat by given messages ID(s).  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chat_messages(delete_chat_messages_bulk_input_object, id, async_req=True)
@@ -1976,6 +2015,7 @@ class TextMagicApi(object):
     def delete_chat_messages_with_http_info(self, delete_chat_messages_bulk_input_object, id, **kwargs):  # noqa: E501
         """Delete messages from chat by given messages ID(s).  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chat_messages_with_http_info(delete_chat_messages_bulk_input_object, id, async_req=True)
@@ -2055,6 +2095,7 @@ class TextMagicApi(object):
     def delete_chats_bulk(self, delete_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Delete chats by given ID(s) or delete all chats.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chats_bulk(delete_chats_bulk_input_object, async_req=True)
@@ -2076,6 +2117,7 @@ class TextMagicApi(object):
     def delete_chats_bulk_with_http_info(self, delete_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Delete chats by given ID(s) or delete all chats.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chats_bulk_with_http_info(delete_chats_bulk_input_object, async_req=True)
@@ -2148,6 +2190,7 @@ class TextMagicApi(object):
     def delete_contact(self, id, **kwargs):  # noqa: E501
         """Delete a single contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact(id, async_req=True)
@@ -2169,6 +2212,7 @@ class TextMagicApi(object):
     def delete_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a single contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_with_http_info(id, async_req=True)
@@ -2241,6 +2285,7 @@ class TextMagicApi(object):
     def delete_contact_avatar(self, id, **kwargs):  # noqa: E501
         """Delete an avatar for the contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_avatar(id, async_req=True)
@@ -2262,6 +2307,7 @@ class TextMagicApi(object):
     def delete_contact_avatar_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete an avatar for the contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_avatar_with_http_info(id, async_req=True)
@@ -2338,6 +2384,7 @@ class TextMagicApi(object):
     def delete_contact_note(self, id, **kwargs):  # noqa: E501
         """Delete a single contact note.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_note(id, async_req=True)
@@ -2359,6 +2406,7 @@ class TextMagicApi(object):
     def delete_contact_note_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a single contact note.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_note_with_http_info(id, async_req=True)
@@ -2431,6 +2479,7 @@ class TextMagicApi(object):
     def delete_contact_notes_bulk(self, id, delete_contact_notes_bulk_input_object, **kwargs):  # noqa: E501
         """Delete contact note by given ID(s) or delete all contact notes.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_notes_bulk(id, delete_contact_notes_bulk_input_object, async_req=True)
@@ -2453,6 +2502,7 @@ class TextMagicApi(object):
     def delete_contact_notes_bulk_with_http_info(self, id, delete_contact_notes_bulk_input_object, **kwargs):  # noqa: E501
         """Delete contact note by given ID(s) or delete all contact notes.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contact_notes_bulk_with_http_info(id, delete_contact_notes_bulk_input_object, async_req=True)
@@ -2532,6 +2582,7 @@ class TextMagicApi(object):
     def delete_contacts_by_ids(self, delete_contacts_by_ids_input_object, **kwargs):  # noqa: E501
         """Delete contact by given ID(s) or delete all contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contacts_by_ids(delete_contacts_by_ids_input_object, async_req=True)
@@ -2553,6 +2604,7 @@ class TextMagicApi(object):
     def delete_contacts_by_ids_with_http_info(self, delete_contacts_by_ids_input_object, **kwargs):  # noqa: E501
         """Delete contact by given ID(s) or delete all contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contacts_by_ids_with_http_info(delete_contacts_by_ids_input_object, async_req=True)
@@ -2625,6 +2677,7 @@ class TextMagicApi(object):
     def delete_contacts_from_list(self, delete_contacs_from_list_object, id, **kwargs):  # noqa: E501
         """Unassign contacts from the specified list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contacts_from_list(delete_contacs_from_list_object, id, async_req=True)
@@ -2647,6 +2700,7 @@ class TextMagicApi(object):
     def delete_contacts_from_list_with_http_info(self, delete_contacs_from_list_object, id, **kwargs):  # noqa: E501
         """Unassign contacts from the specified list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_contacts_from_list_with_http_info(delete_contacs_from_list_object, id, async_req=True)
@@ -2726,6 +2780,7 @@ class TextMagicApi(object):
     def delete_custom_field(self, id, **kwargs):  # noqa: E501
         """Delete a single custom field.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_custom_field(id, async_req=True)
@@ -2747,6 +2802,7 @@ class TextMagicApi(object):
     def delete_custom_field_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a single custom field.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_custom_field_with_http_info(id, async_req=True)
@@ -2819,6 +2875,7 @@ class TextMagicApi(object):
     def delete_dedicated_number(self, id, **kwargs):  # noqa: E501
         """Cancel dedicated number subscription.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_dedicated_number(id, async_req=True)
@@ -2840,6 +2897,7 @@ class TextMagicApi(object):
     def delete_dedicated_number_with_http_info(self, id, **kwargs):  # noqa: E501
         """Cancel dedicated number subscription.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_dedicated_number_with_http_info(id, async_req=True)
@@ -2912,6 +2970,7 @@ class TextMagicApi(object):
     def delete_inbound_message(self, id, **kwargs):  # noqa: E501
         """Delete the incoming message.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_message(id, async_req=True)
@@ -2933,6 +2992,7 @@ class TextMagicApi(object):
     def delete_inbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete the incoming message.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_message_with_http_info(id, async_req=True)
@@ -3005,6 +3065,7 @@ class TextMagicApi(object):
     def delete_inbound_messages_bulk(self, delete_inbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete inbound messages by given ID(s) or delete all inbound messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_messages_bulk(delete_inbound_messages_bulk_input_object, async_req=True)
@@ -3026,6 +3087,7 @@ class TextMagicApi(object):
     def delete_inbound_messages_bulk_with_http_info(self, delete_inbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete inbound messages by given ID(s) or delete all inbound messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_messages_bulk_with_http_info(delete_inbound_messages_bulk_input_object, async_req=True)
@@ -3098,6 +3160,7 @@ class TextMagicApi(object):
     def delete_list(self, id, **kwargs):  # noqa: E501
         """Delete a single list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list(id, async_req=True)
@@ -3119,6 +3182,7 @@ class TextMagicApi(object):
     def delete_list_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a single list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_with_http_info(id, async_req=True)
@@ -3191,6 +3255,7 @@ class TextMagicApi(object):
     def delete_list_avatar(self, id, **kwargs):  # noqa: E501
         """Delete an avatar for the list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_avatar(id, async_req=True)
@@ -3212,6 +3277,7 @@ class TextMagicApi(object):
     def delete_list_avatar_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete an avatar for the list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_avatar_with_http_info(id, async_req=True)
@@ -3288,6 +3354,7 @@ class TextMagicApi(object):
     def delete_list_contacts_bulk(self, delete_list_contacts_bulk_input_object, id, **kwargs):  # noqa: E501
         """Delete contact from list by given ID(s) or all contacts from list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id, async_req=True)
@@ -3310,6 +3377,7 @@ class TextMagicApi(object):
     def delete_list_contacts_bulk_with_http_info(self, delete_list_contacts_bulk_input_object, id, **kwargs):  # noqa: E501
         """Delete contact from list by given ID(s) or all contacts from list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_contacts_bulk_with_http_info(delete_list_contacts_bulk_input_object, id, async_req=True)
@@ -3389,6 +3457,7 @@ class TextMagicApi(object):
     def delete_lists_bulk(self, delete_lists_bulk_input_object, **kwargs):  # noqa: E501
         """Delete list by given ID(s) or delete all lists.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_lists_bulk(delete_lists_bulk_input_object, async_req=True)
@@ -3410,6 +3479,7 @@ class TextMagicApi(object):
     def delete_lists_bulk_with_http_info(self, delete_lists_bulk_input_object, **kwargs):  # noqa: E501
         """Delete list by given ID(s) or delete all lists.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_lists_bulk_with_http_info(delete_lists_bulk_input_object, async_req=True)
@@ -3482,6 +3552,7 @@ class TextMagicApi(object):
     def delete_message_session(self, id, **kwargs):  # noqa: E501
         """Delete a message session, together with all nested messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_message_session(id, async_req=True)
@@ -3503,6 +3574,7 @@ class TextMagicApi(object):
     def delete_message_session_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a message session, together with all nested messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_message_session_with_http_info(id, async_req=True)
@@ -3575,6 +3647,7 @@ class TextMagicApi(object):
     def delete_message_sessions_bulk(self, delete_message_sessions_bulk_input_object, **kwargs):  # noqa: E501
         """Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_message_sessions_bulk(delete_message_sessions_bulk_input_object, async_req=True)
@@ -3596,6 +3669,7 @@ class TextMagicApi(object):
     def delete_message_sessions_bulk_with_http_info(self, delete_message_sessions_bulk_input_object, **kwargs):  # noqa: E501
         """Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_message_sessions_bulk_with_http_info(delete_message_sessions_bulk_input_object, async_req=True)
@@ -3668,7 +3742,7 @@ class TextMagicApi(object):
     def delete_outbound_message(self, id, **kwargs):  # noqa: E501
         """Delete message  # noqa: E501
 
-        Delete a single message.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_message(id, async_req=True)
@@ -3690,7 +3764,7 @@ class TextMagicApi(object):
     def delete_outbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete message  # noqa: E501
 
-        Delete a single message.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_message_with_http_info(id, async_req=True)
@@ -3763,7 +3837,7 @@ class TextMagicApi(object):
     def delete_outbound_messages_bulk(self, delete_outbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete messages by IDs  # noqa: E501
 
-        Delete outbound messages by given ID(s) or delete all outbound messages.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_messages_bulk(delete_outbound_messages_bulk_input_object, async_req=True)
@@ -3785,7 +3859,7 @@ class TextMagicApi(object):
     def delete_outbound_messages_bulk_with_http_info(self, delete_outbound_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete messages by IDs  # noqa: E501
 
-        Delete outbound messages by given ID(s) or delete all outbound messages.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_messages_bulk_with_http_info(delete_outbound_messages_bulk_input_object, async_req=True)
@@ -3858,6 +3932,7 @@ class TextMagicApi(object):
     def delete_push_token(self, type, device_id, **kwargs):  # noqa: E501
         """Delete a push notification device token.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_push_token(type, device_id, async_req=True)
@@ -3880,6 +3955,7 @@ class TextMagicApi(object):
     def delete_push_token_with_http_info(self, type, device_id, **kwargs):  # noqa: E501
         """Delete a push notification device token.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_push_token_with_http_info(type, device_id, async_req=True)
@@ -3959,6 +4035,7 @@ class TextMagicApi(object):
     def delete_scheduled_message(self, id, **kwargs):  # noqa: E501
         """Delete a message session, together with all nested messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_scheduled_message(id, async_req=True)
@@ -3980,6 +4057,7 @@ class TextMagicApi(object):
     def delete_scheduled_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a message session, together with all nested messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_scheduled_message_with_http_info(id, async_req=True)
@@ -4052,6 +4130,7 @@ class TextMagicApi(object):
     def delete_scheduled_messages_bulk(self, delete_scheduled_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete scheduled messages by given ID(s) or delete all scheduled messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_scheduled_messages_bulk(delete_scheduled_messages_bulk_input_object, async_req=True)
@@ -4073,6 +4152,7 @@ class TextMagicApi(object):
     def delete_scheduled_messages_bulk_with_http_info(self, delete_scheduled_messages_bulk_input_object, **kwargs):  # noqa: E501
         """Delete scheduled messages by given ID(s) or delete all scheduled messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_scheduled_messages_bulk_with_http_info(delete_scheduled_messages_bulk_input_object, async_req=True)
@@ -4145,6 +4225,7 @@ class TextMagicApi(object):
     def delete_sender_id(self, id, **kwargs):  # noqa: E501
         """Delete a Sender ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_sender_id(id, async_req=True)
@@ -4166,6 +4247,7 @@ class TextMagicApi(object):
     def delete_sender_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a Sender ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_sender_id_with_http_info(id, async_req=True)
@@ -4238,6 +4320,7 @@ class TextMagicApi(object):
     def delete_survey(self, id, **kwargs):  # noqa: E501
         """Delete a survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_survey(id, async_req=True)
@@ -4259,6 +4342,7 @@ class TextMagicApi(object):
     def delete_survey_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_survey_with_http_info(id, async_req=True)
@@ -4331,6 +4415,7 @@ class TextMagicApi(object):
     def delete_survey_node(self, id, **kwargs):  # noqa: E501
         """Delete a node.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_survey_node(id, async_req=True)
@@ -4352,6 +4437,7 @@ class TextMagicApi(object):
     def delete_survey_node_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a node.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_survey_node_with_http_info(id, async_req=True)
@@ -4424,6 +4510,7 @@ class TextMagicApi(object):
     def delete_template(self, id, **kwargs):  # noqa: E501
         """Delete a single template.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_template(id, async_req=True)
@@ -4445,6 +4532,7 @@ class TextMagicApi(object):
     def delete_template_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a single template.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_template_with_http_info(id, async_req=True)
@@ -4517,6 +4605,7 @@ class TextMagicApi(object):
     def delete_templates_bulk(self, delete_templates_bulk_input_object, **kwargs):  # noqa: E501
         """Delete template by given ID(s) or delete all templates.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_templates_bulk(delete_templates_bulk_input_object, async_req=True)
@@ -4538,6 +4627,7 @@ class TextMagicApi(object):
     def delete_templates_bulk_with_http_info(self, delete_templates_bulk_input_object, **kwargs):  # noqa: E501
         """Delete template by given ID(s) or delete all templates.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_templates_bulk_with_http_info(delete_templates_bulk_input_object, async_req=True)
@@ -4610,7 +4700,7 @@ class TextMagicApi(object):
     def do_auth(self, do_auth_input_object, **kwargs):  # noqa: E501
         """Authenticate user by given username and password.  # noqa: E501
 
-        Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_auth(do_auth_input_object, async_req=True)
@@ -4632,7 +4722,7 @@ class TextMagicApi(object):
     def do_auth_with_http_info(self, do_auth_input_object, **kwargs):  # noqa: E501
         """Authenticate user by given username and password.  # noqa: E501
 
-        Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_auth_with_http_info(do_auth_input_object, async_req=True)
@@ -4709,6 +4799,7 @@ class TextMagicApi(object):
     def do_carrier_lookup(self, phone, **kwargs):  # noqa: E501
         """Carrier Lookup  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_carrier_lookup(phone, async_req=True)
@@ -4731,6 +4822,7 @@ class TextMagicApi(object):
     def do_carrier_lookup_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Carrier Lookup  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_carrier_lookup_with_http_info(phone, async_req=True)
@@ -4810,6 +4902,7 @@ class TextMagicApi(object):
     def do_email_lookup(self, email, **kwargs):  # noqa: E501
         """Validate Email address using Email Lookup tool  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_email_lookup(email, async_req=True)
@@ -4831,6 +4924,7 @@ class TextMagicApi(object):
     def do_email_lookup_with_http_info(self, email, **kwargs):  # noqa: E501
         """Validate Email address using Email Lookup tool  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_email_lookup_with_http_info(email, async_req=True)
@@ -4907,6 +5001,7 @@ class TextMagicApi(object):
     def duplicate_survey(self, id, **kwargs):  # noqa: E501
         """Duplicate a survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.duplicate_survey(id, async_req=True)
@@ -4928,6 +5023,7 @@ class TextMagicApi(object):
     def duplicate_survey_with_http_info(self, id, **kwargs):  # noqa: E501
         """Duplicate a survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.duplicate_survey_with_http_info(id, async_req=True)
@@ -5004,6 +5100,7 @@ class TextMagicApi(object):
     def get_all_bulk_sessions(self, **kwargs):  # noqa: E501
         """Get all bulk sending sessions.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_bulk_sessions(async_req=True)
@@ -5026,6 +5123,7 @@ class TextMagicApi(object):
     def get_all_bulk_sessions_with_http_info(self, **kwargs):  # noqa: E501
         """Get all bulk sending sessions.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_bulk_sessions_with_http_info(async_req=True)
@@ -5101,6 +5199,7 @@ class TextMagicApi(object):
     def get_all_chats(self, **kwargs):  # noqa: E501
         """Get all user chats.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_chats(async_req=True)
@@ -5127,6 +5226,7 @@ class TextMagicApi(object):
     def get_all_chats_with_http_info(self, **kwargs):  # noqa: E501
         """Get all user chats.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_chats_with_http_info(async_req=True)
@@ -5214,6 +5314,7 @@ class TextMagicApi(object):
     def get_all_inbound_messages(self, **kwargs):  # noqa: E501
         """Get all inbox messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_inbound_messages(async_req=True)
@@ -5238,6 +5339,7 @@ class TextMagicApi(object):
     def get_all_inbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Get all inbox messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_inbound_messages_with_http_info(async_req=True)
@@ -5319,6 +5421,7 @@ class TextMagicApi(object):
     def get_all_message_sessions(self, **kwargs):  # noqa: E501
         """Get all message sending sessions.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_message_sessions(async_req=True)
@@ -5341,6 +5444,7 @@ class TextMagicApi(object):
     def get_all_message_sessions_with_http_info(self, **kwargs):  # noqa: E501
         """Get all message sending sessions.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_message_sessions_with_http_info(async_req=True)
@@ -5416,7 +5520,7 @@ class TextMagicApi(object):
     def get_all_outbound_messages(self, **kwargs):  # noqa: E501
         """Get all messages  # noqa: E501
 
-        Get all user oubound messages.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_outbound_messages(async_req=True)
@@ -5440,7 +5544,7 @@ class TextMagicApi(object):
     def get_all_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Get all messages  # noqa: E501
 
-        Get all user oubound messages.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_outbound_messages_with_http_info(async_req=True)
@@ -5519,6 +5623,7 @@ class TextMagicApi(object):
     def get_all_scheduled_messages(self, **kwargs):  # noqa: E501
         """Get all scheduled messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_scheduled_messages(async_req=True)
@@ -5544,6 +5649,7 @@ class TextMagicApi(object):
     def get_all_scheduled_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Get all scheduled messages.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_scheduled_messages_with_http_info(async_req=True)
@@ -5628,6 +5734,7 @@ class TextMagicApi(object):
     def get_all_templates(self, **kwargs):  # noqa: E501
         """Get all user templates.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_templates(async_req=True)
@@ -5650,6 +5757,7 @@ class TextMagicApi(object):
     def get_all_templates_with_http_info(self, **kwargs):  # noqa: E501
         """Get all user templates.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_templates_with_http_info(async_req=True)
@@ -5725,6 +5833,7 @@ class TextMagicApi(object):
     def get_available_dedicated_numbers(self, country, **kwargs):  # noqa: E501
         """Find available dedicated numbers to buy.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_dedicated_numbers(country, async_req=True)
@@ -5748,6 +5857,7 @@ class TextMagicApi(object):
     def get_available_dedicated_numbers_with_http_info(self, country, **kwargs):  # noqa: E501
         """Find available dedicated numbers to buy.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_dedicated_numbers_with_http_info(country, async_req=True)
@@ -5830,6 +5940,7 @@ class TextMagicApi(object):
     def get_available_sender_setting_options(self, **kwargs):  # noqa: E501
         """Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_sender_setting_options(async_req=True)
@@ -5851,6 +5962,7 @@ class TextMagicApi(object):
     def get_available_sender_setting_options_with_http_info(self, **kwargs):  # noqa: E501
         """Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_sender_setting_options_with_http_info(async_req=True)
@@ -5923,6 +6035,7 @@ class TextMagicApi(object):
     def get_balance_notification_options(self, **kwargs):  # noqa: E501
         """Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_balance_notification_options(async_req=True)
@@ -5943,6 +6056,7 @@ class TextMagicApi(object):
     def get_balance_notification_options_with_http_info(self, **kwargs):  # noqa: E501
         """Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_balance_notification_options_with_http_info(async_req=True)
@@ -6012,6 +6126,7 @@ class TextMagicApi(object):
     def get_balance_notification_settings(self, **kwargs):  # noqa: E501
         """Get balance notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_balance_notification_settings(async_req=True)
@@ -6032,6 +6147,7 @@ class TextMagicApi(object):
     def get_balance_notification_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get balance notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_balance_notification_settings_with_http_info(async_req=True)
@@ -6101,6 +6217,7 @@ class TextMagicApi(object):
     def get_blocked_contacts(self, **kwargs):  # noqa: E501
         """Get blocked contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_blocked_contacts(async_req=True)
@@ -6126,6 +6243,7 @@ class TextMagicApi(object):
     def get_blocked_contacts_with_http_info(self, **kwargs):  # noqa: E501
         """Get blocked contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_blocked_contacts_with_http_info(async_req=True)
@@ -6210,6 +6328,7 @@ class TextMagicApi(object):
     def get_bulk_session(self, id, **kwargs):  # noqa: E501
         """Get bulk message session status.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_bulk_session(id, async_req=True)
@@ -6231,6 +6350,7 @@ class TextMagicApi(object):
     def get_bulk_session_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get bulk message session status.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_bulk_session_with_http_info(id, async_req=True)
@@ -6307,6 +6427,7 @@ class TextMagicApi(object):
     def get_callback_settings(self, **kwargs):  # noqa: E501
         """Fetch callback URL settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_callback_settings(async_req=True)
@@ -6327,6 +6448,7 @@ class TextMagicApi(object):
     def get_callback_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Fetch callback URL settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_callback_settings_with_http_info(async_req=True)
@@ -6396,6 +6518,7 @@ class TextMagicApi(object):
     def get_calls_prices(self, **kwargs):  # noqa: E501
         """Check pricing for a inbound/outbound call.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_calls_prices(async_req=True)
@@ -6416,6 +6539,7 @@ class TextMagicApi(object):
     def get_calls_prices_with_http_info(self, **kwargs):  # noqa: E501
         """Check pricing for a inbound/outbound call.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_calls_prices_with_http_info(async_req=True)
@@ -6485,6 +6609,7 @@ class TextMagicApi(object):
     def get_chat(self, id, **kwargs):  # noqa: E501
         """Get a single chat.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat(id, async_req=True)
@@ -6506,6 +6631,7 @@ class TextMagicApi(object):
     def get_chat_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single chat.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_with_http_info(id, async_req=True)
@@ -6582,6 +6708,7 @@ class TextMagicApi(object):
     def get_chat_by_phone(self, phone, **kwargs):  # noqa: E501
         """Find chats by phone.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_by_phone(phone, async_req=True)
@@ -6605,6 +6732,7 @@ class TextMagicApi(object):
     def get_chat_by_phone_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Find chats by phone.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_by_phone_with_http_info(phone, async_req=True)
@@ -6687,6 +6815,7 @@ class TextMagicApi(object):
     def get_chat_messages(self, id, **kwargs):  # noqa: E501
         """Fetch messages from chat with specified chat id.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_messages(id, async_req=True)
@@ -6715,6 +6844,7 @@ class TextMagicApi(object):
     def get_chat_messages_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fetch messages from chat with specified chat id.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_chat_messages_with_http_info(id, async_req=True)
@@ -6812,6 +6942,7 @@ class TextMagicApi(object):
     def get_contact(self, id, **kwargs):  # noqa: E501
         """Get a single contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact(id, async_req=True)
@@ -6833,6 +6964,7 @@ class TextMagicApi(object):
     def get_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_with_http_info(id, async_req=True)
@@ -6909,6 +7041,7 @@ class TextMagicApi(object):
     def get_contact_by_phone(self, phone, **kwargs):  # noqa: E501
         """Get a single contact by phone number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_by_phone(phone, async_req=True)
@@ -6930,6 +7063,7 @@ class TextMagicApi(object):
     def get_contact_by_phone_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Get a single contact by phone number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_by_phone_with_http_info(phone, async_req=True)
@@ -7006,6 +7140,7 @@ class TextMagicApi(object):
     def get_contact_if_blocked(self, phone, **kwargs):  # noqa: E501
         """Check is that phone number blocked  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_if_blocked(phone, async_req=True)
@@ -7027,6 +7162,7 @@ class TextMagicApi(object):
     def get_contact_if_blocked_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Check is that phone number blocked  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_if_blocked_with_http_info(phone, async_req=True)
@@ -7103,6 +7239,7 @@ class TextMagicApi(object):
     def get_contact_import_session_progress(self, id, **kwargs):  # noqa: E501
         """Get contact import session progress.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_import_session_progress(id, async_req=True)
@@ -7124,6 +7261,7 @@ class TextMagicApi(object):
     def get_contact_import_session_progress_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get contact import session progress.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_import_session_progress_with_http_info(id, async_req=True)
@@ -7200,6 +7338,7 @@ class TextMagicApi(object):
     def get_contact_note(self, id, **kwargs):  # noqa: E501
         """Get a single contact note.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_note(id, async_req=True)
@@ -7221,6 +7360,7 @@ class TextMagicApi(object):
     def get_contact_note_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single contact note.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_note_with_http_info(id, async_req=True)
@@ -7297,6 +7437,7 @@ class TextMagicApi(object):
     def get_contact_notes(self, id, **kwargs):  # noqa: E501
         """Fetch notes assigned to the given contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_notes(id, async_req=True)
@@ -7320,6 +7461,7 @@ class TextMagicApi(object):
     def get_contact_notes_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fetch notes assigned to the given contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contact_notes_with_http_info(id, async_req=True)
@@ -7402,6 +7544,7 @@ class TextMagicApi(object):
     def get_contacts(self, **kwargs):  # noqa: E501
         """Get all user contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts(async_req=True)
@@ -7427,6 +7570,7 @@ class TextMagicApi(object):
     def get_contacts_with_http_info(self, **kwargs):  # noqa: E501
         """Get all user contacts.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_with_http_info(async_req=True)
@@ -7511,6 +7655,7 @@ class TextMagicApi(object):
     def get_contacts_autocomplete(self, query, **kwargs):  # noqa: E501
         """Get contacts autocomplete suggestions by given search term.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_autocomplete(query, async_req=True)
@@ -7534,6 +7679,7 @@ class TextMagicApi(object):
     def get_contacts_autocomplete_with_http_info(self, query, **kwargs):  # noqa: E501
         """Get contacts autocomplete suggestions by given search term.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_autocomplete_with_http_info(query, async_req=True)
@@ -7616,7 +7762,7 @@ class TextMagicApi(object):
     def get_contacts_by_list_id(self, id, **kwargs):  # noqa: E501
         """Fetch user contacts by given group id.  # noqa: E501
 
-        A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_by_list_id(id, async_req=True)
@@ -7642,7 +7788,7 @@ class TextMagicApi(object):
     def get_contacts_by_list_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fetch user contacts by given group id.  # noqa: E501
 
-        A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_by_list_id_with_http_info(id, async_req=True)
@@ -7731,6 +7877,7 @@ class TextMagicApi(object):
     def get_countries(self, **kwargs):  # noqa: E501
         """Return list of countries.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_countries(async_req=True)
@@ -7751,6 +7898,7 @@ class TextMagicApi(object):
     def get_countries_with_http_info(self, **kwargs):  # noqa: E501
         """Return list of countries.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_countries_with_http_info(async_req=True)
@@ -7820,6 +7968,7 @@ class TextMagicApi(object):
     def get_current_user(self, **kwargs):  # noqa: E501
         """Get current user info.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_current_user(async_req=True)
@@ -7840,6 +7989,7 @@ class TextMagicApi(object):
     def get_current_user_with_http_info(self, **kwargs):  # noqa: E501
         """Get current user info.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_current_user_with_http_info(async_req=True)
@@ -7909,6 +8059,7 @@ class TextMagicApi(object):
     def get_custom_field(self, id, **kwargs):  # noqa: E501
         """Get a single custom field.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_custom_field(id, async_req=True)
@@ -7930,6 +8081,7 @@ class TextMagicApi(object):
     def get_custom_field_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single custom field.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_custom_field_with_http_info(id, async_req=True)
@@ -8006,6 +8158,7 @@ class TextMagicApi(object):
     def get_custom_fields(self, **kwargs):  # noqa: E501
         """Get all contact custom fields.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_custom_fields(async_req=True)
@@ -8028,6 +8181,7 @@ class TextMagicApi(object):
     def get_custom_fields_with_http_info(self, **kwargs):  # noqa: E501
         """Get all contact custom fields.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_custom_fields_with_http_info(async_req=True)
@@ -8103,6 +8257,7 @@ class TextMagicApi(object):
     def get_dedicated_number(self, id, **kwargs):  # noqa: E501
         """Get a single dedicated number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_dedicated_number(id, async_req=True)
@@ -8124,6 +8279,7 @@ class TextMagicApi(object):
     def get_dedicated_number_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single dedicated number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_dedicated_number_with_http_info(id, async_req=True)
@@ -8200,6 +8356,7 @@ class TextMagicApi(object):
     def get_disallowed_rules(self, **kwargs):  # noqa: E501
         """Get an array of all rules that are disallowed to the current account.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_disallowed_rules(async_req=True)
@@ -8220,6 +8377,7 @@ class TextMagicApi(object):
     def get_disallowed_rules_with_http_info(self, **kwargs):  # noqa: E501
         """Get an array of all rules that are disallowed to the current account.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_disallowed_rules_with_http_info(async_req=True)
@@ -8289,6 +8447,7 @@ class TextMagicApi(object):
     def get_favourites(self, **kwargs):  # noqa: E501
         """Get favorite contacts and lists.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_favourites(async_req=True)
@@ -8312,6 +8471,7 @@ class TextMagicApi(object):
     def get_favourites_with_http_info(self, **kwargs):  # noqa: E501
         """Get favorite contacts and lists.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_favourites_with_http_info(async_req=True)
@@ -8390,6 +8550,7 @@ class TextMagicApi(object):
     def get_forwarded_calls(self, **kwargs):  # noqa: E501
         """Get all forwarded calls.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_forwarded_calls(async_req=True)
@@ -8412,6 +8573,7 @@ class TextMagicApi(object):
     def get_forwarded_calls_with_http_info(self, **kwargs):  # noqa: E501
         """Get all forwarded calls.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_forwarded_calls_with_http_info(async_req=True)
@@ -8487,6 +8649,7 @@ class TextMagicApi(object):
     def get_inbound_message(self, id, **kwargs):  # noqa: E501
         """Get a single inbox message.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_inbound_message(id, async_req=True)
@@ -8508,6 +8671,7 @@ class TextMagicApi(object):
     def get_inbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single inbox message.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_inbound_message_with_http_info(id, async_req=True)
@@ -8584,6 +8748,7 @@ class TextMagicApi(object):
     def get_inbound_messages_notification_settings(self, **kwargs):  # noqa: E501
         """Get inbound messages notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_inbound_messages_notification_settings(async_req=True)
@@ -8604,6 +8769,7 @@ class TextMagicApi(object):
     def get_inbound_messages_notification_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get inbound messages notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_inbound_messages_notification_settings_with_http_info(async_req=True)
@@ -8673,6 +8839,7 @@ class TextMagicApi(object):
     def get_invoices(self, **kwargs):  # noqa: E501
         """Return account invoices.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_invoices(async_req=True)
@@ -8695,6 +8862,7 @@ class TextMagicApi(object):
     def get_invoices_with_http_info(self, **kwargs):  # noqa: E501
         """Return account invoices.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_invoices_with_http_info(async_req=True)
@@ -8770,6 +8938,7 @@ class TextMagicApi(object):
     def get_list(self, id, **kwargs):  # noqa: E501
         """Get a single list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_list(id, async_req=True)
@@ -8791,6 +8960,7 @@ class TextMagicApi(object):
     def get_list_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_list_with_http_info(id, async_req=True)
@@ -8867,6 +9037,7 @@ class TextMagicApi(object):
     def get_list_contacts_ids(self, id, **kwargs):  # noqa: E501
         """Fetch all contacts IDs belonging to the list with ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_list_contacts_ids(id, async_req=True)
@@ -8888,6 +9059,7 @@ class TextMagicApi(object):
     def get_list_contacts_ids_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fetch all contacts IDs belonging to the list with ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_list_contacts_ids_with_http_info(id, async_req=True)
@@ -8964,6 +9136,7 @@ class TextMagicApi(object):
     def get_lists_of_contact(self, id, **kwargs):  # noqa: E501
         """Return lists which contact belongs to.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_lists_of_contact(id, async_req=True)
@@ -8987,6 +9160,7 @@ class TextMagicApi(object):
     def get_lists_of_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Return lists which contact belongs to.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_lists_of_contact_with_http_info(id, async_req=True)
@@ -9069,7 +9243,7 @@ class TextMagicApi(object):
     def get_message_preview(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-        Get messages preview (with tags merged) up to 100 messages per session.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview(async_req=True)
@@ -9107,7 +9281,7 @@ class TextMagicApi(object):
     def get_message_preview_with_http_info(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-        Get messages preview (with tags merged) up to 100 messages per session.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview_with_http_info(async_req=True)
@@ -9228,7 +9402,7 @@ class TextMagicApi(object):
     def get_message_price(self, **kwargs):  # noqa: E501
         """Check price  # noqa: E501
 
-        Check pricing for a new outbound message.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_price(async_req=True)
@@ -9267,7 +9441,7 @@ class TextMagicApi(object):
     def get_message_price_with_http_info(self, **kwargs):  # noqa: E501
         """Check price  # noqa: E501
 
-        Check pricing for a new outbound message.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_price_with_http_info(async_req=True)
@@ -9391,7 +9565,7 @@ class TextMagicApi(object):
     def get_message_prices(self, **kwargs):  # noqa: E501
         """Get pricing  # noqa: E501
 
-        Get message prices for all countries.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_prices(async_req=True)
@@ -9412,7 +9586,7 @@ class TextMagicApi(object):
     def get_message_prices_with_http_info(self, **kwargs):  # noqa: E501
         """Get pricing  # noqa: E501
 
-        Get message prices for all countries.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_prices_with_http_info(async_req=True)
@@ -9482,6 +9656,7 @@ class TextMagicApi(object):
     def get_message_session(self, id, **kwargs):  # noqa: E501
         """Get a message session.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_session(id, async_req=True)
@@ -9503,6 +9678,7 @@ class TextMagicApi(object):
     def get_message_session_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a message session.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_session_with_http_info(id, async_req=True)
@@ -9579,6 +9755,7 @@ class TextMagicApi(object):
     def get_message_session_stat(self, id, **kwargs):  # noqa: E501
         """Get sending session statistics.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_session_stat(id, async_req=True)
@@ -9601,6 +9778,7 @@ class TextMagicApi(object):
     def get_message_session_stat_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get sending session statistics.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_session_stat_with_http_info(id, async_req=True)
@@ -9680,7 +9858,7 @@ class TextMagicApi(object):
     def get_messages_by_session_id(self, id, **kwargs):  # noqa: E501
         """Fetch messages by given session id.  # noqa: E501
 
-        A useful synonym for \"messages/search\" command with provided \"sessionId\" parameter.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messages_by_session_id(id, async_req=True)
@@ -9706,7 +9884,7 @@ class TextMagicApi(object):
     def get_messages_by_session_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fetch messages by given session id.  # noqa: E501
 
-        A useful synonym for \"messages/search\" command with provided \"sessionId\" parameter.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messages_by_session_id_with_http_info(id, async_req=True)
@@ -9795,6 +9973,7 @@ class TextMagicApi(object):
     def get_messaging_counters(self, **kwargs):  # noqa: E501
         """Return counters for messaging data views.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_counters(async_req=True)
@@ -9815,6 +9994,7 @@ class TextMagicApi(object):
     def get_messaging_counters_with_http_info(self, **kwargs):  # noqa: E501
         """Return counters for messaging data views.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_counters_with_http_info(async_req=True)
@@ -9884,6 +10064,7 @@ class TextMagicApi(object):
     def get_messaging_stat(self, **kwargs):  # noqa: E501
         """Return messaging statistics.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_stat(async_req=True)
@@ -9907,6 +10088,7 @@ class TextMagicApi(object):
     def get_messaging_stat_with_http_info(self, **kwargs):  # noqa: E501
         """Return messaging statistics.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_stat_with_http_info(async_req=True)
@@ -9985,7 +10167,7 @@ class TextMagicApi(object):
     def get_outbound_message(self, id, **kwargs):  # noqa: E501
         """Get a single message  # noqa: E501
 
-        Get a single outgoing message.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_message(id, async_req=True)
@@ -10007,7 +10189,7 @@ class TextMagicApi(object):
     def get_outbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single message  # noqa: E501
 
-        Get a single outgoing message.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_message_with_http_info(id, async_req=True)
@@ -10084,7 +10266,7 @@ class TextMagicApi(object):
     def get_outbound_messages_history(self, **kwargs):  # noqa: E501
         """Get history  # noqa: E501
 
-        Get outbound messages history.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_messages_history(async_req=True)
@@ -10110,7 +10292,7 @@ class TextMagicApi(object):
     def get_outbound_messages_history_with_http_info(self, **kwargs):  # noqa: E501
         """Get history  # noqa: E501
 
-        Get outbound messages history.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_messages_history_with_http_info(async_req=True)
@@ -10195,6 +10377,7 @@ class TextMagicApi(object):
     def get_push_tokens(self, **kwargs):  # noqa: E501
         """Get all device tokens assigned to the current account  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_push_tokens(async_req=True)
@@ -10215,6 +10398,7 @@ class TextMagicApi(object):
     def get_push_tokens_with_http_info(self, **kwargs):  # noqa: E501
         """Get all device tokens assigned to the current account  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_push_tokens_with_http_info(async_req=True)
@@ -10284,6 +10468,7 @@ class TextMagicApi(object):
     def get_scheduled_message(self, id, **kwargs):  # noqa: E501
         """Get message schedule.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_scheduled_message(id, async_req=True)
@@ -10305,6 +10490,7 @@ class TextMagicApi(object):
     def get_scheduled_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get message schedule.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_scheduled_message_with_http_info(id, async_req=True)
@@ -10381,6 +10567,7 @@ class TextMagicApi(object):
     def get_sender_id(self, id, **kwargs):  # noqa: E501
         """Get a single Sender ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_id(id, async_req=True)
@@ -10402,6 +10589,7 @@ class TextMagicApi(object):
     def get_sender_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single Sender ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_id_with_http_info(id, async_req=True)
@@ -10478,6 +10666,7 @@ class TextMagicApi(object):
     def get_sender_ids(self, **kwargs):  # noqa: E501
         """Get all sender IDs of current user.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_ids(async_req=True)
@@ -10500,6 +10689,7 @@ class TextMagicApi(object):
     def get_sender_ids_with_http_info(self, **kwargs):  # noqa: E501
         """Get all sender IDs of current user.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_ids_with_http_info(async_req=True)
@@ -10575,6 +10765,7 @@ class TextMagicApi(object):
     def get_sender_settings(self, **kwargs):  # noqa: E501
         """Get current user sender settings.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_settings(async_req=True)
@@ -10596,6 +10787,7 @@ class TextMagicApi(object):
     def get_sender_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get current user sender settings.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_settings_with_http_info(async_req=True)
@@ -10668,6 +10860,7 @@ class TextMagicApi(object):
     def get_spending_stat(self, **kwargs):  # noqa: E501
         """Return account spending statistics.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_spending_stat(async_req=True)
@@ -10692,6 +10885,7 @@ class TextMagicApi(object):
     def get_spending_stat_with_http_info(self, **kwargs):  # noqa: E501
         """Return account spending statistics.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_spending_stat_with_http_info(async_req=True)
@@ -10773,6 +10967,7 @@ class TextMagicApi(object):
     def get_state(self, **kwargs):  # noqa: E501
         """Get current entities state  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_state(async_req=True)
@@ -10793,6 +10988,7 @@ class TextMagicApi(object):
     def get_state_with_http_info(self, **kwargs):  # noqa: E501
         """Get current entities state  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_state_with_http_info(async_req=True)
@@ -10862,6 +11058,7 @@ class TextMagicApi(object):
     def get_subaccount(self, id, **kwargs):  # noqa: E501
         """Get a single subaccount.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccount(id, async_req=True)
@@ -10883,6 +11080,7 @@ class TextMagicApi(object):
     def get_subaccount_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single subaccount.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccount_with_http_info(id, async_req=True)
@@ -10959,6 +11157,7 @@ class TextMagicApi(object):
     def get_subaccounts(self, **kwargs):  # noqa: E501
         """Get all subaccounts of current user.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts(async_req=True)
@@ -10981,6 +11180,7 @@ class TextMagicApi(object):
     def get_subaccounts_with_http_info(self, **kwargs):  # noqa: E501
         """Get all subaccounts of current user.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_http_info(async_req=True)
@@ -11056,7 +11256,7 @@ class TextMagicApi(object):
     def get_subaccounts_with_tokens(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
         """Get all subaccounts with their REST API tokens associated with specified app name.  # noqa: E501
 
-        When more than one token related to app name, last key will be returned.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, async_req=True)
@@ -11080,7 +11280,7 @@ class TextMagicApi(object):
     def get_subaccounts_with_tokens_with_http_info(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
         """Get all subaccounts with their REST API tokens associated with specified app name.  # noqa: E501
 
-        When more than one token related to app name, last key will be returned.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_tokens_with_http_info(get_subaccounts_with_tokens_input_object, async_req=True)
@@ -11163,6 +11363,7 @@ class TextMagicApi(object):
     def get_survey(self, id, **kwargs):  # noqa: E501
         """Get a survey by id.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_survey(id, async_req=True)
@@ -11184,6 +11385,7 @@ class TextMagicApi(object):
     def get_survey_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a survey by id.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_survey_with_http_info(id, async_req=True)
@@ -11260,6 +11462,7 @@ class TextMagicApi(object):
     def get_survey_node(self, id, **kwargs):  # noqa: E501
         """Get a node by id.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_survey_node(id, async_req=True)
@@ -11281,6 +11484,7 @@ class TextMagicApi(object):
     def get_survey_node_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a node by id.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_survey_node_with_http_info(id, async_req=True)
@@ -11357,6 +11561,7 @@ class TextMagicApi(object):
     def get_survey_nodes(self, id, **kwargs):  # noqa: E501
         """Fetch nodes by given survey id.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_survey_nodes(id, async_req=True)
@@ -11378,6 +11583,7 @@ class TextMagicApi(object):
     def get_survey_nodes_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fetch nodes by given survey id.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_survey_nodes_with_http_info(id, async_req=True)
@@ -11454,6 +11660,7 @@ class TextMagicApi(object):
     def get_surveys(self, **kwargs):  # noqa: E501
         """Get all user surveys.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_surveys(async_req=True)
@@ -11476,6 +11683,7 @@ class TextMagicApi(object):
     def get_surveys_with_http_info(self, **kwargs):  # noqa: E501
         """Get all user surveys.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_surveys_with_http_info(async_req=True)
@@ -11551,6 +11759,7 @@ class TextMagicApi(object):
     def get_template(self, id, **kwargs):  # noqa: E501
         """Get a single template.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_template(id, async_req=True)
@@ -11572,6 +11781,7 @@ class TextMagicApi(object):
     def get_template_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single template.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_template_with_http_info(id, async_req=True)
@@ -11648,6 +11858,7 @@ class TextMagicApi(object):
     def get_timezones(self, **kwargs):  # noqa: E501
         """Return all available timezone IDs.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_timezones(async_req=True)
@@ -11669,6 +11880,7 @@ class TextMagicApi(object):
     def get_timezones_with_http_info(self, **kwargs):  # noqa: E501
         """Return all available timezone IDs.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_timezones_with_http_info(async_req=True)
@@ -11741,6 +11953,7 @@ class TextMagicApi(object):
     def get_unread_messages_total(self, **kwargs):  # noqa: E501
         """Get total amount of unread messages in the current user chats.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unread_messages_total(async_req=True)
@@ -11761,6 +11974,7 @@ class TextMagicApi(object):
     def get_unread_messages_total_with_http_info(self, **kwargs):  # noqa: E501
         """Get total amount of unread messages in the current user chats.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unread_messages_total_with_http_info(async_req=True)
@@ -11830,6 +12044,7 @@ class TextMagicApi(object):
     def get_unsubscribed_contact(self, id, **kwargs):  # noqa: E501
         """Get a single unsubscribed contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribed_contact(id, async_req=True)
@@ -11851,6 +12066,7 @@ class TextMagicApi(object):
     def get_unsubscribed_contact_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single unsubscribed contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribed_contact_with_http_info(id, async_req=True)
@@ -11927,6 +12143,7 @@ class TextMagicApi(object):
     def get_unsubscribers(self, **kwargs):  # noqa: E501
         """Get all contact have unsubscribed from your communication.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribers(async_req=True)
@@ -11949,6 +12166,7 @@ class TextMagicApi(object):
     def get_unsubscribers_with_http_info(self, **kwargs):  # noqa: E501
         """Get all contact have unsubscribed from your communication.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribers_with_http_info(async_req=True)
@@ -12024,6 +12242,7 @@ class TextMagicApi(object):
     def get_user_dedicated_numbers(self, **kwargs):  # noqa: E501
         """Get user's dedicated numbers.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_dedicated_numbers(async_req=True)
@@ -12047,6 +12266,7 @@ class TextMagicApi(object):
     def get_user_dedicated_numbers_with_http_info(self, **kwargs):  # noqa: E501
         """Get user's dedicated numbers.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_dedicated_numbers_with_http_info(async_req=True)
@@ -12125,6 +12345,7 @@ class TextMagicApi(object):
     def get_user_lists(self, **kwargs):  # noqa: E501
         """Get all user lists.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_lists(async_req=True)
@@ -12151,6 +12372,7 @@ class TextMagicApi(object):
     def get_user_lists_with_http_info(self, **kwargs):  # noqa: E501
         """Get all user lists.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_lists_with_http_info(async_req=True)
@@ -12238,6 +12460,7 @@ class TextMagicApi(object):
     def get_versions(self, **kwargs):  # noqa: E501
         """Get minimal valid apps versions  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_versions(async_req=True)
@@ -12258,6 +12481,7 @@ class TextMagicApi(object):
     def get_versions_with_http_info(self, **kwargs):  # noqa: E501
         """Get minimal valid apps versions  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_versions_with_http_info(async_req=True)
@@ -12327,6 +12551,7 @@ class TextMagicApi(object):
     def invite_subaccount(self, invite_subaccount_input_object, **kwargs):  # noqa: E501
         """Invite new subaccount.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.invite_subaccount(invite_subaccount_input_object, async_req=True)
@@ -12348,6 +12573,7 @@ class TextMagicApi(object):
     def invite_subaccount_with_http_info(self, invite_subaccount_input_object, **kwargs):  # noqa: E501
         """Invite new subaccount.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.invite_subaccount_with_http_info(invite_subaccount_input_object, async_req=True)
@@ -12420,6 +12646,7 @@ class TextMagicApi(object):
     def mark_chats_read_bulk(self, mark_chats_read_bulk_input_object, **kwargs):  # noqa: E501
         """Mark several chats as read by chat ids or mark all chats as read  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_read_bulk(mark_chats_read_bulk_input_object, async_req=True)
@@ -12441,6 +12668,7 @@ class TextMagicApi(object):
     def mark_chats_read_bulk_with_http_info(self, mark_chats_read_bulk_input_object, **kwargs):  # noqa: E501
         """Mark several chats as read by chat ids or mark all chats as read  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_read_bulk_with_http_info(mark_chats_read_bulk_input_object, async_req=True)
@@ -12513,6 +12741,7 @@ class TextMagicApi(object):
     def mark_chats_unread_bulk(self, mark_chats_unread_bulk_input_object, **kwargs):  # noqa: E501
         """Mark several chats as UNread by chat ids or mark all chats as UNread  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_unread_bulk(mark_chats_unread_bulk_input_object, async_req=True)
@@ -12534,6 +12763,7 @@ class TextMagicApi(object):
     def mark_chats_unread_bulk_with_http_info(self, mark_chats_unread_bulk_input_object, **kwargs):  # noqa: E501
         """Mark several chats as UNread by chat ids or mark all chats as UNread  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_unread_bulk_with_http_info(mark_chats_unread_bulk_input_object, async_req=True)
@@ -12606,6 +12836,7 @@ class TextMagicApi(object):
     def merge_survey_nodes(self, merge_survey_nodes_input_object, **kwargs):  # noqa: E501
         """Merge two question nodes.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.merge_survey_nodes(merge_survey_nodes_input_object, async_req=True)
@@ -12627,6 +12858,7 @@ class TextMagicApi(object):
     def merge_survey_nodes_with_http_info(self, merge_survey_nodes_input_object, **kwargs):  # noqa: E501
         """Merge two question nodes.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.merge_survey_nodes_with_http_info(merge_survey_nodes_input_object, async_req=True)
@@ -12699,6 +12931,7 @@ class TextMagicApi(object):
     def mute_chat(self, mute_chat_input_object, **kwargs):  # noqa: E501
         """Set mute mode.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chat(mute_chat_input_object, async_req=True)
@@ -12720,6 +12953,7 @@ class TextMagicApi(object):
     def mute_chat_with_http_info(self, mute_chat_input_object, **kwargs):  # noqa: E501
         """Set mute mode.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chat_with_http_info(mute_chat_input_object, async_req=True)
@@ -12796,6 +13030,7 @@ class TextMagicApi(object):
     def mute_chats_bulk(self, mute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Mute several chats by chat ids or mute all chats  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chats_bulk(mute_chats_bulk_input_object, async_req=True)
@@ -12817,6 +13052,7 @@ class TextMagicApi(object):
     def mute_chats_bulk_with_http_info(self, mute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Mute several chats by chat ids or mute all chats  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chats_bulk_with_http_info(mute_chats_bulk_input_object, async_req=True)
@@ -12889,6 +13125,7 @@ class TextMagicApi(object):
     def ping(self, **kwargs):  # noqa: E501
         """Just does a pong.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ping(async_req=True)
@@ -12909,6 +13146,7 @@ class TextMagicApi(object):
     def ping_with_http_info(self, **kwargs):  # noqa: E501
         """Just does a pong.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ping_with_http_info(async_req=True)
@@ -12978,6 +13216,7 @@ class TextMagicApi(object):
     def reopen_chats_bulk(self, reopen_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Reopen chats by chat ids or reopen all chats  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.reopen_chats_bulk(reopen_chats_bulk_input_object, async_req=True)
@@ -12999,6 +13238,7 @@ class TextMagicApi(object):
     def reopen_chats_bulk_with_http_info(self, reopen_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Reopen chats by chat ids or reopen all chats  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.reopen_chats_bulk_with_http_info(reopen_chats_bulk_input_object, async_req=True)
@@ -13071,7 +13311,7 @@ class TextMagicApi(object):
     def request_new_subaccount_token(self, request_new_subaccount_token_input_object, **kwargs):  # noqa: E501
         """Request a new REST API token for subaccount.  # noqa: E501
 
-        Returning user object, key and app name.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_new_subaccount_token(request_new_subaccount_token_input_object, async_req=True)
@@ -13093,7 +13333,7 @@ class TextMagicApi(object):
     def request_new_subaccount_token_with_http_info(self, request_new_subaccount_token_input_object, **kwargs):  # noqa: E501
         """Request a new REST API token for subaccount.  # noqa: E501
 
-        Returning user object, key and app name.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_new_subaccount_token_with_http_info(request_new_subaccount_token_input_object, async_req=True)
@@ -13170,6 +13410,7 @@ class TextMagicApi(object):
     def request_sender_id(self, request_sender_id_input_object, **kwargs):  # noqa: E501
         """Request for a new Sender ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_sender_id(request_sender_id_input_object, async_req=True)
@@ -13191,6 +13432,7 @@ class TextMagicApi(object):
     def request_sender_id_with_http_info(self, request_sender_id_input_object, **kwargs):  # noqa: E501
         """Request for a new Sender ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_sender_id_with_http_info(request_sender_id_input_object, async_req=True)
@@ -13267,6 +13509,7 @@ class TextMagicApi(object):
     def reset_survey(self, id, **kwargs):  # noqa: E501
         """Reset a survey flow.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.reset_survey(id, async_req=True)
@@ -13288,6 +13531,7 @@ class TextMagicApi(object):
     def reset_survey_with_http_info(self, id, **kwargs):  # noqa: E501
         """Reset a survey flow.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.reset_survey_with_http_info(id, async_req=True)
@@ -13364,6 +13608,7 @@ class TextMagicApi(object):
     def search_chats(self, **kwargs):  # noqa: E501
         """Find chats by inbound or outbound messages text.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats(async_req=True)
@@ -13387,6 +13632,7 @@ class TextMagicApi(object):
     def search_chats_with_http_info(self, **kwargs):  # noqa: E501
         """Find chats by inbound or outbound messages text.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_with_http_info(async_req=True)
@@ -13465,6 +13711,7 @@ class TextMagicApi(object):
     def search_chats_by_ids(self, **kwargs):  # noqa: E501
         """Find chats by IDs.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_ids(async_req=True)
@@ -13488,6 +13735,7 @@ class TextMagicApi(object):
     def search_chats_by_ids_with_http_info(self, **kwargs):  # noqa: E501
         """Find chats by IDs.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_ids_with_http_info(async_req=True)
@@ -13568,6 +13816,7 @@ class TextMagicApi(object):
     def search_chats_by_receipent(self, **kwargs):  # noqa: E501
         """Find chats by recipient (contact, list name or phone number).  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_receipent(async_req=True)
@@ -13592,6 +13841,7 @@ class TextMagicApi(object):
     def search_chats_by_receipent_with_http_info(self, **kwargs):  # noqa: E501
         """Find chats by recipient (contact, list name or phone number).  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_receipent_with_http_info(async_req=True)
@@ -13673,6 +13923,7 @@ class TextMagicApi(object):
     def search_contacts(self, **kwargs):  # noqa: E501
         """Find user contacts by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_contacts(async_req=True)
@@ -13704,6 +13955,7 @@ class TextMagicApi(object):
     def search_contacts_with_http_info(self, **kwargs):  # noqa: E501
         """Find user contacts by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_contacts_with_http_info(async_req=True)
@@ -13808,6 +14060,7 @@ class TextMagicApi(object):
     def search_inbound_messages(self, **kwargs):  # noqa: E501
         """Find inbound messages by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_inbound_messages(async_req=True)
@@ -13835,6 +14088,7 @@ class TextMagicApi(object):
     def search_inbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Find inbound messages by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_inbound_messages_with_http_info(async_req=True)
@@ -13927,6 +14181,7 @@ class TextMagicApi(object):
     def search_lists(self, **kwargs):  # noqa: E501
         """Find contact lists by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_lists(async_req=True)
@@ -13955,6 +14210,7 @@ class TextMagicApi(object):
     def search_lists_with_http_info(self, **kwargs):  # noqa: E501
         """Find contact lists by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_lists_with_http_info(async_req=True)
@@ -14048,7 +14304,7 @@ class TextMagicApi(object):
     def search_outbound_messages(self, **kwargs):  # noqa: E501
         """Find messages  # noqa: E501
 
-        Find outbound messages by given parameters.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_outbound_messages(async_req=True)
@@ -14077,7 +14333,7 @@ class TextMagicApi(object):
     def search_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Find messages  # noqa: E501
 
-        Find outbound messages by given parameters.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_outbound_messages_with_http_info(async_req=True)
@@ -14173,6 +14429,7 @@ class TextMagicApi(object):
     def search_scheduled_messages(self, **kwargs):  # noqa: E501
         """Find scheduled messages by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_scheduled_messages(async_req=True)
@@ -14200,6 +14457,7 @@ class TextMagicApi(object):
     def search_scheduled_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Find scheduled messages by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_scheduled_messages_with_http_info(async_req=True)
@@ -14292,6 +14550,7 @@ class TextMagicApi(object):
     def search_templates(self, **kwargs):  # noqa: E501
         """Find user templates by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_templates(async_req=True)
@@ -14317,6 +14576,7 @@ class TextMagicApi(object):
     def search_templates_with_http_info(self, **kwargs):  # noqa: E501
         """Find user templates by given parameters.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_templates_with_http_info(async_req=True)
@@ -14401,6 +14661,7 @@ class TextMagicApi(object):
     def send_email_verification_code(self, **kwargs):  # noqa: E501
         """Send user email verification  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_email_verification_code(async_req=True)
@@ -14421,6 +14682,7 @@ class TextMagicApi(object):
     def send_email_verification_code_with_http_info(self, **kwargs):  # noqa: E501
         """Send user email verification  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_email_verification_code_with_http_info(async_req=True)
@@ -14490,7 +14752,7 @@ class TextMagicApi(object):
     def send_message(self, send_message_input_object, **kwargs):  # noqa: E501
         """Send message  # noqa: E501
 
-        The main entrypoint to send messages. See examples above for the reference.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_message(send_message_input_object, async_req=True)
@@ -14512,7 +14774,7 @@ class TextMagicApi(object):
     def send_message_with_http_info(self, send_message_input_object, **kwargs):  # noqa: E501
         """Send message  # noqa: E501
 
-        The main entrypoint to send messages. See examples above for the reference.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_message_with_http_info(send_message_input_object, async_req=True)
@@ -14589,6 +14851,7 @@ class TextMagicApi(object):
     def send_phone_verification_code(self, **kwargs):  # noqa: E501
         """Send user phone verification  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_phone_verification_code(async_req=True)
@@ -14609,6 +14872,7 @@ class TextMagicApi(object):
     def send_phone_verification_code_with_http_info(self, **kwargs):  # noqa: E501
         """Send user phone verification  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_phone_verification_code_with_http_info(async_req=True)
@@ -14678,6 +14942,7 @@ class TextMagicApi(object):
     def set_chat_status(self, set_chat_status_input_object, **kwargs):  # noqa: E501
         """Set status of the chat given by ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.set_chat_status(set_chat_status_input_object, async_req=True)
@@ -14699,6 +14964,7 @@ class TextMagicApi(object):
     def set_chat_status_with_http_info(self, set_chat_status_input_object, **kwargs):  # noqa: E501
         """Set status of the chat given by ID.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.set_chat_status_with_http_info(set_chat_status_input_object, async_req=True)
@@ -14775,6 +15041,7 @@ class TextMagicApi(object):
     def start_survey(self, id, **kwargs):  # noqa: E501
         """Start a survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.start_survey(id, async_req=True)
@@ -14796,6 +15063,7 @@ class TextMagicApi(object):
     def start_survey_with_http_info(self, id, **kwargs):  # noqa: E501
         """Start a survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.start_survey_with_http_info(id, async_req=True)
@@ -14872,6 +15140,7 @@ class TextMagicApi(object):
     def unblock_contact(self, unblock_contact_input_object, **kwargs):  # noqa: E501
         """Unblock contact by phone number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contact(unblock_contact_input_object, async_req=True)
@@ -14893,6 +15162,7 @@ class TextMagicApi(object):
     def unblock_contact_with_http_info(self, unblock_contact_input_object, **kwargs):  # noqa: E501
         """Unblock contact by phone number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contact_with_http_info(unblock_contact_input_object, async_req=True)
@@ -14965,6 +15235,7 @@ class TextMagicApi(object):
     def unblock_contacts_bulk(self, unblock_contacts_bulk_input_object, **kwargs):  # noqa: E501
         """Unblock several contacts by blocked contact ids or unblock all contacts  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contacts_bulk(unblock_contacts_bulk_input_object, async_req=True)
@@ -14986,6 +15257,7 @@ class TextMagicApi(object):
     def unblock_contacts_bulk_with_http_info(self, unblock_contacts_bulk_input_object, **kwargs):  # noqa: E501
         """Unblock several contacts by blocked contact ids or unblock all contacts  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unblock_contacts_bulk_with_http_info(unblock_contacts_bulk_input_object, async_req=True)
@@ -15058,6 +15330,7 @@ class TextMagicApi(object):
     def unmute_chats_bulk(self, unmute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Unmute several chats by chat ids or unmute all chats  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unmute_chats_bulk(unmute_chats_bulk_input_object, async_req=True)
@@ -15079,6 +15352,7 @@ class TextMagicApi(object):
     def unmute_chats_bulk_with_http_info(self, unmute_chats_bulk_input_object, **kwargs):  # noqa: E501
         """Unmute several chats by chat ids or unmute all chats  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unmute_chats_bulk_with_http_info(unmute_chats_bulk_input_object, async_req=True)
@@ -15151,6 +15425,7 @@ class TextMagicApi(object):
     def unsubscribe_contact(self, unsubscribe_contact_input_object, **kwargs):  # noqa: E501
         """Unsubscribe contact from your communication by phone number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unsubscribe_contact(unsubscribe_contact_input_object, async_req=True)
@@ -15172,6 +15447,7 @@ class TextMagicApi(object):
     def unsubscribe_contact_with_http_info(self, unsubscribe_contact_input_object, **kwargs):  # noqa: E501
         """Unsubscribe contact from your communication by phone number.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unsubscribe_contact_with_http_info(unsubscribe_contact_input_object, async_req=True)
@@ -15248,6 +15524,7 @@ class TextMagicApi(object):
     def update_balance_notification_settings(self, update_balance_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update balance notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_balance_notification_settings(update_balance_notification_settings_input_object, async_req=True)
@@ -15269,6 +15546,7 @@ class TextMagicApi(object):
     def update_balance_notification_settings_with_http_info(self, update_balance_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update balance notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_balance_notification_settings_with_http_info(update_balance_notification_settings_input_object, async_req=True)
@@ -15341,6 +15619,7 @@ class TextMagicApi(object):
     def update_callback_settings(self, update_callback_settings_input_object, **kwargs):  # noqa: E501
         """Update callback URL settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_callback_settings(update_callback_settings_input_object, async_req=True)
@@ -15362,6 +15641,7 @@ class TextMagicApi(object):
     def update_callback_settings_with_http_info(self, update_callback_settings_input_object, **kwargs):  # noqa: E501
         """Update callback URL settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_callback_settings_with_http_info(update_callback_settings_input_object, async_req=True)
@@ -15438,6 +15718,7 @@ class TextMagicApi(object):
     def update_chat_desktop_notification_settings(self, update_chat_desktop_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update chat desktop notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_chat_desktop_notification_settings(update_chat_desktop_notification_settings_input_object, async_req=True)
@@ -15459,6 +15740,7 @@ class TextMagicApi(object):
     def update_chat_desktop_notification_settings_with_http_info(self, update_chat_desktop_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update chat desktop notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_chat_desktop_notification_settings_with_http_info(update_chat_desktop_notification_settings_input_object, async_req=True)
@@ -15535,6 +15817,7 @@ class TextMagicApi(object):
     def update_contact(self, update_contact_input_object, id, **kwargs):  # noqa: E501
         """Update existing contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_contact(update_contact_input_object, id, async_req=True)
@@ -15557,6 +15840,7 @@ class TextMagicApi(object):
     def update_contact_with_http_info(self, update_contact_input_object, id, **kwargs):  # noqa: E501
         """Update existing contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_contact_with_http_info(update_contact_input_object, id, async_req=True)
@@ -15640,6 +15924,7 @@ class TextMagicApi(object):
     def update_contact_note(self, update_contact_note_input_object, id, **kwargs):  # noqa: E501
         """Update existing contact note.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_contact_note(update_contact_note_input_object, id, async_req=True)
@@ -15662,6 +15947,7 @@ class TextMagicApi(object):
     def update_contact_note_with_http_info(self, update_contact_note_input_object, id, **kwargs):  # noqa: E501
         """Update existing contact note.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_contact_note_with_http_info(update_contact_note_input_object, id, async_req=True)
@@ -15745,6 +16031,7 @@ class TextMagicApi(object):
     def update_current_user(self, update_current_user_input_object, **kwargs):  # noqa: E501
         """Update current user info.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_current_user(update_current_user_input_object, async_req=True)
@@ -15766,6 +16053,7 @@ class TextMagicApi(object):
     def update_current_user_with_http_info(self, update_current_user_input_object, **kwargs):  # noqa: E501
         """Update current user info.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_current_user_with_http_info(update_current_user_input_object, async_req=True)
@@ -15842,6 +16130,7 @@ class TextMagicApi(object):
     def update_custom_field(self, update_custom_field_input_object, id, **kwargs):  # noqa: E501
         """Update existing custom field.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_custom_field(update_custom_field_input_object, id, async_req=True)
@@ -15864,6 +16153,7 @@ class TextMagicApi(object):
     def update_custom_field_with_http_info(self, update_custom_field_input_object, id, **kwargs):  # noqa: E501
         """Update existing custom field.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_custom_field_with_http_info(update_custom_field_input_object, id, async_req=True)
@@ -15947,6 +16237,7 @@ class TextMagicApi(object):
     def update_custom_field_value(self, update_custom_field_value_input_object, id, **kwargs):  # noqa: E501
         """Update contact's custom field value.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_custom_field_value(update_custom_field_value_input_object, id, async_req=True)
@@ -15969,6 +16260,7 @@ class TextMagicApi(object):
     def update_custom_field_value_with_http_info(self, update_custom_field_value_input_object, id, **kwargs):  # noqa: E501
         """Update contact's custom field value.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_custom_field_value_with_http_info(update_custom_field_value_input_object, id, async_req=True)
@@ -16052,6 +16344,7 @@ class TextMagicApi(object):
     def update_inbound_messages_notification_settings(self, update_inbound_messages_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update inbound messages notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_inbound_messages_notification_settings(update_inbound_messages_notification_settings_input_object, async_req=True)
@@ -16073,6 +16366,7 @@ class TextMagicApi(object):
     def update_inbound_messages_notification_settings_with_http_info(self, update_inbound_messages_notification_settings_input_object, **kwargs):  # noqa: E501
         """Update inbound messages notification settings  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_inbound_messages_notification_settings_with_http_info(update_inbound_messages_notification_settings_input_object, async_req=True)
@@ -16145,6 +16439,7 @@ class TextMagicApi(object):
     def update_list(self, id, **kwargs):  # noqa: E501
         """Update existing list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_list(id, async_req=True)
@@ -16167,6 +16462,7 @@ class TextMagicApi(object):
     def update_list_with_http_info(self, id, **kwargs):  # noqa: E501
         """Update existing list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_list_with_http_info(id, async_req=True)
@@ -16246,6 +16542,7 @@ class TextMagicApi(object):
     def update_password(self, update_password_input_object, **kwargs):  # noqa: E501
         """Change user password.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_password(update_password_input_object, async_req=True)
@@ -16267,6 +16564,7 @@ class TextMagicApi(object):
     def update_password_with_http_info(self, update_password_input_object, **kwargs):  # noqa: E501
         """Change user password.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_password_with_http_info(update_password_input_object, async_req=True)
@@ -16339,6 +16637,7 @@ class TextMagicApi(object):
     def update_sender_setting(self, update_sender_setting_input_object, **kwargs):  # noqa: E501
         """Change sender settings for specified country.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_sender_setting(update_sender_setting_input_object, async_req=True)
@@ -16360,6 +16659,7 @@ class TextMagicApi(object):
     def update_sender_setting_with_http_info(self, update_sender_setting_input_object, **kwargs):  # noqa: E501
         """Change sender settings for specified country.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_sender_setting_with_http_info(update_sender_setting_input_object, async_req=True)
@@ -16432,6 +16732,7 @@ class TextMagicApi(object):
     def update_survey(self, update_survey_input_object, id, **kwargs):  # noqa: E501
         """Update existing survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_survey(update_survey_input_object, id, async_req=True)
@@ -16454,6 +16755,7 @@ class TextMagicApi(object):
     def update_survey_with_http_info(self, update_survey_input_object, id, **kwargs):  # noqa: E501
         """Update existing survey.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_survey_with_http_info(update_survey_input_object, id, async_req=True)
@@ -16537,6 +16839,7 @@ class TextMagicApi(object):
     def update_survey_node(self, update_survey_node_input_object, id, **kwargs):  # noqa: E501
         """Update existing node.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_survey_node(update_survey_node_input_object, id, async_req=True)
@@ -16559,6 +16862,7 @@ class TextMagicApi(object):
     def update_survey_node_with_http_info(self, update_survey_node_input_object, id, **kwargs):  # noqa: E501
         """Update existing node.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_survey_node_with_http_info(update_survey_node_input_object, id, async_req=True)
@@ -16642,6 +16946,7 @@ class TextMagicApi(object):
     def update_template(self, update_template_input_object, id, **kwargs):  # noqa: E501
         """Update existing template.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_template(update_template_input_object, id, async_req=True)
@@ -16664,6 +16969,7 @@ class TextMagicApi(object):
     def update_template_with_http_info(self, update_template_input_object, id, **kwargs):  # noqa: E501
         """Update existing template.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_template_with_http_info(update_template_input_object, id, async_req=True)
@@ -16747,6 +17053,7 @@ class TextMagicApi(object):
     def upload_avatar(self, image, **kwargs):  # noqa: E501
         """Add an avatar for the current user.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_avatar(image, async_req=True)
@@ -16768,6 +17075,7 @@ class TextMagicApi(object):
     def upload_avatar_with_http_info(self, image, **kwargs):  # noqa: E501
         """Add an avatar for the current user.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_avatar_with_http_info(image, async_req=True)
@@ -16844,6 +17152,7 @@ class TextMagicApi(object):
     def upload_contact_avatar(self, image, id, **kwargs):  # noqa: E501
         """Add an avatar for the contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_contact_avatar(image, id, async_req=True)
@@ -16866,6 +17175,7 @@ class TextMagicApi(object):
     def upload_contact_avatar_with_http_info(self, image, id, **kwargs):  # noqa: E501
         """Add an avatar for the contact.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_contact_avatar_with_http_info(image, id, async_req=True)
@@ -16949,6 +17259,7 @@ class TextMagicApi(object):
     def upload_list_avatar(self, image, id, **kwargs):  # noqa: E501
         """Add an avatar for the list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_list_avatar(image, id, async_req=True)
@@ -16971,6 +17282,7 @@ class TextMagicApi(object):
     def upload_list_avatar_with_http_info(self, image, id, **kwargs):  # noqa: E501
         """Add an avatar for the list.  # noqa: E501
 
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_list_avatar_with_http_info(image, id, async_req=True)
@@ -17054,7 +17366,7 @@ class TextMagicApi(object):
     def upload_message_attachment(self, file, **kwargs):  # noqa: E501
         """Upload message attachment  # noqa: E501
 
-        Upload a new file to insert it as a link.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_message_attachment(file, async_req=True)
@@ -17076,7 +17388,7 @@ class TextMagicApi(object):
     def upload_message_attachment_with_http_info(self, file, **kwargs):  # noqa: E501
         """Upload message attachment  # noqa: E501
 
-        Upload a new file to insert it as a link.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_message_attachment_with_http_info(file, async_req=True)
