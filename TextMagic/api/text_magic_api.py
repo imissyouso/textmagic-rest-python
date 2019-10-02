@@ -1024,7 +1024,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def close_subaccount(self, id, **kwargs):  # noqa: E501
-        """Close subaccount.  # noqa: E501
+        """Close sub-account  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1046,7 +1046,7 @@ class TextMagicApi(object):
             return data
 
     def close_subaccount_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Close subaccount.  # noqa: E501
+        """Close sub-account  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2101,7 +2101,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_avatar(self, **kwargs):  # noqa: E501
-        """Delete an avatar for the current user.\\  # noqa: E501
+        """Delete an avatar  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2122,7 +2122,7 @@ class TextMagicApi(object):
             return data
 
     def delete_avatar_with_http_info(self, **kwargs):  # noqa: E501
-        """Delete an avatar for the current user.\\  # noqa: E501
+        """Delete an avatar  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -8164,7 +8164,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_current_user(self, **kwargs):  # noqa: E501
-        """Get current user info.  # noqa: E501
+        """Get current account information  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -8185,7 +8185,7 @@ class TextMagicApi(object):
             return data
 
     def get_current_user_with_http_info(self, **kwargs):  # noqa: E501
-        """Get current user info.  # noqa: E501
+        """Get current account information  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -8552,9 +8552,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_disallowed_rules(self, **kwargs):  # noqa: E501
-        """Get an array of all rules that are disallowed to the current account.  # noqa: E501
+        """Get disallowed permissions  # noqa: E501
 
-          # noqa: E501
+        Get an array of all rules that are disallowed to the current account.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_disallowed_rules(async_req=True)
@@ -8573,9 +8573,9 @@ class TextMagicApi(object):
             return data
 
     def get_disallowed_rules_with_http_info(self, **kwargs):  # noqa: E501
-        """Get an array of all rules that are disallowed to the current account.  # noqa: E501
+        """Get disallowed permissions  # noqa: E501
 
-          # noqa: E501
+        Get an array of all rules that are disallowed to the current account.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_disallowed_rules_with_http_info(async_req=True)
@@ -8936,9 +8936,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_invoices(self, **kwargs):  # noqa: E501
-        """Return account invoices.  # noqa: E501
+        """Get all invoices  # noqa: E501
 
-          # noqa: E501
+        With the TextMagic API, you can check the invoices and transactions for your account.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_invoices(async_req=True)
@@ -8959,9 +8959,9 @@ class TextMagicApi(object):
             return data
 
     def get_invoices_with_http_info(self, **kwargs):  # noqa: E501
-        """Return account invoices.  # noqa: E501
+        """Get all invoices  # noqa: E501
 
-          # noqa: E501
+        With the TextMagic API, you can check the invoices and transactions for your account.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_invoices_with_http_info(async_req=True)
@@ -10070,9 +10070,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_messaging_counters(self, **kwargs):  # noqa: E501
-        """Return counters for messaging data views.  # noqa: E501
+        """Get sent/received messages counters values  # noqa: E501
 
-          # noqa: E501
+        Get total contacts, sent messages and received messages counters values.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_counters(async_req=True)
@@ -10091,9 +10091,9 @@ class TextMagicApi(object):
             return data
 
     def get_messaging_counters_with_http_info(self, **kwargs):  # noqa: E501
-        """Return counters for messaging data views.  # noqa: E501
+        """Get sent/received messages counters values  # noqa: E501
 
-          # noqa: E501
+        Get total contacts, sent messages and received messages counters values.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messaging_counters_with_http_info(async_req=True)
@@ -10161,7 +10161,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_messaging_stat(self, **kwargs):  # noqa: E501
-        """Return messaging statistics.  # noqa: E501
+        """Get messaging statistics  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10170,9 +10170,9 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str by: Group results by specified period: off, day, month or year. Default is off
-        :param int start: Start date in unix timestamp format. Default is 7 days ago
-        :param str end: End date in unix timestamp format. Default is now
+        :param str by: *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year 
+        :param int start: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+        :param str end: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
         :return: GetMessagingStatResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10185,7 +10185,7 @@ class TextMagicApi(object):
             return data
 
     def get_messaging_stat_with_http_info(self, **kwargs):  # noqa: E501
-        """Return messaging statistics.  # noqa: E501
+        """Get messaging statistics  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10194,9 +10194,9 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str by: Group results by specified period: off, day, month or year. Default is off
-        :param int start: Start date in unix timestamp format. Default is 7 days ago
-        :param str end: End date in unix timestamp format. Default is now
+        :param str by: *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year 
+        :param int start: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+        :param str end: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
         :return: GetMessagingStatResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10957,7 +10957,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_spending_stat(self, **kwargs):  # noqa: E501
-        """Return account spending statistics.  # noqa: E501
+        """Get spending statistics  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10968,8 +10968,8 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int start: Optional. Start date in unix timestamp format. Default is 7 days ago
-        :param int end: Optional. End date in unix timestamp format. Default is now
+        :param int start: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+        :param str end: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
         :return: GetSpendingStatPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10982,7 +10982,7 @@ class TextMagicApi(object):
             return data
 
     def get_spending_stat_with_http_info(self, **kwargs):  # noqa: E501
-        """Return account spending statistics.  # noqa: E501
+        """Get spending statistics  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10993,8 +10993,8 @@ class TextMagicApi(object):
         :param async_req bool
         :param int page: Fetch specified results page.
         :param int limit: The number of results per page.
-        :param int start: Optional. Start date in unix timestamp format. Default is 7 days ago
-        :param int end: Optional. End date in unix timestamp format. Default is now
+        :param int start: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+        :param str end: Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
         :return: GetSpendingStatPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11155,7 +11155,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_subaccount(self, id, **kwargs):  # noqa: E501
-        """Get a single subaccount.  # noqa: E501
+        """Get sub-account information  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -11177,7 +11177,7 @@ class TextMagicApi(object):
             return data
 
     def get_subaccount_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get a single subaccount.  # noqa: E501
+        """Get sub-account information  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -11254,7 +11254,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_subaccounts(self, **kwargs):  # noqa: E501
-        """Get all subaccounts of current user.  # noqa: E501
+        """Get sub-accounts list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -11277,7 +11277,7 @@ class TextMagicApi(object):
             return data
 
     def get_subaccounts_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all subaccounts of current user.  # noqa: E501
+        """Get sub-accounts list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -11353,9 +11353,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_subaccounts_with_tokens(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
-        """Get all subaccounts with their REST API tokens associated with specified app name.  # noqa: E501
+        """Get all sub-accounts with their REST API tokens associated with app name  # noqa: E501
 
-        When more than one token related to app name, last key will be returned.  # noqa: E501
+        Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, async_req=True)
@@ -11377,9 +11377,9 @@ class TextMagicApi(object):
             return data
 
     def get_subaccounts_with_tokens_with_http_info(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
-        """Get all subaccounts with their REST API tokens associated with specified app name.  # noqa: E501
+        """Get all sub-accounts with their REST API tokens associated with app name  # noqa: E501
 
-        When more than one token related to app name, last key will be returned.  # noqa: E501
+        Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_tokens_with_http_info(get_subaccounts_with_tokens_input_object, async_req=True)
@@ -12648,7 +12648,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def invite_subaccount(self, invite_subaccount_input_object, **kwargs):  # noqa: E501
-        """Invite new subaccount.  # noqa: E501
+        """Invite a new sub-account  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -12670,7 +12670,7 @@ class TextMagicApi(object):
             return data
 
     def invite_subaccount_with_http_info(self, invite_subaccount_input_object, **kwargs):  # noqa: E501
-        """Invite new subaccount.  # noqa: E501
+        """Invite a new sub-account  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -13408,7 +13408,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def request_new_subaccount_token(self, request_new_subaccount_token_input_object, **kwargs):  # noqa: E501
-        """Request a new REST API token for subaccount.  # noqa: E501
+        """Request a new REST API token for sub-account  # noqa: E501
 
         Returning user object, key and app name.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -13430,7 +13430,7 @@ class TextMagicApi(object):
             return data
 
     def request_new_subaccount_token_with_http_info(self, request_new_subaccount_token_input_object, **kwargs):  # noqa: E501
-        """Request a new REST API token for subaccount.  # noqa: E501
+        """Request a new REST API token for sub-account  # noqa: E501
 
         Returning user object, key and app name.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -16227,7 +16227,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def update_current_user(self, update_current_user_input_object, **kwargs):  # noqa: E501
-        """Update current user info.  # noqa: E501
+        """Edit current account info  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -16249,7 +16249,7 @@ class TextMagicApi(object):
             return data
 
     def update_current_user_with_http_info(self, update_current_user_input_object, **kwargs):  # noqa: E501
-        """Update current user info.  # noqa: E501
+        """Edit current account info  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -17249,7 +17249,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def upload_avatar(self, image, **kwargs):  # noqa: E501
-        """Add an avatar for the current user.  # noqa: E501
+        """Upload an avatar  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -17271,7 +17271,7 @@ class TextMagicApi(object):
             return data
 
     def upload_avatar_with_http_info(self, image, **kwargs):  # noqa: E501
-        """Add an avatar for the current user.  # noqa: E501
+        """Upload an avatar  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an

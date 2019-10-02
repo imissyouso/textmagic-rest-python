@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**clear_and_assign_contacts_to_list**](TextMagicApi.md#clear_and_assign_contacts_to_list) | **POST** /api/v2/lists/{id}/contacts | Reset list members to the specified contacts.
 [**close_chats_bulk**](TextMagicApi.md#close_chats_bulk) | **POST** /api/v2/chats/close/bulk | Close chats (bulk)
 [**close_read_chats**](TextMagicApi.md#close_read_chats) | **POST** /api/v2/chats/close/read | Close read chats
-[**close_subaccount**](TextMagicApi.md#close_subaccount) | **DELETE** /api/v2/subaccounts/{id} | Close subaccount.
+[**close_subaccount**](TextMagicApi.md#close_subaccount) | **DELETE** /api/v2/subaccounts/{id} | Close sub-account
 [**create_contact**](TextMagicApi.md#create_contact) | **POST** /api/v2/contacts | Create a new contact from the submitted data.
 [**create_contact_note**](TextMagicApi.md#create_contact_note) | **POST** /api/v2/contacts/{id}/notes | Create a new contact note.
 [**create_custom_field**](TextMagicApi.md#create_custom_field) | **POST** /api/v2/customfields | Create a new custom field from the submitted data.
@@ -25,7 +25,7 @@ Method | HTTP request | Description
 [**create_template**](TextMagicApi.md#create_template) | **POST** /api/v2/templates | Create a template
 [**delete_all_contacts**](TextMagicApi.md#delete_all_contacts) | **DELETE** /api/v2/contact/all | Delete all contacts.
 [**delete_all_outbound_messages**](TextMagicApi.md#delete_all_outbound_messages) | **DELETE** /api/v2/message/all | Delete all messages
-[**delete_avatar**](TextMagicApi.md#delete_avatar) | **DELETE** /api/v2/user/avatar | Delete an avatar for the current user.\\
+[**delete_avatar**](TextMagicApi.md#delete_avatar) | **DELETE** /api/v2/user/avatar | Delete an avatar
 [**delete_chat_messages**](TextMagicApi.md#delete_chat_messages) | **POST** /api/v2/chats/{id}/messages/delete | Delete chat messages by ID(s)
 [**delete_chats_bulk**](TextMagicApi.md#delete_chats_bulk) | **POST** /api/v2/chats/delete | Delete chats (bulk)
 [**delete_contact**](TextMagicApi.md#delete_contact) | **DELETE** /api/v2/contacts/{id} | Delete a single contact.
@@ -86,15 +86,15 @@ Method | HTTP request | Description
 [**get_contacts_autocomplete**](TextMagicApi.md#get_contacts_autocomplete) | **GET** /api/v2/contacts/autocomplete | Get contacts autocomplete suggestions by given search term.
 [**get_contacts_by_list_id**](TextMagicApi.md#get_contacts_by_list_id) | **GET** /api/v2/lists/{id}/contacts | Fetch user contacts by given group id.
 [**get_countries**](TextMagicApi.md#get_countries) | **GET** /api/v2/countries | Return list of countries.
-[**get_current_user**](TextMagicApi.md#get_current_user) | **GET** /api/v2/user | Get current user info.
+[**get_current_user**](TextMagicApi.md#get_current_user) | **GET** /api/v2/user | Get current account information
 [**get_custom_field**](TextMagicApi.md#get_custom_field) | **GET** /api/v2/customfields/{id} | Get a single custom field.
 [**get_custom_fields**](TextMagicApi.md#get_custom_fields) | **GET** /api/v2/customfields | Get all contact custom fields.
 [**get_dedicated_number**](TextMagicApi.md#get_dedicated_number) | **GET** /api/v2/numbers/{id} | Get the details of a specific dedicated number
-[**get_disallowed_rules**](TextMagicApi.md#get_disallowed_rules) | **GET** /api/v2/user/disallowed-rules | Get an array of all rules that are disallowed to the current account.
+[**get_disallowed_rules**](TextMagicApi.md#get_disallowed_rules) | **GET** /api/v2/user/disallowed-rules | Get disallowed permissions
 [**get_favourites**](TextMagicApi.md#get_favourites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists.
 [**get_inbound_message**](TextMagicApi.md#get_inbound_message) | **GET** /api/v2/replies/{id} | Get a single inbound message
 [**get_inbound_messages_notification_settings**](TextMagicApi.md#get_inbound_messages_notification_settings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
-[**get_invoices**](TextMagicApi.md#get_invoices) | **GET** /api/v2/invoices | Return account invoices.
+[**get_invoices**](TextMagicApi.md#get_invoices) | **GET** /api/v2/invoices | Get all invoices
 [**get_list**](TextMagicApi.md#get_list) | **GET** /api/v2/lists/{id} | Get a single list.
 [**get_list_contacts_ids**](TextMagicApi.md#get_list_contacts_ids) | **GET** /api/v2/lists/{id}/contacts/ids | Fetch all contacts IDs belonging to the list with ID.
 [**get_lists_of_contact**](TextMagicApi.md#get_lists_of_contact) | **GET** /api/v2/contacts/{id}/lists | Return lists which contact belongs to.
@@ -104,8 +104,8 @@ Method | HTTP request | Description
 [**get_message_session**](TextMagicApi.md#get_message_session) | **GET** /api/v2/sessions/{id} | Get a session details
 [**get_message_session_stat**](TextMagicApi.md#get_message_session_stat) | **GET** /api/v2/sessions/{id}/stat | Get a session statistics
 [**get_messages_by_session_id**](TextMagicApi.md#get_messages_by_session_id) | **GET** /api/v2/sessions/{id}/messages | Get a session messages
-[**get_messaging_counters**](TextMagicApi.md#get_messaging_counters) | **GET** /api/v2/stats/messaging/data | Return counters for messaging data views.
-[**get_messaging_stat**](TextMagicApi.md#get_messaging_stat) | **GET** /api/v2/stats/messaging | Return messaging statistics.
+[**get_messaging_counters**](TextMagicApi.md#get_messaging_counters) | **GET** /api/v2/stats/messaging/data | Get sent/received messages counters values
+[**get_messaging_stat**](TextMagicApi.md#get_messaging_stat) | **GET** /api/v2/stats/messaging | Get messaging statistics
 [**get_outbound_message**](TextMagicApi.md#get_outbound_message) | **GET** /api/v2/messages/{id} | Get a single message
 [**get_outbound_messages_history**](TextMagicApi.md#get_outbound_messages_history) | **GET** /api/v2/history | Get history
 [**get_push_tokens**](TextMagicApi.md#get_push_tokens) | **GET** /api/v2/push/tokens | Get all device tokens assigned to the current account
@@ -113,11 +113,11 @@ Method | HTTP request | Description
 [**get_sender_id**](TextMagicApi.md#get_sender_id) | **GET** /api/v2/senderids/{id} | Get the details of a specific Sender ID
 [**get_sender_ids**](TextMagicApi.md#get_sender_ids) | **GET** /api/v2/senderids | Get all your approved Sender IDs
 [**get_sender_settings**](TextMagicApi.md#get_sender_settings) | **GET** /api/v2/sender/settings | Get current sender settings
-[**get_spending_stat**](TextMagicApi.md#get_spending_stat) | **GET** /api/v2/stats/spending | Return account spending statistics.
+[**get_spending_stat**](TextMagicApi.md#get_spending_stat) | **GET** /api/v2/stats/spending | Get spending statistics
 [**get_state**](TextMagicApi.md#get_state) | **GET** /api/v2/state | Get current entities state
-[**get_subaccount**](TextMagicApi.md#get_subaccount) | **GET** /api/v2/subaccounts/{id} | Get a single subaccount.
-[**get_subaccounts**](TextMagicApi.md#get_subaccounts) | **GET** /api/v2/subaccounts | Get all subaccounts of current user.
-[**get_subaccounts_with_tokens**](TextMagicApi.md#get_subaccounts_with_tokens) | **POST** /api/v2/subaccounts/tokens/list | Get all subaccounts with their REST API tokens associated with specified app name.
+[**get_subaccount**](TextMagicApi.md#get_subaccount) | **GET** /api/v2/subaccounts/{id} | Get sub-account information
+[**get_subaccounts**](TextMagicApi.md#get_subaccounts) | **GET** /api/v2/subaccounts | Get sub-accounts list
+[**get_subaccounts_with_tokens**](TextMagicApi.md#get_subaccounts_with_tokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with app name
 [**get_survey**](TextMagicApi.md#get_survey) | **GET** /api/v2/surveys/{id} | Get a survey by id.
 [**get_survey_node**](TextMagicApi.md#get_survey_node) | **GET** /api/v2/surveys/nodes/{id} | Get a node by id.
 [**get_survey_nodes**](TextMagicApi.md#get_survey_nodes) | **GET** /api/v2/surveys/{id}/nodes | Fetch nodes by given survey id.
@@ -130,7 +130,7 @@ Method | HTTP request | Description
 [**get_user_dedicated_numbers**](TextMagicApi.md#get_user_dedicated_numbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
 [**get_user_lists**](TextMagicApi.md#get_user_lists) | **GET** /api/v2/lists | Get all user lists.
 [**get_versions**](TextMagicApi.md#get_versions) | **GET** /api/v2/versions | Get minimal valid apps versions
-[**invite_subaccount**](TextMagicApi.md#invite_subaccount) | **POST** /api/v2/subaccounts | Invite new subaccount.
+[**invite_subaccount**](TextMagicApi.md#invite_subaccount) | **POST** /api/v2/subaccounts | Invite a new sub-account
 [**mark_chats_read_bulk**](TextMagicApi.md#mark_chats_read_bulk) | **POST** /api/v2/chats/read/bulk | Mark chats as read (bulk)
 [**mark_chats_unread_bulk**](TextMagicApi.md#mark_chats_unread_bulk) | **POST** /api/v2/chats/unread/bulk | Mark chats as unread (bulk)
 [**merge_survey_nodes**](TextMagicApi.md#merge_survey_nodes) | **POST** /api/v2/surveys/nodes/merge | Merge two question nodes.
@@ -138,7 +138,7 @@ Method | HTTP request | Description
 [**mute_chats_bulk**](TextMagicApi.md#mute_chats_bulk) | **POST** /api/v2/chats/mute/bulk | Mute chats (bulk)
 [**ping**](TextMagicApi.md#ping) | **GET** /api/v2/ping | Just does a pong.
 [**reopen_chats_bulk**](TextMagicApi.md#reopen_chats_bulk) | **POST** /api/v2/chats/reopen/bulk | Reopen chats (bulk)
-[**request_new_subaccount_token**](TextMagicApi.md#request_new_subaccount_token) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for subaccount.
+[**request_new_subaccount_token**](TextMagicApi.md#request_new_subaccount_token) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for sub-account
 [**request_sender_id**](TextMagicApi.md#request_sender_id) | **POST** /api/v2/senderids | Apply for a new Sender ID
 [**reset_survey**](TextMagicApi.md#reset_survey) | **PUT** /api/v2/surveys/{id}/reset | Reset a survey flow.
 [**search_chats**](TextMagicApi.md#search_chats) | **GET** /api/v2/chats/search | Find chats by message text
@@ -165,7 +165,7 @@ Method | HTTP request | Description
 [**update_chat_desktop_notification_settings**](TextMagicApi.md#update_chat_desktop_notification_settings) | **PUT** /api/v2/user/desktop/notification | Update chat desktop notification settings
 [**update_contact**](TextMagicApi.md#update_contact) | **PUT** /api/v2/contacts/{id} | Update existing contact.
 [**update_contact_note**](TextMagicApi.md#update_contact_note) | **PUT** /api/v2/notes/{id} | Update existing contact note.
-[**update_current_user**](TextMagicApi.md#update_current_user) | **PUT** /api/v2/user | Update current user info.
+[**update_current_user**](TextMagicApi.md#update_current_user) | **PUT** /api/v2/user | Edit current account info
 [**update_custom_field**](TextMagicApi.md#update_custom_field) | **PUT** /api/v2/customfields/{id} | Update existing custom field.
 [**update_custom_field_value**](TextMagicApi.md#update_custom_field_value) | **PUT** /api/v2/customfields/{id}/update | Update contact&#39;s custom field value.
 [**update_inbound_messages_notification_settings**](TextMagicApi.md#update_inbound_messages_notification_settings) | **PUT** /api/v2/user/notification/inbound | Update inbound messages notification settings
@@ -175,7 +175,7 @@ Method | HTTP request | Description
 [**update_survey**](TextMagicApi.md#update_survey) | **PUT** /api/v2/surveys/{id} | Update existing survey.
 [**update_survey_node**](TextMagicApi.md#update_survey_node) | **PUT** /api/v2/surveys/nodes/{id} | Update existing node.
 [**update_template**](TextMagicApi.md#update_template) | **PUT** /api/v2/templates/{id} | Update a template
-[**upload_avatar**](TextMagicApi.md#upload_avatar) | **POST** /api/v2/user/avatar | Add an avatar for the current user.
+[**upload_avatar**](TextMagicApi.md#upload_avatar) | **POST** /api/v2/user/avatar | Upload an avatar
 [**upload_contact_avatar**](TextMagicApi.md#upload_contact_avatar) | **POST** /api/v2/contacts/{id}/avatar | Add an avatar for the contact.
 [**upload_list_avatar**](TextMagicApi.md#upload_list_avatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for the list.
 [**upload_message_attachment**](TextMagicApi.md#upload_message_attachment) | **POST** /api/v2/messages/attachment | Upload message attachment
@@ -708,7 +708,7 @@ void (empty response body)
 # **close_subaccount**
 > close_subaccount(id)
 
-Close subaccount.
+Close sub-account
 
 
 
@@ -730,7 +730,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Close subaccount.
+    # Close sub-account
     api_instance.close_subaccount(id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->close_subaccount: %s\n" % e)
@@ -1283,7 +1283,7 @@ void (empty response body)
 # **delete_avatar**
 > delete_avatar()
 
-Delete an avatar for the current user.\\
+Delete an avatar
 
 
 
@@ -1304,7 +1304,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 
 try:
-    # Delete an avatar for the current user.\\
+    # Delete an avatar
     api_instance.delete_avatar()
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_avatar: %s\n" % e)
@@ -4558,7 +4558,7 @@ This endpoint does not need any parameter.
 # **get_current_user**
 > User get_current_user()
 
-Get current user info.
+Get current account information
 
 
 
@@ -4579,7 +4579,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 
 try:
-    # Get current user info.
+    # Get current account information
     api_response = api_instance.get_current_user()
     pprint(api_response)
 except ApiException as e:
@@ -4768,9 +4768,9 @@ Name | Type | Description  | Notes
 # **get_disallowed_rules**
 > GetDisallowedRulesResponse get_disallowed_rules()
 
+Get disallowed permissions
+
 Get an array of all rules that are disallowed to the current account.
-
-
 
 ### Example
 ```python
@@ -4789,7 +4789,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 
 try:
-    # Get an array of all rules that are disallowed to the current account.
+    # Get disallowed permissions
     api_response = api_instance.get_disallowed_rules()
     pprint(api_response)
 except ApiException as e:
@@ -4976,9 +4976,9 @@ This endpoint does not need any parameter.
 # **get_invoices**
 > GetInvoicesPaginatedResponse get_invoices(page=page, limit=limit)
 
-Return account invoices.
+Get all invoices
 
-
+With the TextMagic API, you can check the invoices and transactions for your account.
 
 ### Example
 ```python
@@ -4999,7 +4999,7 @@ page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 
 try:
-    # Return account invoices.
+    # Get all invoices
     api_response = api_instance.get_invoices(page=page, limit=limit)
     pprint(api_response)
 except ApiException as e:
@@ -5584,9 +5584,9 @@ Name | Type | Description  | Notes
 # **get_messaging_counters**
 > GetMessagingCountersResponse get_messaging_counters()
 
-Return counters for messaging data views.
+Get sent/received messages counters values
 
-
+Get total contacts, sent messages and received messages counters values.
 
 ### Example
 ```python
@@ -5605,7 +5605,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 
 try:
-    # Return counters for messaging data views.
+    # Get sent/received messages counters values
     api_response = api_instance.get_messaging_counters()
     pprint(api_response)
 except ApiException as e:
@@ -5633,7 +5633,7 @@ This endpoint does not need any parameter.
 # **get_messaging_stat**
 > GetMessagingStatResponse get_messaging_stat(by=by, start=start, end=end)
 
-Return messaging statistics.
+Get messaging statistics
 
 
 
@@ -5652,12 +5652,12 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-by = 'off' # str | Group results by specified period: off, day, month or year. Default is off (optional) (default to off)
-start = 56 # int | Start date in unix timestamp format. Default is 7 days ago (optional)
-end = 'end_example' # str | End date in unix timestamp format. Default is now (optional)
+by = 'off' # str | *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional) (default to off)
+start = 1430438400 # int | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
+end = '1431648000' # str | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
 
 try:
-    # Return messaging statistics.
+    # Get messaging statistics
     api_response = api_instance.get_messaging_stat(by=by, start=start, end=end)
     pprint(api_response)
 except ApiException as e:
@@ -5668,9 +5668,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **by** | **str**| Group results by specified period: off, day, month or year. Default is off | [optional] [default to off]
- **start** | **int**| Start date in unix timestamp format. Default is 7 days ago | [optional] 
- **end** | **str**| End date in unix timestamp format. Default is now | [optional] 
+ **by** | **str**| *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  | [optional] [default to off]
+ **start** | **int**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
+ **end** | **str**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
 ### Return type
 
@@ -6067,7 +6067,7 @@ Name | Type | Description  | Notes
 # **get_spending_stat**
 > GetSpendingStatPaginatedResponse get_spending_stat(page=page, limit=limit, start=start, end=end)
 
-Return account spending statistics.
+Get spending statistics
 
 
 
@@ -6088,11 +6088,11 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-start = 56 # int | Optional. Start date in unix timestamp format. Default is 7 days ago (optional)
-end = 56 # int | Optional. End date in unix timestamp format. Default is now (optional)
+start = 1430438400 # int | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
+end = '1431648000' # str | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
 
 try:
-    # Return account spending statistics.
+    # Get spending statistics
     api_response = api_instance.get_spending_stat(page=page, limit=limit, start=start, end=end)
     pprint(api_response)
 except ApiException as e:
@@ -6105,8 +6105,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **start** | **int**| Optional. Start date in unix timestamp format. Default is 7 days ago | [optional] 
- **end** | **int**| Optional. End date in unix timestamp format. Default is now | [optional] 
+ **start** | **int**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
+ **end** | **str**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
 ### Return type
 
@@ -6175,7 +6175,7 @@ This endpoint does not need any parameter.
 # **get_subaccount**
 > User get_subaccount(id)
 
-Get a single subaccount.
+Get sub-account information
 
 
 
@@ -6197,7 +6197,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Get a single subaccount.
+    # Get sub-account information
     api_response = api_instance.get_subaccount(id)
     pprint(api_response)
 except ApiException as e:
@@ -6228,7 +6228,7 @@ Name | Type | Description  | Notes
 # **get_subaccounts**
 > User get_subaccounts(page=page, limit=limit)
 
-Get all subaccounts of current user.
+Get sub-accounts list
 
 
 
@@ -6251,7 +6251,7 @@ page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 
 try:
-    # Get all subaccounts of current user.
+    # Get sub-accounts list
     api_response = api_instance.get_subaccounts(page=page, limit=limit)
     pprint(api_response)
 except ApiException as e:
@@ -6283,9 +6283,9 @@ Name | Type | Description  | Notes
 # **get_subaccounts_with_tokens**
 > GetSubaccountsWithTokensResponse get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, page=page, limit=limit)
 
-Get all subaccounts with their REST API tokens associated with specified app name.
+Get all sub-accounts with their REST API tokens associated with app name
 
-When more than one token related to app name, last key will be returned.
+Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
 
 ### Example
 ```python
@@ -6307,7 +6307,7 @@ page = 1 # float | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 
 try:
-    # Get all subaccounts with their REST API tokens associated with specified app name.
+    # Get all sub-accounts with their REST API tokens associated with app name
     api_response = api_instance.get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, page=page, limit=limit)
     pprint(api_response)
 except ApiException as e:
@@ -6986,7 +6986,7 @@ This endpoint does not need any parameter.
 # **invite_subaccount**
 > invite_subaccount(invite_subaccount_input_object)
 
-Invite new subaccount.
+Invite a new sub-account
 
 
 
@@ -7008,7 +7008,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 invite_subaccount_input_object = TextMagic.InviteSubaccountInputObject() # InviteSubaccountInputObject | 
 
 try:
-    # Invite new subaccount.
+    # Invite a new sub-account
     api_instance.invite_subaccount(invite_subaccount_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->invite_subaccount: %s\n" % e)
@@ -7400,7 +7400,7 @@ void (empty response body)
 # **request_new_subaccount_token**
 > User request_new_subaccount_token(request_new_subaccount_token_input_object)
 
-Request a new REST API token for subaccount.
+Request a new REST API token for sub-account
 
 Returning user object, key and app name.
 
@@ -7422,7 +7422,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 request_new_subaccount_token_input_object = TextMagic.RequestNewSubaccountTokenInputObject() # RequestNewSubaccountTokenInputObject | 
 
 try:
-    # Request a new REST API token for subaccount.
+    # Request a new REST API token for sub-account
     api_response = api_instance.request_new_subaccount_token(request_new_subaccount_token_input_object)
     pprint(api_response)
 except ApiException as e:
@@ -8913,7 +8913,7 @@ Name | Type | Description  | Notes
 # **update_current_user**
 > UpdateCurrentUserResponse update_current_user(update_current_user_input_object)
 
-Update current user info.
+Edit current account info
 
 
 
@@ -8935,7 +8935,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_current_user_input_object = TextMagic.UpdateCurrentUserInputObject() # UpdateCurrentUserInputObject | 
 
 try:
-    # Update current user info.
+    # Edit current account info
     api_response = api_instance.update_current_user(update_current_user_input_object)
     pprint(api_response)
 except ApiException as e:
@@ -9452,7 +9452,7 @@ Name | Type | Description  | Notes
 # **upload_avatar**
 > upload_avatar(image)
 
-Add an avatar for the current user.
+Upload an avatar
 
 
 
@@ -9474,7 +9474,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 image = '/path/to/file.txt' # file | User avatar. Should be PNG or JPG file not more than 10 MB
 
 try:
-    # Add an avatar for the current user.
+    # Upload an avatar
     api_instance.upload_avatar(image)
 except ApiException as e:
     print("Exception when calling TextMagicApi->upload_avatar: %s\n" % e)

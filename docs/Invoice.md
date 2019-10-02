@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** |  | 
-**bundle** | **int** |  | 
-**currency** | **str** |  | 
-**vat** | **float** |  | 
-**payment_method** | **str** |  | 
+**id** | **int** | The invoice ID. | 
+**bundle** | **int** | Top up amount. | 
+**currency** | **str** | Top up currency. | 
+**vat** | **float** | VAT charged (if any). | 
+**payment_method** | **str** | Payment method description. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -90,6 +90,7 @@ class MessagingStatItem(object):
     def reply_rate(self):
         """Gets the reply_rate of this MessagingStatItem.  # noqa: E501
 
+        the number of incoming messages divided by the number of total messages.  # noqa: E501
 
         :return: The reply_rate of this MessagingStatItem.  # noqa: E501
         :rtype: float
@@ -100,6 +101,7 @@ class MessagingStatItem(object):
     def reply_rate(self, reply_rate):
         """Sets the reply_rate of this MessagingStatItem.
 
+        the number of incoming messages divided by the number of total messages.  # noqa: E501
 
         :param reply_rate: The reply_rate of this MessagingStatItem.  # noqa: E501
         :type: float
@@ -111,6 +113,7 @@ class MessagingStatItem(object):
     def _date(self):
         """Gets the _date of this MessagingStatItem.  # noqa: E501
 
+        Time interval start, empty if the **by** parameter was set to **off**.   # noqa: E501
 
         :return: The _date of this MessagingStatItem.  # noqa: E501
         :rtype: datetime
@@ -121,6 +124,7 @@ class MessagingStatItem(object):
     def _date(self, _date):
         """Sets the _date of this MessagingStatItem.
 
+        Time interval start, empty if the **by** parameter was set to **off**.   # noqa: E501
 
         :param _date: The _date of this MessagingStatItem.  # noqa: E501
         :type: datetime
@@ -132,6 +136,7 @@ class MessagingStatItem(object):
     def delivery_rate(self):
         """Gets the delivery_rate of this MessagingStatItem.  # noqa: E501
 
+        Message delivery rate:the number of delivered messages divided by the number of total messages.  # noqa: E501
 
         :return: The delivery_rate of this MessagingStatItem.  # noqa: E501
         :rtype: float
@@ -142,6 +147,7 @@ class MessagingStatItem(object):
     def delivery_rate(self, delivery_rate):
         """Sets the delivery_rate of this MessagingStatItem.
 
+        Message delivery rate:the number of delivered messages divided by the number of total messages.  # noqa: E501
 
         :param delivery_rate: The delivery_rate of this MessagingStatItem.  # noqa: E501
         :type: float
@@ -153,6 +159,7 @@ class MessagingStatItem(object):
     def costs(self):
         """Gets the costs of this MessagingStatItem.  # noqa: E501
 
+        Cost for sent messages during this period. The costs are in the [Account](/docs/api/account/) currency. TODO   # noqa: E501
 
         :return: The costs of this MessagingStatItem.  # noqa: E501
         :rtype: float
@@ -163,6 +170,7 @@ class MessagingStatItem(object):
     def costs(self, costs):
         """Sets the costs of this MessagingStatItem.
 
+        Cost for sent messages during this period. The costs are in the [Account](/docs/api/account/) currency. TODO   # noqa: E501
 
         :param costs: The costs of this MessagingStatItem.  # noqa: E501
         :type: float
@@ -174,6 +182,7 @@ class MessagingStatItem(object):
     def messages_received(self):
         """Gets the messages_received of this MessagingStatItem.  # noqa: E501
 
+        Total received messages count.  # noqa: E501
 
         :return: The messages_received of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -184,6 +193,7 @@ class MessagingStatItem(object):
     def messages_received(self, messages_received):
         """Sets the messages_received of this MessagingStatItem.
 
+        Total received messages count.  # noqa: E501
 
         :param messages_received: The messages_received of this MessagingStatItem.  # noqa: E501
         :type: int
@@ -195,6 +205,7 @@ class MessagingStatItem(object):
     def messages_sent_delivered(self):
         """Gets the messages_sent_delivered of this MessagingStatItem.  # noqa: E501
 
+        Delivered messages count. As messages are retried for up to 48 hours, this value could change.  # noqa: E501
 
         :return: The messages_sent_delivered of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -205,6 +216,7 @@ class MessagingStatItem(object):
     def messages_sent_delivered(self, messages_sent_delivered):
         """Sets the messages_sent_delivered of this MessagingStatItem.
 
+        Delivered messages count. As messages are retried for up to 48 hours, this value could change.  # noqa: E501
 
         :param messages_sent_delivered: The messages_sent_delivered of this MessagingStatItem.  # noqa: E501
         :type: int
@@ -216,6 +228,7 @@ class MessagingStatItem(object):
     def messages_sent_accepted(self):
         """Gets the messages_sent_accepted of this MessagingStatItem.  # noqa: E501
 
+        Messages accepted for delivery (in queue), but not yet delivered.  # noqa: E501
 
         :return: The messages_sent_accepted of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -226,6 +239,7 @@ class MessagingStatItem(object):
     def messages_sent_accepted(self, messages_sent_accepted):
         """Sets the messages_sent_accepted of this MessagingStatItem.
 
+        Messages accepted for delivery (in queue), but not yet delivered.  # noqa: E501
 
         :param messages_sent_accepted: The messages_sent_accepted of this MessagingStatItem.  # noqa: E501
         :type: int
@@ -237,6 +251,7 @@ class MessagingStatItem(object):
     def messages_sent_buffered(self):
         """Gets the messages_sent_buffered of this MessagingStatItem.  # noqa: E501
 
+        Messages buffered by endpoint cell phone operators.  # noqa: E501
 
         :return: The messages_sent_buffered of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -247,6 +262,7 @@ class MessagingStatItem(object):
     def messages_sent_buffered(self, messages_sent_buffered):
         """Sets the messages_sent_buffered of this MessagingStatItem.
 
+        Messages buffered by endpoint cell phone operators.  # noqa: E501
 
         :param messages_sent_buffered: The messages_sent_buffered of this MessagingStatItem.  # noqa: E501
         :type: int
@@ -258,6 +274,7 @@ class MessagingStatItem(object):
     def messages_sent_failed(self):
         """Gets the messages_sent_failed of this MessagingStatItem.  # noqa: E501
 
+        Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.  # noqa: E501
 
         :return: The messages_sent_failed of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -268,6 +285,7 @@ class MessagingStatItem(object):
     def messages_sent_failed(self, messages_sent_failed):
         """Sets the messages_sent_failed of this MessagingStatItem.
 
+        Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.  # noqa: E501
 
         :param messages_sent_failed: The messages_sent_failed of this MessagingStatItem.  # noqa: E501
         :type: int
@@ -279,6 +297,7 @@ class MessagingStatItem(object):
     def messages_sent_rejected(self):
         """Gets the messages_sent_rejected of this MessagingStatItem.  # noqa: E501
 
+        Messages that were rejected: invalid Sender ID used (e.g. you cannot use the Sender ID or your own mobile number when sending to the United States and Canada.)   # noqa: E501
 
         :return: The messages_sent_rejected of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -289,6 +308,7 @@ class MessagingStatItem(object):
     def messages_sent_rejected(self, messages_sent_rejected):
         """Sets the messages_sent_rejected of this MessagingStatItem.
 
+        Messages that were rejected: invalid Sender ID used (e.g. you cannot use the Sender ID or your own mobile number when sending to the United States and Canada.)   # noqa: E501
 
         :param messages_sent_rejected: The messages_sent_rejected of this MessagingStatItem.  # noqa: E501
         :type: int
@@ -300,6 +320,7 @@ class MessagingStatItem(object):
     def messages_sent_parts(self):
         """Gets the messages_sent_parts of this MessagingStatItem.  # noqa: E501
 
+        Total sent messages **parts** count. Note that this is not equal to the sent messages count, because one message could consist of 1 to 6 parts and users are charged per part, not per message.  # noqa: E501
 
         :return: The messages_sent_parts of this MessagingStatItem.  # noqa: E501
         :rtype: int
@@ -310,6 +331,7 @@ class MessagingStatItem(object):
     def messages_sent_parts(self, messages_sent_parts):
         """Sets the messages_sent_parts of this MessagingStatItem.
 
+        Total sent messages **parts** count. Note that this is not equal to the sent messages count, because one message could consist of 1 to 6 parts and users are charged per part, not per message.  # noqa: E501
 
         :param messages_sent_parts: The messages_sent_parts of this MessagingStatItem.  # noqa: E501
         :type: int

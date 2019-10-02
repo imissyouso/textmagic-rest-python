@@ -110,6 +110,7 @@ class User(object):
     def id(self):
         """Gets the id of this User.  # noqa: E501
 
+        User ID.  # noqa: E501
 
         :return: The id of this User.  # noqa: E501
         :rtype: int
@@ -120,6 +121,7 @@ class User(object):
     def id(self, id):
         """Sets the id of this User.
 
+        User ID.  # noqa: E501
 
         :param id: The id of this User.  # noqa: E501
         :type: int
@@ -131,6 +133,7 @@ class User(object):
     def username(self):
         """Gets the username of this User.  # noqa: E501
 
+        Username.  # noqa: E501
 
         :return: The username of this User.  # noqa: E501
         :rtype: str
@@ -141,6 +144,7 @@ class User(object):
     def username(self, username):
         """Sets the username of this User.
 
+        Username.  # noqa: E501
 
         :param username: The username of this User.  # noqa: E501
         :type: str
@@ -152,6 +156,7 @@ class User(object):
     def first_name(self):
         """Gets the first_name of this User.  # noqa: E501
 
+        Account first name.  # noqa: E501
 
         :return: The first_name of this User.  # noqa: E501
         :rtype: str
@@ -162,6 +167,7 @@ class User(object):
     def first_name(self, first_name):
         """Sets the first_name of this User.
 
+        Account first name.  # noqa: E501
 
         :param first_name: The first_name of this User.  # noqa: E501
         :type: str
@@ -173,6 +179,7 @@ class User(object):
     def last_name(self):
         """Gets the last_name of this User.  # noqa: E501
 
+        Account last name.  # noqa: E501
 
         :return: The last_name of this User.  # noqa: E501
         :rtype: str
@@ -183,6 +190,7 @@ class User(object):
     def last_name(self, last_name):
         """Sets the last_name of this User.
 
+        Account last name.  # noqa: E501
 
         :param last_name: The last_name of this User.  # noqa: E501
         :type: str
@@ -194,6 +202,7 @@ class User(object):
     def email(self):
         """Gets the email of this User.  # noqa: E501
 
+        User email address.  # noqa: E501
 
         :return: The email of this User.  # noqa: E501
         :rtype: str
@@ -204,6 +213,7 @@ class User(object):
     def email(self, email):
         """Sets the email of this User.
 
+        User email address.  # noqa: E501
 
         :param email: The email of this User.  # noqa: E501
         :type: str
@@ -215,6 +225,7 @@ class User(object):
     def status(self):
         """Gets the status of this User.  # noqa: E501
 
+        Current account status: * **A** for Active * **T** for Trial.   # noqa: E501
 
         :return: The status of this User.  # noqa: E501
         :rtype: str
@@ -225,10 +236,17 @@ class User(object):
     def status(self, status):
         """Sets the status of this User.
 
+        Current account status: * **A** for Active * **T** for Trial.   # noqa: E501
 
         :param status: The status of this User.  # noqa: E501
         :type: str
         """
+        allowed_values = ["A", "T"]  # noqa: E501
+        if status not in allowed_values:
+            raise ValueError(
+                "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
+                .format(status, allowed_values)
+            )
 
         self._status = status
 
@@ -236,6 +254,7 @@ class User(object):
     def balance(self):
         """Gets the balance of this User.  # noqa: E501
 
+        Account balance (in account currency).  # noqa: E501
 
         :return: The balance of this User.  # noqa: E501
         :rtype: float
@@ -246,6 +265,7 @@ class User(object):
     def balance(self, balance):
         """Sets the balance of this User.
 
+        Account balance (in account currency).  # noqa: E501
 
         :param balance: The balance of this User.  # noqa: E501
         :type: float
@@ -278,6 +298,7 @@ class User(object):
     def company(self):
         """Gets the company of this User.  # noqa: E501
 
+        Account company name.  # noqa: E501
 
         :return: The company of this User.  # noqa: E501
         :rtype: str
@@ -288,6 +309,7 @@ class User(object):
     def company(self, company):
         """Sets the company of this User.
 
+        Account company name.  # noqa: E501
 
         :param company: The company of this User.  # noqa: E501
         :type: str
@@ -362,6 +384,7 @@ class User(object):
     def subaccount_type(self):
         """Gets the subaccount_type of this User.  # noqa: E501
 
+        Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User   # noqa: E501
 
         :return: The subaccount_type of this User.  # noqa: E501
         :rtype: str
@@ -372,10 +395,17 @@ class User(object):
     def subaccount_type(self, subaccount_type):
         """Sets the subaccount_type of this User.
 
+        Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User   # noqa: E501
 
         :param subaccount_type: The subaccount_type of this User.  # noqa: E501
         :type: str
         """
+        allowed_values = ["P", "A", "U"]  # noqa: E501
+        if subaccount_type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `subaccount_type` ({0}), must be one of {1}"  # noqa: E501
+                .format(subaccount_type, allowed_values)
+            )
 
         self._subaccount_type = subaccount_type
 

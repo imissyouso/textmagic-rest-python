@@ -99,6 +99,7 @@ class UserStatement(object):
     def user_id(self):
         """Gets the user_id of this UserStatement.  # noqa: E501
 
+        User statement ID.  # noqa: E501
 
         :return: The user_id of this UserStatement.  # noqa: E501
         :rtype: int
@@ -109,6 +110,7 @@ class UserStatement(object):
     def user_id(self, user_id):
         """Sets the user_id of this UserStatement.
 
+        User statement ID.  # noqa: E501
 
         :param user_id: The user_id of this UserStatement.  # noqa: E501
         :type: int
@@ -120,6 +122,7 @@ class UserStatement(object):
     def _date(self):
         """Gets the _date of this UserStatement.  # noqa: E501
 
+        User statement date.  # noqa: E501
 
         :return: The _date of this UserStatement.  # noqa: E501
         :rtype: datetime
@@ -130,6 +133,7 @@ class UserStatement(object):
     def _date(self, _date):
         """Sets the _date of this UserStatement.
 
+        User statement date.  # noqa: E501
 
         :param _date: The _date of this UserStatement.  # noqa: E501
         :type: datetime
@@ -162,6 +166,7 @@ class UserStatement(object):
     def delta(self):
         """Gets the delta of this UserStatement.  # noqa: E501
 
+        Balance change amount.  # noqa: E501
 
         :return: The delta of this UserStatement.  # noqa: E501
         :rtype: float
@@ -172,6 +177,7 @@ class UserStatement(object):
     def delta(self, delta):
         """Sets the delta of this UserStatement.
 
+        Balance change amount.  # noqa: E501
 
         :param delta: The delta of this UserStatement.  # noqa: E501
         :type: float
@@ -183,6 +189,7 @@ class UserStatement(object):
     def type(self):
         """Gets the type of this UserStatement.  # noqa: E501
 
+        Type of statement (what you have been charged for): *   **sms** for sending SMS *   **number** for renewing a dedicated number *   **schedule** for scheduling text messages *   **topup** for adding credits to your account   # noqa: E501
 
         :return: The type of this UserStatement.  # noqa: E501
         :rtype: str
@@ -193,6 +200,7 @@ class UserStatement(object):
     def type(self, type):
         """Sets the type of this UserStatement.
 
+        Type of statement (what you have been charged for): *   **sms** for sending SMS *   **number** for renewing a dedicated number *   **schedule** for scheduling text messages *   **topup** for adding credits to your account   # noqa: E501
 
         :param type: The type of this UserStatement.  # noqa: E501
         :type: str
@@ -204,6 +212,7 @@ class UserStatement(object):
     def value(self):
         """Gets the value of this UserStatement.  # noqa: E501
 
+        Value differs by **type**: *   for **sms**, it is the sent messages amount *   for **number**, it is a dedicated phone number *   for **schedule**, it is a scheduled messages amount *   for **top-up**, it is an invoice ID   # noqa: E501
 
         :return: The value of this UserStatement.  # noqa: E501
         :rtype: str
@@ -214,6 +223,7 @@ class UserStatement(object):
     def value(self, value):
         """Sets the value of this UserStatement.
 
+        Value differs by **type**: *   for **sms**, it is the sent messages amount *   for **number**, it is a dedicated phone number *   for **schedule**, it is a scheduled messages amount *   for **top-up**, it is an invoice ID   # noqa: E501
 
         :param value: The value of this UserStatement.  # noqa: E501
         :type: str
@@ -225,6 +235,7 @@ class UserStatement(object):
     def comment(self):
         """Gets the comment of this UserStatement.  # noqa: E501
 
+        Optional comment.  # noqa: E501
 
         :return: The comment of this UserStatement.  # noqa: E501
         :rtype: str
@@ -235,6 +246,7 @@ class UserStatement(object):
     def comment(self, comment):
         """Sets the comment of this UserStatement.
 
+        Optional comment.  # noqa: E501
 
         :param comment: The comment of this UserStatement.  # noqa: E501
         :type: str

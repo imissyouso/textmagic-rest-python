@@ -81,6 +81,7 @@ class UpdateCurrentUserResponse(object):
     def username(self):
         """Gets the username of this UpdateCurrentUserResponse.  # noqa: E501
 
+        Username.  # noqa: E501
 
         :return: The username of this UpdateCurrentUserResponse.  # noqa: E501
         :rtype: str
@@ -91,6 +92,7 @@ class UpdateCurrentUserResponse(object):
     def username(self, username):
         """Sets the username of this UpdateCurrentUserResponse.
 
+        Username.  # noqa: E501
 
         :param username: The username of this UpdateCurrentUserResponse.  # noqa: E501
         :type: str
@@ -102,6 +104,7 @@ class UpdateCurrentUserResponse(object):
     def first_name(self):
         """Gets the first_name of this UpdateCurrentUserResponse.  # noqa: E501
 
+        Account first name.  # noqa: E501
 
         :return: The first_name of this UpdateCurrentUserResponse.  # noqa: E501
         :rtype: str
@@ -112,6 +115,7 @@ class UpdateCurrentUserResponse(object):
     def first_name(self, first_name):
         """Sets the first_name of this UpdateCurrentUserResponse.
 
+        Account first name.  # noqa: E501
 
         :param first_name: The first_name of this UpdateCurrentUserResponse.  # noqa: E501
         :type: str
@@ -123,6 +127,7 @@ class UpdateCurrentUserResponse(object):
     def last_name(self):
         """Gets the last_name of this UpdateCurrentUserResponse.  # noqa: E501
 
+        Account last name.  # noqa: E501
 
         :return: The last_name of this UpdateCurrentUserResponse.  # noqa: E501
         :rtype: str
@@ -133,6 +138,7 @@ class UpdateCurrentUserResponse(object):
     def last_name(self, last_name):
         """Sets the last_name of this UpdateCurrentUserResponse.
 
+        Account last name.  # noqa: E501
 
         :param last_name: The last_name of this UpdateCurrentUserResponse.  # noqa: E501
         :type: str
@@ -144,6 +150,7 @@ class UpdateCurrentUserResponse(object):
     def email(self):
         """Gets the email of this UpdateCurrentUserResponse.  # noqa: E501
 
+        User email address.  # noqa: E501
 
         :return: The email of this UpdateCurrentUserResponse.  # noqa: E501
         :rtype: str
@@ -154,6 +161,7 @@ class UpdateCurrentUserResponse(object):
     def email(self, email):
         """Sets the email of this UpdateCurrentUserResponse.
 
+        User email address.  # noqa: E501
 
         :param email: The email of this UpdateCurrentUserResponse.  # noqa: E501
         :type: str
@@ -186,6 +194,7 @@ class UpdateCurrentUserResponse(object):
     def company(self):
         """Gets the company of this UpdateCurrentUserResponse.  # noqa: E501
 
+        Account company name.  # noqa: E501
 
         :return: The company of this UpdateCurrentUserResponse.  # noqa: E501
         :rtype: str
@@ -196,6 +205,7 @@ class UpdateCurrentUserResponse(object):
     def company(self, company):
         """Sets the company of this UpdateCurrentUserResponse.
 
+        Account company name.  # noqa: E501
 
         :param company: The company of this UpdateCurrentUserResponse.  # noqa: E501
         :type: str
@@ -207,7 +217,7 @@ class UpdateCurrentUserResponse(object):
     def timezone(self):
         """Gets the timezone of this UpdateCurrentUserResponse.  # noqa: E501
 
-        timezone id  # noqa: E501
+        Internal timezone ID  # noqa: E501
 
         :return: The timezone of this UpdateCurrentUserResponse.  # noqa: E501
         :rtype: int
@@ -218,7 +228,7 @@ class UpdateCurrentUserResponse(object):
     def timezone(self, timezone):
         """Sets the timezone of this UpdateCurrentUserResponse.
 
-        timezone id  # noqa: E501
+        Internal timezone ID  # noqa: E501
 
         :param timezone: The timezone of this UpdateCurrentUserResponse.  # noqa: E501
         :type: int

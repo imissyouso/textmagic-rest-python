@@ -58,6 +58,7 @@ class GetMessagingCountersResponse(object):
     def contacts(self):
         """Gets the contacts of this GetMessagingCountersResponse.  # noqa: E501
 
+        Total contacts amount.  # noqa: E501
 
         :return: The contacts of this GetMessagingCountersResponse.  # noqa: E501
         :rtype: int
@@ -68,6 +69,7 @@ class GetMessagingCountersResponse(object):
     def contacts(self, contacts):
         """Sets the contacts of this GetMessagingCountersResponse.
 
+        Total contacts amount.  # noqa: E501
 
         :param contacts: The contacts of this GetMessagingCountersResponse.  # noqa: E501
         :type: int
@@ -79,6 +81,7 @@ class GetMessagingCountersResponse(object):
     def sent(self):
         """Gets the sent of this GetMessagingCountersResponse.  # noqa: E501
 
+        Total sent messages amount.  # noqa: E501
 
         :return: The sent of this GetMessagingCountersResponse.  # noqa: E501
         :rtype: int
@@ -89,6 +92,7 @@ class GetMessagingCountersResponse(object):
     def sent(self, sent):
         """Sets the sent of this GetMessagingCountersResponse.
 
+        Total sent messages amount.  # noqa: E501
 
         :param sent: The sent of this GetMessagingCountersResponse.  # noqa: E501
         :type: int
@@ -100,6 +104,7 @@ class GetMessagingCountersResponse(object):
     def received(self):
         """Gets the received of this GetMessagingCountersResponse.  # noqa: E501
 
+        Total received messages amount.  # noqa: E501
 
         :return: The received of this GetMessagingCountersResponse.  # noqa: E501
         :rtype: int
@@ -110,6 +115,7 @@ class GetMessagingCountersResponse(object):
     def received(self, received):
         """Sets the received of this GetMessagingCountersResponse.
 
+        Total received messages amount.  # noqa: E501
 
         :param received: The received of this GetMessagingCountersResponse.  # noqa: E501
         :type: int

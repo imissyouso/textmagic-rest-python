@@ -54,7 +54,7 @@ class InviteSubaccountInputObject(object):
     def email(self):
         """Gets the email of this InviteSubaccountInputObject.  # noqa: E501
 
-        Subaccount email  # noqa: E501
+        Invitation email will be sent to this email address.  # noqa: E501
 
         :return: The email of this InviteSubaccountInputObject.  # noqa: E501
         :rtype: str
@@ -65,7 +65,7 @@ class InviteSubaccountInputObject(object):
     def email(self, email):
         """Sets the email of this InviteSubaccountInputObject.
 
-        Subaccount email  # noqa: E501
+        Invitation email will be sent to this email address.  # noqa: E501
 
         :param email: The email of this InviteSubaccountInputObject.  # noqa: E501
         :type: str
@@ -77,7 +77,7 @@ class InviteSubaccountInputObject(object):
     def role(self):
         """Gets the role of this InviteSubaccountInputObject.  # noqa: E501
 
-        Subaccount role: A for administrator or U for regular user  # noqa: E501
+        Type of account: *   **A** for Administrator sub-account *   **U** for Regular User   # noqa: E501
 
         :return: The role of this InviteSubaccountInputObject.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class InviteSubaccountInputObject(object):
     def role(self, role):
         """Sets the role of this InviteSubaccountInputObject.
 
-        Subaccount role: A for administrator or U for regular user  # noqa: E501
+        Type of account: *   **A** for Administrator sub-account *   **U** for Regular User   # noqa: E501
 
         :param role: The role of this InviteSubaccountInputObject.  # noqa: E501
         :type: str

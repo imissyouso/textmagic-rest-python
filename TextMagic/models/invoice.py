@@ -66,6 +66,7 @@ class Invoice(object):
     def id(self):
         """Gets the id of this Invoice.  # noqa: E501
 
+        The invoice ID.  # noqa: E501
 
         :return: The id of this Invoice.  # noqa: E501
         :rtype: int
@@ -76,6 +77,7 @@ class Invoice(object):
     def id(self, id):
         """Sets the id of this Invoice.
 
+        The invoice ID.  # noqa: E501
 
         :param id: The id of this Invoice.  # noqa: E501
         :type: int
@@ -87,6 +89,7 @@ class Invoice(object):
     def bundle(self):
         """Gets the bundle of this Invoice.  # noqa: E501
 
+        Top up amount.  # noqa: E501
 
         :return: The bundle of this Invoice.  # noqa: E501
         :rtype: int
@@ -97,6 +100,7 @@ class Invoice(object):
     def bundle(self, bundle):
         """Sets the bundle of this Invoice.
 
+        Top up amount.  # noqa: E501
 
         :param bundle: The bundle of this Invoice.  # noqa: E501
         :type: int
@@ -108,6 +112,7 @@ class Invoice(object):
     def currency(self):
         """Gets the currency of this Invoice.  # noqa: E501
 
+        Top up currency.  # noqa: E501
 
         :return: The currency of this Invoice.  # noqa: E501
         :rtype: str
@@ -118,6 +123,7 @@ class Invoice(object):
     def currency(self, currency):
         """Sets the currency of this Invoice.
 
+        Top up currency.  # noqa: E501
 
         :param currency: The currency of this Invoice.  # noqa: E501
         :type: str
@@ -129,6 +135,7 @@ class Invoice(object):
     def vat(self):
         """Gets the vat of this Invoice.  # noqa: E501
 
+        VAT charged (if any).  # noqa: E501
 
         :return: The vat of this Invoice.  # noqa: E501
         :rtype: float
@@ -139,6 +146,7 @@ class Invoice(object):
     def vat(self, vat):
         """Sets the vat of this Invoice.
 
+        VAT charged (if any).  # noqa: E501
 
         :param vat: The vat of this Invoice.  # noqa: E501
         :type: float
@@ -150,6 +158,7 @@ class Invoice(object):
     def payment_method(self):
         """Gets the payment_method of this Invoice.  # noqa: E501
 
+        Payment method description.  # noqa: E501
 
         :return: The payment_method of this Invoice.  # noqa: E501
         :rtype: str
@@ -160,6 +169,7 @@ class Invoice(object):
     def payment_method(self, payment_method):
         """Sets the payment_method of this Invoice.
 
+        Payment method description.  # noqa: E501
 
         :param payment_method: The payment_method of this Invoice.  # noqa: E501
         :type: str

@@ -58,6 +58,7 @@ class Currency(object):
     def id(self):
         """Gets the id of this Currency.  # noqa: E501
 
+        Three-letter ISO currency ID.  # noqa: E501
 
         :return: The id of this Currency.  # noqa: E501
         :rtype: str
@@ -68,6 +69,7 @@ class Currency(object):
     def id(self, id):
         """Sets the id of this Currency.
 
+        Three-letter ISO currency ID.  # noqa: E501
 
         :param id: The id of this Currency.  # noqa: E501
         :type: str
@@ -79,6 +81,7 @@ class Currency(object):
     def unicode_symbol(self):
         """Gets the unicode_symbol of this Currency.  # noqa: E501
 
+        Unicode-compatible currency symbol.  # noqa: E501
 
         :return: The unicode_symbol of this Currency.  # noqa: E501
         :rtype: str
@@ -89,6 +92,7 @@ class Currency(object):
     def unicode_symbol(self, unicode_symbol):
         """Sets the unicode_symbol of this Currency.
 
+        Unicode-compatible currency symbol.  # noqa: E501
 
         :param unicode_symbol: The unicode_symbol of this Currency.  # noqa: E501
         :type: str
@@ -100,6 +104,7 @@ class Currency(object):
     def html_symbol(self):
         """Gets the html_symbol of this Currency.  # noqa: E501
 
+        HTML-compatible currency symbol.  # noqa: E501
 
         :return: The html_symbol of this Currency.  # noqa: E501
         :rtype: str
@@ -110,6 +115,7 @@ class Currency(object):
     def html_symbol(self, html_symbol):
         """Sets the html_symbol of this Currency.
 
+        HTML-compatible currency symbol.  # noqa: E501
 
         :param html_symbol: The html_symbol of this Currency.  # noqa: E501
         :type: str

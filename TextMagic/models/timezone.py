@@ -66,6 +66,7 @@ class Timezone(object):
     def id(self):
         """Gets the id of this Timezone.  # noqa: E501
 
+        Internal timezone ID.  # noqa: E501
 
         :return: The id of this Timezone.  # noqa: E501
         :rtype: int
@@ -76,6 +77,7 @@ class Timezone(object):
     def id(self, id):
         """Sets the id of this Timezone.
 
+        Internal timezone ID.  # noqa: E501
 
         :param id: The id of this Timezone.  # noqa: E501
         :type: int
@@ -87,6 +89,7 @@ class Timezone(object):
     def area(self):
         """Gets the area of this Timezone.  # noqa: E501
 
+        Timezone area.  # noqa: E501
 
         :return: The area of this Timezone.  # noqa: E501
         :rtype: str
@@ -97,6 +100,7 @@ class Timezone(object):
     def area(self, area):
         """Sets the area of this Timezone.
 
+        Timezone area.  # noqa: E501
 
         :param area: The area of this Timezone.  # noqa: E501
         :type: str
@@ -108,6 +112,7 @@ class Timezone(object):
     def dst(self):
         """Gets the dst of this Timezone.  # noqa: E501
 
+        Is Daylight saving time used in this timezone?  # noqa: E501
 
         :return: The dst of this Timezone.  # noqa: E501
         :rtype: int
@@ -118,6 +123,7 @@ class Timezone(object):
     def dst(self, dst):
         """Sets the dst of this Timezone.
 
+        Is Daylight saving time used in this timezone?  # noqa: E501
 
         :param dst: The dst of this Timezone.  # noqa: E501
         :type: int
@@ -150,6 +156,7 @@ class Timezone(object):
     def timezone(self):
         """Gets the timezone of this Timezone.  # noqa: E501
 
+        User-friendly timezone name (with spaces replaced by underscores).  # noqa: E501
 
         :return: The timezone of this Timezone.  # noqa: E501
         :rtype: str
@@ -160,6 +167,7 @@ class Timezone(object):
     def timezone(self, timezone):
         """Sets the timezone of this Timezone.
 
+        User-friendly timezone name (with spaces replaced by underscores).  # noqa: E501
 
         :param timezone: The timezone of this Timezone.  # noqa: E501
         :type: str

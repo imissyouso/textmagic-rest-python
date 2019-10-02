@@ -102,7 +102,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_close_subaccount(self):
         """Test case for close_subaccount
 
-        Close subaccount.  # noqa: E501
+        Close sub-account  # noqa: E501
         """
         pass
 
@@ -179,7 +179,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_avatar(self):
         """Test case for delete_avatar
 
-        Delete an avatar for the current user.\\  # noqa: E501
+        Delete an avatar  # noqa: E501
         """
         pass
 
@@ -606,7 +606,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_current_user(self):
         """Test case for get_current_user
 
-        Get current user info.  # noqa: E501
+        Get current account information  # noqa: E501
         """
         pass
 
@@ -634,7 +634,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_disallowed_rules(self):
         """Test case for get_disallowed_rules
 
-        Get an array of all rules that are disallowed to the current account.  # noqa: E501
+        Get disallowed permissions  # noqa: E501
         """
         pass
 
@@ -662,7 +662,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_invoices(self):
         """Test case for get_invoices
 
-        Return account invoices.  # noqa: E501
+        Get all invoices  # noqa: E501
         """
         pass
 
@@ -732,14 +732,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_messaging_counters(self):
         """Test case for get_messaging_counters
 
-        Return counters for messaging data views.  # noqa: E501
+        Get sent/received messages counters values  # noqa: E501
         """
         pass
 
     def test_get_messaging_stat(self):
         """Test case for get_messaging_stat
 
-        Return messaging statistics.  # noqa: E501
+        Get messaging statistics  # noqa: E501
         """
         pass
 
@@ -795,7 +795,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_spending_stat(self):
         """Test case for get_spending_stat
 
-        Return account spending statistics.  # noqa: E501
+        Get spending statistics  # noqa: E501
         """
         pass
 
@@ -809,21 +809,21 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_subaccount(self):
         """Test case for get_subaccount
 
-        Get a single subaccount.  # noqa: E501
+        Get sub-account information  # noqa: E501
         """
         pass
 
     def test_get_subaccounts(self):
         """Test case for get_subaccounts
 
-        Get all subaccounts of current user.  # noqa: E501
+        Get sub-accounts list  # noqa: E501
         """
         pass
 
     def test_get_subaccounts_with_tokens(self):
         """Test case for get_subaccounts_with_tokens
 
-        Get all subaccounts with their REST API tokens associated with specified app name.  # noqa: E501
+        Get all sub-accounts with their REST API tokens associated with app name  # noqa: E501
         """
         pass
 
@@ -914,7 +914,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_invite_subaccount(self):
         """Test case for invite_subaccount
 
-        Invite new subaccount.  # noqa: E501
+        Invite a new sub-account  # noqa: E501
         """
         pass
 
@@ -970,7 +970,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_request_new_subaccount_token(self):
         """Test case for request_new_subaccount_token
 
-        Request a new REST API token for subaccount.  # noqa: E501
+        Request a new REST API token for sub-account  # noqa: E501
         """
         pass
 
@@ -1159,7 +1159,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_update_current_user(self):
         """Test case for update_current_user
 
-        Update current user info.  # noqa: E501
+        Edit current account info  # noqa: E501
         """
         pass
 
@@ -1229,7 +1229,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_upload_avatar(self):
         """Test case for upload_avatar
 
-        Add an avatar for the current user.  # noqa: E501
+        Upload an avatar  # noqa: E501
         """
         pass
 
