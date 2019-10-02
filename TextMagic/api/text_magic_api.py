@@ -240,9 +240,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def buy_dedicated_number(self, buy_dedicated_number_input_object, **kwargs):  # noqa: E501
-        """Buy a dedicated number and assign it to the specified account.  # noqa: E501
+        """Buy a dedicated number  # noqa: E501
 
-          # noqa: E501
+        To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.buy_dedicated_number(buy_dedicated_number_input_object, async_req=True)
@@ -262,9 +262,9 @@ class TextMagicApi(object):
             return data
 
     def buy_dedicated_number_with_http_info(self, buy_dedicated_number_input_object, **kwargs):  # noqa: E501
-        """Buy a dedicated number and assign it to the specified account.  # noqa: E501
+        """Buy a dedicated number  # noqa: E501
 
-          # noqa: E501
+        To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.buy_dedicated_number_with_http_info(buy_dedicated_number_input_object, async_req=True)
@@ -1830,7 +1830,7 @@ class TextMagicApi(object):
     def create_template(self, create_template_input_object, **kwargs):  # noqa: E501
         """Create a template  # noqa: E501
 
-          # noqa: E501
+        There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_template(create_template_input_object, async_req=True)
@@ -1852,7 +1852,7 @@ class TextMagicApi(object):
     def create_template_with_http_info(self, create_template_input_object, **kwargs):  # noqa: E501
         """Create a template  # noqa: E501
 
-          # noqa: E501
+        There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns.   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.create_template_with_http_info(create_template_input_object, async_req=True)
@@ -3071,7 +3071,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_dedicated_number(self, id, **kwargs):  # noqa: E501
-        """Cancel dedicated number subscription.  # noqa: E501
+        """Cancel dedicated number subscription  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3093,7 +3093,7 @@ class TextMagicApi(object):
             return data
 
     def delete_dedicated_number_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Cancel dedicated number subscription.  # noqa: E501
+        """Cancel dedicated number subscription  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4421,7 +4421,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_sender_id(self, id, **kwargs):  # noqa: E501
-        """Delete a Sender ID.  # noqa: E501
+        """Delete a Sender ID  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4443,7 +4443,7 @@ class TextMagicApi(object):
             return data
 
     def delete_sender_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Delete a Sender ID.  # noqa: E501
+        """Delete a Sender ID  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6029,7 +6029,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_available_dedicated_numbers(self, country, **kwargs):  # noqa: E501
-        """Find available dedicated numbers to buy.  # noqa: E501
+        """Find dedicated numbers available for purchase  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6038,9 +6038,9 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Dedicated number country. Two letters in upper case (required)
-        :param int prefix: Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree = 1 parameter and there are available tollfree numbers, this parameter will be ignore.
-        :param int tollfree: Should we show only tollfree numbers (tollfree available only for US). Default is false.
+        :param str country: Two-letter dedicated number country ISO code. (required)
+        :param int prefix: Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
+        :param int tollfree: Should we show only tollfree numbers (tollfree available only for US).
         :return: GetAvailableDedicatedNumbersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6053,7 +6053,7 @@ class TextMagicApi(object):
             return data
 
     def get_available_dedicated_numbers_with_http_info(self, country, **kwargs):  # noqa: E501
-        """Find available dedicated numbers to buy.  # noqa: E501
+        """Find dedicated numbers available for purchase  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6062,9 +6062,9 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Dedicated number country. Two letters in upper case (required)
-        :param int prefix: Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree = 1 parameter and there are available tollfree numbers, this parameter will be ignore.
-        :param int tollfree: Should we show only tollfree numbers (tollfree available only for US). Default is false.
+        :param str country: Two-letter dedicated number country ISO code. (required)
+        :param int prefix: Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
+        :param int tollfree: Should we show only tollfree numbers (tollfree available only for US).
         :return: GetAvailableDedicatedNumbersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6136,16 +6136,16 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_available_sender_setting_options(self, **kwargs):  # noqa: E501
-        """Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
+        """Get available sender settings  # noqa: E501
 
-          # noqa: E501
+        Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_sender_setting_options(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Return sender setting options available in specific country only. Two upper case characters
+        :param str country: Two-letter ISO country ID. If not specified, it returns all the available sender settings.
         :return: GetAvailableSenderSettingOptionsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6158,16 +6158,16 @@ class TextMagicApi(object):
             return data
 
     def get_available_sender_setting_options_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
+        """Get available sender settings  # noqa: E501
 
-          # noqa: E501
+        Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_available_sender_setting_options_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str country: Return sender setting options available in specific country only. Two upper case characters
+        :param str country: Two-letter ISO country ID. If not specified, it returns all the available sender settings.
         :return: GetAvailableSenderSettingOptionsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8453,7 +8453,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_dedicated_number(self, id, **kwargs):  # noqa: E501
-        """Get a single dedicated number.  # noqa: E501
+        """Get the details of a specific dedicated number  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -8475,7 +8475,7 @@ class TextMagicApi(object):
             return data
 
     def get_dedicated_number_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get a single dedicated number.  # noqa: E501
+        """Get the details of a specific dedicated number  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10664,7 +10664,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_sender_id(self, id, **kwargs):  # noqa: E501
-        """Get a single Sender ID.  # noqa: E501
+        """Get the details of a specific Sender ID  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10686,7 +10686,7 @@ class TextMagicApi(object):
             return data
 
     def get_sender_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get a single Sender ID.  # noqa: E501
+        """Get the details of a specific Sender ID  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10763,7 +10763,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_sender_ids(self, **kwargs):  # noqa: E501
-        """Get all sender IDs of current user.  # noqa: E501
+        """Get all your approved Sender IDs  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10786,7 +10786,7 @@ class TextMagicApi(object):
             return data
 
     def get_sender_ids_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all sender IDs of current user.  # noqa: E501
+        """Get all your approved Sender IDs  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10862,9 +10862,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_sender_settings(self, **kwargs):  # noqa: E501
-        """Get current user sender settings.  # noqa: E501
+        """Get current sender settings  # noqa: E501
 
-          # noqa: E501
+        @TODO  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_settings(async_req=True)
@@ -10884,9 +10884,9 @@ class TextMagicApi(object):
             return data
 
     def get_sender_settings_with_http_info(self, **kwargs):  # noqa: E501
-        """Get current user sender settings.  # noqa: E501
+        """Get current sender settings  # noqa: E501
 
-          # noqa: E501
+        @TODO  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_settings_with_http_info(async_req=True)
@@ -12339,7 +12339,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_user_dedicated_numbers(self, **kwargs):  # noqa: E501
-        """Get user's dedicated numbers.  # noqa: E501
+        """Get all your dedicated numbers  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -12363,7 +12363,7 @@ class TextMagicApi(object):
             return data
 
     def get_user_dedicated_numbers_with_http_info(self, **kwargs):  # noqa: E501
-        """Get user's dedicated numbers.  # noqa: E501
+        """Get all your dedicated numbers  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -13507,9 +13507,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def request_sender_id(self, request_sender_id_input_object, **kwargs):  # noqa: E501
-        """Request for a new Sender ID.  # noqa: E501
+        """Apply for a new Sender ID  # noqa: E501
 
-          # noqa: E501
+        > Sender IDs are shared between all of your sub-accounts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_sender_id(request_sender_id_input_object, async_req=True)
@@ -13529,9 +13529,9 @@ class TextMagicApi(object):
             return data
 
     def request_sender_id_with_http_info(self, request_sender_id_input_object, **kwargs):  # noqa: E501
-        """Request for a new Sender ID.  # noqa: E501
+        """Apply for a new Sender ID  # noqa: E501
 
-          # noqa: E501
+        > Sender IDs are shared between all of your sub-accounts.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_sender_id_with_http_info(request_sender_id_input_object, async_req=True)
@@ -16833,9 +16833,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def update_sender_setting(self, update_sender_setting_input_object, **kwargs):  # noqa: E501
-        """Change sender settings for specified country.  # noqa: E501
+        """Change sender settings  # noqa: E501
 
-          # noqa: E501
+        @TODO  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_sender_setting(update_sender_setting_input_object, async_req=True)
@@ -16855,9 +16855,9 @@ class TextMagicApi(object):
             return data
 
     def update_sender_setting_with_http_info(self, update_sender_setting_input_object, **kwargs):  # noqa: E501
-        """Change sender settings for specified country.  # noqa: E501
+        """Change sender settings  # noqa: E501
 
-          # noqa: E501
+        @TODO  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_sender_setting_with_http_info(update_sender_setting_input_object, async_req=True)

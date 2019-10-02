@@ -62,6 +62,7 @@ class SenderId(object):
     def id(self):
         """Gets the id of this SenderId.  # noqa: E501
 
+        Numeric sender ID.  # noqa: E501
 
         :return: The id of this SenderId.  # noqa: E501
         :rtype: int
@@ -72,6 +73,7 @@ class SenderId(object):
     def id(self, id):
         """Sets the id of this SenderId.
 
+        Numeric sender ID.  # noqa: E501
 
         :param id: The id of this SenderId.  # noqa: E501
         :type: int
@@ -83,6 +85,7 @@ class SenderId(object):
     def sender_id(self):
         """Gets the sender_id of this SenderId.  # noqa: E501
 
+        Alphanumeric ID.  # noqa: E501
 
         :return: The sender_id of this SenderId.  # noqa: E501
         :rtype: str
@@ -93,6 +96,7 @@ class SenderId(object):
     def sender_id(self, sender_id):
         """Sets the sender_id of this SenderId.
 
+        Alphanumeric ID.  # noqa: E501
 
         :param sender_id: The sender_id of this SenderId.  # noqa: E501
         :type: str
@@ -125,7 +129,7 @@ class SenderId(object):
     def status(self):
         """Gets the status of this SenderId.  # noqa: E501
 
-        A - accepted, R - rejected, P - pending  # noqa: E501
+        *   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active.   # noqa: E501
 
         :return: The status of this SenderId.  # noqa: E501
         :rtype: str
@@ -136,7 +140,7 @@ class SenderId(object):
     def status(self, status):
         """Sets the status of this SenderId.
 
-        A - accepted, R - rejected, P - pending  # noqa: E501
+        *   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active.   # noqa: E501
 
         :param status: The status of this SenderId.  # noqa: E501
         :type: str

@@ -46,7 +46,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_buy_dedicated_number(self):
         """Test case for buy_dedicated_number
 
-        Buy a dedicated number and assign it to the specified account.  # noqa: E501
+        Buy a dedicated number  # noqa: E501
         """
         pass
 
@@ -249,7 +249,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_dedicated_number(self):
         """Test case for delete_dedicated_number
 
-        Cancel dedicated number subscription.  # noqa: E501
+        Cancel dedicated number subscription  # noqa: E501
         """
         pass
 
@@ -347,7 +347,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_sender_id(self):
         """Test case for delete_sender_id
 
-        Delete a Sender ID.  # noqa: E501
+        Delete a Sender ID  # noqa: E501
         """
         pass
 
@@ -459,14 +459,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_available_dedicated_numbers(self):
         """Test case for get_available_dedicated_numbers
 
-        Find available dedicated numbers to buy.  # noqa: E501
+        Find dedicated numbers available for purchase  # noqa: E501
         """
         pass
 
     def test_get_available_sender_setting_options(self):
         """Test case for get_available_sender_setting_options
 
-        Get all available sender setting options which could be used in \"from\" parameter of POST messages method.  # noqa: E501
+        Get available sender settings  # noqa: E501
         """
         pass
 
@@ -627,7 +627,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_dedicated_number(self):
         """Test case for get_dedicated_number
 
-        Get a single dedicated number.  # noqa: E501
+        Get the details of a specific dedicated number  # noqa: E501
         """
         pass
 
@@ -774,21 +774,21 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_sender_id(self):
         """Test case for get_sender_id
 
-        Get a single Sender ID.  # noqa: E501
+        Get the details of a specific Sender ID  # noqa: E501
         """
         pass
 
     def test_get_sender_ids(self):
         """Test case for get_sender_ids
 
-        Get all sender IDs of current user.  # noqa: E501
+        Get all your approved Sender IDs  # noqa: E501
         """
         pass
 
     def test_get_sender_settings(self):
         """Test case for get_sender_settings
 
-        Get current user sender settings.  # noqa: E501
+        Get current sender settings  # noqa: E501
         """
         pass
 
@@ -893,7 +893,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_user_dedicated_numbers(self):
         """Test case for get_user_dedicated_numbers
 
-        Get user's dedicated numbers.  # noqa: E501
+        Get all your dedicated numbers  # noqa: E501
         """
         pass
 
@@ -977,7 +977,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_request_sender_id(self):
         """Test case for request_sender_id
 
-        Request for a new Sender ID.  # noqa: E501
+        Apply for a new Sender ID  # noqa: E501
         """
         pass
 
@@ -1201,7 +1201,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_update_sender_setting(self):
         """Test case for update_sender_setting
 
-        Change sender settings for specified country.  # noqa: E501
+        Change sender settings  # noqa: E501
         """
         pass
 

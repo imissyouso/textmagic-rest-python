@@ -62,6 +62,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def dedicated(self):
         """Gets the dedicated of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
 
+        Array of dedicated numbers strings.  # noqa: E501
 
         :return: The dedicated of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :rtype: list[str]
@@ -72,6 +73,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def dedicated(self, dedicated):
         """Sets the dedicated of this GetAvailableSenderSettingOptionsResponse.
 
+        Array of dedicated numbers strings.  # noqa: E501
 
         :param dedicated: The dedicated of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :type: list[str]
@@ -83,6 +85,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def user(self):
         """Gets the user of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
 
+        Array of verified account phone numbers (currently only one).  # noqa: E501
 
         :return: The user of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :rtype: list[str]
@@ -93,6 +96,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def user(self, user):
         """Sets the user of this GetAvailableSenderSettingOptionsResponse.
 
+        Array of verified account phone numbers (currently only one).  # noqa: E501
 
         :param user: The user of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :type: list[str]
@@ -104,6 +108,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def shared(self):
         """Gets the shared of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
 
+        Array of shared numbers strings.  # noqa: E501
 
         :return: The shared of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :rtype: list[str]
@@ -114,6 +119,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def shared(self, shared):
         """Sets the shared of this GetAvailableSenderSettingOptionsResponse.
 
+        Array of shared numbers strings.  # noqa: E501
 
         :param shared: The shared of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :type: list[str]
@@ -125,6 +131,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def sender_ids(self):
         """Gets the sender_ids of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
 
+        Array of alphanumeric sender IDs.  # noqa: E501
 
         :return: The sender_ids of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :rtype: list[str]
@@ -135,6 +142,7 @@ class GetAvailableSenderSettingOptionsResponse(object):
     def sender_ids(self, sender_ids):
         """Sets the sender_ids of this GetAvailableSenderSettingOptionsResponse.
 
+        Array of alphanumeric sender IDs.  # noqa: E501
 
         :param sender_ids: The sender_ids of this GetAvailableSenderSettingOptionsResponse.  # noqa: E501
         :type: list[str]

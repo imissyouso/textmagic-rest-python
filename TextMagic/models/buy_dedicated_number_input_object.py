@@ -58,7 +58,7 @@ class BuyDedicatedNumberInputObject(object):
     def phone(self):
         """Gets the phone of this BuyDedicatedNumberInputObject.  # noqa: E501
 
-        Desired dedicated phone number in international E.164 format  # noqa: E501
+        Dedicated phone number.  # noqa: E501
 
         :return: The phone of this BuyDedicatedNumberInputObject.  # noqa: E501
         :rtype: str
@@ -69,7 +69,7 @@ class BuyDedicatedNumberInputObject(object):
     def phone(self, phone):
         """Sets the phone of this BuyDedicatedNumberInputObject.
 
-        Desired dedicated phone number in international E.164 format  # noqa: E501
+        Dedicated phone number.  # noqa: E501
 
         :param phone: The phone of this BuyDedicatedNumberInputObject.  # noqa: E501
         :type: str
@@ -81,7 +81,7 @@ class BuyDedicatedNumberInputObject(object):
     def country(self):
         """Gets the country of this BuyDedicatedNumberInputObject.  # noqa: E501
 
-        Dedicated number country. Two charactes in upper case.  # noqa: E501
+        Country code phone number.  # noqa: E501
 
         :return: The country of this BuyDedicatedNumberInputObject.  # noqa: E501
         :rtype: str
@@ -92,7 +92,7 @@ class BuyDedicatedNumberInputObject(object):
     def country(self, country):
         """Sets the country of this BuyDedicatedNumberInputObject.
 
-        Dedicated number country. Two charactes in upper case.  # noqa: E501
+        Country code phone number.  # noqa: E501
 
         :param country: The country of this BuyDedicatedNumberInputObject.  # noqa: E501
         :type: str
@@ -104,7 +104,7 @@ class BuyDedicatedNumberInputObject(object):
     def user_id(self):
         """Gets the user_id of this BuyDedicatedNumberInputObject.  # noqa: E501
 
-        User ID this number will be assigned to  # noqa: E501
+        Assigned dedicated number. This number will be available for this account only. You cannot transfer numbers between sub-accounts.   # noqa: E501
 
         :return: The user_id of this BuyDedicatedNumberInputObject.  # noqa: E501
         :rtype: int
@@ -115,7 +115,7 @@ class BuyDedicatedNumberInputObject(object):
     def user_id(self, user_id):
         """Sets the user_id of this BuyDedicatedNumberInputObject.
 
-        User ID this number will be assigned to  # noqa: E501
+        Assigned dedicated number. This number will be available for this account only. You cannot transfer numbers between sub-accounts.   # noqa: E501
 
         :param user_id: The user_id of this BuyDedicatedNumberInputObject.  # noqa: E501
         :type: int

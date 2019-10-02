@@ -32,49 +32,50 @@ class UsersInbound(object):
     """
     swagger_types = {
         'id': 'int',
+        'phone': 'str',
         'user': 'User',
         'purchased_at': 'datetime',
         'expire_at': 'datetime',
         'status': 'str',
-        'country': 'Country',
-        'phone': 'str'
+        'country': 'Country'
     }
 
     attribute_map = {
         'id': 'id',
+        'phone': 'phone',
         'user': 'user',
         'purchased_at': 'purchasedAt',
         'expire_at': 'expireAt',
         'status': 'status',
-        'country': 'country',
-        'phone': 'phone'
+        'country': 'country'
     }
 
-    def __init__(self, id=None, user=None, purchased_at=None, expire_at=None, status=None, country=None, phone=None):  # noqa: E501
+    def __init__(self, id=None, phone=None, user=None, purchased_at=None, expire_at=None, status=None, country=None):  # noqa: E501
         """UsersInbound - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
+        self._phone = None
         self._user = None
         self._purchased_at = None
         self._expire_at = None
         self._status = None
         self._country = None
-        self._phone = None
         self.discriminator = None
 
         self.id = id
+        if phone is not None:
+            self.phone = phone
         self.user = user
         self.purchased_at = purchased_at
         self.expire_at = expire_at
         self.status = status
         self.country = country
-        if phone is not None:
-            self.phone = phone
 
     @property
     def id(self):
         """Gets the id of this UsersInbound.  # noqa: E501
 
+        Dedicated number ID.  # noqa: E501
 
         :return: The id of this UsersInbound.  # noqa: E501
         :rtype: int
@@ -85,12 +86,36 @@ class UsersInbound(object):
     def id(self, id):
         """Sets the id of this UsersInbound.
 
+        Dedicated number ID.  # noqa: E501
 
         :param id: The id of this UsersInbound.  # noqa: E501
         :type: int
         """
 
         self._id = id
+
+    @property
+    def phone(self):
+        """Gets the phone of this UsersInbound.  # noqa: E501
+
+        Dedicated phone number.  # noqa: E501
+
+        :return: The phone of this UsersInbound.  # noqa: E501
+        :rtype: str
+        """
+        return self._phone
+
+    @phone.setter
+    def phone(self, phone):
+        """Sets the phone of this UsersInbound.
+
+        Dedicated phone number.  # noqa: E501
+
+        :param phone: The phone of this UsersInbound.  # noqa: E501
+        :type: str
+        """
+
+        self._phone = phone
 
     @property
     def user(self):
@@ -117,6 +142,7 @@ class UsersInbound(object):
     def purchased_at(self):
         """Gets the purchased_at of this UsersInbound.  # noqa: E501
 
+        Time when the dedicated number was purchased.  # noqa: E501
 
         :return: The purchased_at of this UsersInbound.  # noqa: E501
         :rtype: datetime
@@ -127,6 +153,7 @@ class UsersInbound(object):
     def purchased_at(self, purchased_at):
         """Sets the purchased_at of this UsersInbound.
 
+        Time when the dedicated number was purchased.  # noqa: E501
 
         :param purchased_at: The purchased_at of this UsersInbound.  # noqa: E501
         :type: datetime
@@ -138,6 +165,7 @@ class UsersInbound(object):
     def expire_at(self):
         """Gets the expire_at of this UsersInbound.  # noqa: E501
 
+        Dedicated number subscription expiration time.  # noqa: E501
 
         :return: The expire_at of this UsersInbound.  # noqa: E501
         :rtype: datetime
@@ -148,6 +176,7 @@ class UsersInbound(object):
     def expire_at(self, expire_at):
         """Sets the expire_at of this UsersInbound.
 
+        Dedicated number subscription expiration time.  # noqa: E501
 
         :param expire_at: The expire_at of this UsersInbound.  # noqa: E501
         :type: datetime
@@ -159,7 +188,7 @@ class UsersInbound(object):
     def status(self):
         """Gets the status of this UsersInbound.  # noqa: E501
 
-        A - active, in use (at least one message was sent/received from/to this number), U - never used before  # noqa: E501
+        Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active.   # noqa: E501
 
         :return: The status of this UsersInbound.  # noqa: E501
         :rtype: str
@@ -170,7 +199,7 @@ class UsersInbound(object):
     def status(self, status):
         """Sets the status of this UsersInbound.
 
-        A - active, in use (at least one message was sent/received from/to this number), U - never used before  # noqa: E501
+        Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active.   # noqa: E501
 
         :param status: The status of this UsersInbound.  # noqa: E501
         :type: str
@@ -204,27 +233,6 @@ class UsersInbound(object):
         """
 
         self._country = country
-
-    @property
-    def phone(self):
-        """Gets the phone of this UsersInbound.  # noqa: E501
-
-
-        :return: The phone of this UsersInbound.  # noqa: E501
-        :rtype: str
-        """
-        return self._phone
-
-    @phone.setter
-    def phone(self, phone):
-        """Sets the phone of this UsersInbound.
-
-
-        :param phone: The phone of this UsersInbound.  # noqa: E501
-        :type: str
-        """
-
-        self._phone = phone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

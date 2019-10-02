@@ -62,6 +62,7 @@ class MessageTemplate(object):
     def id(self):
         """Gets the id of this MessageTemplate.  # noqa: E501
 
+        Template ID.  # noqa: E501
 
         :return: The id of this MessageTemplate.  # noqa: E501
         :rtype: int
@@ -72,6 +73,7 @@ class MessageTemplate(object):
     def id(self, id):
         """Sets the id of this MessageTemplate.
 
+        Template ID.  # noqa: E501
 
         :param id: The id of this MessageTemplate.  # noqa: E501
         :type: int
@@ -83,6 +85,7 @@ class MessageTemplate(object):
     def name(self):
         """Gets the name of this MessageTemplate.  # noqa: E501
 
+        Template name.  # noqa: E501
 
         :return: The name of this MessageTemplate.  # noqa: E501
         :rtype: str
@@ -93,6 +96,7 @@ class MessageTemplate(object):
     def name(self, name):
         """Sets the name of this MessageTemplate.
 
+        Template name.  # noqa: E501
 
         :param name: The name of this MessageTemplate.  # noqa: E501
         :type: str
@@ -104,6 +108,7 @@ class MessageTemplate(object):
     def content(self):
         """Gets the content of this MessageTemplate.  # noqa: E501
 
+        Template text. May contain the tags listed below @TODO.  # noqa: E501
 
         :return: The content of this MessageTemplate.  # noqa: E501
         :rtype: str
@@ -114,6 +119,7 @@ class MessageTemplate(object):
     def content(self, content):
         """Sets the content of this MessageTemplate.
 
+        Template text. May contain the tags listed below @TODO.  # noqa: E501
 
         :param content: The content of this MessageTemplate.  # noqa: E501
         :type: str
@@ -125,6 +131,7 @@ class MessageTemplate(object):
     def last_modified(self):
         """Gets the last_modified of this MessageTemplate.  # noqa: E501
 
+        Time when template was last modified.  # noqa: E501
 
         :return: The last_modified of this MessageTemplate.  # noqa: E501
         :rtype: datetime
@@ -135,6 +142,7 @@ class MessageTemplate(object):
     def last_modified(self, last_modified):
         """Sets the last_modified of this MessageTemplate.
 
+        Time when template was last modified.  # noqa: E501
 
         :param last_modified: The last_modified of this MessageTemplate.  # noqa: E501
         :type: datetime

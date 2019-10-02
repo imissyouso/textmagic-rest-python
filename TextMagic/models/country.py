@@ -54,6 +54,7 @@ class Country(object):
     def id(self):
         """Gets the id of this Country.  # noqa: E501
 
+        Two-letter ISO country ID.  # noqa: E501
 
         :return: The id of this Country.  # noqa: E501
         :rtype: str
@@ -64,6 +65,7 @@ class Country(object):
     def id(self, id):
         """Sets the id of this Country.
 
+        Two-letter ISO country ID.  # noqa: E501
 
         :param id: The id of this Country.  # noqa: E501
         :type: str
@@ -75,6 +77,7 @@ class Country(object):
     def name(self):
         """Gets the name of this Country.  # noqa: E501
 
+        Full country name.  # noqa: E501
 
         :return: The name of this Country.  # noqa: E501
         :rtype: str
@@ -85,6 +88,7 @@ class Country(object):
     def name(self, name):
         """Sets the name of this Country.
 
+        Full country name.  # noqa: E501
 
         :param name: The name of this Country.  # noqa: E501
         :type: str

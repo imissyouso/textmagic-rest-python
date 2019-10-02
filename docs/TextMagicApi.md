@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**assign_contacts_to_list**](TextMagicApi.md#assign_contacts_to_list) | **PUT** /api/v2/lists/{id}/contacts | Assign contacts to the specified list.
 [**block_contact**](TextMagicApi.md#block_contact) | **POST** /api/v2/contacts/block | Block contact from inbound and outbound communication by phone number.
-[**buy_dedicated_number**](TextMagicApi.md#buy_dedicated_number) | **POST** /api/v2/numbers | Buy a dedicated number and assign it to the specified account.
+[**buy_dedicated_number**](TextMagicApi.md#buy_dedicated_number) | **POST** /api/v2/numbers | Buy a dedicated number
 [**cancel_survey**](TextMagicApi.md#cancel_survey) | **PUT** /api/v2/surveys/{id}/cancel | Cancel a survey.
 [**cancel_verification**](TextMagicApi.md#cancel_verification) | **DELETE** /api/v2/verify/{verifyId} | Cancel verification process
 [**check_phone_verification_code**](TextMagicApi.md#check_phone_verification_code) | **PUT** /api/v2/user/phone/verification | Check user phone verification code
@@ -35,7 +35,7 @@ Method | HTTP request | Description
 [**delete_contacts_by_ids**](TextMagicApi.md#delete_contacts_by_ids) | **POST** /api/v2/contacts/delete | Delete contact by given ID(s) or delete all contacts.
 [**delete_contacts_from_list**](TextMagicApi.md#delete_contacts_from_list) | **DELETE** /api/v2/lists/{id}/contacts | Unassign contacts from the specified list.
 [**delete_custom_field**](TextMagicApi.md#delete_custom_field) | **DELETE** /api/v2/customfields/{id} | Delete a single custom field.
-[**delete_dedicated_number**](TextMagicApi.md#delete_dedicated_number) | **DELETE** /api/v2/numbers/{id} | Cancel dedicated number subscription.
+[**delete_dedicated_number**](TextMagicApi.md#delete_dedicated_number) | **DELETE** /api/v2/numbers/{id} | Cancel dedicated number subscription
 [**delete_inbound_message**](TextMagicApi.md#delete_inbound_message) | **DELETE** /api/v2/replies/{id} | Delete a single inbound message
 [**delete_inbound_messages_bulk**](TextMagicApi.md#delete_inbound_messages_bulk) | **POST** /api/v2/replies/delete | Delete inbound messages (bulk)
 [**delete_list**](TextMagicApi.md#delete_list) | **DELETE** /api/v2/lists/{id} | Delete a single list.
@@ -49,7 +49,7 @@ Method | HTTP request | Description
 [**delete_push_token**](TextMagicApi.md#delete_push_token) | **DELETE** /api/v2/push/tokens/{type}/{deviceId} | Delete a push notification device token.
 [**delete_scheduled_message**](TextMagicApi.md#delete_scheduled_message) | **DELETE** /api/v2/schedules/{id} | Delete a single scheduled message
 [**delete_scheduled_messages_bulk**](TextMagicApi.md#delete_scheduled_messages_bulk) | **POST** /api/v2/schedules/delete | Delete scheduled messages (bulk)
-[**delete_sender_id**](TextMagicApi.md#delete_sender_id) | **DELETE** /api/v2/senderids/{id} | Delete a Sender ID.
+[**delete_sender_id**](TextMagicApi.md#delete_sender_id) | **DELETE** /api/v2/senderids/{id} | Delete a Sender ID
 [**delete_survey**](TextMagicApi.md#delete_survey) | **DELETE** /api/v2/surveys/{id} | Delete a survey.
 [**delete_survey_node**](TextMagicApi.md#delete_survey_node) | **DELETE** /api/v2/surveys/nodes/{id} | Delete a node.
 [**delete_template**](TextMagicApi.md#delete_template) | **DELETE** /api/v2/templates/{id} | Delete a template
@@ -65,8 +65,8 @@ Method | HTTP request | Description
 [**get_all_outbound_messages**](TextMagicApi.md#get_all_outbound_messages) | **GET** /api/v2/messages | Get all messages
 [**get_all_scheduled_messages**](TextMagicApi.md#get_all_scheduled_messages) | **GET** /api/v2/schedules | Get all scheduled messages
 [**get_all_templates**](TextMagicApi.md#get_all_templates) | **GET** /api/v2/templates | Get all templates
-[**get_available_dedicated_numbers**](TextMagicApi.md#get_available_dedicated_numbers) | **GET** /api/v2/numbers/available | Find available dedicated numbers to buy.
-[**get_available_sender_setting_options**](TextMagicApi.md#get_available_sender_setting_options) | **GET** /api/v2/sources | Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+[**get_available_dedicated_numbers**](TextMagicApi.md#get_available_dedicated_numbers) | **GET** /api/v2/numbers/available | Find dedicated numbers available for purchase
+[**get_available_sender_setting_options**](TextMagicApi.md#get_available_sender_setting_options) | **GET** /api/v2/sources | Get available sender settings
 [**get_balance_notification_options**](TextMagicApi.md#get_balance_notification_options) | **GET** /api/v2/user/notification/balance/bundles | Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
 [**get_balance_notification_settings**](TextMagicApi.md#get_balance_notification_settings) | **GET** /api/v2/user/notification/balance | Get balance notification settings
 [**get_blocked_contacts**](TextMagicApi.md#get_blocked_contacts) | **GET** /api/v2/contacts/block/list | Get blocked contacts.
@@ -89,7 +89,7 @@ Method | HTTP request | Description
 [**get_current_user**](TextMagicApi.md#get_current_user) | **GET** /api/v2/user | Get current user info.
 [**get_custom_field**](TextMagicApi.md#get_custom_field) | **GET** /api/v2/customfields/{id} | Get a single custom field.
 [**get_custom_fields**](TextMagicApi.md#get_custom_fields) | **GET** /api/v2/customfields | Get all contact custom fields.
-[**get_dedicated_number**](TextMagicApi.md#get_dedicated_number) | **GET** /api/v2/numbers/{id} | Get a single dedicated number.
+[**get_dedicated_number**](TextMagicApi.md#get_dedicated_number) | **GET** /api/v2/numbers/{id} | Get the details of a specific dedicated number
 [**get_disallowed_rules**](TextMagicApi.md#get_disallowed_rules) | **GET** /api/v2/user/disallowed-rules | Get an array of all rules that are disallowed to the current account.
 [**get_favourites**](TextMagicApi.md#get_favourites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists.
 [**get_inbound_message**](TextMagicApi.md#get_inbound_message) | **GET** /api/v2/replies/{id} | Get a single inbound message
@@ -110,9 +110,9 @@ Method | HTTP request | Description
 [**get_outbound_messages_history**](TextMagicApi.md#get_outbound_messages_history) | **GET** /api/v2/history | Get history
 [**get_push_tokens**](TextMagicApi.md#get_push_tokens) | **GET** /api/v2/push/tokens | Get all device tokens assigned to the current account
 [**get_scheduled_message**](TextMagicApi.md#get_scheduled_message) | **GET** /api/v2/schedules/{id} | Get a single scheduled message
-[**get_sender_id**](TextMagicApi.md#get_sender_id) | **GET** /api/v2/senderids/{id} | Get a single Sender ID.
-[**get_sender_ids**](TextMagicApi.md#get_sender_ids) | **GET** /api/v2/senderids | Get all sender IDs of current user.
-[**get_sender_settings**](TextMagicApi.md#get_sender_settings) | **GET** /api/v2/sender/settings | Get current user sender settings.
+[**get_sender_id**](TextMagicApi.md#get_sender_id) | **GET** /api/v2/senderids/{id} | Get the details of a specific Sender ID
+[**get_sender_ids**](TextMagicApi.md#get_sender_ids) | **GET** /api/v2/senderids | Get all your approved Sender IDs
+[**get_sender_settings**](TextMagicApi.md#get_sender_settings) | **GET** /api/v2/sender/settings | Get current sender settings
 [**get_spending_stat**](TextMagicApi.md#get_spending_stat) | **GET** /api/v2/stats/spending | Return account spending statistics.
 [**get_state**](TextMagicApi.md#get_state) | **GET** /api/v2/state | Get current entities state
 [**get_subaccount**](TextMagicApi.md#get_subaccount) | **GET** /api/v2/subaccounts/{id} | Get a single subaccount.
@@ -127,7 +127,7 @@ Method | HTTP request | Description
 [**get_unread_messages_total**](TextMagicApi.md#get_unread_messages_total) | **GET** /api/v2/chats/unread/count | Get unread messages number
 [**get_unsubscribed_contact**](TextMagicApi.md#get_unsubscribed_contact) | **GET** /api/v2/unsubscribers/{id} | Get a single unsubscribed contact.
 [**get_unsubscribers**](TextMagicApi.md#get_unsubscribers) | **GET** /api/v2/unsubscribers | Get all contact have unsubscribed from your communication.
-[**get_user_dedicated_numbers**](TextMagicApi.md#get_user_dedicated_numbers) | **GET** /api/v2/numbers | Get user&#39;s dedicated numbers.
+[**get_user_dedicated_numbers**](TextMagicApi.md#get_user_dedicated_numbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
 [**get_user_lists**](TextMagicApi.md#get_user_lists) | **GET** /api/v2/lists | Get all user lists.
 [**get_versions**](TextMagicApi.md#get_versions) | **GET** /api/v2/versions | Get minimal valid apps versions
 [**invite_subaccount**](TextMagicApi.md#invite_subaccount) | **POST** /api/v2/subaccounts | Invite new subaccount.
@@ -139,7 +139,7 @@ Method | HTTP request | Description
 [**ping**](TextMagicApi.md#ping) | **GET** /api/v2/ping | Just does a pong.
 [**reopen_chats_bulk**](TextMagicApi.md#reopen_chats_bulk) | **POST** /api/v2/chats/reopen/bulk | Reopen chats (bulk)
 [**request_new_subaccount_token**](TextMagicApi.md#request_new_subaccount_token) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for subaccount.
-[**request_sender_id**](TextMagicApi.md#request_sender_id) | **POST** /api/v2/senderids | Request for a new Sender ID.
+[**request_sender_id**](TextMagicApi.md#request_sender_id) | **POST** /api/v2/senderids | Apply for a new Sender ID
 [**reset_survey**](TextMagicApi.md#reset_survey) | **PUT** /api/v2/surveys/{id}/reset | Reset a survey flow.
 [**search_chats**](TextMagicApi.md#search_chats) | **GET** /api/v2/chats/search | Find chats by message text
 [**search_chats_by_ids**](TextMagicApi.md#search_chats_by_ids) | **GET** /api/v2/chats/search/ids | Find chats (bulk)
@@ -171,7 +171,7 @@ Method | HTTP request | Description
 [**update_inbound_messages_notification_settings**](TextMagicApi.md#update_inbound_messages_notification_settings) | **PUT** /api/v2/user/notification/inbound | Update inbound messages notification settings
 [**update_list**](TextMagicApi.md#update_list) | **PUT** /api/v2/lists/{id} | Update existing list.
 [**update_password**](TextMagicApi.md#update_password) | **PUT** /api/v2/user/password/change | Change user password.
-[**update_sender_setting**](TextMagicApi.md#update_sender_setting) | **PUT** /api/v2/sender/settings | Change sender settings for specified country.
+[**update_sender_setting**](TextMagicApi.md#update_sender_setting) | **PUT** /api/v2/sender/settings | Change sender settings
 [**update_survey**](TextMagicApi.md#update_survey) | **PUT** /api/v2/surveys/{id} | Update existing survey.
 [**update_survey_node**](TextMagicApi.md#update_survey_node) | **PUT** /api/v2/surveys/nodes/{id} | Update existing node.
 [**update_template**](TextMagicApi.md#update_template) | **PUT** /api/v2/templates/{id} | Update a template
@@ -292,9 +292,9 @@ Name | Type | Description  | Notes
 # **buy_dedicated_number**
 > buy_dedicated_number(buy_dedicated_number_input_object)
 
-Buy a dedicated number and assign it to the specified account.
+Buy a dedicated number
 
-
+To buy a dedicated number, you first need to find an available number matching your criteria using the `/api/v2/numbers/available` command described above.
 
 ### Example
 ```python
@@ -314,7 +314,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 buy_dedicated_number_input_object = TextMagic.BuyDedicatedNumberInputObject() # BuyDedicatedNumberInputObject | 
 
 try:
-    # Buy a dedicated number and assign it to the specified account.
+    # Buy a dedicated number
     api_instance.buy_dedicated_number(buy_dedicated_number_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->buy_dedicated_number: %s\n" % e)
@@ -1136,7 +1136,7 @@ Name | Type | Description  | Notes
 
 Create a template
 
-
+There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
 
 ### Example
 ```python
@@ -1805,7 +1805,7 @@ void (empty response body)
 # **delete_dedicated_number**
 > delete_dedicated_number(id)
 
-Cancel dedicated number subscription.
+Cancel dedicated number subscription
 
 
 
@@ -1827,7 +1827,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Cancel dedicated number subscription.
+    # Cancel dedicated number subscription
     api_instance.delete_dedicated_number(id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_dedicated_number: %s\n" % e)
@@ -2537,7 +2537,7 @@ void (empty response body)
 # **delete_sender_id**
 > delete_sender_id(id)
 
-Delete a Sender ID.
+Delete a Sender ID
 
 
 
@@ -2559,7 +2559,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Delete a Sender ID.
+    # Delete a Sender ID
     api_instance.delete_sender_id(id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_sender_id: %s\n" % e)
@@ -3411,7 +3411,7 @@ Name | Type | Description  | Notes
 # **get_available_dedicated_numbers**
 > GetAvailableDedicatedNumbersResponse get_available_dedicated_numbers(country, prefix=prefix, tollfree=tollfree)
 
-Find available dedicated numbers to buy.
+Find dedicated numbers available for purchase
 
 
 
@@ -3430,12 +3430,12 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-country = '\"GB\"' # str | Dedicated number country. Two letters in upper case
-prefix = 1 # int | Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree = 1 parameter and there are available tollfree numbers, this parameter will be ignore. (optional) (default to 1)
-tollfree = 0 # int | Should we show only tollfree numbers (tollfree available only for US). Default is false. (optional) (default to 0)
+country = '\"GB\"' # str | Two-letter dedicated number country ISO code.
+prefix = 1 # int | Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional) (default to 1)
+tollfree = 0 # int | Should we show only tollfree numbers (tollfree available only for US). (optional) (default to 0)
 
 try:
-    # Find available dedicated numbers to buy.
+    # Find dedicated numbers available for purchase
     api_response = api_instance.get_available_dedicated_numbers(country, prefix=prefix, tollfree=tollfree)
     pprint(api_response)
 except ApiException as e:
@@ -3446,9 +3446,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **str**| Dedicated number country. Two letters in upper case | 
- **prefix** | **int**| Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree &#x3D; 1 parameter and there are available tollfree numbers, this parameter will be ignore. | [optional] [default to 1]
- **tollfree** | **int**| Should we show only tollfree numbers (tollfree available only for US). Default is false. | [optional] [default to 0]
+ **country** | **str**| Two-letter dedicated number country ISO code. | 
+ **prefix** | **int**| Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional] [default to 1]
+ **tollfree** | **int**| Should we show only tollfree numbers (tollfree available only for US). | [optional] [default to 0]
 
 ### Return type
 
@@ -3468,9 +3468,9 @@ Name | Type | Description  | Notes
 # **get_available_sender_setting_options**
 > GetAvailableSenderSettingOptionsResponse get_available_sender_setting_options(country=country)
 
+Get available sender settings
+
 Get all available sender setting options which could be used in \"from\" parameter of POST messages method.
-
-
 
 ### Example
 ```python
@@ -3487,10 +3487,10 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-country = 'country_example' # str | Return sender setting options available in specific country only. Two upper case characters (optional)
+country = '\"US\"' # str | Two-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)
 
 try:
-    # Get all available sender setting options which could be used in \"from\" parameter of POST messages method.
+    # Get available sender settings
     api_response = api_instance.get_available_sender_setting_options(country=country)
     pprint(api_response)
 except ApiException as e:
@@ -3501,7 +3501,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **str**| Return sender setting options available in specific country only. Two upper case characters | [optional] 
+ **country** | **str**| Two-letter ISO country ID. If not specified, it returns all the available sender settings. | [optional] 
 
 ### Return type
 
@@ -4715,7 +4715,7 @@ Name | Type | Description  | Notes
 # **get_dedicated_number**
 > UsersInbound get_dedicated_number(id)
 
-Get a single dedicated number.
+Get the details of a specific dedicated number
 
 
 
@@ -4737,7 +4737,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Get a single dedicated number.
+    # Get the details of a specific dedicated number
     api_response = api_instance.get_dedicated_number(id)
     pprint(api_response)
 except ApiException as e:
@@ -5906,7 +5906,7 @@ Name | Type | Description  | Notes
 # **get_sender_id**
 > SenderId get_sender_id(id)
 
-Get a single Sender ID.
+Get the details of a specific Sender ID
 
 
 
@@ -5928,7 +5928,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Get a single Sender ID.
+    # Get the details of a specific Sender ID
     api_response = api_instance.get_sender_id(id)
     pprint(api_response)
 except ApiException as e:
@@ -5959,7 +5959,7 @@ Name | Type | Description  | Notes
 # **get_sender_ids**
 > GetSenderIdsPaginatedResponse get_sender_ids(page=page, limit=limit)
 
-Get all sender IDs of current user.
+Get all your approved Sender IDs
 
 
 
@@ -5982,7 +5982,7 @@ page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 
 try:
-    # Get all sender IDs of current user.
+    # Get all your approved Sender IDs
     api_response = api_instance.get_sender_ids(page=page, limit=limit)
     pprint(api_response)
 except ApiException as e:
@@ -6014,9 +6014,9 @@ Name | Type | Description  | Notes
 # **get_sender_settings**
 > GetSenderSettingsResponse get_sender_settings(country=country)
 
-Get current user sender settings.
+Get current sender settings
 
-
+@TODO
 
 ### Example
 ```python
@@ -6033,10 +6033,10 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-country = 'country_example' # str | Return sender settings enabled for sending to specified country. Two upper case characters (optional)
+country = '\"US\"' # str | Return sender settings enabled for sending to specified country. Two upper case characters (optional)
 
 try:
-    # Get current user sender settings.
+    # Get current sender settings
     api_response = api_instance.get_sender_settings(country=country)
     pprint(api_response)
 except ApiException as e:
@@ -6817,7 +6817,7 @@ Name | Type | Description  | Notes
 # **get_user_dedicated_numbers**
 > GetUserDedicatedNumbersPaginatedResponse get_user_dedicated_numbers(page=page, limit=limit, survey_id=survey_id)
 
-Get user's dedicated numbers.
+Get all your dedicated numbers
 
 
 
@@ -6841,7 +6841,7 @@ limit = 10 # int | The number of results per page. (optional) (default to 10)
 survey_id = 56 # int | Fetch only that numbers which are ready for the survey (optional)
 
 try:
-    # Get user's dedicated numbers.
+    # Get all your dedicated numbers
     api_response = api_instance.get_user_dedicated_numbers(page=page, limit=limit, survey_id=survey_id)
     pprint(api_response)
 except ApiException as e:
@@ -7453,9 +7453,9 @@ Name | Type | Description  | Notes
 # **request_sender_id**
 > ResourceLinkResponse request_sender_id(request_sender_id_input_object)
 
-Request for a new Sender ID.
+Apply for a new Sender ID
 
-
+> Sender IDs are shared between all of your sub-accounts.
 
 ### Example
 ```python
@@ -7475,7 +7475,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 request_sender_id_input_object = TextMagic.RequestSenderIdInputObject() # RequestSenderIdInputObject | 
 
 try:
-    # Request for a new Sender ID.
+    # Apply for a new Sender ID
     api_response = api_instance.request_sender_id(request_sender_id_input_object)
     pprint(api_response)
 except ApiException as e:
@@ -9235,9 +9235,9 @@ void (empty response body)
 # **update_sender_setting**
 > update_sender_setting(update_sender_setting_input_object)
 
-Change sender settings for specified country.
+Change sender settings
 
-
+@TODO
 
 ### Example
 ```python
@@ -9257,7 +9257,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_sender_setting_input_object = TextMagic.UpdateSenderSettingInputObject() # UpdateSenderSettingInputObject | 
 
 try:
-    # Change sender settings for specified country.
+    # Change sender settings
     api_instance.update_sender_setting(update_sender_setting_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->update_sender_setting: %s\n" % e)
