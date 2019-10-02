@@ -114,6 +114,7 @@ class MessagesIcs(object):
     def id(self):
         """Gets the id of this MessagesIcs.  # noqa: E501
 
+        Schedule ID.  # noqa: E501
 
         :return: The id of this MessagesIcs.  # noqa: E501
         :rtype: int
@@ -124,6 +125,7 @@ class MessagesIcs(object):
     def id(self, id):
         """Sets the id of this MessagesIcs.
 
+        Schedule ID.  # noqa: E501
 
         :param id: The id of this MessagesIcs.  # noqa: E501
         :type: int
@@ -135,6 +137,7 @@ class MessagesIcs(object):
     def next_send(self):
         """Gets the next_send of this MessagesIcs.  # noqa: E501
 
+        Next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format.   # noqa: E501
 
         :return: The next_send of this MessagesIcs.  # noqa: E501
         :rtype: datetime
@@ -145,6 +148,7 @@ class MessagesIcs(object):
     def next_send(self, next_send):
         """Sets the next_send of this MessagesIcs.
 
+        Next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format.   # noqa: E501
 
         :param next_send: The next_send of this MessagesIcs.  # noqa: E501
         :type: datetime
@@ -156,6 +160,7 @@ class MessagesIcs(object):
     def rrule(self):
         """Gets the rrule of this MessagesIcs.  # noqa: E501
 
+        [iCal RRULE](http://www.kanzaki.com/docs/ical/rrule.html) string.   # noqa: E501
 
         :return: The rrule of this MessagesIcs.  # noqa: E501
         :rtype: str
@@ -166,6 +171,7 @@ class MessagesIcs(object):
     def rrule(self, rrule):
         """Sets the rrule of this MessagesIcs.
 
+        [iCal RRULE](http://www.kanzaki.com/docs/ical/rrule.html) string.   # noqa: E501
 
         :param rrule: The rrule of this MessagesIcs.  # noqa: E501
         :type: str

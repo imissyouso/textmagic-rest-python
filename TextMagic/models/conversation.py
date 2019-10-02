@@ -107,6 +107,7 @@ class Conversation(object):
     def direction(self):
         """Gets the direction of this Conversation.  # noqa: E501
 
+        Message type: inbound or outbound.   # noqa: E501
 
         :return: The direction of this Conversation.  # noqa: E501
         :rtype: str
@@ -117,10 +118,17 @@ class Conversation(object):
     def direction(self, direction):
         """Sets the direction of this Conversation.
 
+        Message type: inbound or outbound.   # noqa: E501
 
         :param direction: The direction of this Conversation.  # noqa: E501
         :type: str
         """
+        allowed_values = ["in", "out"]  # noqa: E501
+        if direction not in allowed_values:
+            raise ValueError(
+                "Invalid value for `direction` ({0}), must be one of {1}"  # noqa: E501
+                .format(direction, allowed_values)
+            )
 
         self._direction = direction
 
@@ -128,6 +136,7 @@ class Conversation(object):
     def sender(self):
         """Gets the sender of this Conversation.  # noqa: E501
 
+        Sender phone number.  # noqa: E501
 
         :return: The sender of this Conversation.  # noqa: E501
         :rtype: str
@@ -138,6 +147,7 @@ class Conversation(object):
     def sender(self, sender):
         """Sets the sender of this Conversation.
 
+        Sender phone number.  # noqa: E501
 
         :param sender: The sender of this Conversation.  # noqa: E501
         :type: str
@@ -149,6 +159,7 @@ class Conversation(object):
     def message_time(self):
         """Gets the message_time of this Conversation.  # noqa: E501
 
+        Time when message arrived at TextMagic.  # noqa: E501
 
         :return: The message_time of this Conversation.  # noqa: E501
         :rtype: datetime
@@ -159,6 +170,7 @@ class Conversation(object):
     def message_time(self, message_time):
         """Sets the message_time of this Conversation.
 
+        Time when message arrived at TextMagic.  # noqa: E501
 
         :param message_time: The message_time of this Conversation.  # noqa: E501
         :type: datetime
@@ -170,6 +182,7 @@ class Conversation(object):
     def text(self):
         """Gets the text of this Conversation.  # noqa: E501
 
+        Message text.  # noqa: E501
 
         :return: The text of this Conversation.  # noqa: E501
         :rtype: str
@@ -180,6 +193,7 @@ class Conversation(object):
     def text(self, text):
         """Sets the text of this Conversation.
 
+        Message text.  # noqa: E501
 
         :param text: The text of this Conversation.  # noqa: E501
         :type: str
@@ -191,6 +205,7 @@ class Conversation(object):
     def receiver(self):
         """Gets the receiver of this Conversation.  # noqa: E501
 
+        Receiver phone number.  # noqa: E501
 
         :return: The receiver of this Conversation.  # noqa: E501
         :rtype: str
@@ -201,6 +216,7 @@ class Conversation(object):
     def receiver(self, receiver):
         """Sets the receiver of this Conversation.
 
+        Receiver phone number.  # noqa: E501
 
         :param receiver: The receiver of this Conversation.  # noqa: E501
         :type: str
@@ -212,6 +228,7 @@ class Conversation(object):
     def status(self):
         """Gets the status of this Conversation.  # noqa: E501
 
+        Message status (for chats outbound only). See [message delivery statuses](/docs/api/sms-sessions/#message-delivery-statuses) for details.  # noqa: E501
 
         :return: The status of this Conversation.  # noqa: E501
         :rtype: str
@@ -222,6 +239,7 @@ class Conversation(object):
     def status(self, status):
         """Sets the status of this Conversation.
 
+        Message status (for chats outbound only). See [message delivery statuses](/docs/api/sms-sessions/#message-delivery-statuses) for details.  # noqa: E501
 
         :param status: The status of this Conversation.  # noqa: E501
         :type: str
@@ -233,6 +251,7 @@ class Conversation(object):
     def first_name(self):
         """Gets the first_name of this Conversation.  # noqa: E501
 
+        Contact first name.  # noqa: E501
 
         :return: The first_name of this Conversation.  # noqa: E501
         :rtype: str
@@ -243,6 +262,7 @@ class Conversation(object):
     def first_name(self, first_name):
         """Sets the first_name of this Conversation.
 
+        Contact first name.  # noqa: E501
 
         :param first_name: The first_name of this Conversation.  # noqa: E501
         :type: str
@@ -254,6 +274,7 @@ class Conversation(object):
     def last_name(self):
         """Gets the last_name of this Conversation.  # noqa: E501
 
+        Contact last name.  # noqa: E501
 
         :return: The last_name of this Conversation.  # noqa: E501
         :rtype: str
@@ -264,6 +285,7 @@ class Conversation(object):
     def last_name(self, last_name):
         """Sets the last_name of this Conversation.
 
+        Contact last name.  # noqa: E501
 
         :param last_name: The last_name of this Conversation.  # noqa: E501
         :type: str

@@ -57,10 +57,24 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
+    def test_cancel_verification(self):
+        """Test case for cancel_verification
+
+        Cancel verification process  # noqa: E501
+        """
+        pass
+
     def test_check_phone_verification_code(self):
         """Test case for check_phone_verification_code
 
         Check user phone verification code  # noqa: E501
+        """
+        pass
+
+    def test_check_phone_verification_code_0(self):
+        """Test case for check_phone_verification_code_0
+
+        Step 2: Check the verification code   # noqa: E501
         """
         pass
 
@@ -74,14 +88,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_close_chats_bulk(self):
         """Test case for close_chats_bulk
 
-        Close chats by chat ids or close all chats  # noqa: E501
+        Close chats (bulk)  # noqa: E501
         """
         pass
 
     def test_close_read_chats(self):
         """Test case for close_read_chats
 
-        Close all chats that have no unread messages.  # noqa: E501
+        Close read chats  # noqa: E501
         """
         pass
 
@@ -144,7 +158,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_create_template(self):
         """Test case for create_template
 
-        Create a new template from the submitted data.  # noqa: E501
+        Create a template  # noqa: E501
         """
         pass
 
@@ -172,14 +186,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_chat_messages(self):
         """Test case for delete_chat_messages
 
-        Delete messages from chat by given messages ID(s).  # noqa: E501
+        Delete chat messages by ID(s)  # noqa: E501
         """
         pass
 
     def test_delete_chats_bulk(self):
         """Test case for delete_chats_bulk
 
-        Delete chats by given ID(s) or delete all chats.  # noqa: E501
+        Delete chats (bulk)  # noqa: E501
         """
         pass
 
@@ -242,14 +256,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_inbound_message(self):
         """Test case for delete_inbound_message
 
-        Delete the incoming message.  # noqa: E501
+        Delete a single inbound message  # noqa: E501
         """
         pass
 
     def test_delete_inbound_messages_bulk(self):
         """Test case for delete_inbound_messages_bulk
 
-        Delete inbound messages by given ID(s) or delete all inbound messages.  # noqa: E501
+        Delete inbound messages (bulk)  # noqa: E501
         """
         pass
 
@@ -284,14 +298,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_message_session(self):
         """Test case for delete_message_session
 
-        Delete a message session, together with all nested messages.  # noqa: E501
+        Delete a session  # noqa: E501
         """
         pass
 
     def test_delete_message_sessions_bulk(self):
         """Test case for delete_message_sessions_bulk
 
-        Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.  # noqa: E501
+        Delete sessions (bulk)  # noqa: E501
         """
         pass
 
@@ -305,7 +319,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_outbound_messages_bulk(self):
         """Test case for delete_outbound_messages_bulk
 
-        Delete messages by IDs  # noqa: E501
+        Delete messages (bulk)  # noqa: E501
         """
         pass
 
@@ -319,14 +333,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_scheduled_message(self):
         """Test case for delete_scheduled_message
 
-        Delete a message session, together with all nested messages.  # noqa: E501
+        Delete a single scheduled message  # noqa: E501
         """
         pass
 
     def test_delete_scheduled_messages_bulk(self):
         """Test case for delete_scheduled_messages_bulk
 
-        Delete scheduled messages by given ID(s) or delete all scheduled messages.  # noqa: E501
+        Delete scheduled messages (bulk)  # noqa: E501
         """
         pass
 
@@ -354,14 +368,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_template(self):
         """Test case for delete_template
 
-        Delete a single template.  # noqa: E501
+        Delete a template  # noqa: E501
         """
         pass
 
     def test_delete_templates_bulk(self):
         """Test case for delete_templates_bulk
 
-        Delete template by given ID(s) or delete all templates.  # noqa: E501
+        Delete templates (bulk)  # noqa: E501
         """
         pass
 
@@ -403,21 +417,21 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_all_chats(self):
         """Test case for get_all_chats
 
-        Get all user chats.  # noqa: E501
+        Get all chats  # noqa: E501
         """
         pass
 
     def test_get_all_inbound_messages(self):
         """Test case for get_all_inbound_messages
 
-        Get all inbox messages.  # noqa: E501
+        Get all inbound messages  # noqa: E501
         """
         pass
 
     def test_get_all_message_sessions(self):
         """Test case for get_all_message_sessions
 
-        Get all message sending sessions.  # noqa: E501
+        Get all sessions  # noqa: E501
         """
         pass
 
@@ -431,14 +445,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_all_scheduled_messages(self):
         """Test case for get_all_scheduled_messages
 
-        Get all scheduled messages.  # noqa: E501
+        Get all scheduled messages  # noqa: E501
         """
         pass
 
     def test_get_all_templates(self):
         """Test case for get_all_templates
 
-        Get all user templates.  # noqa: E501
+        Get all templates  # noqa: E501
         """
         pass
 
@@ -501,21 +515,21 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_chat(self):
         """Test case for get_chat
 
-        Get a single chat.  # noqa: E501
+        Get a single chat  # noqa: E501
         """
         pass
 
     def test_get_chat_by_phone(self):
         """Test case for get_chat_by_phone
 
-        Find chats by phone.  # noqa: E501
+        Find chats by phone  # noqa: E501
         """
         pass
 
     def test_get_chat_messages(self):
         """Test case for get_chat_messages
 
-        Fetch messages from chat with specified chat id.  # noqa: E501
+        Get chat messages  # noqa: E501
         """
         pass
 
@@ -631,17 +645,10 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_forwarded_calls(self):
-        """Test case for get_forwarded_calls
-
-        Get all forwarded calls.  # noqa: E501
-        """
-        pass
-
     def test_get_inbound_message(self):
         """Test case for get_inbound_message
 
-        Get a single inbox message.  # noqa: E501
+        Get a single inbound message  # noqa: E501
         """
         pass
 
@@ -704,21 +711,21 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_message_session(self):
         """Test case for get_message_session
 
-        Get a message session.  # noqa: E501
+        Get a session details  # noqa: E501
         """
         pass
 
     def test_get_message_session_stat(self):
         """Test case for get_message_session_stat
 
-        Get sending session statistics.  # noqa: E501
+        Get a session statistics  # noqa: E501
         """
         pass
 
     def test_get_messages_by_session_id(self):
         """Test case for get_messages_by_session_id
 
-        Fetch messages by given session id.  # noqa: E501
+        Get a session messages  # noqa: E501
         """
         pass
 
@@ -760,7 +767,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_scheduled_message(self):
         """Test case for get_scheduled_message
 
-        Get message schedule.  # noqa: E501
+        Get a single scheduled message  # noqa: E501
         """
         pass
 
@@ -851,7 +858,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_template(self):
         """Test case for get_template
 
-        Get a single template.  # noqa: E501
+        Get a template details  # noqa: E501
         """
         pass
 
@@ -865,7 +872,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_unread_messages_total(self):
         """Test case for get_unread_messages_total
 
-        Get total amount of unread messages in the current user chats.  # noqa: E501
+        Get unread messages number  # noqa: E501
         """
         pass
 
@@ -914,14 +921,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_mark_chats_read_bulk(self):
         """Test case for mark_chats_read_bulk
 
-        Mark several chats as read by chat ids or mark all chats as read  # noqa: E501
+        Mark chats as read (bulk)  # noqa: E501
         """
         pass
 
     def test_mark_chats_unread_bulk(self):
         """Test case for mark_chats_unread_bulk
 
-        Mark several chats as UNread by chat ids or mark all chats as UNread  # noqa: E501
+        Mark chats as unread (bulk)  # noqa: E501
         """
         pass
 
@@ -935,14 +942,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_mute_chat(self):
         """Test case for mute_chat
 
-        Set mute mode.  # noqa: E501
+        Mute chat sounds  # noqa: E501
         """
         pass
 
     def test_mute_chats_bulk(self):
         """Test case for mute_chats_bulk
 
-        Mute several chats by chat ids or mute all chats  # noqa: E501
+        Mute chats (bulk)  # noqa: E501
         """
         pass
 
@@ -956,7 +963,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_reopen_chats_bulk(self):
         """Test case for reopen_chats_bulk
 
-        Reopen chats by chat ids or reopen all chats  # noqa: E501
+        Reopen chats (bulk)  # noqa: E501
         """
         pass
 
@@ -984,21 +991,21 @@ class TestTextMagicApi(unittest.TestCase):
     def test_search_chats(self):
         """Test case for search_chats
 
-        Find chats by inbound or outbound messages text.  # noqa: E501
+        Find chats by message text  # noqa: E501
         """
         pass
 
     def test_search_chats_by_ids(self):
         """Test case for search_chats_by_ids
 
-        Find chats by IDs.  # noqa: E501
+        Find chats (bulk)  # noqa: E501
         """
         pass
 
     def test_search_chats_by_receipent(self):
         """Test case for search_chats_by_receipent
 
-        Find chats by recipient (contact, list name or phone number).  # noqa: E501
+        Find chats by recipient  # noqa: E501
         """
         pass
 
@@ -1012,7 +1019,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_search_inbound_messages(self):
         """Test case for search_inbound_messages
 
-        Find inbound messages by given parameters.  # noqa: E501
+        Find inbound messages  # noqa: E501
         """
         pass
 
@@ -1033,14 +1040,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_search_scheduled_messages(self):
         """Test case for search_scheduled_messages
 
-        Find scheduled messages by given parameters.  # noqa: E501
+        Find scheduled messages  # noqa: E501
         """
         pass
 
     def test_search_templates(self):
         """Test case for search_templates
 
-        Find user templates by given parameters.  # noqa: E501
+        Find templates by criteria  # noqa: E501
         """
         pass
 
@@ -1065,10 +1072,17 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
+    def test_send_phone_verification_code_0(self):
+        """Test case for send_phone_verification_code_0
+
+        Step 1: Send a verification code   # noqa: E501
+        """
+        pass
+
     def test_set_chat_status(self):
         """Test case for set_chat_status
 
-        Set status of the chat given by ID.  # noqa: E501
+        Change chat status  # noqa: E501
         """
         pass
 
@@ -1096,7 +1110,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_unmute_chats_bulk(self):
         """Test case for unmute_chats_bulk
 
-        Unmute several chats by chat ids or unmute all chats  # noqa: E501
+        Unmute chats (bulk)  # noqa: E501
         """
         pass
 
@@ -1208,7 +1222,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_update_template(self):
         """Test case for update_template
 
-        Update existing template.  # noqa: E501
+        Update a template  # noqa: E501
         """
         pass
 

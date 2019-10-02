@@ -1,12 +1,10 @@
-# GetForwardedCallsPaginatedResponse
+# CheckPhoneVerificationCodeInputObject1
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**page** | **int** |  | 
-**page_count** | **int** |  | 
-**limit** | **int** |  | 
-**resources** | [**list[ForwardedCall]**](ForwardedCall.md) |  | 
+**code** | **int** | Verification code that was received by the user and entered into the form field. | 
+**verify_id** | **str** | VerifyId from Step 1 to match both requests together. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

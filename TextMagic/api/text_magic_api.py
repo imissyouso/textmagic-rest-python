@@ -437,6 +437,105 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def cancel_verification(self, verify_id, **kwargs):  # noqa: E501
+        """Cancel verification process  # noqa: E501
+
+        You can cancel the verification not earlier than 30 seconds after the initial request.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.cancel_verification(verify_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str verify_id: the verifyId that you received in Step 1. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.cancel_verification_with_http_info(verify_id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.cancel_verification_with_http_info(verify_id, **kwargs)  # noqa: E501
+            return data
+
+    def cancel_verification_with_http_info(self, verify_id, **kwargs):  # noqa: E501
+        """Cancel verification process  # noqa: E501
+
+        You can cancel the verification not earlier than 30 seconds after the initial request.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.cancel_verification_with_http_info(verify_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str verify_id: the verifyId that you received in Step 1. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['verify_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method cancel_verification" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'verify_id' is set
+        if ('verify_id' not in params or
+                params['verify_id'] is None):
+            raise ValueError("Missing the required parameter `verify_id` when calling `cancel_verification`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'verify_id' in params:
+            path_params['verifyId'] = params['verify_id']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['BasicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v2/verify/{verifyId}', 'DELETE',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def check_phone_verification_code(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
         """Check user phone verification code  # noqa: E501
 
@@ -522,6 +621,105 @@ class TextMagicApi(object):
 
         return self.api_client.call_api(
             '/api/v2/user/phone/verification', 'PUT',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def check_phone_verification_code_0(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
+        """Step 2: Check the verification code   # noqa: E501
+
+        Check received code from user with the code which was actually sent.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.check_phone_verification_code_0(check_phone_verification_code_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param CheckPhoneVerificationCodeInputObject1 check_phone_verification_code_input_object: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.check_phone_verification_code_0_with_http_info(check_phone_verification_code_input_object, **kwargs)  # noqa: E501
+        else:
+            (data) = self.check_phone_verification_code_0_with_http_info(check_phone_verification_code_input_object, **kwargs)  # noqa: E501
+            return data
+
+    def check_phone_verification_code_0_with_http_info(self, check_phone_verification_code_input_object, **kwargs):  # noqa: E501
+        """Step 2: Check the verification code   # noqa: E501
+
+        Check received code from user with the code which was actually sent.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.check_phone_verification_code_0_with_http_info(check_phone_verification_code_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param CheckPhoneVerificationCodeInputObject1 check_phone_verification_code_input_object: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['check_phone_verification_code_input_object']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method check_phone_verification_code_0" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'check_phone_verification_code_input_object' is set
+        if ('check_phone_verification_code_input_object' not in params or
+                params['check_phone_verification_code_input_object'] is None):
+            raise ValueError("Missing the required parameter `check_phone_verification_code_input_object` when calling `check_phone_verification_code_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'check_phone_verification_code_input_object' in params:
+            body_params = params['check_phone_verification_code_input_object']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['BasicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v2/verify', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -644,9 +842,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def close_chats_bulk(self, close_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Close chats by chat ids or close all chats  # noqa: E501
+        """Close chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Close chats by chat ids or close all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_chats_bulk(close_chats_bulk_input_object, async_req=True)
@@ -666,9 +864,9 @@ class TextMagicApi(object):
             return data
 
     def close_chats_bulk_with_http_info(self, close_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Close chats by chat ids or close all chats  # noqa: E501
+        """Close chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Close chats by chat ids or close all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_chats_bulk_with_http_info(close_chats_bulk_input_object, async_req=True)
@@ -739,9 +937,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def close_read_chats(self, **kwargs):  # noqa: E501
-        """Close all chats that have no unread messages.  # noqa: E501
+        """Close read chats  # noqa: E501
 
-          # noqa: E501
+        Close all chats that have no unread messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_read_chats(async_req=True)
@@ -760,9 +958,9 @@ class TextMagicApi(object):
             return data
 
     def close_read_chats_with_http_info(self, **kwargs):  # noqa: E501
-        """Close all chats that have no unread messages.  # noqa: E501
+        """Close read chats  # noqa: E501
 
-          # noqa: E501
+        Close all chats that have no unread messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.close_read_chats_with_http_info(async_req=True)
@@ -1630,7 +1828,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def create_template(self, create_template_input_object, **kwargs):  # noqa: E501
-        """Create a new template from the submitted data.  # noqa: E501
+        """Create a template  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1652,7 +1850,7 @@ class TextMagicApi(object):
             return data
 
     def create_template_with_http_info(self, create_template_input_object, **kwargs):  # noqa: E501
-        """Create a new template from the submitted data.  # noqa: E501
+        """Create a template  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1818,7 +2016,7 @@ class TextMagicApi(object):
     def delete_all_outbound_messages(self, **kwargs):  # noqa: E501
         """Delete all messages  # noqa: E501
 
-          # noqa: E501
+        Delete all messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_outbound_messages(async_req=True)
@@ -1839,7 +2037,7 @@ class TextMagicApi(object):
     def delete_all_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Delete all messages  # noqa: E501
 
-          # noqa: E501
+        Delete all messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_all_outbound_messages_with_http_info(async_req=True)
@@ -1990,9 +2188,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_chat_messages(self, delete_chat_messages_bulk_input_object, id, **kwargs):  # noqa: E501
-        """Delete messages from chat by given messages ID(s).  # noqa: E501
+        """Delete chat messages by ID(s)  # noqa: E501
 
-          # noqa: E501
+        Delete messages from chat by given messages ID(s).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chat_messages(delete_chat_messages_bulk_input_object, id, async_req=True)
@@ -2013,9 +2211,9 @@ class TextMagicApi(object):
             return data
 
     def delete_chat_messages_with_http_info(self, delete_chat_messages_bulk_input_object, id, **kwargs):  # noqa: E501
-        """Delete messages from chat by given messages ID(s).  # noqa: E501
+        """Delete chat messages by ID(s)  # noqa: E501
 
-          # noqa: E501
+        Delete messages from chat by given messages ID(s).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chat_messages_with_http_info(delete_chat_messages_bulk_input_object, id, async_req=True)
@@ -2093,9 +2291,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_chats_bulk(self, delete_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete chats by given ID(s) or delete all chats.  # noqa: E501
+        """Delete chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Delete chats by given ID(s) or delete all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chats_bulk(delete_chats_bulk_input_object, async_req=True)
@@ -2115,9 +2313,9 @@ class TextMagicApi(object):
             return data
 
     def delete_chats_bulk_with_http_info(self, delete_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete chats by given ID(s) or delete all chats.  # noqa: E501
+        """Delete chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Delete chats by given ID(s) or delete all chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_chats_bulk_with_http_info(delete_chats_bulk_input_object, async_req=True)
@@ -2968,16 +3166,16 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_inbound_message(self, id, **kwargs):  # noqa: E501
-        """Delete the incoming message.  # noqa: E501
+        """Delete a single inbound message  # noqa: E501
 
-          # noqa: E501
+        > Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_message(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: (required)
+        :param int id: The unique numeric ID for the inbound message. (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2990,16 +3188,16 @@ class TextMagicApi(object):
             return data
 
     def delete_inbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Delete the incoming message.  # noqa: E501
+        """Delete a single inbound message  # noqa: E501
 
-          # noqa: E501
+        > Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_message_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: (required)
+        :param int id: The unique numeric ID for the inbound message. (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -3063,9 +3261,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_inbound_messages_bulk(self, delete_inbound_messages_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete inbound messages by given ID(s) or delete all inbound messages.  # noqa: E501
+        """Delete inbound messages (bulk)  # noqa: E501
 
-          # noqa: E501
+        > Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_messages_bulk(delete_inbound_messages_bulk_input_object, async_req=True)
@@ -3085,9 +3283,9 @@ class TextMagicApi(object):
             return data
 
     def delete_inbound_messages_bulk_with_http_info(self, delete_inbound_messages_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete inbound messages by given ID(s) or delete all inbound messages.  # noqa: E501
+        """Delete inbound messages (bulk)  # noqa: E501
 
-          # noqa: E501
+        > Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful!   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_inbound_messages_bulk_with_http_info(delete_inbound_messages_bulk_input_object, async_req=True)
@@ -3550,7 +3748,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_message_session(self, id, **kwargs):  # noqa: E501
-        """Delete a message session, together with all nested messages.  # noqa: E501
+        """Delete a session  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3572,7 +3770,7 @@ class TextMagicApi(object):
             return data
 
     def delete_message_session_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Delete a message session, together with all nested messages.  # noqa: E501
+        """Delete a session  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3645,7 +3843,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_message_sessions_bulk(self, delete_message_sessions_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.  # noqa: E501
+        """Delete sessions (bulk)  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3667,7 +3865,7 @@ class TextMagicApi(object):
             return data
 
     def delete_message_sessions_bulk_with_http_info(self, delete_message_sessions_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.  # noqa: E501
+        """Delete sessions (bulk)  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3742,7 +3940,7 @@ class TextMagicApi(object):
     def delete_outbound_message(self, id, **kwargs):  # noqa: E501
         """Delete message  # noqa: E501
 
-          # noqa: E501
+        Delete a single message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_message(id, async_req=True)
@@ -3764,7 +3962,7 @@ class TextMagicApi(object):
     def delete_outbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete message  # noqa: E501
 
-          # noqa: E501
+        Delete a single message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_message_with_http_info(id, async_req=True)
@@ -3835,9 +4033,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_outbound_messages_bulk(self, delete_outbound_messages_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete messages by IDs  # noqa: E501
+        """Delete messages (bulk)  # noqa: E501
 
-          # noqa: E501
+        Delete outbound messages by given ID(s) or delete all outbound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_messages_bulk(delete_outbound_messages_bulk_input_object, async_req=True)
@@ -3857,9 +4055,9 @@ class TextMagicApi(object):
             return data
 
     def delete_outbound_messages_bulk_with_http_info(self, delete_outbound_messages_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete messages by IDs  # noqa: E501
+        """Delete messages (bulk)  # noqa: E501
 
-          # noqa: E501
+        Delete outbound messages by given ID(s) or delete all outbound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_outbound_messages_bulk_with_http_info(delete_outbound_messages_bulk_input_object, async_req=True)
@@ -4033,7 +4231,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_scheduled_message(self, id, **kwargs):  # noqa: E501
-        """Delete a message session, together with all nested messages.  # noqa: E501
+        """Delete a single scheduled message  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4055,7 +4253,7 @@ class TextMagicApi(object):
             return data
 
     def delete_scheduled_message_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Delete a message session, together with all nested messages.  # noqa: E501
+        """Delete a single scheduled message  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4128,7 +4326,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_scheduled_messages_bulk(self, delete_scheduled_messages_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete scheduled messages by given ID(s) or delete all scheduled messages.  # noqa: E501
+        """Delete scheduled messages (bulk)  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4150,7 +4348,7 @@ class TextMagicApi(object):
             return data
 
     def delete_scheduled_messages_bulk_with_http_info(self, delete_scheduled_messages_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete scheduled messages by given ID(s) or delete all scheduled messages.  # noqa: E501
+        """Delete scheduled messages (bulk)  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4508,7 +4706,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_template(self, id, **kwargs):  # noqa: E501
-        """Delete a single template.  # noqa: E501
+        """Delete a template  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4530,7 +4728,7 @@ class TextMagicApi(object):
             return data
 
     def delete_template_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Delete a single template.  # noqa: E501
+        """Delete a template  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4603,7 +4801,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_templates_bulk(self, delete_templates_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete template by given ID(s) or delete all templates.  # noqa: E501
+        """Delete templates (bulk)  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4625,7 +4823,7 @@ class TextMagicApi(object):
             return data
 
     def delete_templates_bulk_with_http_info(self, delete_templates_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete template by given ID(s) or delete all templates.  # noqa: E501
+        """Delete templates (bulk)  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -4700,7 +4898,7 @@ class TextMagicApi(object):
     def do_auth(self, do_auth_input_object, **kwargs):  # noqa: E501
         """Authenticate user by given username and password.  # noqa: E501
 
-          # noqa: E501
+        Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_auth(do_auth_input_object, async_req=True)
@@ -4722,7 +4920,7 @@ class TextMagicApi(object):
     def do_auth_with_http_info(self, do_auth_input_object, **kwargs):  # noqa: E501
         """Authenticate user by given username and password.  # noqa: E501
 
-          # noqa: E501
+        Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_auth_with_http_info(do_auth_input_object, async_req=True)
@@ -5107,8 +5305,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetAllBulkSessionsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5130,8 +5328,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetAllBulkSessionsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5197,7 +5395,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_all_chats(self, **kwargs):  # noqa: E501
-        """Get all user chats.  # noqa: E501
+        """Get all chats  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5207,8 +5405,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param str status: Fetch only (a)ctive, (c)losed or (d)eleted chats
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
         :param int voice: Fetch results with voice calls
         :param int flat: Should additional contact info be included
@@ -5224,7 +5422,7 @@ class TextMagicApi(object):
             return data
 
     def get_all_chats_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all user chats.  # noqa: E501
+        """Get all chats  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5234,8 +5432,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param str status: Fetch only (a)ctive, (c)losed or (d)eleted chats
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
         :param int voice: Fetch results with voice calls
         :param int flat: Should additional contact info be included
@@ -5312,7 +5510,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_all_inbound_messages(self, **kwargs):  # noqa: E501
-        """Get all inbox messages.  # noqa: E501
+        """Get all inbound messages  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5321,8 +5519,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
         :return: GetAllInboundMessagesPaginatedResponse
@@ -5337,7 +5535,7 @@ class TextMagicApi(object):
             return data
 
     def get_all_inbound_messages_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all inbox messages.  # noqa: E501
+        """Get all inbound messages  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5346,8 +5544,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
         :return: GetAllInboundMessagesPaginatedResponse
@@ -5419,7 +5617,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_all_message_sessions(self, **kwargs):  # noqa: E501
-        """Get all message sending sessions.  # noqa: E501
+        """Get all sessions  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5428,8 +5626,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetAllMessageSessionsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5442,7 +5640,7 @@ class TextMagicApi(object):
             return data
 
     def get_all_message_sessions_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all message sending sessions.  # noqa: E501
+        """Get all sessions  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5451,8 +5649,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetAllMessageSessionsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5520,15 +5718,15 @@ class TextMagicApi(object):
     def get_all_outbound_messages(self, **kwargs):  # noqa: E501
         """Get all messages  # noqa: E501
 
-          # noqa: E501
+        Get all user oubound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_outbound_messages(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
         :return: GetAllOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -5544,15 +5742,15 @@ class TextMagicApi(object):
     def get_all_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Get all messages  # noqa: E501
 
-          # noqa: E501
+        Get all user oubound messages.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_all_outbound_messages_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
         :return: GetAllOutboundMessagesPaginatedResponse
                  If the method is called asynchronously,
@@ -5621,7 +5819,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_all_scheduled_messages(self, **kwargs):  # noqa: E501
-        """Get all scheduled messages.  # noqa: E501
+        """Get all scheduled messages  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5630,8 +5828,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
@@ -5647,7 +5845,7 @@ class TextMagicApi(object):
             return data
 
     def get_all_scheduled_messages_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all scheduled messages.  # noqa: E501
+        """Get all scheduled messages  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5656,8 +5854,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
@@ -5732,7 +5930,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_all_templates(self, **kwargs):  # noqa: E501
-        """Get all user templates.  # noqa: E501
+        """Get all templates  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5741,8 +5939,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetAllTemplatesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5755,7 +5953,7 @@ class TextMagicApi(object):
             return data
 
     def get_all_templates_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all user templates.  # noqa: E501
+        """Get all templates  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -5764,8 +5962,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetAllTemplatesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -6224,8 +6422,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find blocked contacts by specified search query
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
@@ -6250,8 +6448,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find blocked contacts by specified search query
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
@@ -6607,7 +6805,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_chat(self, id, **kwargs):  # noqa: E501
-        """Get a single chat.  # noqa: E501
+        """Get a single chat  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6629,7 +6827,7 @@ class TextMagicApi(object):
             return data
 
     def get_chat_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get a single chat.  # noqa: E501
+        """Get a single chat  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6706,7 +6904,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_chat_by_phone(self, phone, **kwargs):  # noqa: E501
-        """Find chats by phone.  # noqa: E501
+        """Find chats by phone  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6730,7 +6928,7 @@ class TextMagicApi(object):
             return data
 
     def get_chat_by_phone_with_http_info(self, phone, **kwargs):  # noqa: E501
-        """Find chats by phone.  # noqa: E501
+        """Find chats by phone  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6813,7 +7011,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_chat_messages(self, id, **kwargs):  # noqa: E501
-        """Fetch messages from chat with specified chat id.  # noqa: E501
+        """Get chat messages  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6823,8 +7021,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find messages by specified search query
         :param int start: Return messages since specified timestamp only
         :param int end: Return messages up to specified timestamp only
@@ -6842,7 +7040,7 @@ class TextMagicApi(object):
             return data
 
     def get_chat_messages_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Fetch messages from chat with specified chat id.  # noqa: E501
+        """Get chat messages  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -6852,8 +7050,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find messages by specified search query
         :param int start: Return messages since specified timestamp only
         :param int end: Return messages up to specified timestamp only
@@ -7445,8 +7643,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetContactNotesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -7469,8 +7667,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetContactNotesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -7551,8 +7749,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int shared: Should shared contacts to be included
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
@@ -7577,8 +7775,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int shared: Should shared contacts to be included
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
@@ -7663,7 +7861,7 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param str query: Find recipients by specified search query (required)
-        :param int limit: How many results to return
+        :param int limit: The number of results per page.
         :param int lists: Should lists be returned or not
         :return: GetContactsAutocompleteResponse
                  If the method is called asynchronously,
@@ -7687,7 +7885,7 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param str query: Find recipients by specified search query (required)
-        :param int limit: How many results to return
+        :param int limit: The number of results per page.
         :param int lists: Should lists be returned or not
         :return: GetContactsAutocompleteResponse
                  If the method is called asynchronously,
@@ -7762,7 +7960,7 @@ class TextMagicApi(object):
     def get_contacts_by_list_id(self, id, **kwargs):  # noqa: E501
         """Fetch user contacts by given group id.  # noqa: E501
 
-          # noqa: E501
+        A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_by_list_id(id, async_req=True)
@@ -7770,8 +7968,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: Given group Id. (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
         :return: GetContactsByListIdPaginatedResponse
@@ -7788,7 +7986,7 @@ class TextMagicApi(object):
     def get_contacts_by_list_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fetch user contacts by given group id.  # noqa: E501
 
-          # noqa: E501
+        A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_contacts_by_list_id_with_http_info(id, async_req=True)
@@ -7796,8 +7994,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: Given group Id. (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
         :return: GetContactsByListIdPaginatedResponse
@@ -8165,8 +8363,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetCustomFieldsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8188,8 +8386,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetCustomFieldsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8454,8 +8652,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find contacts or lists by specified search query
         :return: GetFavouritesPaginatedResponse
                  If the method is called asynchronously,
@@ -8478,8 +8676,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find contacts or lists by specified search query
         :return: GetFavouritesPaginatedResponse
                  If the method is called asynchronously,
@@ -8547,107 +8745,8 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_forwarded_calls(self, **kwargs):  # noqa: E501
-        """Get all forwarded calls.  # noqa: E501
-
-          # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_forwarded_calls(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
-        :return: GetForwardedCallsPaginatedResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.get_forwarded_calls_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.get_forwarded_calls_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def get_forwarded_calls_with_http_info(self, **kwargs):  # noqa: E501
-        """Get all forwarded calls.  # noqa: E501
-
-          # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_forwarded_calls_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
-        :return: GetForwardedCallsPaginatedResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['page', 'limit']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method get_forwarded_calls" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'page' in params:
-            query_params.append(('page', params['page']))  # noqa: E501
-        if 'limit' in params:
-            query_params.append(('limit', params['limit']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['BasicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/api/v2/calls', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='GetForwardedCallsPaginatedResponse',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
     def get_inbound_message(self, id, **kwargs):  # noqa: E501
-        """Get a single inbox message.  # noqa: E501
+        """Get a single inbound message  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -8656,7 +8755,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: (required)
+        :param int id: The unique numeric ID for the inbound message. (required)
         :return: MessageIn
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8669,7 +8768,7 @@ class TextMagicApi(object):
             return data
 
     def get_inbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get a single inbox message.  # noqa: E501
+        """Get a single inbound message  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -8678,7 +8777,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: (required)
+        :param int id: The unique numeric ID for the inbound message. (required)
         :return: MessageIn
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8846,8 +8945,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetInvoicesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8869,8 +8968,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetInvoicesPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -9144,8 +9243,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetListsOfContactPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -9168,8 +9267,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetListsOfContactPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -9243,7 +9342,7 @@ class TextMagicApi(object):
     def get_message_preview(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-          # noqa: E501
+        Get messages preview (with tags merged) up to 100 messages per session.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview(async_req=True)
@@ -9281,7 +9380,7 @@ class TextMagicApi(object):
     def get_message_preview_with_http_info(self, **kwargs):  # noqa: E501
         """Preview message  # noqa: E501
 
-          # noqa: E501
+        Get messages preview (with tags merged) up to 100 messages per session.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_preview_with_http_info(async_req=True)
@@ -9402,7 +9501,7 @@ class TextMagicApi(object):
     def get_message_price(self, **kwargs):  # noqa: E501
         """Check price  # noqa: E501
 
-          # noqa: E501
+        Check pricing for a new outbound message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_price(async_req=True)
@@ -9441,7 +9540,7 @@ class TextMagicApi(object):
     def get_message_price_with_http_info(self, **kwargs):  # noqa: E501
         """Check price  # noqa: E501
 
-          # noqa: E501
+        Check pricing for a new outbound message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_price_with_http_info(async_req=True)
@@ -9565,7 +9664,7 @@ class TextMagicApi(object):
     def get_message_prices(self, **kwargs):  # noqa: E501
         """Get pricing  # noqa: E501
 
-          # noqa: E501
+        Get message prices for all countries.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_prices(async_req=True)
@@ -9586,7 +9685,7 @@ class TextMagicApi(object):
     def get_message_prices_with_http_info(self, **kwargs):  # noqa: E501
         """Get pricing  # noqa: E501
 
-          # noqa: E501
+        Get message prices for all countries.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_message_prices_with_http_info(async_req=True)
@@ -9654,7 +9753,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_message_session(self, id, **kwargs):  # noqa: E501
-        """Get a message session.  # noqa: E501
+        """Get a session details  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9663,7 +9762,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: (required)
+        :param int id: a session ID (required)
         :return: MessageSession
                  If the method is called asynchronously,
                  returns the request thread.
@@ -9676,7 +9775,7 @@ class TextMagicApi(object):
             return data
 
     def get_message_session_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get a message session.  # noqa: E501
+        """Get a session details  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9685,7 +9784,7 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id: (required)
+        :param int id: a session ID (required)
         :return: MessageSession
                  If the method is called asynchronously,
                  returns the request thread.
@@ -9753,7 +9852,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_message_session_stat(self, id, **kwargs):  # noqa: E501
-        """Get sending session statistics.  # noqa: E501
+        """Get a session statistics  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9776,7 +9875,7 @@ class TextMagicApi(object):
             return data
 
     def get_message_session_stat_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get sending session statistics.  # noqa: E501
+        """Get a session statistics  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9856,9 +9955,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_messages_by_session_id(self, id, **kwargs):  # noqa: E501
-        """Fetch messages by given session id.  # noqa: E501
+        """Get a session messages  # noqa: E501
 
-          # noqa: E501
+        A useful synonym for \"messages/search\" command with provided \"sessionId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messages_by_session_id(id, async_req=True)
@@ -9866,8 +9965,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str statuses: Find messages by status
         :param int include_deleted: Search also in deleted messages
         :return: GetMessagesBySessionIdPaginatedResponse
@@ -9882,9 +9981,9 @@ class TextMagicApi(object):
             return data
 
     def get_messages_by_session_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Fetch messages by given session id.  # noqa: E501
+        """Get a session messages  # noqa: E501
 
-          # noqa: E501
+        A useful synonym for \"messages/search\" command with provided \"sessionId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_messages_by_session_id_with_http_info(id, async_req=True)
@@ -9892,8 +9991,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param int id: (required)
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str statuses: Find messages by status
         :param int include_deleted: Search also in deleted messages
         :return: GetMessagesBySessionIdPaginatedResponse
@@ -10167,7 +10266,7 @@ class TextMagicApi(object):
     def get_outbound_message(self, id, **kwargs):  # noqa: E501
         """Get a single message  # noqa: E501
 
-          # noqa: E501
+        Get a single outgoing message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_message(id, async_req=True)
@@ -10189,7 +10288,7 @@ class TextMagicApi(object):
     def get_outbound_message_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a single message  # noqa: E501
 
-          # noqa: E501
+        Get a single outgoing message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_message_with_http_info(id, async_req=True)
@@ -10266,14 +10365,14 @@ class TextMagicApi(object):
     def get_outbound_messages_history(self, **kwargs):  # noqa: E501
         """Get history  # noqa: E501
 
-          # noqa: E501
+        Get outbound messages history.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_messages_history(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int limit: How many results to return
+        :param int limit: The number of results per page.
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID.
         :param str query: Find message by specified search query
         :param str order_by: Order results by some field. Default is id
@@ -10292,14 +10391,14 @@ class TextMagicApi(object):
     def get_outbound_messages_history_with_http_info(self, **kwargs):  # noqa: E501
         """Get history  # noqa: E501
 
-          # noqa: E501
+        Get outbound messages history.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_outbound_messages_history_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int limit: How many results to return
+        :param int limit: The number of results per page.
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID.
         :param str query: Find message by specified search query
         :param str order_by: Order results by some field. Default is id
@@ -10466,7 +10565,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_scheduled_message(self, id, **kwargs):  # noqa: E501
-        """Get message schedule.  # noqa: E501
+        """Get a single scheduled message  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10488,7 +10587,7 @@ class TextMagicApi(object):
             return data
 
     def get_scheduled_message_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get message schedule.  # noqa: E501
+        """Get a single scheduled message  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10673,8 +10772,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetSenderIdsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10696,8 +10795,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetSenderIdsPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10867,8 +10966,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int start: Optional. Start date in unix timestamp format. Default is 7 days ago
         :param int end: Optional. End date in unix timestamp format. Default is now
         :return: GetSpendingStatPaginatedResponse
@@ -10892,8 +10991,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int start: Optional. Start date in unix timestamp format. Default is 7 days ago
         :param int end: Optional. End date in unix timestamp format. Default is now
         :return: GetSpendingStatPaginatedResponse
@@ -11164,8 +11263,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: User
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11187,8 +11286,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: User
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11256,7 +11355,7 @@ class TextMagicApi(object):
     def get_subaccounts_with_tokens(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
         """Get all subaccounts with their REST API tokens associated with specified app name.  # noqa: E501
 
-          # noqa: E501
+        When more than one token related to app name, last key will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_tokens(get_subaccounts_with_tokens_input_object, async_req=True)
@@ -11264,8 +11363,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param GetSubaccountsWithTokensInputObject get_subaccounts_with_tokens_input_object: (required)
-        :param float page: Fetch specified results page
-        :param int limit: How many results to return
+        :param float page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetSubaccountsWithTokensResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11280,7 +11379,7 @@ class TextMagicApi(object):
     def get_subaccounts_with_tokens_with_http_info(self, get_subaccounts_with_tokens_input_object, **kwargs):  # noqa: E501
         """Get all subaccounts with their REST API tokens associated with specified app name.  # noqa: E501
 
-          # noqa: E501
+        When more than one token related to app name, last key will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_subaccounts_with_tokens_with_http_info(get_subaccounts_with_tokens_input_object, async_req=True)
@@ -11288,8 +11387,8 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param GetSubaccountsWithTokensInputObject get_subaccounts_with_tokens_input_object: (required)
-        :param float page: Fetch specified results page
-        :param int limit: How many results to return
+        :param float page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetSubaccountsWithTokensResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11667,8 +11766,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetSurveysPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11690,8 +11789,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetSurveysPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -11757,7 +11856,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_template(self, id, **kwargs):  # noqa: E501
-        """Get a single template.  # noqa: E501
+        """Get a template details  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -11779,7 +11878,7 @@ class TextMagicApi(object):
             return data
 
     def get_template_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Get a single template.  # noqa: E501
+        """Get a template details  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -11951,9 +12050,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_unread_messages_total(self, **kwargs):  # noqa: E501
-        """Get total amount of unread messages in the current user chats.  # noqa: E501
+        """Get unread messages number  # noqa: E501
 
-          # noqa: E501
+        Get total amount of unread messages in the current user chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unread_messages_total(async_req=True)
@@ -11972,9 +12071,9 @@ class TextMagicApi(object):
             return data
 
     def get_unread_messages_total_with_http_info(self, **kwargs):  # noqa: E501
-        """Get total amount of unread messages in the current user chats.  # noqa: E501
+        """Get unread messages number  # noqa: E501
 
-          # noqa: E501
+        Get total amount of unread messages in the current user chats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unread_messages_total_with_http_info(async_req=True)
@@ -12150,8 +12249,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetUnsubscribersPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12173,8 +12272,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :return: GetUnsubscribersPaginatedResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -12249,8 +12348,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int survey_id: Fetch only that numbers which are ready for the survey
         :return: GetUserDedicatedNumbersPaginatedResponse
                  If the method is called asynchronously,
@@ -12273,8 +12372,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int survey_id: Fetch only that numbers which are ready for the survey
         :return: GetUserDedicatedNumbersPaginatedResponse
                  If the method is called asynchronously,
@@ -12352,8 +12451,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
         :param int favorite_only: Return only favorite lists
@@ -12379,8 +12478,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str order_by: Order results by some field. Default is id
         :param str direction: Order direction. Default is desc
         :param int favorite_only: Return only favorite lists
@@ -12644,9 +12743,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def mark_chats_read_bulk(self, mark_chats_read_bulk_input_object, **kwargs):  # noqa: E501
-        """Mark several chats as read by chat ids or mark all chats as read  # noqa: E501
+        """Mark chats as read (bulk)  # noqa: E501
 
-          # noqa: E501
+        Mark several chats as read by chat ids or mark all chats as read  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_read_bulk(mark_chats_read_bulk_input_object, async_req=True)
@@ -12666,9 +12765,9 @@ class TextMagicApi(object):
             return data
 
     def mark_chats_read_bulk_with_http_info(self, mark_chats_read_bulk_input_object, **kwargs):  # noqa: E501
-        """Mark several chats as read by chat ids or mark all chats as read  # noqa: E501
+        """Mark chats as read (bulk)  # noqa: E501
 
-          # noqa: E501
+        Mark several chats as read by chat ids or mark all chats as read  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_read_bulk_with_http_info(mark_chats_read_bulk_input_object, async_req=True)
@@ -12739,9 +12838,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def mark_chats_unread_bulk(self, mark_chats_unread_bulk_input_object, **kwargs):  # noqa: E501
-        """Mark several chats as UNread by chat ids or mark all chats as UNread  # noqa: E501
+        """Mark chats as unread (bulk)  # noqa: E501
 
-          # noqa: E501
+        Mark several chats as UNread by chat ids or mark all chats as UNread  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_unread_bulk(mark_chats_unread_bulk_input_object, async_req=True)
@@ -12761,9 +12860,9 @@ class TextMagicApi(object):
             return data
 
     def mark_chats_unread_bulk_with_http_info(self, mark_chats_unread_bulk_input_object, **kwargs):  # noqa: E501
-        """Mark several chats as UNread by chat ids or mark all chats as UNread  # noqa: E501
+        """Mark chats as unread (bulk)  # noqa: E501
 
-          # noqa: E501
+        Mark several chats as UNread by chat ids or mark all chats as UNread  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mark_chats_unread_bulk_with_http_info(mark_chats_unread_bulk_input_object, async_req=True)
@@ -12929,7 +13028,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def mute_chat(self, mute_chat_input_object, **kwargs):  # noqa: E501
-        """Set mute mode.  # noqa: E501
+        """Mute chat sounds  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -12951,7 +13050,7 @@ class TextMagicApi(object):
             return data
 
     def mute_chat_with_http_info(self, mute_chat_input_object, **kwargs):  # noqa: E501
-        """Set mute mode.  # noqa: E501
+        """Mute chat sounds  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -13028,9 +13127,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def mute_chats_bulk(self, mute_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Mute several chats by chat ids or mute all chats  # noqa: E501
+        """Mute chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Mute several chats by chat ids or mute all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chats_bulk(mute_chats_bulk_input_object, async_req=True)
@@ -13050,9 +13149,9 @@ class TextMagicApi(object):
             return data
 
     def mute_chats_bulk_with_http_info(self, mute_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Mute several chats by chat ids or mute all chats  # noqa: E501
+        """Mute chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Mute several chats by chat ids or mute all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.mute_chats_bulk_with_http_info(mute_chats_bulk_input_object, async_req=True)
@@ -13214,9 +13313,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def reopen_chats_bulk(self, reopen_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Reopen chats by chat ids or reopen all chats  # noqa: E501
+        """Reopen chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Reopen chats by chat ids or reopen all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.reopen_chats_bulk(reopen_chats_bulk_input_object, async_req=True)
@@ -13236,9 +13335,9 @@ class TextMagicApi(object):
             return data
 
     def reopen_chats_bulk_with_http_info(self, reopen_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Reopen chats by chat ids or reopen all chats  # noqa: E501
+        """Reopen chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Reopen chats by chat ids or reopen all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.reopen_chats_bulk_with_http_info(reopen_chats_bulk_input_object, async_req=True)
@@ -13311,7 +13410,7 @@ class TextMagicApi(object):
     def request_new_subaccount_token(self, request_new_subaccount_token_input_object, **kwargs):  # noqa: E501
         """Request a new REST API token for subaccount.  # noqa: E501
 
-          # noqa: E501
+        Returning user object, key and app name.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_new_subaccount_token(request_new_subaccount_token_input_object, async_req=True)
@@ -13333,7 +13432,7 @@ class TextMagicApi(object):
     def request_new_subaccount_token_with_http_info(self, request_new_subaccount_token_input_object, **kwargs):  # noqa: E501
         """Request a new REST API token for subaccount.  # noqa: E501
 
-          # noqa: E501
+        Returning user object, key and app name.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.request_new_subaccount_token_with_http_info(request_new_subaccount_token_input_object, async_req=True)
@@ -13606,7 +13705,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def search_chats(self, **kwargs):  # noqa: E501
-        """Find chats by inbound or outbound messages text.  # noqa: E501
+        """Find chats by message text  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -13615,8 +13714,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find chats by specified search query
         :return: SearchChatsPaginatedResponse
                  If the method is called asynchronously,
@@ -13630,7 +13729,7 @@ class TextMagicApi(object):
             return data
 
     def search_chats_with_http_info(self, **kwargs):  # noqa: E501
-        """Find chats by inbound or outbound messages text.  # noqa: E501
+        """Find chats by message text  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -13639,8 +13738,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find chats by specified search query
         :return: SearchChatsPaginatedResponse
                  If the method is called asynchronously,
@@ -13709,7 +13808,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def search_chats_by_ids(self, **kwargs):  # noqa: E501
-        """Find chats by IDs.  # noqa: E501
+        """Find chats (bulk)  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -13718,8 +13817,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str ids: Find chats by ID(s)
         :return: SearchChatsByIdsPaginatedResponse
                  If the method is called asynchronously,
@@ -13733,7 +13832,7 @@ class TextMagicApi(object):
             return data
 
     def search_chats_by_ids_with_http_info(self, **kwargs):  # noqa: E501
-        """Find chats by IDs.  # noqa: E501
+        """Find chats (bulk)  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -13742,8 +13841,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str ids: Find chats by ID(s)
         :return: SearchChatsByIdsPaginatedResponse
                  If the method is called asynchronously,
@@ -13814,17 +13913,17 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def search_chats_by_receipent(self, **kwargs):  # noqa: E501
-        """Find chats by recipient (contact, list name or phone number).  # noqa: E501
+        """Find chats by recipient  # noqa: E501
 
-          # noqa: E501
+        Find chats by recipient (contact, list name or phone number).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_receipent(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find chats by specified search query
         :param str order_by: Order results by some field. Default is id
         :return: SearchChatsByReceipentPaginatedResponse
@@ -13839,17 +13938,17 @@ class TextMagicApi(object):
             return data
 
     def search_chats_by_receipent_with_http_info(self, **kwargs):  # noqa: E501
-        """Find chats by recipient (contact, list name or phone number).  # noqa: E501
+        """Find chats by recipient  # noqa: E501
 
-          # noqa: E501
+        Find chats by recipient (contact, list name or phone number).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_chats_by_receipent_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find chats by specified search query
         :param str order_by: Order results by some field. Default is id
         :return: SearchChatsByReceipentPaginatedResponse
@@ -13930,8 +14029,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int shared: Should shared contacts to be included
         :param str ids: Find contact by ID(s)
         :param int list_id: Find contact by List ID
@@ -13962,8 +14061,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int shared: Should shared contacts to be included
         :param str ids: Find contact by ID(s)
         :param int list_id: Find contact by List ID
@@ -14058,17 +14157,17 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def search_inbound_messages(self, **kwargs):  # noqa: E501
-        """Find inbound messages by given parameters.  # noqa: E501
+        """Find inbound messages  # noqa: E501
 
-          # noqa: E501
+        Find inbound messages by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_inbound_messages(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str ids: Find message by ID(s)
         :param str query: Find recipients by specified search query
         :param str order_by: Order results by some field. Default is id
@@ -14086,17 +14185,17 @@ class TextMagicApi(object):
             return data
 
     def search_inbound_messages_with_http_info(self, **kwargs):  # noqa: E501
-        """Find inbound messages by given parameters.  # noqa: E501
+        """Find inbound messages  # noqa: E501
 
-          # noqa: E501
+        Find inbound messages by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_inbound_messages_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str ids: Find message by ID(s)
         :param str query: Find recipients by specified search query
         :param str order_by: Order results by some field. Default is id
@@ -14188,8 +14287,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str ids: Find lists by ID(s)
         :param str query: Find lists by specified search query
         :param int only_mine: Return only current user lists
@@ -14217,8 +14316,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str ids: Find lists by ID(s)
         :param str query: Find lists by specified search query
         :param int only_mine: Return only current user lists
@@ -14304,15 +14403,15 @@ class TextMagicApi(object):
     def search_outbound_messages(self, **kwargs):  # noqa: E501
         """Find messages  # noqa: E501
 
-          # noqa: E501
+        Find outbound messages by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_outbound_messages(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
         :param str ids: Find message by ID(s)
         :param int session_id: Find messages by session ID
@@ -14333,15 +14432,15 @@ class TextMagicApi(object):
     def search_outbound_messages_with_http_info(self, **kwargs):  # noqa: E501
         """Find messages  # noqa: E501
 
-          # noqa: E501
+        Find outbound messages by given parameters.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.search_outbound_messages_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param int last_id: Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
         :param str ids: Find message by ID(s)
         :param int session_id: Find messages by session ID
@@ -14427,7 +14526,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def search_scheduled_messages(self, **kwargs):  # noqa: E501
-        """Find scheduled messages by given parameters.  # noqa: E501
+        """Find scheduled messages  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -14436,8 +14535,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find messages by specified search query
         :param str ids: Find schedules by ID(s)
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
@@ -14455,7 +14554,7 @@ class TextMagicApi(object):
             return data
 
     def search_scheduled_messages_with_http_info(self, **kwargs):  # noqa: E501
-        """Find scheduled messages by given parameters.  # noqa: E501
+        """Find scheduled messages  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -14464,8 +14563,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str query: Find messages by specified search query
         :param str ids: Find schedules by ID(s)
         :param str status: Fetch schedules with the specific status: a - actual, c - completed, x - all
@@ -14548,7 +14647,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def search_templates(self, **kwargs):  # noqa: E501
-        """Find user templates by given parameters.  # noqa: E501
+        """Find templates by criteria  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -14557,8 +14656,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str ids: Find template by ID(s)
         :param str name: Find template by name
         :param str content: Find template by content
@@ -14574,7 +14673,7 @@ class TextMagicApi(object):
             return data
 
     def search_templates_with_http_info(self, **kwargs):  # noqa: E501
-        """Find user templates by given parameters.  # noqa: E501
+        """Find templates by criteria  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -14583,8 +14682,8 @@ class TextMagicApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int page: Fetch specified results page
-        :param int limit: How many results to return
+        :param int page: Fetch specified results page.
+        :param int limit: The number of results per page.
         :param str ids: Find template by ID(s)
         :param str name: Find template by name
         :param str content: Find template by content
@@ -14752,7 +14851,7 @@ class TextMagicApi(object):
     def send_message(self, send_message_input_object, **kwargs):  # noqa: E501
         """Send message  # noqa: E501
 
-          # noqa: E501
+        The main entrypoint to send messages. See examples above for the reference.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_message(send_message_input_object, async_req=True)
@@ -14774,7 +14873,7 @@ class TextMagicApi(object):
     def send_message_with_http_info(self, send_message_input_object, **kwargs):  # noqa: E501
         """Send message  # noqa: E501
 
-          # noqa: E501
+        The main entrypoint to send messages. See examples above for the reference.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_message_with_http_info(send_message_input_object, async_req=True)
@@ -14851,7 +14950,7 @@ class TextMagicApi(object):
     def send_phone_verification_code(self, **kwargs):  # noqa: E501
         """Send user phone verification  # noqa: E501
 
-        Send Two-Factor Authentication Messages =======================================  You can easily verify your customers using their phone numbers with the help of 2FA (better known as two-factor authentication) and protect against fraud, build trust, and increase conversions. There is a simple way to do this with an API call to a TextMagic endpoint. With the help of TextMagic API you can:  *   Send two-factor authentication messages (2FA) *   Send one-time passwords (OTP) *   Integrate passwordless login into your app *   Protect your app from fraud  How does it work? -----------------  *   **Step 1:** Your server makes an API call to the TextMagic endpoint, and we send a text message (and later, as a fallback, a generate a text-to-speech voice call) with a verification code to the phone number supplied in the initial request.      *   **Step 2:** Once the code is received, the user enters it into the relevant input field in your app. This code needs to be passed to TextMagic in the second API call; if it is correct, the server will respond with the correct response code. This way, you can ensure that the recipient really owns the phone number entered into your app or form.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_phone_verification_code(async_req=True)
@@ -14872,7 +14971,7 @@ class TextMagicApi(object):
     def send_phone_verification_code_with_http_info(self, **kwargs):  # noqa: E501
         """Send user phone verification  # noqa: E501
 
-        Send Two-Factor Authentication Messages =======================================  You can easily verify your customers using their phone numbers with the help of 2FA (better known as two-factor authentication) and protect against fraud, build trust, and increase conversions. There is a simple way to do this with an API call to a TextMagic endpoint. With the help of TextMagic API you can:  *   Send two-factor authentication messages (2FA) *   Send one-time passwords (OTP) *   Integrate passwordless login into your app *   Protect your app from fraud  How does it work? -----------------  *   **Step 1:** Your server makes an API call to the TextMagic endpoint, and we send a text message (and later, as a fallback, a generate a text-to-speech voice call) with a verification code to the phone number supplied in the initial request.      *   **Step 2:** Once the code is received, the user enters it into the relevant input field in your app. This code needs to be passed to TextMagic in the second API call; if it is correct, the server will respond with the correct response code. This way, you can ensure that the recipient really owns the phone number entered into your app or form.  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.send_phone_verification_code_with_http_info(async_req=True)
@@ -14939,10 +15038,109 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def set_chat_status(self, set_chat_status_input_object, **kwargs):  # noqa: E501
-        """Set status of the chat given by ID.  # noqa: E501
+    def send_phone_verification_code_0(self, send_phone_verification_code_input_object, **kwargs):  # noqa: E501
+        """Step 1: Send a verification code   # noqa: E501
 
-          # noqa: E501
+        Sends verification code to specified phone number.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.send_phone_verification_code_0(send_phone_verification_code_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param SendPhoneVerificationCodeInputObject send_phone_verification_code_input_object: (required)
+        :return: SendPhoneVerificationCodeResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.send_phone_verification_code_0_with_http_info(send_phone_verification_code_input_object, **kwargs)  # noqa: E501
+        else:
+            (data) = self.send_phone_verification_code_0_with_http_info(send_phone_verification_code_input_object, **kwargs)  # noqa: E501
+            return data
+
+    def send_phone_verification_code_0_with_http_info(self, send_phone_verification_code_input_object, **kwargs):  # noqa: E501
+        """Step 1: Send a verification code   # noqa: E501
+
+        Sends verification code to specified phone number.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.send_phone_verification_code_0_with_http_info(send_phone_verification_code_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param SendPhoneVerificationCodeInputObject send_phone_verification_code_input_object: (required)
+        :return: SendPhoneVerificationCodeResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['send_phone_verification_code_input_object']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method send_phone_verification_code_0" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'send_phone_verification_code_input_object' is set
+        if ('send_phone_verification_code_input_object' not in params or
+                params['send_phone_verification_code_input_object'] is None):
+            raise ValueError("Missing the required parameter `send_phone_verification_code_input_object` when calling `send_phone_verification_code_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'send_phone_verification_code_input_object' in params:
+            body_params = params['send_phone_verification_code_input_object']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['BasicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v2/verify', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='SendPhoneVerificationCodeResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def set_chat_status(self, set_chat_status_input_object, **kwargs):  # noqa: E501
+        """Change chat status  # noqa: E501
+
+        Set status of the chat given by ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.set_chat_status(set_chat_status_input_object, async_req=True)
@@ -14962,9 +15160,9 @@ class TextMagicApi(object):
             return data
 
     def set_chat_status_with_http_info(self, set_chat_status_input_object, **kwargs):  # noqa: E501
-        """Set status of the chat given by ID.  # noqa: E501
+        """Change chat status  # noqa: E501
 
-          # noqa: E501
+        Set status of the chat given by ID.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.set_chat_status_with_http_info(set_chat_status_input_object, async_req=True)
@@ -15328,9 +15526,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def unmute_chats_bulk(self, unmute_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Unmute several chats by chat ids or unmute all chats  # noqa: E501
+        """Unmute chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Unmute several chats by chat ids or unmute all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unmute_chats_bulk(unmute_chats_bulk_input_object, async_req=True)
@@ -15350,9 +15548,9 @@ class TextMagicApi(object):
             return data
 
     def unmute_chats_bulk_with_http_info(self, unmute_chats_bulk_input_object, **kwargs):  # noqa: E501
-        """Unmute several chats by chat ids or unmute all chats  # noqa: E501
+        """Unmute chats (bulk)  # noqa: E501
 
-          # noqa: E501
+        Unmute several chats by chat ids or unmute all chats  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.unmute_chats_bulk_with_http_info(unmute_chats_bulk_input_object, async_req=True)
@@ -16944,7 +17142,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def update_template(self, update_template_input_object, id, **kwargs):  # noqa: E501
-        """Update existing template.  # noqa: E501
+        """Update a template  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -16967,7 +17165,7 @@ class TextMagicApi(object):
             return data
 
     def update_template_with_http_info(self, update_template_input_object, id, **kwargs):  # noqa: E501
-        """Update existing template.  # noqa: E501
+        """Update a template  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -17366,7 +17564,7 @@ class TextMagicApi(object):
     def upload_message_attachment(self, file, **kwargs):  # noqa: E501
         """Upload message attachment  # noqa: E501
 
-          # noqa: E501
+        Upload a new file to insert it as a link.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_message_attachment(file, async_req=True)
@@ -17388,7 +17586,7 @@ class TextMagicApi(object):
     def upload_message_attachment_with_http_info(self, file, **kwargs):  # noqa: E501
         """Upload message attachment  # noqa: E501
 
-          # noqa: E501
+        Upload a new file to insert it as a link.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upload_message_attachment_with_http_info(file, async_req=True)

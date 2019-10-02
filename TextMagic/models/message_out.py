@@ -32,20 +32,20 @@ class MessageOut(object):
     """
     swagger_types = {
         'id': 'int',
+        'sender': 'str',
+        'receiver': 'str',
+        'text': 'str',
+        'status': 'str',
         'contact_id': 'int',
         'session_id': 'int',
-        'receiver': 'str',
         'message_time': 'datetime',
-        'status': 'str',
         'avatar': 'str',
-        'text': 'str',
         'deleted': 'bool',
         'charset': 'str',
         'charset_label': 'str',
         'first_name': 'str',
         'last_name': 'str',
         'country': 'str',
-        'sender': 'str',
         'phone': 'str',
         'price': 'float',
         'parts_count': 'int',
@@ -63,20 +63,20 @@ class MessageOut(object):
 
     attribute_map = {
         'id': 'id',
+        'sender': 'sender',
+        'receiver': 'receiver',
+        'text': 'text',
+        'status': 'status',
         'contact_id': 'contactId',
         'session_id': 'sessionId',
-        'receiver': 'receiver',
         'message_time': 'messageTime',
-        'status': 'status',
         'avatar': 'avatar',
-        'text': 'text',
         'deleted': 'deleted',
         'charset': 'charset',
         'charset_label': 'charsetLabel',
         'first_name': 'firstName',
         'last_name': 'lastName',
         'country': 'country',
-        'sender': 'sender',
         'phone': 'phone',
         'price': 'price',
         'parts_count': 'partsCount',
@@ -92,24 +92,24 @@ class MessageOut(object):
         'chars': 'chars'
     }
 
-    def __init__(self, id=None, contact_id=None, session_id=None, receiver=None, message_time=None, status=None, avatar=None, text=None, deleted=None, charset=None, charset_label=None, first_name=None, last_name=None, country=None, sender=None, phone=None, price=None, parts_count=None, from_email=None, from_number=None, smsc_id=None, contact=None, source=None, delivered_count=None, numbers_count=None, user_id=None, credits_price=None, chars=None):  # noqa: E501
+    def __init__(self, id=None, sender=None, receiver=None, text=None, status=None, contact_id=None, session_id=None, message_time=None, avatar=None, deleted=None, charset=None, charset_label=None, first_name=None, last_name=None, country=None, phone=None, price=None, parts_count=None, from_email=None, from_number=None, smsc_id=None, contact=None, source=None, delivered_count=None, numbers_count=None, user_id=None, credits_price=None, chars=None):  # noqa: E501
         """MessageOut - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
+        self._sender = None
+        self._receiver = None
+        self._text = None
+        self._status = None
         self._contact_id = None
         self._session_id = None
-        self._receiver = None
         self._message_time = None
-        self._status = None
         self._avatar = None
-        self._text = None
         self._deleted = None
         self._charset = None
         self._charset_label = None
         self._first_name = None
         self._last_name = None
         self._country = None
-        self._sender = None
         self._phone = None
         self._price = None
         self._parts_count = None
@@ -126,14 +126,16 @@ class MessageOut(object):
         self.discriminator = None
 
         self.id = id
-        self.contact_id = contact_id
-        self.session_id = session_id
+        if sender is not None:
+            self.sender = sender
         if receiver is not None:
             self.receiver = receiver
-        self.message_time = message_time
-        self.status = status
-        self.avatar = avatar
         self.text = text
+        self.status = status
+        self.contact_id = contact_id
+        self.session_id = session_id
+        self.message_time = message_time
+        self.avatar = avatar
         if deleted is not None:
             self.deleted = deleted
         self.charset = charset
@@ -141,8 +143,6 @@ class MessageOut(object):
         self.first_name = first_name
         self.last_name = last_name
         self.country = country
-        if sender is not None:
-            self.sender = sender
         if phone is not None:
             self.phone = phone
         if price is not None:
@@ -173,6 +173,7 @@ class MessageOut(object):
     def id(self):
         """Gets the id of this MessageOut.  # noqa: E501
 
+        Message ID.  # noqa: E501
 
         :return: The id of this MessageOut.  # noqa: E501
         :rtype: int
@@ -183,12 +184,109 @@ class MessageOut(object):
     def id(self, id):
         """Sets the id of this MessageOut.
 
+        Message ID.  # noqa: E501
 
         :param id: The id of this MessageOut.  # noqa: E501
         :type: int
         """
 
         self._id = id
+
+    @property
+    def sender(self):
+        """Gets the sender of this MessageOut.  # noqa: E501
+
+        Message sender (phone number or alphanumeric Sender ID).  # noqa: E501
+
+        :return: The sender of this MessageOut.  # noqa: E501
+        :rtype: str
+        """
+        return self._sender
+
+    @sender.setter
+    def sender(self, sender):
+        """Sets the sender of this MessageOut.
+
+        Message sender (phone number or alphanumeric Sender ID).  # noqa: E501
+
+        :param sender: The sender of this MessageOut.  # noqa: E501
+        :type: str
+        """
+
+        self._sender = sender
+
+    @property
+    def receiver(self):
+        """Gets the receiver of this MessageOut.  # noqa: E501
+
+        Recipient phone number.  # noqa: E501
+
+        :return: The receiver of this MessageOut.  # noqa: E501
+        :rtype: str
+        """
+        return self._receiver
+
+    @receiver.setter
+    def receiver(self, receiver):
+        """Sets the receiver of this MessageOut.
+
+        Recipient phone number.  # noqa: E501
+
+        :param receiver: The receiver of this MessageOut.  # noqa: E501
+        :type: str
+        """
+
+        self._receiver = receiver
+
+    @property
+    def text(self):
+        """Gets the text of this MessageOut.  # noqa: E501
+
+
+        :return: The text of this MessageOut.  # noqa: E501
+        :rtype: str
+        """
+        return self._text
+
+    @text.setter
+    def text(self, text):
+        """Sets the text of this MessageOut.
+
+
+        :param text: The text of this MessageOut.  # noqa: E501
+        :type: str
+        """
+
+        self._text = text
+
+    @property
+    def status(self):
+        """Gets the status of this MessageOut.  # noqa: E501
+
+        Delivery status of the message. @TODO: Please see the table below to see different delivery statuses.   # noqa: E501
+
+        :return: The status of this MessageOut.  # noqa: E501
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this MessageOut.
+
+        Delivery status of the message. @TODO: Please see the table below to see different delivery statuses.   # noqa: E501
+
+        :param status: The status of this MessageOut.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["q", "s", "e", "r", "a", "d", "b", "f", "u", "j", "i", "p", "h"]  # noqa: E501
+        if status not in allowed_values:
+            raise ValueError(
+                "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
+                .format(status, allowed_values)
+            )
+
+        self._status = status
 
     @property
     def contact_id(self):
@@ -233,30 +331,10 @@ class MessageOut(object):
         self._session_id = session_id
 
     @property
-    def receiver(self):
-        """Gets the receiver of this MessageOut.  # noqa: E501
-
-
-        :return: The receiver of this MessageOut.  # noqa: E501
-        :rtype: str
-        """
-        return self._receiver
-
-    @receiver.setter
-    def receiver(self, receiver):
-        """Sets the receiver of this MessageOut.
-
-
-        :param receiver: The receiver of this MessageOut.  # noqa: E501
-        :type: str
-        """
-
-        self._receiver = receiver
-
-    @property
     def message_time(self):
         """Gets the message_time of this MessageOut.  # noqa: E501
 
+        Sending time.  # noqa: E501
 
         :return: The message_time of this MessageOut.  # noqa: E501
         :rtype: datetime
@@ -267,41 +345,13 @@ class MessageOut(object):
     def message_time(self, message_time):
         """Sets the message_time of this MessageOut.
 
+        Sending time.  # noqa: E501
 
         :param message_time: The message_time of this MessageOut.  # noqa: E501
         :type: datetime
         """
 
         self._message_time = message_time
-
-    @property
-    def status(self):
-        """Gets the status of this MessageOut.  # noqa: E501
-
-        q - queued s - scheduled queue e - sending error r - enroute a - acked d - delivered b - buffered f - failed u - unknown j - rejected i - bulk insert p - scheduled suspend h - queue suspend  # noqa: E501
-
-        :return: The status of this MessageOut.  # noqa: E501
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this MessageOut.
-
-        q - queued s - scheduled queue e - sending error r - enroute a - acked d - delivered b - buffered f - failed u - unknown j - rejected i - bulk insert p - scheduled suspend h - queue suspend  # noqa: E501
-
-        :param status: The status of this MessageOut.  # noqa: E501
-        :type: str
-        """
-        allowed_values = ["q", "s", "e", "r", "a", "d", "b", "f", "u", "j", "i", "p", "h"]  # noqa: E501
-        if status not in allowed_values:
-            raise ValueError(
-                "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
-                .format(status, allowed_values)
-            )
-
-        self._status = status
 
     @property
     def avatar(self):
@@ -323,27 +373,6 @@ class MessageOut(object):
         """
 
         self._avatar = avatar
-
-    @property
-    def text(self):
-        """Gets the text of this MessageOut.  # noqa: E501
-
-
-        :return: The text of this MessageOut.  # noqa: E501
-        :rtype: str
-        """
-        return self._text
-
-    @text.setter
-    def text(self, text):
-        """Sets the text of this MessageOut.
-
-
-        :param text: The text of this MessageOut.  # noqa: E501
-        :type: str
-        """
-
-        self._text = text
 
     @property
     def deleted(self):
@@ -370,6 +399,7 @@ class MessageOut(object):
     def charset(self):
         """Gets the charset of this MessageOut.  # noqa: E501
 
+        Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS   # noqa: E501
 
         :return: The charset of this MessageOut.  # noqa: E501
         :rtype: str
@@ -380,6 +410,7 @@ class MessageOut(object):
     def charset(self, charset):
         """Sets the charset of this MessageOut.
 
+        Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS   # noqa: E501
 
         :param charset: The charset of this MessageOut.  # noqa: E501
         :type: str
@@ -412,6 +443,7 @@ class MessageOut(object):
     def first_name(self):
         """Gets the first_name of this MessageOut.  # noqa: E501
 
+        @TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID).   # noqa: E501
 
         :return: The first_name of this MessageOut.  # noqa: E501
         :rtype: str
@@ -422,6 +454,7 @@ class MessageOut(object):
     def first_name(self, first_name):
         """Sets the first_name of this MessageOut.
 
+        @TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID).   # noqa: E501
 
         :param first_name: The first_name of this MessageOut.  # noqa: E501
         :type: str
@@ -433,6 +466,7 @@ class MessageOut(object):
     def last_name(self):
         """Gets the last_name of this MessageOut.  # noqa: E501
 
+        Contact last name.  # noqa: E501
 
         :return: The last_name of this MessageOut.  # noqa: E501
         :rtype: str
@@ -443,6 +477,7 @@ class MessageOut(object):
     def last_name(self, last_name):
         """Sets the last_name of this MessageOut.
 
+        Contact last name.  # noqa: E501
 
         :param last_name: The last_name of this MessageOut.  # noqa: E501
         :type: str
@@ -454,6 +489,7 @@ class MessageOut(object):
     def country(self):
         """Gets the country of this MessageOut.  # noqa: E501
 
+        Two-letter ISO country code of the recipient phone number.   # noqa: E501
 
         :return: The country of this MessageOut.  # noqa: E501
         :rtype: str
@@ -464,33 +500,13 @@ class MessageOut(object):
     def country(self, country):
         """Sets the country of this MessageOut.
 
+        Two-letter ISO country code of the recipient phone number.   # noqa: E501
 
         :param country: The country of this MessageOut.  # noqa: E501
         :type: str
         """
 
         self._country = country
-
-    @property
-    def sender(self):
-        """Gets the sender of this MessageOut.  # noqa: E501
-
-
-        :return: The sender of this MessageOut.  # noqa: E501
-        :rtype: str
-        """
-        return self._sender
-
-    @sender.setter
-    def sender(self, sender):
-        """Sets the sender of this MessageOut.
-
-
-        :param sender: The sender of this MessageOut.  # noqa: E501
-        :type: str
-        """
-
-        self._sender = sender
 
     @property
     def phone(self):
@@ -538,6 +554,7 @@ class MessageOut(object):
     def parts_count(self):
         """Gets the parts_count of this MessageOut.  # noqa: E501
 
+        Message parts (multiples of 160 characters) count.  # noqa: E501
 
         :return: The parts_count of this MessageOut.  # noqa: E501
         :rtype: int
@@ -548,6 +565,7 @@ class MessageOut(object):
     def parts_count(self, parts_count):
         """Sets the parts_count of this MessageOut.
 
+        Message parts (multiples of 160 characters) count.  # noqa: E501
 
         :param parts_count: The parts_count of this MessageOut.  # noqa: E501
         :type: int

@@ -106,6 +106,7 @@ class Chat(object):
     def id(self):
         """Gets the id of this Chat.  # noqa: E501
 
+        Chat ID.  # noqa: E501
 
         :return: The id of this Chat.  # noqa: E501
         :rtype: int
@@ -116,6 +117,7 @@ class Chat(object):
     def id(self, id):
         """Sets the id of this Chat.
 
+        Chat ID.  # noqa: E501
 
         :param id: The id of this Chat.  # noqa: E501
         :type: int
@@ -148,6 +150,7 @@ class Chat(object):
     def phone(self):
         """Gets the phone of this Chat.  # noqa: E501
 
+        Chat partner phone number.  # noqa: E501
 
         :return: The phone of this Chat.  # noqa: E501
         :rtype: str
@@ -158,6 +161,7 @@ class Chat(object):
     def phone(self, phone):
         """Sets the phone of this Chat.
 
+        Chat partner phone number.  # noqa: E501
 
         :param phone: The phone of this Chat.  # noqa: E501
         :type: str
@@ -211,6 +215,7 @@ class Chat(object):
     def unread(self):
         """Gets the unread of this Chat.  # noqa: E501
 
+        Unread incoming messages count.  # noqa: E501
 
         :return: The unread of this Chat.  # noqa: E501
         :rtype: int
@@ -221,6 +226,7 @@ class Chat(object):
     def unread(self, unread):
         """Sets the unread of this Chat.
 
+        Unread incoming messages count.  # noqa: E501
 
         :param unread: The unread of this Chat.  # noqa: E501
         :type: int
@@ -232,6 +238,7 @@ class Chat(object):
     def updated_at(self):
         """Gets the updated_at of this Chat.  # noqa: E501
 
+        Time when last incoming message arrived at this chat.  # noqa: E501
 
         :return: The updated_at of this Chat.  # noqa: E501
         :rtype: datetime
@@ -242,6 +249,7 @@ class Chat(object):
     def updated_at(self, updated_at):
         """Sets the updated_at of this Chat.
 
+        Time when last incoming message arrived at this chat.  # noqa: E501
 
         :param updated_at: The updated_at of this Chat.  # noqa: E501
         :type: datetime

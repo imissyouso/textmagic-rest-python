@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import TextMagic
-from TextMagic.models.get_forwarded_calls_paginated_response import GetForwardedCallsPaginatedResponse  # noqa: E501
+from TextMagic.models.send_phone_verification_code_response import SendPhoneVerificationCodeResponse  # noqa: E501
 from TextMagic.rest import ApiException
 
 
-class TestGetForwardedCallsPaginatedResponse(unittest.TestCase):
-    """GetForwardedCallsPaginatedResponse unit test stubs"""
+class TestSendPhoneVerificationCodeResponse(unittest.TestCase):
+    """SendPhoneVerificationCodeResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestGetForwardedCallsPaginatedResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testGetForwardedCallsPaginatedResponse(self):
-        """Test GetForwardedCallsPaginatedResponse"""
+    def testSendPhoneVerificationCodeResponse(self):
+        """Test SendPhoneVerificationCodeResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_forwarded_calls_paginated_response.GetForwardedCallsPaginatedResponse()  # noqa: E501
+        # model = TextMagic.models.send_phone_verification_code_response.SendPhoneVerificationCodeResponse()  # noqa: E501
         pass
 
 

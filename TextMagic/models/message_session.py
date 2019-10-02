@@ -78,6 +78,7 @@ class MessageSession(object):
     def id(self):
         """Gets the id of this MessageSession.  # noqa: E501
 
+        Session ID.  # noqa: E501
 
         :return: The id of this MessageSession.  # noqa: E501
         :rtype: int
@@ -88,6 +89,7 @@ class MessageSession(object):
     def id(self, id):
         """Sets the id of this MessageSession.
 
+        Session ID.  # noqa: E501
 
         :param id: The id of this MessageSession.  # noqa: E501
         :type: int
@@ -99,6 +101,7 @@ class MessageSession(object):
     def start_time(self):
         """Gets the start_time of this MessageSession.  # noqa: E501
 
+        Session creation time.  # noqa: E501
 
         :return: The start_time of this MessageSession.  # noqa: E501
         :rtype: str
@@ -109,6 +112,7 @@ class MessageSession(object):
     def start_time(self, start_time):
         """Sets the start_time of this MessageSession.
 
+        Session creation time.  # noqa: E501
 
         :param start_time: The start_time of this MessageSession.  # noqa: E501
         :type: str
@@ -120,6 +124,7 @@ class MessageSession(object):
     def text(self):
         """Gets the text of this MessageSession.  # noqa: E501
 
+        Session text. If a template was used for the session text (see [Messages: Send](#tag/Outbound-Messages) for details), it may contain template tags.   # noqa: E501
 
         :return: The text of this MessageSession.  # noqa: E501
         :rtype: str
@@ -130,6 +135,7 @@ class MessageSession(object):
     def text(self, text):
         """Sets the text of this MessageSession.
 
+        Session text. If a template was used for the session text (see [Messages: Send](#tag/Outbound-Messages) for details), it may contain template tags.   # noqa: E501
 
         :param text: The text of this MessageSession.  # noqa: E501
         :type: str
@@ -141,6 +147,7 @@ class MessageSession(object):
     def source(self):
         """Gets the source of this MessageSession.  # noqa: E501
 
+        *   **O** for TextMagic Online *   **A** for API *   **M** for TextMagic Messenger *   **E** for [Email to SMS](/docs/api/send-email-to-sms/) *   **X** for [Distribution lists](/docs/api/distribution-lists/)   # noqa: E501
 
         :return: The source of this MessageSession.  # noqa: E501
         :rtype: str
@@ -151,6 +158,7 @@ class MessageSession(object):
     def source(self, source):
         """Sets the source of this MessageSession.
 
+        *   **O** for TextMagic Online *   **A** for API *   **M** for TextMagic Messenger *   **E** for [Email to SMS](/docs/api/send-email-to-sms/) *   **X** for [Distribution lists](/docs/api/distribution-lists/)   # noqa: E501
 
         :param source: The source of this MessageSession.  # noqa: E501
         :type: str
@@ -162,6 +170,7 @@ class MessageSession(object):
     def reference_id(self):
         """Gets the reference_id of this MessageSession.  # noqa: E501
 
+        Custom reference ID (see [Messages: Send](/docs/api/send-sms/) for details).   # noqa: E501
 
         :return: The reference_id of this MessageSession.  # noqa: E501
         :rtype: str
@@ -172,6 +181,7 @@ class MessageSession(object):
     def reference_id(self, reference_id):
         """Sets the reference_id of this MessageSession.
 
+        Custom reference ID (see [Messages: Send](/docs/api/send-sms/) for details).   # noqa: E501
 
         :param reference_id: The reference_id of this MessageSession.  # noqa: E501
         :type: str
@@ -183,6 +193,7 @@ class MessageSession(object):
     def price(self):
         """Gets the price of this MessageSession.  # noqa: E501
 
+        Session cost (in account currency).  # noqa: E501
 
         :return: The price of this MessageSession.  # noqa: E501
         :rtype: float
@@ -193,6 +204,7 @@ class MessageSession(object):
     def price(self, price):
         """Sets the price of this MessageSession.
 
+        Session cost (in account currency).  # noqa: E501
 
         :param price: The price of this MessageSession.  # noqa: E501
         :type: float
@@ -204,6 +216,7 @@ class MessageSession(object):
     def numbers_count(self):
         """Gets the numbers_count of this MessageSession.  # noqa: E501
 
+        Session recipient count.  # noqa: E501
 
         :return: The numbers_count of this MessageSession.  # noqa: E501
         :rtype: int
@@ -214,6 +227,7 @@ class MessageSession(object):
     def numbers_count(self, numbers_count):
         """Sets the numbers_count of this MessageSession.
 
+        Session recipient count.  # noqa: E501
 
         :param numbers_count: The numbers_count of this MessageSession.  # noqa: E501
         :type: int

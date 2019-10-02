@@ -83,6 +83,7 @@ class GetUserDedicatedNumbersPaginatedResponse(object):
     def page_count(self):
         """Gets the page_count of this GetUserDedicatedNumbersPaginatedResponse.  # noqa: E501
 
+        The total number of pages.  # noqa: E501
 
         :return: The page_count of this GetUserDedicatedNumbersPaginatedResponse.  # noqa: E501
         :rtype: int
@@ -93,6 +94,7 @@ class GetUserDedicatedNumbersPaginatedResponse(object):
     def page_count(self, page_count):
         """Sets the page_count of this GetUserDedicatedNumbersPaginatedResponse.
 
+        The total number of pages.  # noqa: E501
 
         :param page_count: The page_count of this GetUserDedicatedNumbersPaginatedResponse.  # noqa: E501
         :type: int
@@ -104,6 +106,7 @@ class GetUserDedicatedNumbersPaginatedResponse(object):
     def limit(self):
         """Gets the limit of this GetUserDedicatedNumbersPaginatedResponse.  # noqa: E501
 
+        The number of results per page.  # noqa: E501
 
         :return: The limit of this GetUserDedicatedNumbersPaginatedResponse.  # noqa: E501
         :rtype: int
@@ -114,6 +117,7 @@ class GetUserDedicatedNumbersPaginatedResponse(object):
     def limit(self, limit):
         """Sets the limit of this GetUserDedicatedNumbersPaginatedResponse.
 
+        The number of results per page.  # noqa: E501
 
         :param limit: The limit of this GetUserDedicatedNumbersPaginatedResponse.  # noqa: E501
         :type: int

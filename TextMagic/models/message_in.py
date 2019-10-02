@@ -85,6 +85,7 @@ class MessageIn(object):
     def id(self):
         """Gets the id of this MessageIn.  # noqa: E501
 
+        The ID of the inbound message.  # noqa: E501
 
         :return: The id of this MessageIn.  # noqa: E501
         :rtype: int
@@ -95,6 +96,7 @@ class MessageIn(object):
     def id(self, id):
         """Sets the id of this MessageIn.
 
+        The ID of the inbound message.  # noqa: E501
 
         :param id: The id of this MessageIn.  # noqa: E501
         :type: int
@@ -106,6 +108,7 @@ class MessageIn(object):
     def sender(self):
         """Gets the sender of this MessageIn.  # noqa: E501
 
+        The sender’s phone number.  # noqa: E501
 
         :return: The sender of this MessageIn.  # noqa: E501
         :rtype: str
@@ -116,6 +119,7 @@ class MessageIn(object):
     def sender(self, sender):
         """Sets the sender of this MessageIn.
 
+        The sender’s phone number.  # noqa: E501
 
         :param sender: The sender of this MessageIn.  # noqa: E501
         :type: str
@@ -127,6 +131,7 @@ class MessageIn(object):
     def receiver(self):
         """Gets the receiver of this MessageIn.  # noqa: E501
 
+        The receiver’s phone number (i.e. your dedicated or shared reply number).  # noqa: E501
 
         :return: The receiver of this MessageIn.  # noqa: E501
         :rtype: str
@@ -137,6 +142,7 @@ class MessageIn(object):
     def receiver(self, receiver):
         """Sets the receiver of this MessageIn.
 
+        The receiver’s phone number (i.e. your dedicated or shared reply number).  # noqa: E501
 
         :param receiver: The receiver of this MessageIn.  # noqa: E501
         :type: str
@@ -148,6 +154,7 @@ class MessageIn(object):
     def message_time(self):
         """Gets the message_time of this MessageIn.  # noqa: E501
 
+        The time when the message reached the TextMagic API endpoint.  # noqa: E501
 
         :return: The message_time of this MessageIn.  # noqa: E501
         :rtype: datetime
@@ -158,6 +165,7 @@ class MessageIn(object):
     def message_time(self, message_time):
         """Sets the message_time of this MessageIn.
 
+        The time when the message reached the TextMagic API endpoint.  # noqa: E501
 
         :param message_time: The message_time of this MessageIn.  # noqa: E501
         :type: datetime
@@ -169,6 +177,7 @@ class MessageIn(object):
     def text(self):
         """Gets the text of this MessageIn.  # noqa: E501
 
+        The text from the received message.  # noqa: E501
 
         :return: The text of this MessageIn.  # noqa: E501
         :rtype: str
@@ -179,6 +188,7 @@ class MessageIn(object):
     def text(self, text):
         """Sets the text of this MessageIn.
 
+        The text from the received message.  # noqa: E501
 
         :param text: The text of this MessageIn.  # noqa: E501
         :type: str
