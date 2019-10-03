@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import TextMagic
-from TextMagic.models.get_user_lists_paginated_response import GetUserListsPaginatedResponse  # noqa: E501
+from TextMagic.models.list import List  # noqa: E501
 from TextMagic.rest import ApiException
 
 
-class TestGetUserListsPaginatedResponse(unittest.TestCase):
-    """GetUserListsPaginatedResponse unit test stubs"""
+class TestList(unittest.TestCase):
+    """List unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestGetUserListsPaginatedResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testGetUserListsPaginatedResponse(self):
-        """Test GetUserListsPaginatedResponse"""
+    def testList(self):
+        """Test List"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.get_user_lists_paginated_response.GetUserListsPaginatedResponse()  # noqa: E501
+        # model = TextMagic.models.list.List()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# Group
+# List
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **user** | [**User**](User.md) |  | 
 **service** | **bool** |  | 
 **shared** | **bool** |  | 
-**avatar** | [**GroupImage**](GroupImage.md) |  | 
+**avatar** | [**ListImage**](ListImage.md) |  | 
 **is_default** | **bool** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

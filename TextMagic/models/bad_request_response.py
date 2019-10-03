@@ -61,6 +61,7 @@ class BadRequestResponse(object):
     def code(self):
         """Gets the code of this BadRequestResponse.  # noqa: E501
 
+        HTTP error code.  # noqa: E501
 
         :return: The code of this BadRequestResponse.  # noqa: E501
         :rtype: int
@@ -71,6 +72,7 @@ class BadRequestResponse(object):
     def code(self, code):
         """Sets the code of this BadRequestResponse.
 
+        HTTP error code.  # noqa: E501
 
         :param code: The code of this BadRequestResponse.  # noqa: E501
         :type: int
@@ -82,6 +84,7 @@ class BadRequestResponse(object):
     def message(self):
         """Gets the message of this BadRequestResponse.  # noqa: E501
 
+        Brief error message. You could display this message to your user or save it in a log.  # noqa: E501
 
         :return: The message of this BadRequestResponse.  # noqa: E501
         :rtype: str
@@ -92,6 +95,7 @@ class BadRequestResponse(object):
     def message(self, message):
         """Sets the message of this BadRequestResponse.
 
+        Brief error message. You could display this message to your user or save it in a log.  # noqa: E501
 
         :param message: The message of this BadRequestResponse.  # noqa: E501
         :type: str

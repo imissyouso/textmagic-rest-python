@@ -42,7 +42,7 @@ class Contact(object):
         'country': 'Country',
         'custom_fields': 'list[ContactCustomField]',
         'user': 'User',
-        'lists': 'list[Group]',
+        'lists': 'list[List]',
         'phone_type': 'str',
         'avatar': 'ContactImage',
         'notes': 'list[ContactNote]'
@@ -339,7 +339,7 @@ class Contact(object):
 
 
         :return: The lists of this Contact.  # noqa: E501
-        :rtype: list[Group]
+        :rtype: list[List]
         """
         return self._lists
 
@@ -349,7 +349,7 @@ class Contact(object):
 
 
         :param lists: The lists of this Contact.  # noqa: E501
-        :type: list[Group]
+        :type: list[List]
         """
 
         self._lists = lists

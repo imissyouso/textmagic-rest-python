@@ -88,6 +88,7 @@ from TextMagic.models.get_inbound_messages_notification_settings_response import
 from TextMagic.models.get_invoices_paginated_response import GetInvoicesPaginatedResponse
 from TextMagic.models.get_list_contacts_ids_response import GetListContactsIdsResponse
 from TextMagic.models.get_lists_of_contact_paginated_response import GetListsOfContactPaginatedResponse
+from TextMagic.models.get_lists_paginated_response import GetListsPaginatedResponse
 from TextMagic.models.get_message_preview_response import GetMessagePreviewResponse
 from TextMagic.models.get_message_price_response import GetMessagePriceResponse
 from TextMagic.models.get_message_prices_response import GetMessagePricesResponse
@@ -109,12 +110,11 @@ from TextMagic.models.get_timezones_response import GetTimezonesResponse
 from TextMagic.models.get_unread_messages_total_response import GetUnreadMessagesTotalResponse
 from TextMagic.models.get_unsubscribers_paginated_response import GetUnsubscribersPaginatedResponse
 from TextMagic.models.get_user_dedicated_numbers_paginated_response import GetUserDedicatedNumbersPaginatedResponse
-from TextMagic.models.get_user_lists_paginated_response import GetUserListsPaginatedResponse
 from TextMagic.models.get_versions_response import GetVersionsResponse
-from TextMagic.models.group import Group
-from TextMagic.models.group_image import GroupImage
 from TextMagic.models.invite_subaccount_input_object import InviteSubaccountInputObject
 from TextMagic.models.invoice import Invoice
+from TextMagic.models.list import List
+from TextMagic.models.list_image import ListImage
 from TextMagic.models.mark_chats_read_bulk_input_object import MarkChatsReadBulkInputObject
 from TextMagic.models.mark_chats_unread_bulk_input_object import MarkChatsUnreadBulkInputObject
 from TextMagic.models.merge_survey_nodes_input_object import MergeSurveyNodesInputObject
@@ -152,7 +152,6 @@ from TextMagic.models.send_phone_verification_code_response import SendPhoneVeri
 from TextMagic.models.sender_id import SenderId
 from TextMagic.models.set_chat_status_input_object import SetChatStatusInputObject
 from TextMagic.models.subaccount_with_token import SubaccountWithToken
-from TextMagic.models.successful_response import SuccessfulResponse
 from TextMagic.models.survey import Survey
 from TextMagic.models.survey_node import SurveyNode
 from TextMagic.models.survey_recipient import SurveyRecipient

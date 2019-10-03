@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import TextMagic
-from TextMagic.models.group_image import GroupImage  # noqa: E501
+from TextMagic.models.get_lists_paginated_response import GetListsPaginatedResponse  # noqa: E501
 from TextMagic.rest import ApiException
 
 
-class TestGroupImage(unittest.TestCase):
-    """GroupImage unit test stubs"""
+class TestGetListsPaginatedResponse(unittest.TestCase):
+    """GetListsPaginatedResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestGroupImage(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testGroupImage(self):
-        """Test GroupImage"""
+    def testGetListsPaginatedResponse(self):
+        """Test GetListsPaginatedResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.group_image.GroupImage()  # noqa: E501
+        # model = TextMagic.models.get_lists_paginated_response.GetListsPaginatedResponse()  # noqa: E501
         pass
 
 

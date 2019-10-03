@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import TextMagic
-from TextMagic.models.group import Group  # noqa: E501
+from TextMagic.models.list_image import ListImage  # noqa: E501
 from TextMagic.rest import ApiException
 
 
-class TestGroup(unittest.TestCase):
-    """Group unit test stubs"""
+class TestListImage(unittest.TestCase):
+    """ListImage unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestGroup(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testGroup(self):
-        """Test Group"""
+    def testListImage(self):
+        """Test ListImage"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.group.Group()  # noqa: E501
+        # model = TextMagic.models.list_image.ListImage()  # noqa: E501
         pass
 
 

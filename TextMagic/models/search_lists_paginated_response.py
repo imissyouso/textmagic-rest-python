@@ -34,7 +34,7 @@ class SearchListsPaginatedResponse(object):
         'page': 'int',
         'page_count': 'int',
         'limit': 'int',
-        'resources': 'list[Group]'
+        'resources': 'list[List]'
     }
 
     attribute_map = {
@@ -131,7 +131,7 @@ class SearchListsPaginatedResponse(object):
 
 
         :return: The resources of this SearchListsPaginatedResponse.  # noqa: E501
-        :rtype: list[Group]
+        :rtype: list[List]
         """
         return self._resources
 
@@ -141,7 +141,7 @@ class SearchListsPaginatedResponse(object):
 
 
         :param resources: The resources of this SearchListsPaginatedResponse.  # noqa: E501
-        :type: list[Group]
+        :type: list[List]
         """
 
         self._resources = resources

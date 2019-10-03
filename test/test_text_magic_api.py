@@ -71,8 +71,8 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_check_phone_verification_code_0(self):
-        """Test case for check_phone_verification_code_0
+    def test_check_phone_verification_code_tfa(self):
+        """Test case for check_phone_verification_code_tfa
 
         Step 2: Check the verification code   # noqa: E501
         """
@@ -130,7 +130,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_create_list(self):
         """Test case for create_list
 
-        Create a new list from the submitted data.  # noqa: E501
+        Create a new list  # noqa: E501
         """
         pass
 
@@ -669,7 +669,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_list(self):
         """Test case for get_list
 
-        Get a single list.  # noqa: E501
+        Get the details of a specific list  # noqa: E501
         """
         pass
 
@@ -677,6 +677,13 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for get_list_contacts_ids
 
         Fetch all contacts IDs belonging to the list with ID.  # noqa: E501
+        """
+        pass
+
+    def test_get_lists(self):
+        """Test case for get_lists
+
+        Get all lists  # noqa: E501
         """
         pass
 
@@ -897,13 +904,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_user_lists(self):
-        """Test case for get_user_lists
-
-        Get all user lists.  # noqa: E501
-        """
-        pass
-
     def test_get_versions(self):
         """Test case for get_versions
 
@@ -1072,8 +1072,8 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_send_phone_verification_code_0(self):
-        """Test case for send_phone_verification_code_0
+    def test_send_phone_verification_code_tfa(self):
+        """Test case for send_phone_verification_code_tfa
 
         Step 1: Send a verification code   # noqa: E501
         """

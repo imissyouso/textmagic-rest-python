@@ -44,7 +44,7 @@ class CreateListInputObject(object):
         'is_default': 'isDefault'
     }
 
-    def __init__(self, name=None, shared=None, favorited=False, is_default=False):  # noqa: E501
+    def __init__(self, name=None, shared=False, favorited=False, is_default=False):  # noqa: E501
         """CreateListInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._name = None
@@ -54,7 +54,8 @@ class CreateListInputObject(object):
         self.discriminator = None
 
         self.name = name
-        self.shared = shared
+        if shared is not None:
+            self.shared = shared
         if favorited is not None:
             self.favorited = favorited
         if is_default is not None:
@@ -64,7 +65,7 @@ class CreateListInputObject(object):
     def name(self):
         """Gets the name of this CreateListInputObject.  # noqa: E501
 
-        List name  # noqa: E501
+        List name.  # noqa: E501
 
         :return: The name of this CreateListInputObject.  # noqa: E501
         :rtype: str
@@ -75,7 +76,7 @@ class CreateListInputObject(object):
     def name(self, name):
         """Sets the name of this CreateListInputObject.
 
-        List name  # noqa: E501
+        List name.  # noqa: E501
 
         :param name: The name of this CreateListInputObject.  # noqa: E501
         :type: str
@@ -87,7 +88,7 @@ class CreateListInputObject(object):
     def shared(self):
         """Gets the shared of this CreateListInputObject.  # noqa: E501
 
-        Should this list be shared with sub-accounts  # noqa: E501
+        Should new list be shared among all the sub-accounts? The default is 0 (false).  # noqa: E501
 
         :return: The shared of this CreateListInputObject.  # noqa: E501
         :rtype: bool
@@ -98,7 +99,7 @@ class CreateListInputObject(object):
     def shared(self, shared):
         """Sets the shared of this CreateListInputObject.
 
-        Should this list be shared with sub-accounts  # noqa: E501
+        Should new list be shared among all the sub-accounts? The default is 0 (false).  # noqa: E501
 
         :param shared: The shared of this CreateListInputObject.  # noqa: E501
         :type: bool
@@ -110,7 +111,7 @@ class CreateListInputObject(object):
     def favorited(self):
         """Gets the favorited of this CreateListInputObject.  # noqa: E501
 
-        Is list favorited. Default is false  # noqa: E501
+        Is list favorited. Default is false.  # noqa: E501
 
         :return: The favorited of this CreateListInputObject.  # noqa: E501
         :rtype: bool
@@ -121,7 +122,7 @@ class CreateListInputObject(object):
     def favorited(self, favorited):
         """Sets the favorited of this CreateListInputObject.
 
-        Is list favorited. Default is false  # noqa: E501
+        Is list favorited. Default is false.  # noqa: E501
 
         :param favorited: The favorited of this CreateListInputObject.  # noqa: E501
         :type: bool
@@ -133,7 +134,7 @@ class CreateListInputObject(object):
     def is_default(self):
         """Gets the is_default of this CreateListInputObject.  # noqa: E501
 
-        Is list default for new contacts (web only).  # noqa: E501
+        Is list default for new contacts (web only). Default is false.  # noqa: E501
 
         :return: The is_default of this CreateListInputObject.  # noqa: E501
         :rtype: bool
@@ -144,7 +145,7 @@ class CreateListInputObject(object):
     def is_default(self, is_default):
         """Sets the is_default of this CreateListInputObject.
 
-        Is list default for new contacts (web only).  # noqa: E501
+        Is list default for new contacts (web only). Default is false.  # noqa: E501
 
         :param is_default: The is_default of this CreateListInputObject.  # noqa: E501
         :type: bool

@@ -54,6 +54,7 @@ class ResourceLinkResponse(object):
     def id(self):
         """Gets the id of this ResourceLinkResponse.  # noqa: E501
 
+        Resource ID.  # noqa: E501
 
         :return: The id of this ResourceLinkResponse.  # noqa: E501
         :rtype: int
@@ -64,6 +65,7 @@ class ResourceLinkResponse(object):
     def id(self, id):
         """Sets the id of this ResourceLinkResponse.
 
+        Resource ID.  # noqa: E501
 
         :param id: The id of this ResourceLinkResponse.  # noqa: E501
         :type: int
@@ -75,6 +77,7 @@ class ResourceLinkResponse(object):
     def href(self):
         """Gets the href of this ResourceLinkResponse.  # noqa: E501
 
+        A link to this resource. If you want to fetch it, just **GET** this address.  # noqa: E501
 
         :return: The href of this ResourceLinkResponse.  # noqa: E501
         :rtype: str
@@ -85,6 +88,7 @@ class ResourceLinkResponse(object):
     def href(self, href):
         """Sets the href of this ResourceLinkResponse.
 
+        A link to this resource. If you want to fetch it, just **GET** this address.  # noqa: E501
 
         :param href: The href of this ResourceLinkResponse.  # noqa: E501
         :type: str
