@@ -708,13 +708,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_message_prices(self):
-        """Test case for get_message_prices
-
-        Get pricing  # noqa: E501
-        """
-        pass
-
     def test_get_message_session(self):
         """Test case for get_message_session
 
