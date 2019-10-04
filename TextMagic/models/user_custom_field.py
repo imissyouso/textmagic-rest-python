@@ -58,6 +58,7 @@ class UserCustomField(object):
     def id(self):
         """Gets the id of this UserCustomField.  # noqa: E501
 
+        Custom field ID.  # noqa: E501
 
         :return: The id of this UserCustomField.  # noqa: E501
         :rtype: int
@@ -68,6 +69,7 @@ class UserCustomField(object):
     def id(self, id):
         """Sets the id of this UserCustomField.
 
+        Custom field ID.  # noqa: E501
 
         :param id: The id of this UserCustomField.  # noqa: E501
         :type: int
@@ -79,6 +81,7 @@ class UserCustomField(object):
     def name(self):
         """Gets the name of this UserCustomField.  # noqa: E501
 
+        Custom field name.  # noqa: E501
 
         :return: The name of this UserCustomField.  # noqa: E501
         :rtype: str
@@ -89,6 +92,7 @@ class UserCustomField(object):
     def name(self, name):
         """Sets the name of this UserCustomField.
 
+        Custom field name.  # noqa: E501
 
         :param name: The name of this UserCustomField.  # noqa: E501
         :type: str
@@ -100,6 +104,7 @@ class UserCustomField(object):
     def created_at(self):
         """Gets the created_at of this UserCustomField.  # noqa: E501
 
+        Custom field creation time.  # noqa: E501
 
         :return: The created_at of this UserCustomField.  # noqa: E501
         :rtype: datetime
@@ -110,6 +115,7 @@ class UserCustomField(object):
     def created_at(self, created_at):
         """Sets the created_at of this UserCustomField.
 
+        Custom field creation time.  # noqa: E501
 
         :param created_at: The created_at of this UserCustomField.  # noqa: E501
         :type: datetime

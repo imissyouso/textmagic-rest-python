@@ -86,6 +86,7 @@ class List(object):
     def id(self):
         """Gets the id of this List.  # noqa: E501
 
+        List ID.  # noqa: E501
 
         :return: The id of this List.  # noqa: E501
         :rtype: int
@@ -96,6 +97,7 @@ class List(object):
     def id(self, id):
         """Sets the id of this List.
 
+        List ID.  # noqa: E501
 
         :param id: The id of this List.  # noqa: E501
         :type: int
@@ -107,6 +109,7 @@ class List(object):
     def name(self):
         """Gets the name of this List.  # noqa: E501
 
+        List name.  # noqa: E501
 
         :return: The name of this List.  # noqa: E501
         :rtype: str
@@ -117,6 +120,7 @@ class List(object):
     def name(self, name):
         """Sets the name of this List.
 
+        List name.  # noqa: E501
 
         :param name: The name of this List.  # noqa: E501
         :type: str
@@ -128,6 +132,7 @@ class List(object):
     def description(self):
         """Gets the description of this List.  # noqa: E501
 
+        List description.  # noqa: E501
 
         :return: The description of this List.  # noqa: E501
         :rtype: str
@@ -138,6 +143,7 @@ class List(object):
     def description(self, description):
         """Sets the description of this List.
 
+        List description.  # noqa: E501
 
         :param description: The description of this List.  # noqa: E501
         :type: str
@@ -170,6 +176,7 @@ class List(object):
     def members_count(self):
         """Gets the members_count of this List.  # noqa: E501
 
+        List members count.  # noqa: E501
 
         :return: The members_count of this List.  # noqa: E501
         :rtype: int
@@ -180,6 +187,7 @@ class List(object):
     def members_count(self, members_count):
         """Sets the members_count of this List.
 
+        List members count.  # noqa: E501
 
         :param members_count: The members_count of this List.  # noqa: E501
         :type: int
@@ -233,6 +241,7 @@ class List(object):
     def shared(self):
         """Gets the shared of this List.  # noqa: E501
 
+        Is the list **shared** among all sub-accounts?  # noqa: E501
 
         :return: The shared of this List.  # noqa: E501
         :rtype: bool
@@ -243,6 +252,7 @@ class List(object):
     def shared(self, shared):
         """Sets the shared of this List.
 
+        Is the list **shared** among all sub-accounts?  # noqa: E501
 
         :param shared: The shared of this List.  # noqa: E501
         :type: bool

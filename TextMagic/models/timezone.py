@@ -135,6 +135,7 @@ class Timezone(object):
     def offset(self):
         """Gets the offset of this Timezone.  # noqa: E501
 
+        Offset from UTC time in seconds. In this example it is 21600/60/60=6 hours.  # noqa: E501
 
         :return: The offset of this Timezone.  # noqa: E501
         :rtype: int
@@ -145,6 +146,7 @@ class Timezone(object):
     def offset(self, offset):
         """Sets the offset of this Timezone.
 
+        Offset from UTC time in seconds. In this example it is 21600/60/60=6 hours.  # noqa: E501
 
         :param offset: The offset of this Timezone.  # noqa: E501
         :type: int

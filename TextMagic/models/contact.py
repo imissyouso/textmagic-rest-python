@@ -106,6 +106,7 @@ class Contact(object):
     def id(self):
         """Gets the id of this Contact.  # noqa: E501
 
+        Contact ID.  # noqa: E501
 
         :return: The id of this Contact.  # noqa: E501
         :rtype: int
@@ -116,6 +117,7 @@ class Contact(object):
     def id(self, id):
         """Sets the id of this Contact.
 
+        Contact ID.  # noqa: E501
 
         :param id: The id of this Contact.  # noqa: E501
         :type: int
@@ -169,6 +171,7 @@ class Contact(object):
     def first_name(self):
         """Gets the first_name of this Contact.  # noqa: E501
 
+        Contact first name.  # noqa: E501
 
         :return: The first_name of this Contact.  # noqa: E501
         :rtype: str
@@ -179,6 +182,7 @@ class Contact(object):
     def first_name(self, first_name):
         """Sets the first_name of this Contact.
 
+        Contact first name.  # noqa: E501
 
         :param first_name: The first_name of this Contact.  # noqa: E501
         :type: str
@@ -190,6 +194,7 @@ class Contact(object):
     def last_name(self):
         """Gets the last_name of this Contact.  # noqa: E501
 
+        Contact last name.  # noqa: E501
 
         :return: The last_name of this Contact.  # noqa: E501
         :rtype: str
@@ -200,6 +205,7 @@ class Contact(object):
     def last_name(self, last_name):
         """Sets the last_name of this Contact.
 
+        Contact last name.  # noqa: E501
 
         :param last_name: The last_name of this Contact.  # noqa: E501
         :type: str
@@ -211,6 +217,7 @@ class Contact(object):
     def company_name(self):
         """Gets the company_name of this Contact.  # noqa: E501
 
+        Company name.  # noqa: E501
 
         :return: The company_name of this Contact.  # noqa: E501
         :rtype: str
@@ -221,6 +228,7 @@ class Contact(object):
     def company_name(self, company_name):
         """Sets the company_name of this Contact.
 
+        Company name.  # noqa: E501
 
         :param company_name: The company_name of this Contact.  # noqa: E501
         :type: str
@@ -232,6 +240,7 @@ class Contact(object):
     def phone(self):
         """Gets the phone of this Contact.  # noqa: E501
 
+        Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
 
         :return: The phone of this Contact.  # noqa: E501
         :rtype: str
@@ -242,6 +251,7 @@ class Contact(object):
     def phone(self, phone):
         """Sets the phone of this Contact.
 
+        Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
 
         :param phone: The phone of this Contact.  # noqa: E501
         :type: str
@@ -253,6 +263,7 @@ class Contact(object):
     def email(self):
         """Gets the email of this Contact.  # noqa: E501
 
+        Contact email address.  # noqa: E501
 
         :return: The email of this Contact.  # noqa: E501
         :rtype: str
@@ -263,6 +274,7 @@ class Contact(object):
     def email(self, email):
         """Sets the email of this Contact.
 
+        Contact email address.  # noqa: E501
 
         :param email: The email of this Contact.  # noqa: E501
         :type: str
@@ -274,6 +286,7 @@ class Contact(object):
     def country(self):
         """Gets the country of this Contact.  # noqa: E501
 
+        Contact country.  # noqa: E501
 
         :return: The country of this Contact.  # noqa: E501
         :rtype: Country
@@ -284,6 +297,7 @@ class Contact(object):
     def country(self, country):
         """Sets the country of this Contact.
 
+        Contact country.  # noqa: E501
 
         :param country: The country of this Contact.  # noqa: E501
         :type: Country
@@ -295,6 +309,7 @@ class Contact(object):
     def custom_fields(self):
         """Gets the custom_fields of this Contact.  # noqa: E501
 
+        See [Custom Fields](/docs/api/custom-fields/) section.  # noqa: E501
 
         :return: The custom_fields of this Contact.  # noqa: E501
         :rtype: list[ContactCustomField]
@@ -305,6 +320,7 @@ class Contact(object):
     def custom_fields(self, custom_fields):
         """Sets the custom_fields of this Contact.
 
+        See [Custom Fields](/docs/api/custom-fields/) section.  # noqa: E501
 
         :param custom_fields: The custom_fields of this Contact.  # noqa: E501
         :type: list[ContactCustomField]

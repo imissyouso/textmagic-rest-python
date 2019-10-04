@@ -3,14 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** |  | 
-**name** | **str** |  | 
-**description** | **str** |  | 
+**id** | **int** | List ID. | 
+**name** | **str** | List name. | 
+**description** | **str** | List description. | 
 **favorited** | **bool** |  | 
-**members_count** | **int** |  | 
+**members_count** | **int** | List members count. | 
 **user** | [**User**](User.md) |  | 
 **service** | **bool** |  | 
-**shared** | **bool** |  | 
+**shared** | **bool** | Is the list **shared** among all sub-accounts? | 
 **avatar** | [**ListImage**](ListImage.md) |  | 
 **is_default** | **bool** |  | 
 

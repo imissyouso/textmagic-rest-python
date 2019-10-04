@@ -66,6 +66,7 @@ class UnsubscribedContact(object):
     def id(self):
         """Gets the id of this UnsubscribedContact.  # noqa: E501
 
+        Unsubscribed contact ID.  # noqa: E501
 
         :return: The id of this UnsubscribedContact.  # noqa: E501
         :rtype: int
@@ -76,6 +77,7 @@ class UnsubscribedContact(object):
     def id(self, id):
         """Sets the id of this UnsubscribedContact.
 
+        Unsubscribed contact ID.  # noqa: E501
 
         :param id: The id of this UnsubscribedContact.  # noqa: E501
         :type: int
@@ -87,6 +89,7 @@ class UnsubscribedContact(object):
     def phone(self):
         """Gets the phone of this UnsubscribedContact.  # noqa: E501
 
+        Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
 
         :return: The phone of this UnsubscribedContact.  # noqa: E501
         :rtype: str
@@ -97,6 +100,7 @@ class UnsubscribedContact(object):
     def phone(self, phone):
         """Sets the phone of this UnsubscribedContact.
 
+        Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
 
         :param phone: The phone of this UnsubscribedContact.  # noqa: E501
         :type: str
@@ -108,6 +112,7 @@ class UnsubscribedContact(object):
     def unsubscribe_time(self):
         """Gets the unsubscribe_time of this UnsubscribedContact.  # noqa: E501
 
+        Time when contact has been opted-out.  # noqa: E501
 
         :return: The unsubscribe_time of this UnsubscribedContact.  # noqa: E501
         :rtype: datetime
@@ -118,6 +123,7 @@ class UnsubscribedContact(object):
     def unsubscribe_time(self, unsubscribe_time):
         """Sets the unsubscribe_time of this UnsubscribedContact.
 
+        Time when contact has been opted-out.  # noqa: E501
 
         :param unsubscribe_time: The unsubscribe_time of this UnsubscribedContact.  # noqa: E501
         :type: datetime
@@ -129,6 +135,7 @@ class UnsubscribedContact(object):
     def first_name(self):
         """Gets the first_name of this UnsubscribedContact.  # noqa: E501
 
+        Unsubscribed contact first name.  # noqa: E501
 
         :return: The first_name of this UnsubscribedContact.  # noqa: E501
         :rtype: str
@@ -139,6 +146,7 @@ class UnsubscribedContact(object):
     def first_name(self, first_name):
         """Sets the first_name of this UnsubscribedContact.
 
+        Unsubscribed contact first name.  # noqa: E501
 
         :param first_name: The first_name of this UnsubscribedContact.  # noqa: E501
         :type: str
@@ -150,6 +158,7 @@ class UnsubscribedContact(object):
     def last_name(self):
         """Gets the last_name of this UnsubscribedContact.  # noqa: E501
 
+        Unsubscribed contact last name.  # noqa: E501
 
         :return: The last_name of this UnsubscribedContact.  # noqa: E501
         :rtype: str
@@ -160,6 +169,7 @@ class UnsubscribedContact(object):
     def last_name(self, last_name):
         """Sets the last_name of this UnsubscribedContact.
 
+        Unsubscribed contact last name.  # noqa: E501
 
         :param last_name: The last_name of this UnsubscribedContact.  # noqa: E501
         :type: str

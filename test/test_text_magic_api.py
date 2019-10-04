@@ -39,7 +39,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_block_contact(self):
         """Test case for block_contact
 
-        Block contact from inbound and outbound communication by phone number.  # noqa: E501
+        Block contact by phone number  # noqa: E501
         """
         pass
 
@@ -109,7 +109,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_create_contact(self):
         """Test case for create_contact
 
-        Create a new contact from the submitted data.  # noqa: E501
+        Add a new contact  # noqa: E501
         """
         pass
 
@@ -123,7 +123,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_create_custom_field(self):
         """Test case for create_custom_field
 
-        Create a new custom field from the submitted data.  # noqa: E501
+        Add a new custom field  # noqa: E501
         """
         pass
 
@@ -165,7 +165,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_all_contacts(self):
         """Test case for delete_all_contacts
 
-        Delete all contacts.  # noqa: E501
+        Delete contacts (bulk)  # noqa: E501
         """
         pass
 
@@ -200,14 +200,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_contact(self):
         """Test case for delete_contact
 
-        Delete a single contact.  # noqa: E501
+        Delete a contact  # noqa: E501
         """
         pass
 
     def test_delete_contact_avatar(self):
         """Test case for delete_contact_avatar
 
-        Delete an avatar for the contact.  # noqa: E501
+        Delete an avatar  # noqa: E501
         """
         pass
 
@@ -228,7 +228,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_contacts_by_ids(self):
         """Test case for delete_contacts_by_ids
 
-        Delete contact by given ID(s) or delete all contacts.  # noqa: E501
+        Delete contacts by IDs (bulk)  # noqa: E501
         """
         pass
 
@@ -242,7 +242,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_custom_field(self):
         """Test case for delete_custom_field
 
-        Delete a single custom field.  # noqa: E501
+        Delete a custom field  # noqa: E501
         """
         pass
 
@@ -270,7 +270,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_list(self):
         """Test case for delete_list
 
-        Delete a single list  # noqa: E501
+        Delete a list  # noqa: E501
         """
         pass
 
@@ -284,14 +284,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_list_contacts_bulk(self):
         """Test case for delete_list_contacts_bulk
 
-        Delete contact from list by given ID(s) or all contacts from list  # noqa: E501
+        Delete contacts from list (bulk)  # noqa: E501
         """
         pass
 
     def test_delete_lists_bulk(self):
         """Test case for delete_lists_bulk
 
-        Delete list by given ID(s) or delete all lists  # noqa: E501
+        Delete lists (bulk)  # noqa: E501
         """
         pass
 
@@ -487,7 +487,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_blocked_contacts(self):
         """Test case for get_blocked_contacts
 
-        Get blocked contacts.  # noqa: E501
+        Get blocked contacts  # noqa: E501
         """
         pass
 
@@ -536,14 +536,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_contact(self):
         """Test case for get_contact
 
-        Get a single contact.  # noqa: E501
+        Get the details of a specific contact  # noqa: E501
         """
         pass
 
     def test_get_contact_by_phone(self):
         """Test case for get_contact_by_phone
 
-        Get a single contact by phone number.  # noqa: E501
+        Get the details of a specific contact by phone number  # noqa: E501
         """
         pass
 
@@ -578,14 +578,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_contacts(self):
         """Test case for get_contacts
 
-        Get all user contacts.  # noqa: E501
+        Get all contacts  # noqa: E501
         """
         pass
 
     def test_get_contacts_autocomplete(self):
         """Test case for get_contacts_autocomplete
 
-        Get contacts autocomplete suggestions by given search term.  # noqa: E501
+        Get contacts autocomplete suggestions  # noqa: E501
         """
         pass
 
@@ -613,14 +613,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_custom_field(self):
         """Test case for get_custom_field
 
-        Get a single custom field.  # noqa: E501
+        Get the details of a specific custom field  # noqa: E501
         """
         pass
 
     def test_get_custom_fields(self):
         """Test case for get_custom_fields
 
-        Get all contact custom fields.  # noqa: E501
+        Get all custom fields  # noqa: E501
         """
         pass
 
@@ -641,7 +641,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_favourites(self):
         """Test case for get_favourites
 
-        Get favorite contacts and lists.  # noqa: E501
+        Get favorite contacts and lists  # noqa: E501
         """
         pass
 
@@ -676,7 +676,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_list_contacts_ids(self):
         """Test case for get_list_contacts_ids
 
-        Fetch all contacts IDs belonging to the list with ID  # noqa: E501
+        Get all contacts IDs in a list  # noqa: E501
         """
         pass
 
@@ -690,7 +690,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_lists_of_contact(self):
         """Test case for get_lists_of_contact
 
-        Return lists which contact belongs to.  # noqa: E501
+        Get contact's lists  # noqa: E501
         """
         pass
 
@@ -879,14 +879,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_unsubscribed_contact(self):
         """Test case for get_unsubscribed_contact
 
-        Get a single unsubscribed contact.  # noqa: E501
+        Get the details of a specific unsubscribed contact  # noqa: E501
         """
         pass
 
     def test_get_unsubscribers(self):
         """Test case for get_unsubscribers
 
-        Get all contact have unsubscribed from your communication.  # noqa: E501
+        Get all unsubscribed contacts  # noqa: E501
         """
         pass
 
@@ -1005,7 +1005,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_search_contacts(self):
         """Test case for search_contacts
 
-        Find user contacts by given parameters.  # noqa: E501
+        Find contacts by given criteria  # noqa: E501
         """
         pass
 
@@ -1019,7 +1019,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_search_lists(self):
         """Test case for search_lists
 
-        Find contact lists by given parameters  # noqa: E501
+        Find lists by given criteria  # noqa: E501
         """
         pass
 
@@ -1096,7 +1096,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_unblock_contacts_bulk(self):
         """Test case for unblock_contacts_bulk
 
-        Unblock several contacts by blocked contact ids or unblock all contacts  # noqa: E501
+        Unblock contacts (bulk)  # noqa: E501
         """
         pass
 
@@ -1110,7 +1110,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_unsubscribe_contact(self):
         """Test case for unsubscribe_contact
 
-        Unsubscribe contact from your communication by phone number.  # noqa: E501
+        Manually unsubscribe a contact  # noqa: E501
         """
         pass
 
@@ -1138,7 +1138,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_update_contact(self):
         """Test case for update_contact
 
-        Update existing contact.  # noqa: E501
+        Edit a contact  # noqa: E501
         """
         pass
 
@@ -1159,14 +1159,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_update_custom_field(self):
         """Test case for update_custom_field
 
-        Update existing custom field.  # noqa: E501
+        Edit a custom field  # noqa: E501
         """
         pass
 
     def test_update_custom_field_value(self):
         """Test case for update_custom_field_value
 
-        Update contact's custom field value.  # noqa: E501
+        Edit the custom field value of a specified contact  # noqa: E501
         """
         pass
 
@@ -1180,7 +1180,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_update_list(self):
         """Test case for update_list
 
-        Update existing list  # noqa: E501
+        Edit a list  # noqa: E501
         """
         pass
 
@@ -1229,7 +1229,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_upload_contact_avatar(self):
         """Test case for upload_contact_avatar
 
-        Add an avatar for the contact.  # noqa: E501
+        Upload an avatar  # noqa: E501
         """
         pass
 

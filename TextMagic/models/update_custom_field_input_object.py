@@ -50,7 +50,7 @@ class UpdateCustomFieldInputObject(object):
     def name(self):
         """Gets the name of this UpdateCustomFieldInputObject.  # noqa: E501
 
-        Custom field name  # noqa: E501
+        Custom field name.  # noqa: E501
 
         :return: The name of this UpdateCustomFieldInputObject.  # noqa: E501
         :rtype: str
@@ -61,7 +61,7 @@ class UpdateCustomFieldInputObject(object):
     def name(self, name):
         """Sets the name of this UpdateCustomFieldInputObject.
 
-        Custom field name  # noqa: E501
+        Custom field name.  # noqa: E501
 
         :param name: The name of this UpdateCustomFieldInputObject.  # noqa: E501
         :type: str

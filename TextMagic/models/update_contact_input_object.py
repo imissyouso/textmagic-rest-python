@@ -150,7 +150,7 @@ class UpdateContactInputObject(object):
     def phone(self):
         """Gets the phone of this UpdateContactInputObject.  # noqa: E501
 
-        Contact phone number in E.164 (international) format without leading + or zeroes  # noqa: E501
+        Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
 
         :return: The phone of this UpdateContactInputObject.  # noqa: E501
         :rtype: str
@@ -161,7 +161,7 @@ class UpdateContactInputObject(object):
     def phone(self, phone):
         """Sets the phone of this UpdateContactInputObject.
 
-        Contact phone number in E.164 (international) format without leading + or zeroes  # noqa: E501
+        Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
 
         :param phone: The phone of this UpdateContactInputObject.  # noqa: E501
         :type: str
@@ -173,7 +173,7 @@ class UpdateContactInputObject(object):
     def email(self):
         """Gets the email of this UpdateContactInputObject.  # noqa: E501
 
-        Contact email  # noqa: E501
+        Contact email address.  # noqa: E501
 
         :return: The email of this UpdateContactInputObject.  # noqa: E501
         :rtype: str
@@ -184,7 +184,7 @@ class UpdateContactInputObject(object):
     def email(self, email):
         """Sets the email of this UpdateContactInputObject.
 
-        Contact email  # noqa: E501
+        Contact email address.  # noqa: E501
 
         :param email: The email of this UpdateContactInputObject.  # noqa: E501
         :type: str
@@ -219,7 +219,7 @@ class UpdateContactInputObject(object):
     def lists(self):
         """Gets the lists of this UpdateContactInputObject.  # noqa: E501
 
-        Array of list resources id contact will be assigned to  # noqa: E501
+        Comma-separated [list](/docs/api/lists/) ID. Each contact must be assigned to at least one list.  # noqa: E501
 
         :return: The lists of this UpdateContactInputObject.  # noqa: E501
         :rtype: str
@@ -230,7 +230,7 @@ class UpdateContactInputObject(object):
     def lists(self, lists):
         """Sets the lists of this UpdateContactInputObject.
 
-        Array of list resources id contact will be assigned to  # noqa: E501
+        Comma-separated [list](/docs/api/lists/) ID. Each contact must be assigned to at least one list.  # noqa: E501
 
         :param lists: The lists of this UpdateContactInputObject.  # noqa: E501
         :type: str

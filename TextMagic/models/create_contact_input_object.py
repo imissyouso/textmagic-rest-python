@@ -104,7 +104,7 @@ class CreateContactInputObject(object):
     def first_name(self):
         """Gets the first_name of this CreateContactInputObject.  # noqa: E501
 
-        Contact first name  # noqa: E501
+        Contact first name.  # noqa: E501
 
         :return: The first_name of this CreateContactInputObject.  # noqa: E501
         :rtype: str
@@ -115,7 +115,7 @@ class CreateContactInputObject(object):
     def first_name(self, first_name):
         """Sets the first_name of this CreateContactInputObject.
 
-        Contact first name  # noqa: E501
+        Contact first name.  # noqa: E501
 
         :param first_name: The first_name of this CreateContactInputObject.  # noqa: E501
         :type: str
@@ -127,7 +127,7 @@ class CreateContactInputObject(object):
     def last_name(self):
         """Gets the last_name of this CreateContactInputObject.  # noqa: E501
 
-        Contact last name  # noqa: E501
+        Contact last name.  # noqa: E501
 
         :return: The last_name of this CreateContactInputObject.  # noqa: E501
         :rtype: str
@@ -138,7 +138,7 @@ class CreateContactInputObject(object):
     def last_name(self, last_name):
         """Sets the last_name of this CreateContactInputObject.
 
-        Contact last name  # noqa: E501
+        Contact last name.  # noqa: E501
 
         :param last_name: The last_name of this CreateContactInputObject.  # noqa: E501
         :type: str
@@ -150,7 +150,7 @@ class CreateContactInputObject(object):
     def phone(self):
         """Gets the phone of this CreateContactInputObject.  # noqa: E501
 
-        Contact phone number in E.164 (international) format without leading + or zeroes  # noqa: E501
+        Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
 
         :return: The phone of this CreateContactInputObject.  # noqa: E501
         :rtype: str
@@ -161,7 +161,7 @@ class CreateContactInputObject(object):
     def phone(self, phone):
         """Sets the phone of this CreateContactInputObject.
 
-        Contact phone number in E.164 (international) format without leading + or zeroes  # noqa: E501
+        Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).  # noqa: E501
 
         :param phone: The phone of this CreateContactInputObject.  # noqa: E501
         :type: str
@@ -173,7 +173,7 @@ class CreateContactInputObject(object):
     def email(self):
         """Gets the email of this CreateContactInputObject.  # noqa: E501
 
-        Contact email  # noqa: E501
+        Contact email address.  # noqa: E501
 
         :return: The email of this CreateContactInputObject.  # noqa: E501
         :rtype: str
@@ -184,7 +184,7 @@ class CreateContactInputObject(object):
     def email(self, email):
         """Sets the email of this CreateContactInputObject.
 
-        Contact email  # noqa: E501
+        Contact email address.  # noqa: E501
 
         :param email: The email of this CreateContactInputObject.  # noqa: E501
         :type: str
@@ -196,7 +196,7 @@ class CreateContactInputObject(object):
     def company_name(self):
         """Gets the company_name of this CreateContactInputObject.  # noqa: E501
 
-        Contact company name  # noqa: E501
+        Company name.  # noqa: E501
 
         :return: The company_name of this CreateContactInputObject.  # noqa: E501
         :rtype: str
@@ -207,7 +207,7 @@ class CreateContactInputObject(object):
     def company_name(self, company_name):
         """Sets the company_name of this CreateContactInputObject.
 
-        Contact company name  # noqa: E501
+        Company name.  # noqa: E501
 
         :param company_name: The company_name of this CreateContactInputObject.  # noqa: E501
         :type: str
@@ -219,7 +219,7 @@ class CreateContactInputObject(object):
     def lists(self):
         """Gets the lists of this CreateContactInputObject.  # noqa: E501
 
-        Array of list resources id contact will be assigned to  # noqa: E501
+        Contact [list](/docs/api/lists/) ID. Each contact must be assigned to at least one list.  # noqa: E501
 
         :return: The lists of this CreateContactInputObject.  # noqa: E501
         :rtype: str
@@ -230,7 +230,7 @@ class CreateContactInputObject(object):
     def lists(self, lists):
         """Sets the lists of this CreateContactInputObject.
 
-        Array of list resources id contact will be assigned to  # noqa: E501
+        Contact [list](/docs/api/lists/) ID. Each contact must be assigned to at least one list.  # noqa: E501
 
         :param lists: The lists of this CreateContactInputObject.  # noqa: E501
         :type: str

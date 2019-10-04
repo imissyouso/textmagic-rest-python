@@ -44,7 +44,7 @@ class UpdateListObject(object):
         'is_default': 'isDefault'
     }
 
-    def __init__(self, name=None, shared=None, favorited=False, is_default=False):  # noqa: E501
+    def __init__(self, name=None, shared=False, favorited=False, is_default=False):  # noqa: E501
         """UpdateListObject - a model defined in Swagger"""  # noqa: E501
 
         self._name = None
@@ -65,7 +65,7 @@ class UpdateListObject(object):
     def name(self):
         """Gets the name of this UpdateListObject.  # noqa: E501
 
-        List name  # noqa: E501
+        List name.  # noqa: E501
 
         :return: The name of this UpdateListObject.  # noqa: E501
         :rtype: str
@@ -76,7 +76,7 @@ class UpdateListObject(object):
     def name(self, name):
         """Sets the name of this UpdateListObject.
 
-        List name  # noqa: E501
+        List name.  # noqa: E501
 
         :param name: The name of this UpdateListObject.  # noqa: E501
         :type: str
@@ -88,7 +88,7 @@ class UpdateListObject(object):
     def shared(self):
         """Gets the shared of this UpdateListObject.  # noqa: E501
 
-        Should this list be shared with sub-accounts  # noqa: E501
+        Make this list shared or not?  # noqa: E501
 
         :return: The shared of this UpdateListObject.  # noqa: E501
         :rtype: bool
@@ -99,7 +99,7 @@ class UpdateListObject(object):
     def shared(self, shared):
         """Sets the shared of this UpdateListObject.
 
-        Should this list be shared with sub-accounts  # noqa: E501
+        Make this list shared or not?  # noqa: E501
 
         :param shared: The shared of this UpdateListObject.  # noqa: E501
         :type: bool
@@ -111,7 +111,7 @@ class UpdateListObject(object):
     def favorited(self):
         """Gets the favorited of this UpdateListObject.  # noqa: E501
 
-        Is list favorited. Default is false  # noqa: E501
+        Is list favorited.  # noqa: E501
 
         :return: The favorited of this UpdateListObject.  # noqa: E501
         :rtype: bool
@@ -122,7 +122,7 @@ class UpdateListObject(object):
     def favorited(self, favorited):
         """Sets the favorited of this UpdateListObject.
 
-        Is list favorited. Default is false  # noqa: E501
+        Is list favorited.  # noqa: E501
 
         :param favorited: The favorited of this UpdateListObject.  # noqa: E501
         :type: bool
