@@ -704,7 +704,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_message_price(self):
         """Test case for get_message_price
 
-        Check price  # noqa: E501
+        Check message price  # noqa: E501
         """
         pass
 

@@ -100,7 +100,7 @@ Method | HTTP request | Description
 [**get_lists**](TextMagicApi.md#get_lists) | **GET** /api/v2/lists | Get all lists
 [**get_lists_of_contact**](TextMagicApi.md#get_lists_of_contact) | **GET** /api/v2/contacts/{id}/lists | Get contact&#39;s lists
 [**get_message_preview**](TextMagicApi.md#get_message_preview) | **GET** /api/v2/messages/preview | Preview message
-[**get_message_price**](TextMagicApi.md#get_message_price) | **GET** /api/v2/messages/price | Check price
+[**get_message_price**](TextMagicApi.md#get_message_price) | **GET** /api/v2/messages/price | Check message price
 [**get_message_session**](TextMagicApi.md#get_message_session) | **GET** /api/v2/sessions/{id} | Get a session details
 [**get_message_session_stat**](TextMagicApi.md#get_message_session_stat) | **GET** /api/v2/sessions/{id}/stat | Get a session statistics
 [**get_messages_by_session_id**](TextMagicApi.md#get_messages_by_session_id) | **GET** /api/v2/sessions/{id}/messages | Get a session messages
@@ -5341,7 +5341,7 @@ Name | Type | Description  | Notes
 # **get_message_price**
 > GetMessagePriceResponse get_message_price(include_blocked=include_blocked, text=text, template_id=template_id, sending_time=sending_time, sending_date_time=sending_date_time, sending_timezone=sending_timezone, contacts=contacts, lists=lists, phones=phones, cut_extra=cut_extra, parts_count=parts_count, reference_id=reference_id, _from=_from, rule=rule, create_chat=create_chat, tts=tts, local=local, local_country=local_country)
 
-Check price
+Check message price
 
 Check pricing for a new outbound message.
 
@@ -5380,7 +5380,7 @@ local = 0 # int | Treat phone numbers passed in \\'phones\\' field as local. Def
 local_country = '\"US\"' # str | 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country (optional)
 
 try:
-    # Check price
+    # Check message price
     api_response = api_instance.get_message_price(include_blocked=include_blocked, text=text, template_id=template_id, sending_time=sending_time, sending_date_time=sending_date_time, sending_timezone=sending_timezone, contacts=contacts, lists=lists, phones=phones, cut_extra=cut_extra, parts_count=parts_count, reference_id=reference_id, _from=_from, rule=rule, create_chat=create_chat, tts=tts, local=local, local_country=local_country)
     pprint(api_response)
 except ApiException as e:

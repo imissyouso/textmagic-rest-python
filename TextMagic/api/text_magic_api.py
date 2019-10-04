@@ -9614,7 +9614,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_message_price(self, **kwargs):  # noqa: E501
-        """Check price  # noqa: E501
+        """Check message price  # noqa: E501
 
         Check pricing for a new outbound message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9653,7 +9653,7 @@ class TextMagicApi(object):
             return data
 
     def get_message_price_with_http_info(self, **kwargs):  # noqa: E501
-        """Check price  # noqa: E501
+        """Check message price  # noqa: E501
 
         Check pricing for a new outbound message.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
