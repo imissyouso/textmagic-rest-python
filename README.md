@@ -1,3 +1,4 @@
+[comment]: <> (HEAD)
 # TextMagic Python SDK
 This library provides you with an easy way of sending SMS and receiving replies by integrating TextMagic SMS Gateway into your Python application.
 
@@ -8,11 +9,11 @@ For detailed documentation, please visit [http://docs.textmagictesting.com/](htt
 
 ## Requirements
 Python 2.7 and 3.4+
-
+[comment]: <> (/HEAD)
 ## Installation
 
 ```shell
-pip install git+https://github.com/imissyouso/textmagic-rest-python.git@v2.0.473
+pip install git+https://github.com/imissyouso/textmagic-rest-python.git@v2.0.475
 ```
 
 ## Usage Example
@@ -62,6 +63,7 @@ except ApiException as e:
     print("Exception when calling TextMagicApi->upload_list_avatar: %s\n" % e)
 
 ```
-
+[comment]: <> (FOOTER)
 ## License
 The library is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+[comment]: <> (/FOOTER)
