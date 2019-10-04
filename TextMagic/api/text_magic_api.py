@@ -16744,7 +16744,7 @@ class TextMagicApi(object):
     def update_sender_setting(self, update_sender_setting_input_object, **kwargs):  # noqa: E501
         """Change sender settings  # noqa: E501
 
-        @TODO  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_sender_setting(update_sender_setting_input_object, async_req=True)
@@ -16766,7 +16766,7 @@ class TextMagicApi(object):
     def update_sender_setting_with_http_info(self, update_sender_setting_input_object, **kwargs):  # noqa: E501
         """Change sender settings  # noqa: E501
 
-        @TODO  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_sender_setting_with_http_info(update_sender_setting_input_object, async_req=True)
