@@ -32,6 +32,7 @@ class SenderId(object):
     """
     swagger_types = {
         'id': 'int',
+        'display_time_format': 'str',
         'sender_id': 'str',
         'user': 'User',
         'status': 'str'
@@ -39,21 +40,25 @@ class SenderId(object):
 
     attribute_map = {
         'id': 'id',
+        'display_time_format': 'displayTimeFormat',
         'sender_id': 'senderId',
         'user': 'user',
         'status': 'status'
     }
 
-    def __init__(self, id=None, sender_id=None, user=None, status=None):  # noqa: E501
+    def __init__(self, id=None, display_time_format=None, sender_id=None, user=None, status=None):  # noqa: E501
         """SenderId - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
+        self._display_time_format = None
         self._sender_id = None
         self._user = None
         self._status = None
         self.discriminator = None
 
         self.id = id
+        if display_time_format is not None:
+            self.display_time_format = display_time_format
         self.sender_id = sender_id
         self.user = user
         self.status = status
@@ -80,6 +85,29 @@ class SenderId(object):
         """
 
         self._id = id
+
+    @property
+    def display_time_format(self):
+        """Gets the display_time_format of this SenderId.  # noqa: E501
+
+        Format for representation of time  # noqa: E501
+
+        :return: The display_time_format of this SenderId.  # noqa: E501
+        :rtype: str
+        """
+        return self._display_time_format
+
+    @display_time_format.setter
+    def display_time_format(self, display_time_format):
+        """Sets the display_time_format of this SenderId.
+
+        Format for representation of time  # noqa: E501
+
+        :param display_time_format: The display_time_format of this SenderId.  # noqa: E501
+        :type: str
+        """
+
+        self._display_time_format = display_time_format
 
     @property
     def sender_id(self):

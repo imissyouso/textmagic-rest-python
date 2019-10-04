@@ -32,6 +32,7 @@ class User(object):
     """
     swagger_types = {
         'id': 'int',
+        'display_time_format': 'str',
         'username': 'str',
         'first_name': 'str',
         'last_name': 'str',
@@ -51,6 +52,7 @@ class User(object):
 
     attribute_map = {
         'id': 'id',
+        'display_time_format': 'displayTimeFormat',
         'username': 'username',
         'first_name': 'firstName',
         'last_name': 'lastName',
@@ -68,10 +70,11 @@ class User(object):
         'avatar': 'avatar'
     }
 
-    def __init__(self, id=None, username=None, first_name=None, last_name=None, email=None, status=None, balance=None, phone=None, company=None, currency=None, country=None, timezone=None, subaccount_type=None, email_accepted=None, phone_accepted=None, avatar=None):  # noqa: E501
+    def __init__(self, id=None, display_time_format=None, username=None, first_name=None, last_name=None, email=None, status=None, balance=None, phone=None, company=None, currency=None, country=None, timezone=None, subaccount_type=None, email_accepted=None, phone_accepted=None, avatar=None):  # noqa: E501
         """User - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
+        self._display_time_format = None
         self._username = None
         self._first_name = None
         self._last_name = None
@@ -90,6 +93,8 @@ class User(object):
         self.discriminator = None
 
         self.id = id
+        if display_time_format is not None:
+            self.display_time_format = display_time_format
         self.username = username
         self.first_name = first_name
         self.last_name = last_name
@@ -128,6 +133,29 @@ class User(object):
         """
 
         self._id = id
+
+    @property
+    def display_time_format(self):
+        """Gets the display_time_format of this User.  # noqa: E501
+
+        Format for representation of time  # noqa: E501
+
+        :return: The display_time_format of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._display_time_format
+
+    @display_time_format.setter
+    def display_time_format(self, display_time_format):
+        """Sets the display_time_format of this User.
+
+        Format for representation of time  # noqa: E501
+
+        :param display_time_format: The display_time_format of this User.  # noqa: E501
+        :type: str
+        """
+
+        self._display_time_format = display_time_format
 
     @property
     def username(self):

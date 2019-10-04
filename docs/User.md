@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | User ID. | 
+**display_time_format** | **str** | Format for representation of time | [optional] 
 **username** | **str** | Username. | 
 **first_name** | **str** | Account first name. | 
 **last_name** | **str** | Account last name. | 

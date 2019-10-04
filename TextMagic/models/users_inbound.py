@@ -32,6 +32,7 @@ class UsersInbound(object):
     """
     swagger_types = {
         'id': 'int',
+        'display_time_format': 'str',
         'phone': 'str',
         'user': 'User',
         'purchased_at': 'datetime',
@@ -42,6 +43,7 @@ class UsersInbound(object):
 
     attribute_map = {
         'id': 'id',
+        'display_time_format': 'displayTimeFormat',
         'phone': 'phone',
         'user': 'user',
         'purchased_at': 'purchasedAt',
@@ -50,10 +52,11 @@ class UsersInbound(object):
         'country': 'country'
     }
 
-    def __init__(self, id=None, phone=None, user=None, purchased_at=None, expire_at=None, status=None, country=None):  # noqa: E501
+    def __init__(self, id=None, display_time_format=None, phone=None, user=None, purchased_at=None, expire_at=None, status=None, country=None):  # noqa: E501
         """UsersInbound - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
+        self._display_time_format = None
         self._phone = None
         self._user = None
         self._purchased_at = None
@@ -63,6 +66,8 @@ class UsersInbound(object):
         self.discriminator = None
 
         self.id = id
+        if display_time_format is not None:
+            self.display_time_format = display_time_format
         if phone is not None:
             self.phone = phone
         self.user = user
@@ -93,6 +98,29 @@ class UsersInbound(object):
         """
 
         self._id = id
+
+    @property
+    def display_time_format(self):
+        """Gets the display_time_format of this UsersInbound.  # noqa: E501
+
+        Format for representation of time  # noqa: E501
+
+        :return: The display_time_format of this UsersInbound.  # noqa: E501
+        :rtype: str
+        """
+        return self._display_time_format
+
+    @display_time_format.setter
+    def display_time_format(self, display_time_format):
+        """Sets the display_time_format of this UsersInbound.
+
+        Format for representation of time  # noqa: E501
+
+        :param display_time_format: The display_time_format of this UsersInbound.  # noqa: E501
+        :type: str
+        """
+
+        self._display_time_format = display_time_format
 
     @property
     def phone(self):
