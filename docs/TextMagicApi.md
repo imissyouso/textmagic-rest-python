@@ -4,14 +4,14 @@ All URIs are relative to *http://rest.textmagic.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assign_contacts_to_list**](TextMagicApi.md#assign_contacts_to_list) | **PUT** /api/v2/lists/{id}/contacts | Assign contacts to the specified list.
+[**assign_contacts_to_list**](TextMagicApi.md#assign_contacts_to_list) | **PUT** /api/v2/lists/{id}/contacts | Assign contacts to a list
 [**block_contact**](TextMagicApi.md#block_contact) | **POST** /api/v2/contacts/block | Block contact from inbound and outbound communication by phone number.
 [**buy_dedicated_number**](TextMagicApi.md#buy_dedicated_number) | **POST** /api/v2/numbers | Buy a dedicated number
 [**cancel_survey**](TextMagicApi.md#cancel_survey) | **PUT** /api/v2/surveys/{id}/cancel | Cancel a survey.
 [**cancel_verification**](TextMagicApi.md#cancel_verification) | **DELETE** /api/v2/verify/{verifyId} | Cancel verification process
 [**check_phone_verification_code**](TextMagicApi.md#check_phone_verification_code) | **PUT** /api/v2/user/phone/verification | Check user phone verification code
 [**check_phone_verification_code_tfa**](TextMagicApi.md#check_phone_verification_code_tfa) | **PUT** /api/v2/verify | Step 2: Check the verification code 
-[**clear_and_assign_contacts_to_list**](TextMagicApi.md#clear_and_assign_contacts_to_list) | **POST** /api/v2/lists/{id}/contacts | Reset list members to the specified contacts.
+[**clear_and_assign_contacts_to_list**](TextMagicApi.md#clear_and_assign_contacts_to_list) | **POST** /api/v2/lists/{id}/contacts | Reset list members to the specified contacts
 [**close_chats_bulk**](TextMagicApi.md#close_chats_bulk) | **POST** /api/v2/chats/close/bulk | Close chats (bulk)
 [**close_read_chats**](TextMagicApi.md#close_read_chats) | **POST** /api/v2/chats/close/read | Close read chats
 [**close_subaccount**](TextMagicApi.md#close_subaccount) | **DELETE** /api/v2/subaccounts/{id} | Close sub-account
@@ -33,15 +33,15 @@ Method | HTTP request | Description
 [**delete_contact_note**](TextMagicApi.md#delete_contact_note) | **DELETE** /api/v2/notes/{id} | Delete a single contact note.
 [**delete_contact_notes_bulk**](TextMagicApi.md#delete_contact_notes_bulk) | **POST** /api/v2/contacts/{id}/notes/delete | Delete contact note by given ID(s) or delete all contact notes.
 [**delete_contacts_by_ids**](TextMagicApi.md#delete_contacts_by_ids) | **POST** /api/v2/contacts/delete | Delete contact by given ID(s) or delete all contacts.
-[**delete_contacts_from_list**](TextMagicApi.md#delete_contacts_from_list) | **DELETE** /api/v2/lists/{id}/contacts | Unassign contacts from the specified list.
+[**delete_contacts_from_list**](TextMagicApi.md#delete_contacts_from_list) | **DELETE** /api/v2/lists/{id}/contacts | Unassign contacts from a list
 [**delete_custom_field**](TextMagicApi.md#delete_custom_field) | **DELETE** /api/v2/customfields/{id} | Delete a single custom field.
 [**delete_dedicated_number**](TextMagicApi.md#delete_dedicated_number) | **DELETE** /api/v2/numbers/{id} | Cancel dedicated number subscription
 [**delete_inbound_message**](TextMagicApi.md#delete_inbound_message) | **DELETE** /api/v2/replies/{id} | Delete a single inbound message
 [**delete_inbound_messages_bulk**](TextMagicApi.md#delete_inbound_messages_bulk) | **POST** /api/v2/replies/delete | Delete inbound messages (bulk)
-[**delete_list**](TextMagicApi.md#delete_list) | **DELETE** /api/v2/lists/{id} | Delete a single list.
-[**delete_list_avatar**](TextMagicApi.md#delete_list_avatar) | **DELETE** /api/v2/lists/{id}/avatar | Delete an avatar for the list.
-[**delete_list_contacts_bulk**](TextMagicApi.md#delete_list_contacts_bulk) | **POST** /api/v2/lists/{id}/contacts/delete | Delete contact from list by given ID(s) or all contacts from list.
-[**delete_lists_bulk**](TextMagicApi.md#delete_lists_bulk) | **POST** /api/v2/lists/delete | Delete list by given ID(s) or delete all lists.
+[**delete_list**](TextMagicApi.md#delete_list) | **DELETE** /api/v2/lists/{id} | Delete a single list
+[**delete_list_avatar**](TextMagicApi.md#delete_list_avatar) | **DELETE** /api/v2/lists/{id}/avatar | Delete an avatar for the list
+[**delete_list_contacts_bulk**](TextMagicApi.md#delete_list_contacts_bulk) | **POST** /api/v2/lists/{id}/contacts/delete | Delete contact from list by given ID(s) or all contacts from list
+[**delete_lists_bulk**](TextMagicApi.md#delete_lists_bulk) | **POST** /api/v2/lists/delete | Delete list by given ID(s) or delete all lists
 [**delete_message_session**](TextMagicApi.md#delete_message_session) | **DELETE** /api/v2/sessions/{id} | Delete a session
 [**delete_message_sessions_bulk**](TextMagicApi.md#delete_message_sessions_bulk) | **POST** /api/v2/sessions/delete | Delete sessions (bulk)
 [**delete_outbound_message**](TextMagicApi.md#delete_outbound_message) | **DELETE** /api/v2/messages/{id} | Delete message
@@ -84,7 +84,7 @@ Method | HTTP request | Description
 [**get_contact_notes**](TextMagicApi.md#get_contact_notes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to the given contact.
 [**get_contacts**](TextMagicApi.md#get_contacts) | **GET** /api/v2/contacts | Get all user contacts.
 [**get_contacts_autocomplete**](TextMagicApi.md#get_contacts_autocomplete) | **GET** /api/v2/contacts/autocomplete | Get contacts autocomplete suggestions by given search term.
-[**get_contacts_by_list_id**](TextMagicApi.md#get_contacts_by_list_id) | **GET** /api/v2/lists/{id}/contacts | Fetch user contacts by given group id.
+[**get_contacts_by_list_id**](TextMagicApi.md#get_contacts_by_list_id) | **GET** /api/v2/lists/{id}/contacts | Get all contacts in a list
 [**get_countries**](TextMagicApi.md#get_countries) | **GET** /api/v2/countries | Return list of countries.
 [**get_current_user**](TextMagicApi.md#get_current_user) | **GET** /api/v2/user | Get current account information
 [**get_custom_field**](TextMagicApi.md#get_custom_field) | **GET** /api/v2/customfields/{id} | Get a single custom field.
@@ -96,7 +96,7 @@ Method | HTTP request | Description
 [**get_inbound_messages_notification_settings**](TextMagicApi.md#get_inbound_messages_notification_settings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
 [**get_invoices**](TextMagicApi.md#get_invoices) | **GET** /api/v2/invoices | Get all invoices
 [**get_list**](TextMagicApi.md#get_list) | **GET** /api/v2/lists/{id} | Get the details of a specific list
-[**get_list_contacts_ids**](TextMagicApi.md#get_list_contacts_ids) | **GET** /api/v2/lists/{id}/contacts/ids | Fetch all contacts IDs belonging to the list with ID.
+[**get_list_contacts_ids**](TextMagicApi.md#get_list_contacts_ids) | **GET** /api/v2/lists/{id}/contacts/ids | Fetch all contacts IDs belonging to the list with ID
 [**get_lists**](TextMagicApi.md#get_lists) | **GET** /api/v2/lists | Get all lists
 [**get_lists_of_contact**](TextMagicApi.md#get_lists_of_contact) | **GET** /api/v2/contacts/{id}/lists | Return lists which contact belongs to.
 [**get_message_preview**](TextMagicApi.md#get_message_preview) | **GET** /api/v2/messages/preview | Preview message
@@ -145,7 +145,7 @@ Method | HTTP request | Description
 [**search_chats_by_receipent**](TextMagicApi.md#search_chats_by_receipent) | **GET** /api/v2/chats/search/recipients | Find chats by recipient
 [**search_contacts**](TextMagicApi.md#search_contacts) | **GET** /api/v2/contacts/search | Find user contacts by given parameters.
 [**search_inbound_messages**](TextMagicApi.md#search_inbound_messages) | **GET** /api/v2/replies/search | Find inbound messages
-[**search_lists**](TextMagicApi.md#search_lists) | **GET** /api/v2/lists/search | Find contact lists by given parameters.
+[**search_lists**](TextMagicApi.md#search_lists) | **GET** /api/v2/lists/search | Find contact lists by given parameters
 [**search_outbound_messages**](TextMagicApi.md#search_outbound_messages) | **GET** /api/v2/messages/search | Find messages
 [**search_scheduled_messages**](TextMagicApi.md#search_scheduled_messages) | **GET** /api/v2/schedules/search | Find scheduled messages
 [**search_templates**](TextMagicApi.md#search_templates) | **GET** /api/v2/templates/search | Find templates by criteria
@@ -168,7 +168,7 @@ Method | HTTP request | Description
 [**update_custom_field**](TextMagicApi.md#update_custom_field) | **PUT** /api/v2/customfields/{id} | Update existing custom field.
 [**update_custom_field_value**](TextMagicApi.md#update_custom_field_value) | **PUT** /api/v2/customfields/{id}/update | Update contact&#39;s custom field value.
 [**update_inbound_messages_notification_settings**](TextMagicApi.md#update_inbound_messages_notification_settings) | **PUT** /api/v2/user/notification/inbound | Update inbound messages notification settings
-[**update_list**](TextMagicApi.md#update_list) | **PUT** /api/v2/lists/{id} | Update existing list.
+[**update_list**](TextMagicApi.md#update_list) | **PUT** /api/v2/lists/{id} | Update existing list
 [**update_password**](TextMagicApi.md#update_password) | **PUT** /api/v2/user/password/change | Change user password.
 [**update_sender_setting**](TextMagicApi.md#update_sender_setting) | **PUT** /api/v2/sender/settings | Change sender settings
 [**update_survey**](TextMagicApi.md#update_survey) | **PUT** /api/v2/surveys/{id} | Update existing survey.
@@ -176,14 +176,14 @@ Method | HTTP request | Description
 [**update_template**](TextMagicApi.md#update_template) | **PUT** /api/v2/templates/{id} | Update a template
 [**upload_avatar**](TextMagicApi.md#upload_avatar) | **POST** /api/v2/user/avatar | Upload an avatar
 [**upload_contact_avatar**](TextMagicApi.md#upload_contact_avatar) | **POST** /api/v2/contacts/{id}/avatar | Add an avatar for the contact.
-[**upload_list_avatar**](TextMagicApi.md#upload_list_avatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for the list.
+[**upload_list_avatar**](TextMagicApi.md#upload_list_avatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for the list
 [**upload_message_attachment**](TextMagicApi.md#upload_message_attachment) | **POST** /api/v2/messages/attachment | Upload message attachment
 
 
 # **assign_contacts_to_list**
 > ResourceLinkResponse assign_contacts_to_list(assign_contacts_to_list_input_object, id)
 
-Assign contacts to the specified list.
+Assign contacts to a list
 
 
 
@@ -206,7 +206,7 @@ assign_contacts_to_list_input_object = TextMagic.AssignContactsToListInputObject
 id = 1 # int | 
 
 try:
-    # Assign contacts to the specified list.
+    # Assign contacts to a list
     api_response = api_instance.assign_contacts_to_list(assign_contacts_to_list_input_object, id)
     pprint(api_response)
 except ApiException as e:
@@ -552,7 +552,7 @@ void (empty response body)
 # **clear_and_assign_contacts_to_list**
 > ResourceLinkResponse clear_and_assign_contacts_to_list(clear_and_assign_contacts_to_list_input_object, id)
 
-Reset list members to the specified contacts.
+Reset list members to the specified contacts
 
 
 
@@ -575,7 +575,7 @@ clear_and_assign_contacts_to_list_input_object = TextMagic.ClearAndAssignContact
 id = 1 # int | 
 
 try:
-    # Reset list members to the specified contacts.
+    # Reset list members to the specified contacts
     api_response = api_instance.clear_and_assign_contacts_to_list(clear_and_assign_contacts_to_list_input_object, id)
     pprint(api_response)
 except ApiException as e:
@@ -1698,7 +1698,7 @@ void (empty response body)
 # **delete_contacts_from_list**
 > delete_contacts_from_list(delete_contacs_from_list_object, id)
 
-Unassign contacts from the specified list.
+Unassign contacts from a list
 
 
 
@@ -1721,7 +1721,7 @@ delete_contacs_from_list_object = TextMagic.DeleteContacsFromListObject() # Dele
 id = 1 # int | 
 
 try:
-    # Unassign contacts from the specified list.
+    # Unassign contacts from a list
     api_instance.delete_contacts_from_list(delete_contacs_from_list_object, id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_contacts_from_list: %s\n" % e)
@@ -1960,7 +1960,7 @@ void (empty response body)
 # **delete_list**
 > delete_list(id)
 
-Delete a single list.
+Delete a single list
 
 
 
@@ -1982,7 +1982,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Delete a single list.
+    # Delete a single list
     api_instance.delete_list(id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_list: %s\n" % e)
@@ -2012,7 +2012,7 @@ void (empty response body)
 # **delete_list_avatar**
 > delete_list_avatar(id)
 
-Delete an avatar for the list.
+Delete an avatar for the list
 
 
 
@@ -2034,7 +2034,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Delete an avatar for the list.
+    # Delete an avatar for the list
     api_instance.delete_list_avatar(id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_list_avatar: %s\n" % e)
@@ -2064,7 +2064,7 @@ void (empty response body)
 # **delete_list_contacts_bulk**
 > delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id)
 
-Delete contact from list by given ID(s) or all contacts from list.
+Delete contact from list by given ID(s) or all contacts from list
 
 
 
@@ -2087,7 +2087,7 @@ delete_list_contacts_bulk_input_object = TextMagic.DeleteListContactsBulkInputOb
 id = 1 # int | 
 
 try:
-    # Delete contact from list by given ID(s) or all contacts from list.
+    # Delete contact from list by given ID(s) or all contacts from list
     api_instance.delete_list_contacts_bulk(delete_list_contacts_bulk_input_object, id)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_list_contacts_bulk: %s\n" % e)
@@ -2118,7 +2118,7 @@ void (empty response body)
 # **delete_lists_bulk**
 > delete_lists_bulk(delete_lists_bulk_input_object)
 
-Delete list by given ID(s) or delete all lists.
+Delete list by given ID(s) or delete all lists
 
 
 
@@ -2140,7 +2140,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 delete_lists_bulk_input_object = TextMagic.DeleteListsBulkInputObject() # DeleteListsBulkInputObject | 
 
 try:
-    # Delete list by given ID(s) or delete all lists.
+    # Delete list by given ID(s) or delete all lists
     api_instance.delete_lists_bulk(delete_lists_bulk_input_object)
 except ApiException as e:
     print("Exception when calling TextMagicApi->delete_lists_bulk: %s\n" % e)
@@ -4447,7 +4447,7 @@ Name | Type | Description  | Notes
 # **get_contacts_by_list_id**
 > GetContactsByListIdPaginatedResponse get_contacts_by_list_id(id, page=page, limit=limit, order_by=order_by, direction=direction)
 
-Fetch user contacts by given group id.
+Get all contacts in a list
 
 A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.
 
@@ -4473,7 +4473,7 @@ order_by = 'id' # str | Order results by some field. Default is id (optional) (d
 direction = 'desc' # str | Order direction. Default is desc (optional) (default to desc)
 
 try:
-    # Fetch user contacts by given group id.
+    # Get all contacts in a list
     api_response = api_instance.get_contacts_by_list_id(id, page=page, limit=limit, order_by=order_by, direction=direction)
     pprint(api_response)
 except ApiException as e:
@@ -5083,7 +5083,7 @@ Name | Type | Description  | Notes
 # **get_list_contacts_ids**
 > GetListContactsIdsResponse get_list_contacts_ids(id)
 
-Fetch all contacts IDs belonging to the list with ID.
+Fetch all contacts IDs belonging to the list with ID
 
 
 
@@ -5105,7 +5105,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 id = 1 # int | 
 
 try:
-    # Fetch all contacts IDs belonging to the list with ID.
+    # Fetch all contacts IDs belonging to the list with ID
     api_response = api_instance.get_list_contacts_ids(id)
     pprint(api_response)
 except ApiException as e:
@@ -6029,7 +6029,7 @@ Name | Type | Description  | Notes
 
 Get current sender settings
 
-@TODO
+
 
 ### Example
 ```python
@@ -7820,7 +7820,7 @@ Name | Type | Description  | Notes
 # **search_lists**
 > SearchListsPaginatedResponse search_lists(page=page, limit=limit, ids=ids, query=query, only_mine=only_mine, only_default=only_default, order_by=order_by, direction=direction)
 
-Find contact lists by given parameters.
+Find contact lists by given parameters
 
 
 
@@ -7849,7 +7849,7 @@ order_by = 'id' # str | Order results by some field. Default is id (optional) (d
 direction = 'desc' # str | Order direction. Default is desc (optional) (default to desc)
 
 try:
-    # Find contact lists by given parameters.
+    # Find contact lists by given parameters
     api_response = api_instance.search_lists(page=page, limit=limit, ids=ids, query=query, only_mine=only_mine, only_default=only_default, order_by=order_by, direction=direction)
     pprint(api_response)
 except ApiException as e:
@@ -9078,7 +9078,7 @@ void (empty response body)
 # **update_list**
 > ResourceLinkResponse update_list(id, update_list_object=update_list_object)
 
-Update existing list.
+Update existing list
 
 
 
@@ -9101,7 +9101,7 @@ id = 1 # int |
 update_list_object = TextMagic.UpdateListObject() # UpdateListObject |  (optional)
 
 try:
-    # Update existing list.
+    # Update existing list
     api_response = api_instance.update_list(id, update_list_object=update_list_object)
     pprint(api_response)
 except ApiException as e:
@@ -9509,7 +9509,7 @@ Name | Type | Description  | Notes
 # **upload_list_avatar**
 > ResourceLinkResponse upload_list_avatar(image, id)
 
-Add an avatar for the list.
+Add an avatar for the list
 
 
 
@@ -9532,7 +9532,7 @@ image = '/path/to/file.txt' # file | List avatar. Should be PNG or JPG file not 
 id = 1 # int | 
 
 try:
-    # Add an avatar for the list.
+    # Add an avatar for the list
     api_response = api_instance.upload_list_avatar(image, id)
     pprint(api_response)
 except ApiException as e:

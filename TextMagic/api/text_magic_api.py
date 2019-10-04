@@ -34,7 +34,7 @@ class TextMagicApi(object):
         self.api_client = api_client
 
     def assign_contacts_to_list(self, assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
-        """Assign contacts to the specified list.  # noqa: E501
+        """Assign contacts to a list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -57,7 +57,7 @@ class TextMagicApi(object):
             return data
 
     def assign_contacts_to_list_with_http_info(self, assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
-        """Assign contacts to the specified list.  # noqa: E501
+        """Assign contacts to a list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -735,7 +735,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def clear_and_assign_contacts_to_list(self, clear_and_assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
-        """Reset list members to the specified contacts.  # noqa: E501
+        """Reset list members to the specified contacts  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -758,7 +758,7 @@ class TextMagicApi(object):
             return data
 
     def clear_and_assign_contacts_to_list_with_http_info(self, clear_and_assign_contacts_to_list_input_object, id, **kwargs):  # noqa: E501
-        """Reset list members to the specified contacts.  # noqa: E501
+        """Reset list members to the specified contacts  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2873,7 +2873,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_contacts_from_list(self, delete_contacs_from_list_object, id, **kwargs):  # noqa: E501
-        """Unassign contacts from the specified list.  # noqa: E501
+        """Unassign contacts from a list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2896,7 +2896,7 @@ class TextMagicApi(object):
             return data
 
     def delete_contacts_from_list_with_http_info(self, delete_contacs_from_list_object, id, **kwargs):  # noqa: E501
-        """Unassign contacts from the specified list.  # noqa: E501
+        """Unassign contacts from a list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3356,7 +3356,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_list(self, id, **kwargs):  # noqa: E501
-        """Delete a single list.  # noqa: E501
+        """Delete a single list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3378,7 +3378,7 @@ class TextMagicApi(object):
             return data
 
     def delete_list_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Delete a single list.  # noqa: E501
+        """Delete a single list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3451,7 +3451,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_list_avatar(self, id, **kwargs):  # noqa: E501
-        """Delete an avatar for the list.  # noqa: E501
+        """Delete an avatar for the list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3473,7 +3473,7 @@ class TextMagicApi(object):
             return data
 
     def delete_list_avatar_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Delete an avatar for the list.  # noqa: E501
+        """Delete an avatar for the list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3550,7 +3550,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_list_contacts_bulk(self, delete_list_contacts_bulk_input_object, id, **kwargs):  # noqa: E501
-        """Delete contact from list by given ID(s) or all contacts from list.  # noqa: E501
+        """Delete contact from list by given ID(s) or all contacts from list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3573,7 +3573,7 @@ class TextMagicApi(object):
             return data
 
     def delete_list_contacts_bulk_with_http_info(self, delete_list_contacts_bulk_input_object, id, **kwargs):  # noqa: E501
-        """Delete contact from list by given ID(s) or all contacts from list.  # noqa: E501
+        """Delete contact from list by given ID(s) or all contacts from list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3653,7 +3653,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def delete_lists_bulk(self, delete_lists_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete list by given ID(s) or delete all lists.  # noqa: E501
+        """Delete list by given ID(s) or delete all lists  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3675,7 +3675,7 @@ class TextMagicApi(object):
             return data
 
     def delete_lists_bulk_with_http_info(self, delete_lists_bulk_input_object, **kwargs):  # noqa: E501
-        """Delete list by given ID(s) or delete all lists.  # noqa: E501
+        """Delete list by given ID(s) or delete all lists  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -7958,7 +7958,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_contacts_by_list_id(self, id, **kwargs):  # noqa: E501
-        """Fetch user contacts by given group id.  # noqa: E501
+        """Get all contacts in a list  # noqa: E501
 
         A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -7984,7 +7984,7 @@ class TextMagicApi(object):
             return data
 
     def get_contacts_by_list_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Fetch user contacts by given group id.  # noqa: E501
+        """Get all contacts in a list  # noqa: E501
 
         A useful synonym for \"contacts/search\" command with provided \"listId\" parameter.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9134,7 +9134,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_list_contacts_ids(self, id, **kwargs):  # noqa: E501
-        """Fetch all contacts IDs belonging to the list with ID.  # noqa: E501
+        """Fetch all contacts IDs belonging to the list with ID  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -9156,7 +9156,7 @@ class TextMagicApi(object):
             return data
 
     def get_list_contacts_ids_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Fetch all contacts IDs belonging to the list with ID.  # noqa: E501
+        """Fetch all contacts IDs belonging to the list with ID  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -10888,7 +10888,7 @@ class TextMagicApi(object):
     def get_sender_settings(self, **kwargs):  # noqa: E501
         """Get current sender settings  # noqa: E501
 
-        @TODO  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_settings(async_req=True)
@@ -10910,7 +10910,7 @@ class TextMagicApi(object):
     def get_sender_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get current sender settings  # noqa: E501
 
-        @TODO  # noqa: E501
+          # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_sender_settings_with_http_info(async_req=True)
@@ -14187,7 +14187,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def search_lists(self, **kwargs):  # noqa: E501
-        """Find contact lists by given parameters.  # noqa: E501
+        """Find contact lists by given parameters  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -14216,7 +14216,7 @@ class TextMagicApi(object):
             return data
 
     def search_lists_with_http_info(self, **kwargs):  # noqa: E501
-        """Find contact lists by given parameters.  # noqa: E501
+        """Find contact lists by given parameters  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -16544,7 +16544,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def update_list(self, id, **kwargs):  # noqa: E501
-        """Update existing list.  # noqa: E501
+        """Update existing list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -16567,7 +16567,7 @@ class TextMagicApi(object):
             return data
 
     def update_list_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Update existing list.  # noqa: E501
+        """Update existing list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -17364,7 +17364,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def upload_list_avatar(self, image, id, **kwargs):  # noqa: E501
-        """Add an avatar for the list.  # noqa: E501
+        """Add an avatar for the list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -17387,7 +17387,7 @@ class TextMagicApi(object):
             return data
 
     def upload_list_avatar_with_http_info(self, image, id, **kwargs):  # noqa: E501
-        """Add an avatar for the list.  # noqa: E501
+        """Add an avatar for the list  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an

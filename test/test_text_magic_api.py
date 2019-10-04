@@ -32,7 +32,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_assign_contacts_to_list(self):
         """Test case for assign_contacts_to_list
 
-        Assign contacts to the specified list.  # noqa: E501
+        Assign contacts to a list  # noqa: E501
         """
         pass
 
@@ -81,7 +81,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_clear_and_assign_contacts_to_list(self):
         """Test case for clear_and_assign_contacts_to_list
 
-        Reset list members to the specified contacts.  # noqa: E501
+        Reset list members to the specified contacts  # noqa: E501
         """
         pass
 
@@ -235,7 +235,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_contacts_from_list(self):
         """Test case for delete_contacts_from_list
 
-        Unassign contacts from the specified list.  # noqa: E501
+        Unassign contacts from a list  # noqa: E501
         """
         pass
 
@@ -270,28 +270,28 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_list(self):
         """Test case for delete_list
 
-        Delete a single list.  # noqa: E501
+        Delete a single list  # noqa: E501
         """
         pass
 
     def test_delete_list_avatar(self):
         """Test case for delete_list_avatar
 
-        Delete an avatar for the list.  # noqa: E501
+        Delete an avatar for the list  # noqa: E501
         """
         pass
 
     def test_delete_list_contacts_bulk(self):
         """Test case for delete_list_contacts_bulk
 
-        Delete contact from list by given ID(s) or all contacts from list.  # noqa: E501
+        Delete contact from list by given ID(s) or all contacts from list  # noqa: E501
         """
         pass
 
     def test_delete_lists_bulk(self):
         """Test case for delete_lists_bulk
 
-        Delete list by given ID(s) or delete all lists.  # noqa: E501
+        Delete list by given ID(s) or delete all lists  # noqa: E501
         """
         pass
 
@@ -592,7 +592,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_contacts_by_list_id(self):
         """Test case for get_contacts_by_list_id
 
-        Fetch user contacts by given group id.  # noqa: E501
+        Get all contacts in a list  # noqa: E501
         """
         pass
 
@@ -676,7 +676,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_list_contacts_ids(self):
         """Test case for get_list_contacts_ids
 
-        Fetch all contacts IDs belonging to the list with ID.  # noqa: E501
+        Fetch all contacts IDs belonging to the list with ID  # noqa: E501
         """
         pass
 
@@ -1019,7 +1019,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_search_lists(self):
         """Test case for search_lists
 
-        Find contact lists by given parameters.  # noqa: E501
+        Find contact lists by given parameters  # noqa: E501
         """
         pass
 
@@ -1180,7 +1180,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_update_list(self):
         """Test case for update_list
 
-        Update existing list.  # noqa: E501
+        Update existing list  # noqa: E501
         """
         pass
 
@@ -1236,7 +1236,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_upload_list_avatar(self):
         """Test case for upload_list_avatar
 
-        Add an avatar for the list.  # noqa: E501
+        Add an avatar for the list  # noqa: E501
         """
         pass
 
