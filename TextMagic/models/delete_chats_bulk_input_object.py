@@ -42,7 +42,7 @@ class DeleteChatsBulkInputObject(object):
         'status': 'status'
     }
 
-    def __init__(self, ids=None, all=None, status=''):  # noqa: E501
+    def __init__(self, ids=None, all=None, status=None):  # noqa: E501
         """DeleteChatsBulkInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._ids = None
