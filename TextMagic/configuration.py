@@ -40,7 +40,7 @@ class Configuration(object):
             return
 
         # Default Base url
-        self.host = "https://rest.textmagic.com"
+        self.host = "http://rest.textmagic.com"
         # Temp file folder for downloading files
         self.temp_folder_path = None
 
@@ -240,5 +240,5 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 2\n"\
-               "SDK Package Version: 2.0.501".\
+               "SDK Package Version: 2.0.509".\
                format(env=sys.platform, pyversion=sys.version)
