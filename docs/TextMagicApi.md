@@ -1,6 +1,6 @@
 # TextMagic.TextMagicApi
 
-All URIs are relative to *http://rest.textmagic.com*
+All URIs are relative to *https://rest.textmagic.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -3079,7 +3079,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-status = 'status_example' # str | Fetch only (a)ctive, (c)losed or (d)eleted chats (optional)
+status = '\"a\"' # str | Fetch only (a)ctive, (c)losed or (d)eleted chats (optional)
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
 order_by = 'id' # str | Order results by some field. Default is id (optional) (default to id)
