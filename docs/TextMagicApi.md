@@ -56,7 +56,7 @@ Method | HTTP request | Description
 [**delete_templates_bulk**](TextMagicApi.md#delete_templates_bulk) | **POST** /api/v2/templates/delete | Delete templates (bulk)
 [**do_auth**](TextMagicApi.md#do_auth) | **POST** /api/v2/auth | Authenticate user by given username and password.
 [**do_carrier_lookup**](TextMagicApi.md#do_carrier_lookup) | **GET** /api/v2/lookups/{phone} | Carrier Lookup
-[**do_email_lookup**](TextMagicApi.md#do_email_lookup) | **GET** /api/v2/email-lookups/{email} | Validate Email address using Email Lookup tool
+[**do_email_lookup**](TextMagicApi.md#do_email_lookup) | **GET** /api/v2/email-lookups/{email} | Email Lookup
 [**duplicate_survey**](TextMagicApi.md#duplicate_survey) | **PUT** /api/v2/surveys/{id}/duplicate | Duplicate a survey.
 [**get_all_bulk_sessions**](TextMagicApi.md#get_all_bulk_sessions) | **GET** /api/v2/bulks | Get all bulk sending sessions.
 [**get_all_chats**](TextMagicApi.md#get_all_chats) | **GET** /api/v2/chats | Get all chats
@@ -85,7 +85,7 @@ Method | HTTP request | Description
 [**get_contacts**](TextMagicApi.md#get_contacts) | **GET** /api/v2/contacts | Get all contacts
 [**get_contacts_autocomplete**](TextMagicApi.md#get_contacts_autocomplete) | **GET** /api/v2/contacts/autocomplete | Get contacts autocomplete suggestions
 [**get_contacts_by_list_id**](TextMagicApi.md#get_contacts_by_list_id) | **GET** /api/v2/lists/{id}/contacts | Get all contacts in a list
-[**get_countries**](TextMagicApi.md#get_countries) | **GET** /api/v2/countries | Return list of countries.
+[**get_countries**](TextMagicApi.md#get_countries) | **GET** /api/v2/countries | Get countries
 [**get_current_user**](TextMagicApi.md#get_current_user) | **GET** /api/v2/user | Get current account information
 [**get_custom_field**](TextMagicApi.md#get_custom_field) | **GET** /api/v2/customfields/{id} | Get the details of a specific custom field
 [**get_custom_fields**](TextMagicApi.md#get_custom_fields) | **GET** /api/v2/customfields | Get all custom fields
@@ -123,7 +123,7 @@ Method | HTTP request | Description
 [**get_survey_nodes**](TextMagicApi.md#get_survey_nodes) | **GET** /api/v2/surveys/{id}/nodes | Fetch nodes by given survey id.
 [**get_surveys**](TextMagicApi.md#get_surveys) | **GET** /api/v2/surveys | Get all user surveys.
 [**get_template**](TextMagicApi.md#get_template) | **GET** /api/v2/templates/{id} | Get a template details
-[**get_timezones**](TextMagicApi.md#get_timezones) | **GET** /api/v2/timezones | Return all available timezone IDs.
+[**get_timezones**](TextMagicApi.md#get_timezones) | **GET** /api/v2/timezones | Get timezones
 [**get_unread_messages_total**](TextMagicApi.md#get_unread_messages_total) | **GET** /api/v2/chats/unread/count | Get unread messages number
 [**get_unsubscribed_contact**](TextMagicApi.md#get_unsubscribed_contact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
 [**get_unsubscribers**](TextMagicApi.md#get_unsubscribers) | **GET** /api/v2/unsubscribers | Get all unsubscribed contacts
@@ -135,7 +135,7 @@ Method | HTTP request | Description
 [**merge_survey_nodes**](TextMagicApi.md#merge_survey_nodes) | **POST** /api/v2/surveys/nodes/merge | Merge two question nodes.
 [**mute_chat**](TextMagicApi.md#mute_chat) | **POST** /api/v2/chats/mute | Mute chat sounds
 [**mute_chats_bulk**](TextMagicApi.md#mute_chats_bulk) | **POST** /api/v2/chats/mute/bulk | Mute chats (bulk)
-[**ping**](TextMagicApi.md#ping) | **GET** /api/v2/ping | Just does a pong.
+[**ping**](TextMagicApi.md#ping) | **GET** /api/v2/ping | Ping
 [**reopen_chats_bulk**](TextMagicApi.md#reopen_chats_bulk) | **POST** /api/v2/chats/reopen/bulk | Reopen chats (bulk)
 [**request_new_subaccount_token**](TextMagicApi.md#request_new_subaccount_token) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for sub-account
 [**request_sender_id**](TextMagicApi.md#request_sender_id) | **POST** /api/v2/senderids | Apply for a new Sender ID
@@ -2846,7 +2846,7 @@ No authorization required
 
 Carrier Lookup
 
-
+This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers can be checked one by one. You cannot check multiple numbers in one request.   
 
 ### Example
 ```python
@@ -2863,8 +2863,8 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-phone = '\"1-541-754-3010\"' # str | 
-country = 'US' # str | Country code for local formatted numbers (optional) (default to US)
+phone = '\"447860021130\"' # str | Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). 
+country = '\"GB\"' # str | This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
 
 try:
     # Carrier Lookup
@@ -2878,8 +2878,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone** | **str**|  | 
- **country** | **str**| Country code for local formatted numbers | [optional] [default to US]
+ **phone** | **str**| Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  | 
+ **country** | **str**| This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  | [optional] 
 
 ### Return type
 
@@ -2899,9 +2899,9 @@ Name | Type | Description  | Notes
 # **do_email_lookup**
 > DoEmailLookupResponse do_email_lookup(email)
 
-Validate Email address using Email Lookup tool
+Email Lookup
 
-
+To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
 
 ### Example
 ```python
@@ -2918,10 +2918,10 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-email = '\"andrey.v@textmagic.biz\"' # str | 
+email = '\"john@sample.com\"' # str | Email address.
 
 try:
-    # Validate Email address using Email Lookup tool
+    # Email Lookup
     api_response = api_instance.do_email_lookup(email)
     pprint(api_response)
 except ApiException as e:
@@ -2932,7 +2932,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | **str**|  | 
+ **email** | **str**| Email address. | 
 
 ### Return type
 
@@ -4508,7 +4508,7 @@ Name | Type | Description  | Notes
 # **get_countries**
 > GetCountriesResponse get_countries()
 
-Return list of countries.
+Get countries
 
 
 
@@ -4529,7 +4529,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 
 try:
-    # Return list of countries.
+    # Get countries
     api_response = api_instance.get_countries()
     pprint(api_response)
 except ApiException as e:
@@ -6620,9 +6620,9 @@ Name | Type | Description  | Notes
 # **get_timezones**
 > GetTimezonesResponse get_timezones(full=full)
 
-Return all available timezone IDs.
+Get timezones
 
-
+Return all available timezone IDs
 
 ### Example
 ```python
@@ -6642,7 +6642,7 @@ api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 full = 0 # int | Return full info about timezones in array (0 or 1). Default is 0 (optional) (default to 0)
 
 try:
-    # Return all available timezone IDs.
+    # Get timezones
     api_response = api_instance.get_timezones(full=full)
     pprint(api_response)
 except ApiException as e:
@@ -7249,9 +7249,9 @@ void (empty response body)
 # **ping**
 > PingResponse ping()
 
-Just does a pong.
+Ping
 
-
+Make a simple ping request
 
 ### Example
 ```python
@@ -7270,7 +7270,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 
 try:
-    # Just does a pong.
+    # Ping
     api_response = api_instance.ping()
     pprint(api_response)
 except ApiException as e:

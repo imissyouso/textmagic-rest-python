@@ -4997,15 +4997,15 @@ class TextMagicApi(object):
     def do_carrier_lookup(self, phone, **kwargs):  # noqa: E501
         """Carrier Lookup  # noqa: E501
 
-          # noqa: E501
+        This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers can be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_carrier_lookup(phone, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str phone: (required)
-        :param str country: Country code for local formatted numbers
+        :param str phone: Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
+        :param str country: This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
         :return: DoCarrierLookupResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5020,15 +5020,15 @@ class TextMagicApi(object):
     def do_carrier_lookup_with_http_info(self, phone, **kwargs):  # noqa: E501
         """Carrier Lookup  # noqa: E501
 
-          # noqa: E501
+        This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  > Numbers can be checked one by one. You cannot check multiple numbers in one request.     # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_carrier_lookup_with_http_info(phone, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str phone: (required)
-        :param str country: Country code for local formatted numbers
+        :param str phone: Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
+        :param str country: This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
         :return: DoCarrierLookupResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5098,16 +5098,16 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def do_email_lookup(self, email, **kwargs):  # noqa: E501
-        """Validate Email address using Email Lookup tool  # noqa: E501
+        """Email Lookup  # noqa: E501
 
-          # noqa: E501
+        To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_email_lookup(email, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str email: (required)
+        :param str email: Email address. (required)
         :return: DoEmailLookupResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -5120,16 +5120,16 @@ class TextMagicApi(object):
             return data
 
     def do_email_lookup_with_http_info(self, email, **kwargs):  # noqa: E501
-        """Validate Email address using Email Lookup tool  # noqa: E501
+        """Email Lookup  # noqa: E501
 
-          # noqa: E501
+        To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  > Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.do_email_lookup_with_http_info(email, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str email: (required)
+        :param str email: Email address. (required)
         :return: DoEmailLookupResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -8073,7 +8073,7 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_countries(self, **kwargs):  # noqa: E501
-        """Return list of countries.  # noqa: E501
+        """Get countries  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -8094,7 +8094,7 @@ class TextMagicApi(object):
             return data
 
     def get_countries_with_http_info(self, **kwargs):  # noqa: E501
-        """Return list of countries.  # noqa: E501
+        """Get countries  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -11979,9 +11979,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def get_timezones(self, **kwargs):  # noqa: E501
-        """Return all available timezone IDs.  # noqa: E501
+        """Get timezones  # noqa: E501
 
-          # noqa: E501
+        Return all available timezone IDs  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_timezones(async_req=True)
@@ -12001,9 +12001,9 @@ class TextMagicApi(object):
             return data
 
     def get_timezones_with_http_info(self, **kwargs):  # noqa: E501
-        """Return all available timezone IDs.  # noqa: E501
+        """Get timezones  # noqa: E501
 
-          # noqa: E501
+        Return all available timezone IDs  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_timezones_with_http_info(async_req=True)
@@ -13131,9 +13131,9 @@ class TextMagicApi(object):
             collection_formats=collection_formats)
 
     def ping(self, **kwargs):  # noqa: E501
-        """Just does a pong.  # noqa: E501
+        """Ping  # noqa: E501
 
-          # noqa: E501
+        Make a simple ping request  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ping(async_req=True)
@@ -13152,9 +13152,9 @@ class TextMagicApi(object):
             return data
 
     def ping_with_http_info(self, **kwargs):  # noqa: E501
-        """Just does a pong.  # noqa: E501
+        """Ping  # noqa: E501
 
-          # noqa: E501
+        Make a simple ping request  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ping_with_http_info(async_req=True)

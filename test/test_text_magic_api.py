@@ -396,7 +396,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_do_email_lookup(self):
         """Test case for do_email_lookup
 
-        Validate Email address using Email Lookup tool  # noqa: E501
+        Email Lookup  # noqa: E501
         """
         pass
 
@@ -599,7 +599,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_countries(self):
         """Test case for get_countries
 
-        Return list of countries.  # noqa: E501
+        Get countries  # noqa: E501
         """
         pass
 
@@ -865,7 +865,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_timezones(self):
         """Test case for get_timezones
 
-        Return all available timezone IDs.  # noqa: E501
+        Get timezones  # noqa: E501
         """
         pass
 
@@ -949,7 +949,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_ping(self):
         """Test case for ping
 
-        Just does a pong.  # noqa: E501
+        Ping  # noqa: E501
         """
         pass
 
