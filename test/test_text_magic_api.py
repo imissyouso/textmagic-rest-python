@@ -799,13 +799,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_state(self):
-        """Test case for get_state
-
-        Get current entities state  # noqa: E501
-        """
-        pass
-
     def test_get_subaccount(self):
         """Test case for get_subaccount
 
@@ -897,13 +890,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_versions(self):
-        """Test case for get_versions
-
-        Get minimal valid apps versions  # noqa: E501
-        """
-        pass
-
     def test_invite_subaccount(self):
         """Test case for invite_subaccount
 
@@ -943,13 +929,6 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for mute_chats_bulk
 
         Mute chats (bulk)  # noqa: E501
-        """
-        pass
-
-    def test_ping(self):
-        """Test case for ping
-
-        Ping  # noqa: E501
         """
         pass
 
