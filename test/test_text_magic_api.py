@@ -50,24 +50,10 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_cancel_survey(self):
-        """Test case for cancel_survey
-
-        Cancel a survey.  # noqa: E501
-        """
-        pass
-
     def test_cancel_verification(self):
         """Test case for cancel_verification
 
         Cancel verification process  # noqa: E501
-        """
-        pass
-
-    def test_check_phone_verification_code(self):
-        """Test case for check_phone_verification_code
-
-        Check user phone verification code  # noqa: E501
         """
         pass
 
@@ -131,27 +117,6 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for create_list
 
         Create a new list  # noqa: E501
-        """
-        pass
-
-    def test_create_push_token(self):
-        """Test case for create_push_token
-
-        Add or update a device token.  # noqa: E501
-        """
-        pass
-
-    def test_create_survey(self):
-        """Test case for create_survey
-
-        Create a new survey from the submitted data.  # noqa: E501
-        """
-        pass
-
-    def test_create_survey_node(self):
-        """Test case for create_survey_node
-
-        Create a new node from the submitted data.  # noqa: E501
         """
         pass
 
@@ -323,13 +288,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_delete_push_token(self):
-        """Test case for delete_push_token
-
-        Delete a push notification device token.  # noqa: E501
-        """
-        pass
-
     def test_delete_scheduled_message(self):
         """Test case for delete_scheduled_message
 
@@ -351,20 +309,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_delete_survey(self):
-        """Test case for delete_survey
-
-        Delete a survey.  # noqa: E501
-        """
-        pass
-
-    def test_delete_survey_node(self):
-        """Test case for delete_survey_node
-
-        Delete a node.  # noqa: E501
-        """
-        pass
-
     def test_delete_template(self):
         """Test case for delete_template
 
@@ -379,13 +323,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_do_auth(self):
-        """Test case for do_auth
-
-        Authenticate user by given username and password.  # noqa: E501
-        """
-        pass
-
     def test_do_carrier_lookup(self):
         """Test case for do_carrier_lookup
 
@@ -397,13 +334,6 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for do_email_lookup
 
         Email Lookup  # noqa: E501
-        """
-        pass
-
-    def test_duplicate_survey(self):
-        """Test case for duplicate_survey
-
-        Duplicate a survey.  # noqa: E501
         """
         pass
 
@@ -743,13 +673,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_push_tokens(self):
-        """Test case for get_push_tokens
-
-        Get all device tokens assigned to the current account  # noqa: E501
-        """
-        pass
-
     def test_get_scheduled_message(self):
         """Test case for get_scheduled_message
 
@@ -803,34 +726,6 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for get_subaccounts_with_tokens
 
         Get all sub-accounts with their REST API tokens associated with app name  # noqa: E501
-        """
-        pass
-
-    def test_get_survey(self):
-        """Test case for get_survey
-
-        Get a survey by id.  # noqa: E501
-        """
-        pass
-
-    def test_get_survey_node(self):
-        """Test case for get_survey_node
-
-        Get a node by id.  # noqa: E501
-        """
-        pass
-
-    def test_get_survey_nodes(self):
-        """Test case for get_survey_nodes
-
-        Fetch nodes by given survey id.  # noqa: E501
-        """
-        pass
-
-    def test_get_surveys(self):
-        """Test case for get_surveys
-
-        Get all user surveys.  # noqa: E501
         """
         pass
 
@@ -897,13 +792,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_merge_survey_nodes(self):
-        """Test case for merge_survey_nodes
-
-        Merge two question nodes.  # noqa: E501
-        """
-        pass
-
     def test_mute_chat(self):
         """Test case for mute_chat
 
@@ -936,13 +824,6 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for request_sender_id
 
         Apply for a new Sender ID  # noqa: E501
-        """
-        pass
-
-    def test_reset_survey(self):
-        """Test case for reset_survey
-
-        Reset a survey flow.  # noqa: E501
         """
         pass
 
@@ -1009,24 +890,10 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_send_email_verification_code(self):
-        """Test case for send_email_verification_code
-
-        Send user email verification  # noqa: E501
-        """
-        pass
-
     def test_send_message(self):
         """Test case for send_message
 
         Send message  # noqa: E501
-        """
-        pass
-
-    def test_send_phone_verification_code(self):
-        """Test case for send_phone_verification_code
-
-        Send user phone verification  # noqa: E501
         """
         pass
 
@@ -1041,13 +908,6 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for set_chat_status
 
         Change chat status  # noqa: E501
-        """
-        pass
-
-    def test_start_survey(self):
-        """Test case for start_survey
-
-        Start a survey.  # noqa: E501
         """
         pass
 
@@ -1149,31 +1009,10 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_update_password(self):
-        """Test case for update_password
-
-        Change user password.  # noqa: E501
-        """
-        pass
-
     def test_update_sender_setting(self):
         """Test case for update_sender_setting
 
         Change sender settings  # noqa: E501
-        """
-        pass
-
-    def test_update_survey(self):
-        """Test case for update_survey
-
-        Update existing survey.  # noqa: E501
-        """
-        pass
-
-    def test_update_survey_node(self):
-        """Test case for update_survey_node
-
-        Update existing node.  # noqa: E501
         """
         pass
 

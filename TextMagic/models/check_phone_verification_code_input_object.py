@@ -31,25 +31,30 @@ class CheckPhoneVerificationCodeInputObject(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'code': 'int'
+        'code': 'int',
+        'verify_id': 'str'
     }
 
     attribute_map = {
-        'code': 'code'
+        'code': 'code',
+        'verify_id': 'verifyId'
     }
 
-    def __init__(self, code=None):  # noqa: E501
+    def __init__(self, code=None, verify_id=None):  # noqa: E501
         """CheckPhoneVerificationCodeInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._code = None
+        self._verify_id = None
         self.discriminator = None
 
         self.code = code
+        self.verify_id = verify_id
 
     @property
     def code(self):
         """Gets the code of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
 
+        Verification code that was received by the user and entered into the form field.  # noqa: E501
 
         :return: The code of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
         :rtype: int
@@ -60,12 +65,36 @@ class CheckPhoneVerificationCodeInputObject(object):
     def code(self, code):
         """Sets the code of this CheckPhoneVerificationCodeInputObject.
 
+        Verification code that was received by the user and entered into the form field.  # noqa: E501
 
         :param code: The code of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
         :type: int
         """
 
         self._code = code
+
+    @property
+    def verify_id(self):
+        """Gets the verify_id of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
+
+        VerifyId from Step 1 to match both requests together.  # noqa: E501
+
+        :return: The verify_id of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
+        :rtype: str
+        """
+        return self._verify_id
+
+    @verify_id.setter
+    def verify_id(self, verify_id):
+        """Sets the verify_id of this CheckPhoneVerificationCodeInputObject.
+
+        VerifyId from Step 1 to match both requests together.  # noqa: E501
+
+        :param verify_id: The verify_id of this CheckPhoneVerificationCodeInputObject.  # noqa: E501
+        :type: str
+        """
+
+        self._verify_id = verify_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
