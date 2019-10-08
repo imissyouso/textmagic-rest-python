@@ -505,13 +505,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_calls_prices(self):
-        """Test case for get_calls_prices
-
-        Check pricing for a inbound/outbound call.  # noqa: E501
-        """
-        pass
-
     def test_get_chat(self):
         """Test case for get_chat
 
@@ -551,13 +544,6 @@ class TestTextMagicApi(unittest.TestCase):
         """Test case for get_contact_if_blocked
 
         Check is that phone number blocked  # noqa: E501
-        """
-        pass
-
-    def test_get_contact_import_session_progress(self):
-        """Test case for get_contact_import_session_progress
-
-        Get contact import session progress.  # noqa: E501
         """
         pass
 
