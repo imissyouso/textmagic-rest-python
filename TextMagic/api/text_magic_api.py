@@ -12266,7 +12266,7 @@ class TextMagicApi(object):
     def get_unsubscribers(self, **kwargs):  # noqa: E501
         """Get all unsubscribed contacts  # noqa: E501
 
-        When one of your message recipients sends a request with one of the [STOP-words](/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use:   # noqa: E501
+        When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use:   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribers(async_req=True)
@@ -12289,7 +12289,7 @@ class TextMagicApi(object):
     def get_unsubscribers_with_http_info(self, **kwargs):  # noqa: E501
         """Get all unsubscribed contacts  # noqa: E501
 
-        When one of your message recipients sends a request with one of the [STOP-words](/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use:   # noqa: E501
+        When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use:   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_unsubscribers_with_http_info(async_req=True)
