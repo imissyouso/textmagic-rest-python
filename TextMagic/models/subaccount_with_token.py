@@ -114,6 +114,7 @@ class SubaccountWithToken(object):
     def id(self):
         """Gets the id of this SubaccountWithToken.  # noqa: E501
 
+        Sub-account ID.  # noqa: E501
 
         :return: The id of this SubaccountWithToken.  # noqa: E501
         :rtype: int
@@ -124,6 +125,7 @@ class SubaccountWithToken(object):
     def id(self, id):
         """Sets the id of this SubaccountWithToken.
 
+        Sub-account ID.  # noqa: E501
 
         :param id: The id of this SubaccountWithToken.  # noqa: E501
         :type: int
@@ -135,6 +137,7 @@ class SubaccountWithToken(object):
     def username(self):
         """Gets the username of this SubaccountWithToken.  # noqa: E501
 
+        Username.  # noqa: E501
 
         :return: The username of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -145,6 +148,7 @@ class SubaccountWithToken(object):
     def username(self, username):
         """Sets the username of this SubaccountWithToken.
 
+        Username.  # noqa: E501
 
         :param username: The username of this SubaccountWithToken.  # noqa: E501
         :type: str
@@ -156,6 +160,7 @@ class SubaccountWithToken(object):
     def first_name(self):
         """Gets the first_name of this SubaccountWithToken.  # noqa: E501
 
+        Account first name.  # noqa: E501
 
         :return: The first_name of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -166,6 +171,7 @@ class SubaccountWithToken(object):
     def first_name(self, first_name):
         """Sets the first_name of this SubaccountWithToken.
 
+        Account first name.  # noqa: E501
 
         :param first_name: The first_name of this SubaccountWithToken.  # noqa: E501
         :type: str
@@ -177,6 +183,7 @@ class SubaccountWithToken(object):
     def last_name(self):
         """Gets the last_name of this SubaccountWithToken.  # noqa: E501
 
+        Account last name.  # noqa: E501
 
         :return: The last_name of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -187,6 +194,7 @@ class SubaccountWithToken(object):
     def last_name(self, last_name):
         """Sets the last_name of this SubaccountWithToken.
 
+        Account last name.  # noqa: E501
 
         :param last_name: The last_name of this SubaccountWithToken.  # noqa: E501
         :type: str
@@ -219,6 +227,7 @@ class SubaccountWithToken(object):
     def status(self):
         """Gets the status of this SubaccountWithToken.  # noqa: E501
 
+        Current account status: * **A** for Active * **T** for Trial.   # noqa: E501
 
         :return: The status of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -229,10 +238,17 @@ class SubaccountWithToken(object):
     def status(self, status):
         """Sets the status of this SubaccountWithToken.
 
+        Current account status: * **A** for Active * **T** for Trial.   # noqa: E501
 
         :param status: The status of this SubaccountWithToken.  # noqa: E501
         :type: str
         """
+        allowed_values = ["A", "T"]  # noqa: E501
+        if status not in allowed_values:
+            raise ValueError(
+                "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
+                .format(status, allowed_values)
+            )
 
         self._status = status
 
@@ -240,6 +256,7 @@ class SubaccountWithToken(object):
     def balance(self):
         """Gets the balance of this SubaccountWithToken.  # noqa: E501
 
+        Account balance (in account currency).  # noqa: E501
 
         :return: The balance of this SubaccountWithToken.  # noqa: E501
         :rtype: float
@@ -250,6 +267,7 @@ class SubaccountWithToken(object):
     def balance(self, balance):
         """Sets the balance of this SubaccountWithToken.
 
+        Account balance (in account currency).  # noqa: E501
 
         :param balance: The balance of this SubaccountWithToken.  # noqa: E501
         :type: float
@@ -261,6 +279,7 @@ class SubaccountWithToken(object):
     def phone(self):
         """Gets the phone of this SubaccountWithToken.  # noqa: E501
 
+        Contact phone number.  # noqa: E501
 
         :return: The phone of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -271,6 +290,7 @@ class SubaccountWithToken(object):
     def phone(self, phone):
         """Sets the phone of this SubaccountWithToken.
 
+        Contact phone number.  # noqa: E501
 
         :param phone: The phone of this SubaccountWithToken.  # noqa: E501
         :type: str
@@ -282,6 +302,7 @@ class SubaccountWithToken(object):
     def company(self):
         """Gets the company of this SubaccountWithToken.  # noqa: E501
 
+        Account company name.  # noqa: E501
 
         :return: The company of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -292,6 +313,7 @@ class SubaccountWithToken(object):
     def company(self, company):
         """Sets the company of this SubaccountWithToken.
 
+        Account company name.  # noqa: E501
 
         :param company: The company of this SubaccountWithToken.  # noqa: E501
         :type: str
@@ -366,6 +388,7 @@ class SubaccountWithToken(object):
     def subaccount_type(self):
         """Gets the subaccount_type of this SubaccountWithToken.  # noqa: E501
 
+        Type of account: *   **A** for Administrator sub-account *   **U** for Regular User   # noqa: E501
 
         :return: The subaccount_type of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -376,10 +399,17 @@ class SubaccountWithToken(object):
     def subaccount_type(self, subaccount_type):
         """Sets the subaccount_type of this SubaccountWithToken.
 
+        Type of account: *   **A** for Administrator sub-account *   **U** for Regular User   # noqa: E501
 
         :param subaccount_type: The subaccount_type of this SubaccountWithToken.  # noqa: E501
         :type: str
         """
+        allowed_values = ["A", "U"]  # noqa: E501
+        if subaccount_type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `subaccount_type` ({0}), must be one of {1}"  # noqa: E501
+                .format(subaccount_type, allowed_values)
+            )
 
         self._subaccount_type = subaccount_type
 
@@ -387,6 +417,7 @@ class SubaccountWithToken(object):
     def email_accepted(self):
         """Gets the email_accepted of this SubaccountWithToken.  # noqa: E501
 
+        Is account has confirmed Email.  # noqa: E501
 
         :return: The email_accepted of this SubaccountWithToken.  # noqa: E501
         :rtype: bool
@@ -397,6 +428,7 @@ class SubaccountWithToken(object):
     def email_accepted(self, email_accepted):
         """Sets the email_accepted of this SubaccountWithToken.
 
+        Is account has confirmed Email.  # noqa: E501
 
         :param email_accepted: The email_accepted of this SubaccountWithToken.  # noqa: E501
         :type: bool
@@ -408,6 +440,7 @@ class SubaccountWithToken(object):
     def phone_accepted(self):
         """Gets the phone_accepted of this SubaccountWithToken.  # noqa: E501
 
+        Is account has confirmed Phone number.  # noqa: E501
 
         :return: The phone_accepted of this SubaccountWithToken.  # noqa: E501
         :rtype: bool
@@ -418,6 +451,7 @@ class SubaccountWithToken(object):
     def phone_accepted(self, phone_accepted):
         """Sets the phone_accepted of this SubaccountWithToken.
 
+        Is account has confirmed Phone number.  # noqa: E501
 
         :param phone_accepted: The phone_accepted of this SubaccountWithToken.  # noqa: E501
         :type: bool
@@ -450,6 +484,7 @@ class SubaccountWithToken(object):
     def token(self):
         """Gets the token of this SubaccountWithToken.  # noqa: E501
 
+        Access token of account.  # noqa: E501
 
         :return: The token of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -460,6 +495,7 @@ class SubaccountWithToken(object):
     def token(self, token):
         """Sets the token of this SubaccountWithToken.
 
+        Access token of account.  # noqa: E501
 
         :param token: The token of this SubaccountWithToken.  # noqa: E501
         :type: str
