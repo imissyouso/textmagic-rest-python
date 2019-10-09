@@ -228,7 +228,7 @@ class Conversation(object):
     def status(self):
         """Gets the status of this Conversation.  # noqa: E501
 
-        Message status (for chats outbound only). See [message delivery statuses](/docs/api/sms-sessions/#message-delivery-statuses) for details.  # noqa: E501
+        Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/section#Delivery-status-codes) for details.  # noqa: E501
 
         :return: The status of this Conversation.  # noqa: E501
         :rtype: str
@@ -239,7 +239,7 @@ class Conversation(object):
     def status(self, status):
         """Sets the status of this Conversation.
 
-        Message status (for chats outbound only). See [message delivery statuses](/docs/api/sms-sessions/#message-delivery-statuses) for details.  # noqa: E501
+        Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/section#Delivery-status-codes) for details.  # noqa: E501
 
         :param status: The status of this Conversation.  # noqa: E501
         :type: str

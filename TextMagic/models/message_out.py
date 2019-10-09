@@ -443,7 +443,7 @@ class MessageOut(object):
     def first_name(self):
         """Gets the first_name of this MessageOut.  # noqa: E501
 
-        TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID).   # noqa: E501
+        Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/tag#Contacts) (even if you submitted phone number instead of contact ID).   # noqa: E501
 
         :return: The first_name of this MessageOut.  # noqa: E501
         :rtype: str
@@ -454,7 +454,7 @@ class MessageOut(object):
     def first_name(self, first_name):
         """Sets the first_name of this MessageOut.
 
-        TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID).   # noqa: E501
+        Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/tag#Contacts) (even if you submitted phone number instead of contact ID).   # noqa: E501
 
         :param first_name: The first_name of this MessageOut.  # noqa: E501
         :type: str
