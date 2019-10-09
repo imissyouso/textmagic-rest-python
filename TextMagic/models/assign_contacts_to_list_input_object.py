@@ -50,7 +50,7 @@ class AssignContactsToListInputObject(object):
     def contacts(self):
         """Gets the contacts of this AssignContactsToListInputObject.  # noqa: E501
 
-        Comma-separated array of [Contacts](http://docs.textmagictesting.com/tag#Contacts) IDs.  # noqa: E501
+        Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs.  # noqa: E501
 
         :return: The contacts of this AssignContactsToListInputObject.  # noqa: E501
         :rtype: str
@@ -61,7 +61,7 @@ class AssignContactsToListInputObject(object):
     def contacts(self, contacts):
         """Sets the contacts of this AssignContactsToListInputObject.
 
-        Comma-separated array of [Contacts](http://docs.textmagictesting.com/tag#Contacts) IDs.  # noqa: E501
+        Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs.  # noqa: E501
 
         :param contacts: The contacts of this AssignContactsToListInputObject.  # noqa: E501
         :type: str

@@ -309,7 +309,7 @@ class Contact(object):
     def custom_fields(self):
         """Gets the custom_fields of this Contact.  # noqa: E501
 
-        See [Custom Fields](http://docs.textmagictesting.com/tag#Custom-Fields) section.  # noqa: E501
+        See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.  # noqa: E501
 
         :return: The custom_fields of this Contact.  # noqa: E501
         :rtype: list[ContactCustomField]
@@ -320,7 +320,7 @@ class Contact(object):
     def custom_fields(self, custom_fields):
         """Sets the custom_fields of this Contact.
 
-        See [Custom Fields](http://docs.textmagictesting.com/tag#Custom-Fields) section.  # noqa: E501
+        See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.  # noqa: E501
 
         :param custom_fields: The custom_fields of this Contact.  # noqa: E501
         :type: list[ContactCustomField]

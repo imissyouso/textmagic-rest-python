@@ -219,7 +219,7 @@ class UpdateContactInputObject(object):
     def lists(self):
         """Gets the lists of this UpdateContactInputObject.  # noqa: E501
 
-        Comma-separated [list](http://docs.textmagictesting.com/section#Lists) ID. Each contact must be assigned to at least one list.  # noqa: E501
+        Comma-separated [list](http://docs.textmagictesting.com/#section/Lists) ID. Each contact must be assigned to at least one list.  # noqa: E501
 
         :return: The lists of this UpdateContactInputObject.  # noqa: E501
         :rtype: str
@@ -230,7 +230,7 @@ class UpdateContactInputObject(object):
     def lists(self, lists):
         """Sets the lists of this UpdateContactInputObject.
 
-        Comma-separated [list](http://docs.textmagictesting.com/section#Lists) ID. Each contact must be assigned to at least one list.  # noqa: E501
+        Comma-separated [list](http://docs.textmagictesting.com/#section/Lists) ID. Each contact must be assigned to at least one list.  # noqa: E501
 
         :param lists: The lists of this UpdateContactInputObject.  # noqa: E501
         :type: str
