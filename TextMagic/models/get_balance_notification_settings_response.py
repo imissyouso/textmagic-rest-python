@@ -70,7 +70,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def low_balance_notification(self):
         """Gets the low_balance_notification of this GetBalanceNotificationSettingsResponse.  # noqa: E501
 
-        Should user receive low balance notification  # noqa: E501
+        Should user receive low balance notification.  # noqa: E501
 
         :return: The low_balance_notification of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :rtype: bool
@@ -81,7 +81,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def low_balance_notification(self, low_balance_notification):
         """Sets the low_balance_notification of this GetBalanceNotificationSettingsResponse.
 
-        Should user receive low balance notification  # noqa: E501
+        Should user receive low balance notification.  # noqa: E501
 
         :param low_balance_notification: The low_balance_notification of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :type: bool
@@ -93,7 +93,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_balance(self):
         """Gets the alert_balance of this GetBalanceNotificationSettingsResponse.  # noqa: E501
 
-        If balance is below this value, user receive low balance notification  # noqa: E501
+        If balance is below this value, user receive low balance notification.  # noqa: E501
 
         :return: The alert_balance of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -104,7 +104,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_balance(self, alert_balance):
         """Sets the alert_balance of this GetBalanceNotificationSettingsResponse.
 
-        If balance is below this value, user receive low balance notification  # noqa: E501
+        If balance is below this value, user receive low balance notification.  # noqa: E501
 
         :param alert_balance: The alert_balance of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :type: str
@@ -116,7 +116,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_phone(self):
         """Gets the alert_phone of this GetBalanceNotificationSettingsResponse.  # noqa: E501
 
-        Low balance notification phone number  # noqa: E501
+        Low balance notification phone number.  # noqa: E501
 
         :return: The alert_phone of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -127,7 +127,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_phone(self, alert_phone):
         """Sets the alert_phone of this GetBalanceNotificationSettingsResponse.
 
-        Low balance notification phone number  # noqa: E501
+        Low balance notification phone number.  # noqa: E501
 
         :param alert_phone: The alert_phone of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :type: str
@@ -139,7 +139,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_email1(self):
         """Gets the alert_email1 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
 
-        Low balance notification email 1  # noqa: E501
+        Low balance notification email 1.  # noqa: E501
 
         :return: The alert_email1 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -150,7 +150,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_email1(self, alert_email1):
         """Sets the alert_email1 of this GetBalanceNotificationSettingsResponse.
 
-        Low balance notification email 1  # noqa: E501
+        Low balance notification email 1.  # noqa: E501
 
         :param alert_email1: The alert_email1 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :type: str
@@ -162,7 +162,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_email2(self):
         """Gets the alert_email2 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
 
-        Low balance notification email 2  # noqa: E501
+        Low balance notification email 2.  # noqa: E501
 
         :return: The alert_email2 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -173,7 +173,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_email2(self, alert_email2):
         """Sets the alert_email2 of this GetBalanceNotificationSettingsResponse.
 
-        Low balance notification email 2  # noqa: E501
+        Low balance notification email 2.  # noqa: E501
 
         :param alert_email2: The alert_email2 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :type: str
@@ -185,7 +185,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_email3(self):
         """Gets the alert_email3 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
 
-        Low balance notification email 3  # noqa: E501
+        Low balance notification email 3.  # noqa: E501
 
         :return: The alert_email3 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -196,7 +196,7 @@ class GetBalanceNotificationSettingsResponse(object):
     def alert_email3(self, alert_email3):
         """Sets the alert_email3 of this GetBalanceNotificationSettingsResponse.
 
-        Low balance notification email 3  # noqa: E501
+        Low balance notification email 3.  # noqa: E501
 
         :param alert_email3: The alert_email3 of this GetBalanceNotificationSettingsResponse.  # noqa: E501
         :type: str

@@ -75,7 +75,7 @@ class GetContactImportSessionProgressResponse(object):
     def processed(self):
         """Gets the processed of this GetContactImportSessionProgressResponse.  # noqa: E501
 
-        How many contacts have been imported  # noqa: E501
+        How many contacts have been imported.  # noqa: E501
 
         :return: The processed of this GetContactImportSessionProgressResponse.  # noqa: E501
         :rtype: int
@@ -86,7 +86,7 @@ class GetContactImportSessionProgressResponse(object):
     def processed(self, processed):
         """Sets the processed of this GetContactImportSessionProgressResponse.
 
-        How many contacts have been imported  # noqa: E501
+        How many contacts have been imported.  # noqa: E501
 
         :param processed: The processed of this GetContactImportSessionProgressResponse.  # noqa: E501
         :type: int

@@ -62,6 +62,7 @@ class ContactNote(object):
     def id(self):
         """Gets the id of this ContactNote.  # noqa: E501
 
+        Contact note ID.  # noqa: E501
 
         :return: The id of this ContactNote.  # noqa: E501
         :rtype: int
@@ -72,6 +73,7 @@ class ContactNote(object):
     def id(self, id):
         """Sets the id of this ContactNote.
 
+        Contact note ID.  # noqa: E501
 
         :param id: The id of this ContactNote.  # noqa: E501
         :type: int
@@ -83,6 +85,7 @@ class ContactNote(object):
     def created_at(self):
         """Gets the created_at of this ContactNote.  # noqa: E501
 
+        Contact note creation time.  # noqa: E501
 
         :return: The created_at of this ContactNote.  # noqa: E501
         :rtype: datetime
@@ -93,6 +96,7 @@ class ContactNote(object):
     def created_at(self, created_at):
         """Sets the created_at of this ContactNote.
 
+        Contact note creation time.  # noqa: E501
 
         :param created_at: The created_at of this ContactNote.  # noqa: E501
         :type: datetime
@@ -104,6 +108,7 @@ class ContactNote(object):
     def note(self):
         """Gets the note of this ContactNote.  # noqa: E501
 
+        Contact note text.  # noqa: E501
 
         :return: The note of this ContactNote.  # noqa: E501
         :rtype: str
@@ -114,6 +119,7 @@ class ContactNote(object):
     def note(self, note):
         """Sets the note of this ContactNote.
 
+        Contact note text.  # noqa: E501
 
         :param note: The note of this ContactNote.  # noqa: E501
         :type: str

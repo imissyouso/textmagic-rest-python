@@ -51,7 +51,7 @@ class BlockContactInputObject(object):
     def phone(self):
         """Gets the phone of this BlockContactInputObject.  # noqa: E501
 
-        Contact phone number  # noqa: E501
+        Contact phone number.  # noqa: E501
 
         :return: The phone of this BlockContactInputObject.  # noqa: E501
         :rtype: str
@@ -62,7 +62,7 @@ class BlockContactInputObject(object):
     def phone(self, phone):
         """Sets the phone of this BlockContactInputObject.
 
-        Contact phone number  # noqa: E501
+        Contact phone number.  # noqa: E501
 
         :param phone: The phone of this BlockContactInputObject.  # noqa: E501
         :type: str

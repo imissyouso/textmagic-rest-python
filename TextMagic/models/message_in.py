@@ -200,6 +200,7 @@ class MessageIn(object):
     def contact_id(self):
         """Gets the contact_id of this MessageIn.  # noqa: E501
 
+        Sender contact ID.  # noqa: E501
 
         :return: The contact_id of this MessageIn.  # noqa: E501
         :rtype: int
@@ -210,6 +211,7 @@ class MessageIn(object):
     def contact_id(self, contact_id):
         """Sets the contact_id of this MessageIn.
 
+        Sender contact ID.  # noqa: E501
 
         :param contact_id: The contact_id of this MessageIn.  # noqa: E501
         :type: int
@@ -221,6 +223,7 @@ class MessageIn(object):
     def first_name(self):
         """Gets the first_name of this MessageIn.  # noqa: E501
 
+        Sender contact first name.  # noqa: E501
 
         :return: The first_name of this MessageIn.  # noqa: E501
         :rtype: str
@@ -231,6 +234,7 @@ class MessageIn(object):
     def first_name(self, first_name):
         """Sets the first_name of this MessageIn.
 
+        Sender contact first name.  # noqa: E501
 
         :param first_name: The first_name of this MessageIn.  # noqa: E501
         :type: str
@@ -242,6 +246,7 @@ class MessageIn(object):
     def last_name(self):
         """Gets the last_name of this MessageIn.  # noqa: E501
 
+        Sender contact last name.  # noqa: E501
 
         :return: The last_name of this MessageIn.  # noqa: E501
         :rtype: str
@@ -252,6 +257,7 @@ class MessageIn(object):
     def last_name(self, last_name):
         """Sets the last_name of this MessageIn.
 
+        Sender contact last name.  # noqa: E501
 
         :param last_name: The last_name of this MessageIn.  # noqa: E501
         :type: str

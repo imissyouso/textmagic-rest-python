@@ -50,6 +50,7 @@ class GetUnreadMessagesTotalResponse(object):
     def total(self):
         """Gets the total of this GetUnreadMessagesTotalResponse.  # noqa: E501
 
+        Amount of unread messages.  # noqa: E501
 
         :return: The total of this GetUnreadMessagesTotalResponse.  # noqa: E501
         :rtype: int
@@ -60,6 +61,7 @@ class GetUnreadMessagesTotalResponse(object):
     def total(self, total):
         """Sets the total of this GetUnreadMessagesTotalResponse.
 
+        Amount of unread messages.  # noqa: E501
 
         :param total: The total of this GetUnreadMessagesTotalResponse.  # noqa: E501
         :type: int

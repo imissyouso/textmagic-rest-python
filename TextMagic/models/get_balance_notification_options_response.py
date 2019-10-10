@@ -90,7 +90,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _1(self):
         """Gets the _1 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _1 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -101,7 +101,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _1(self, _1):
         """Sets the _1 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _1: The _1 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -113,7 +113,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _2(self):
         """Gets the _2 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _2 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -124,7 +124,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _2(self, _2):
         """Sets the _2 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _2: The _2 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -136,7 +136,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _3(self):
         """Gets the _3 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _3 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -147,7 +147,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _3(self, _3):
         """Sets the _3 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _3: The _3 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -159,7 +159,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _5(self):
         """Gets the _5 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _5 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -170,7 +170,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _5(self, _5):
         """Sets the _5 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _5: The _5 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -182,7 +182,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _10(self):
         """Gets the _10 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _10 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -193,7 +193,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _10(self, _10):
         """Sets the _10 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _10: The _10 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -205,7 +205,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _20(self):
         """Gets the _20 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _20 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -216,7 +216,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _20(self, _20):
         """Sets the _20 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _20: The _20 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -228,7 +228,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _30(self):
         """Gets the _30 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _30 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -239,7 +239,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _30(self, _30):
         """Sets the _30 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _30: The _30 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -251,7 +251,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _50(self):
         """Gets the _50 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _50 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -262,7 +262,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _50(self, _50):
         """Sets the _50 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _50: The _50 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -274,7 +274,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _100(self):
         """Gets the _100 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _100 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -285,7 +285,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _100(self, _100):
         """Sets the _100 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _100: The _100 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -297,7 +297,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _500(self):
         """Gets the _500 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _500 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -308,7 +308,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _500(self, _500):
         """Sets the _500 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _500: The _500 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str
@@ -320,7 +320,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _1000(self):
         """Gets the _1000 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :return: The _1000 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :rtype: str
@@ -331,7 +331,7 @@ class GetBalanceNotificationOptionsResponse(object):
     def _1000(self, _1000):
         """Sets the _1000 of this GetBalanceNotificationOptionsResponse.
 
-        Contains sign of currency in Unicode hex code  # noqa: E501
+        Contains sign of currency in Unicode hex code.  # noqa: E501
 
         :param _1000: The _1000 of this GetBalanceNotificationOptionsResponse.  # noqa: E501
         :type: str

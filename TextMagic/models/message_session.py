@@ -239,6 +239,7 @@ class MessageSession(object):
     def destination(self):
         """Gets the destination of this MessageSession.  # noqa: E501
 
+        Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast   # noqa: E501
 
         :return: The destination of this MessageSession.  # noqa: E501
         :rtype: str
@@ -249,10 +250,17 @@ class MessageSession(object):
     def destination(self, destination):
         """Sets the destination of this MessageSession.
 
+        Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast   # noqa: E501
 
         :param destination: The destination of this MessageSession.  # noqa: E501
         :type: str
         """
+        allowed_values = ["t", "s", "v"]  # noqa: E501
+        if destination not in allowed_values:
+            raise ValueError(
+                "Invalid value for `destination` ({0}), must be one of {1}"  # noqa: E501
+                .format(destination, allowed_values)
+            )
 
         self._destination = destination
 

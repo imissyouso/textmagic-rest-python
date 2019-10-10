@@ -138,7 +138,7 @@ class User(object):
     def display_time_format(self):
         """Gets the display_time_format of this User.  # noqa: E501
 
-        Format for representation of time  # noqa: E501
+        User's prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format   # noqa: E501
 
         :return: The display_time_format of this User.  # noqa: E501
         :rtype: str
@@ -149,11 +149,17 @@ class User(object):
     def display_time_format(self, display_time_format):
         """Sets the display_time_format of this User.
 
-        Format for representation of time  # noqa: E501
+        User's prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format   # noqa: E501
 
         :param display_time_format: The display_time_format of this User.  # noqa: E501
         :type: str
         """
+        allowed_values = ["12h", "24h"]  # noqa: E501
+        if display_time_format not in allowed_values:
+            raise ValueError(
+                "Invalid value for `display_time_format` ({0}), must be one of {1}"  # noqa: E501
+                .format(display_time_format, allowed_values)
+            )
 
         self._display_time_format = display_time_format
 
@@ -305,6 +311,7 @@ class User(object):
     def phone(self):
         """Gets the phone of this User.  # noqa: E501
 
+        User phone number  # noqa: E501
 
         :return: The phone of this User.  # noqa: E501
         :rtype: str
@@ -315,6 +322,7 @@ class User(object):
     def phone(self, phone):
         """Sets the phone of this User.
 
+        User phone number  # noqa: E501
 
         :param phone: The phone of this User.  # noqa: E501
         :type: str
@@ -441,6 +449,7 @@ class User(object):
     def email_accepted(self):
         """Gets the email_accepted of this User.  # noqa: E501
 
+        Is account has confirmed Email.  # noqa: E501
 
         :return: The email_accepted of this User.  # noqa: E501
         :rtype: bool
@@ -451,6 +460,7 @@ class User(object):
     def email_accepted(self, email_accepted):
         """Sets the email_accepted of this User.
 
+        Is account has confirmed Email.  # noqa: E501
 
         :param email_accepted: The email_accepted of this User.  # noqa: E501
         :type: bool
@@ -462,6 +472,7 @@ class User(object):
     def phone_accepted(self):
         """Gets the phone_accepted of this User.  # noqa: E501
 
+        Is account has confirmed Phone number.  # noqa: E501
 
         :return: The phone_accepted of this User.  # noqa: E501
         :rtype: bool
@@ -472,6 +483,7 @@ class User(object):
     def phone_accepted(self, phone_accepted):
         """Sets the phone_accepted of this User.
 
+        Is account has confirmed Phone number.  # noqa: E501
 
         :param phone_accepted: The phone_accepted of this User.  # noqa: E501
         :type: bool

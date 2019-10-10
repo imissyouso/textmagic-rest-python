@@ -54,7 +54,7 @@ class CreateTemplateInputObject(object):
     def name(self):
         """Gets the name of this CreateTemplateInputObject.  # noqa: E501
 
-        Template name  # noqa: E501
+        Template name.  # noqa: E501
 
         :return: The name of this CreateTemplateInputObject.  # noqa: E501
         :rtype: str
@@ -65,7 +65,7 @@ class CreateTemplateInputObject(object):
     def name(self, name):
         """Sets the name of this CreateTemplateInputObject.
 
-        Template name  # noqa: E501
+        Template name.  # noqa: E501
 
         :param name: The name of this CreateTemplateInputObject.  # noqa: E501
         :type: str
@@ -77,7 +77,7 @@ class CreateTemplateInputObject(object):
     def content(self):
         """Gets the content of this CreateTemplateInputObject.  # noqa: E501
 
-        Template text. May contain tags inside braces  # noqa: E501
+        Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
 
         :return: The content of this CreateTemplateInputObject.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class CreateTemplateInputObject(object):
     def content(self, content):
         """Sets the content of this CreateTemplateInputObject.
 
-        Template text. May contain tags inside braces  # noqa: E501
+        Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).  # noqa: E501
 
         :param content: The content of this CreateTemplateInputObject.  # noqa: E501
         :type: str

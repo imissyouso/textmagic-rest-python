@@ -56,7 +56,7 @@ class UnsubscribeContactInputObject(object):
     def phone(self):
         """Gets the phone of this UnsubscribeContactInputObject.  # noqa: E501
 
-        Contact phone number  # noqa: E501
+        Contact phone number.  # noqa: E501
 
         :return: The phone of this UnsubscribeContactInputObject.  # noqa: E501
         :rtype: str
@@ -67,7 +67,7 @@ class UnsubscribeContactInputObject(object):
     def phone(self, phone):
         """Sets the phone of this UnsubscribeContactInputObject.
 
-        Contact phone number  # noqa: E501
+        Contact phone number.  # noqa: E501
 
         :param phone: The phone of this UnsubscribeContactInputObject.  # noqa: E501
         :type: str
@@ -79,7 +79,7 @@ class UnsubscribeContactInputObject(object):
     def block_incoming(self):
         """Gets the block_incoming of this UnsubscribeContactInputObject.  # noqa: E501
 
-        Default is 0 (false). If set to 1 incoming messages from this number will be blocked.  # noqa: E501
+        If set to 1 incoming messages from this number will be blocked.  # noqa: E501
 
         :return: The block_incoming of this UnsubscribeContactInputObject.  # noqa: E501
         :rtype: int
@@ -90,7 +90,7 @@ class UnsubscribeContactInputObject(object):
     def block_incoming(self, block_incoming):
         """Sets the block_incoming of this UnsubscribeContactInputObject.
 
-        Default is 0 (false). If set to 1 incoming messages from this number will be blocked.  # noqa: E501
+        If set to 1 incoming messages from this number will be blocked.  # noqa: E501
 
         :param block_incoming: The block_incoming of this UnsubscribeContactInputObject.  # noqa: E501
         :type: int

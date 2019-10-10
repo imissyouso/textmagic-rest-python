@@ -54,7 +54,7 @@ class SetChatStatusInputObject(object):
     def id(self):
         """Gets the id of this SetChatStatusInputObject.  # noqa: E501
 
-        Chat ID  # noqa: E501
+        Chat ID.  # noqa: E501
 
         :return: The id of this SetChatStatusInputObject.  # noqa: E501
         :rtype: int
@@ -65,7 +65,7 @@ class SetChatStatusInputObject(object):
     def id(self, id):
         """Sets the id of this SetChatStatusInputObject.
 
-        Chat ID  # noqa: E501
+        Chat ID.  # noqa: E501
 
         :param id: The id of this SetChatStatusInputObject.  # noqa: E501
         :type: int
@@ -77,7 +77,7 @@ class SetChatStatusInputObject(object):
     def status(self):
         """Gets the status of this SetChatStatusInputObject.  # noqa: E501
 
-        Status  # noqa: E501
+        Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted   # noqa: E501
 
         :return: The status of this SetChatStatusInputObject.  # noqa: E501
         :rtype: str
@@ -88,7 +88,7 @@ class SetChatStatusInputObject(object):
     def status(self, status):
         """Sets the status of this SetChatStatusInputObject.
 
-        Status  # noqa: E501
+        Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted   # noqa: E501
 
         :param status: The status of this SetChatStatusInputObject.  # noqa: E501
         :type: str

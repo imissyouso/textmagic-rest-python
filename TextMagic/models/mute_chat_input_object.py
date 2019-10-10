@@ -59,7 +59,7 @@ class MuteChatInputObject(object):
     def id(self):
         """Gets the id of this MuteChatInputObject.  # noqa: E501
 
-        Chat ID  # noqa: E501
+        Chat ID.  # noqa: E501
 
         :return: The id of this MuteChatInputObject.  # noqa: E501
         :rtype: int
@@ -70,7 +70,7 @@ class MuteChatInputObject(object):
     def id(self, id):
         """Sets the id of this MuteChatInputObject.
 
-        Chat ID  # noqa: E501
+        Chat ID.  # noqa: E501
 
         :param id: The id of this MuteChatInputObject.  # noqa: E501
         :type: int
@@ -82,7 +82,7 @@ class MuteChatInputObject(object):
     def mute(self):
         """Gets the mute of this MuteChatInputObject.  # noqa: E501
 
-        Mute value  # noqa: E501
+        Mute notifications sound.  # noqa: E501
 
         :return: The mute of this MuteChatInputObject.  # noqa: E501
         :rtype: bool
@@ -93,7 +93,7 @@ class MuteChatInputObject(object):
     def mute(self, mute):
         """Sets the mute of this MuteChatInputObject.
 
-        Mute value  # noqa: E501
+        Mute notifications sound.  # noqa: E501
 
         :param mute: The mute of this MuteChatInputObject.  # noqa: E501
         :type: bool
@@ -105,7 +105,7 @@ class MuteChatInputObject(object):
     def _for(self):
         """Gets the _for of this MuteChatInputObject.  # noqa: E501
 
-        Mute for N hours  # noqa: E501
+        Mute for N hours.  # noqa: E501
 
         :return: The _for of this MuteChatInputObject.  # noqa: E501
         :rtype: int
@@ -116,7 +116,7 @@ class MuteChatInputObject(object):
     def _for(self, _for):
         """Sets the _for of this MuteChatInputObject.
 
-        Mute for N hours  # noqa: E501
+        Mute for N hours.  # noqa: E501
 
         :param _for: The _for of this MuteChatInputObject.  # noqa: E501
         :type: int

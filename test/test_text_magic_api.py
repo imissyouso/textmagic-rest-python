@@ -102,7 +102,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_create_contact_note(self):
         """Test case for create_contact_note
 
-        Create a new contact note.  # noqa: E501
+        Create a new contact note  # noqa: E501
         """
         pass
 
@@ -179,14 +179,14 @@ class TestTextMagicApi(unittest.TestCase):
     def test_delete_contact_note(self):
         """Test case for delete_contact_note
 
-        Delete a single contact note.  # noqa: E501
+        Delete a contact note  # noqa: E501
         """
         pass
 
     def test_delete_contact_notes_bulk(self):
         """Test case for delete_contact_notes_bulk
 
-        Delete contact note by given ID(s) or delete all contact notes.  # noqa: E501
+        Delete contact notes (bulk)  # noqa: E501
         """
         pass
 
@@ -340,7 +340,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_all_bulk_sessions(self):
         """Test case for get_all_bulk_sessions
 
-        Get all bulk sending sessions.  # noqa: E501
+        Get all bulk sessions  # noqa: E501
         """
         pass
 
@@ -424,7 +424,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_bulk_session(self):
         """Test case for get_bulk_session
 
-        Get bulk message session status.  # noqa: E501
+        Get bulk session status  # noqa: E501
         """
         pass
 
@@ -480,7 +480,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_get_contact_note(self):
         """Test case for get_contact_note
 
-        Get a single contact note.  # noqa: E501
+        Get a contact note  # noqa: E501
         """
         pass
 
@@ -977,7 +977,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_update_contact_note(self):
         """Test case for update_contact_note
 
-        Update existing contact note.  # noqa: E501
+        Update a contact note  # noqa: E501
         """
         pass
 

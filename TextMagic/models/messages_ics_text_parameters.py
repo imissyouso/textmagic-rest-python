@@ -70,6 +70,7 @@ class MessagesIcsTextParameters(object):
     def cost(self):
         """Gets the cost of this MessagesIcsTextParameters.  # noqa: E501
 
+        Cost to check one number is constant – 0.04 in your account currency.  # noqa: E501
 
         :return: The cost of this MessagesIcsTextParameters.  # noqa: E501
         :rtype: float
@@ -80,6 +81,7 @@ class MessagesIcsTextParameters(object):
     def cost(self, cost):
         """Sets the cost of this MessagesIcsTextParameters.
 
+        Cost to check one number is constant – 0.04 in your account currency.  # noqa: E501
 
         :param cost: The cost of this MessagesIcsTextParameters.  # noqa: E501
         :type: float
@@ -91,6 +93,7 @@ class MessagesIcsTextParameters(object):
     def parts(self):
         """Gets the parts of this MessagesIcsTextParameters.  # noqa: E501
 
+        Message parts (multiples of 160 characters) count.  # noqa: E501
 
         :return: The parts of this MessagesIcsTextParameters.  # noqa: E501
         :rtype: int
@@ -101,6 +104,7 @@ class MessagesIcsTextParameters(object):
     def parts(self, parts):
         """Sets the parts of this MessagesIcsTextParameters.
 
+        Message parts (multiples of 160 characters) count.  # noqa: E501
 
         :param parts: The parts of this MessagesIcsTextParameters.  # noqa: E501
         :type: int
@@ -133,6 +137,7 @@ class MessagesIcsTextParameters(object):
     def encoding(self):
         """Gets the encoding of this MessagesIcsTextParameters.  # noqa: E501
 
+        Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS   # noqa: E501
 
         :return: The encoding of this MessagesIcsTextParameters.  # noqa: E501
         :rtype: str
@@ -143,10 +148,17 @@ class MessagesIcsTextParameters(object):
     def encoding(self, encoding):
         """Sets the encoding of this MessagesIcsTextParameters.
 
+        Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS   # noqa: E501
 
         :param encoding: The encoding of this MessagesIcsTextParameters.  # noqa: E501
         :type: str
         """
+        allowed_values = ["ISO-8859-1", "UTF-16BE"]  # noqa: E501
+        if encoding not in allowed_values:
+            raise ValueError(
+                "Invalid value for `encoding` ({0}), must be one of {1}"  # noqa: E501
+                .format(encoding, allowed_values)
+            )
 
         self._encoding = encoding
 

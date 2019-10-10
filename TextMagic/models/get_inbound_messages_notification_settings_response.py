@@ -74,7 +74,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def inbound_message_notification(self):
         """Gets the inbound_message_notification of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
 
-        Should user receive notification about new incoming messages  # noqa: E501
+        Should user receive notification about new incoming messages.  # noqa: E501
 
         :return: The inbound_message_notification of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :rtype: bool
@@ -85,7 +85,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def inbound_message_notification(self, inbound_message_notification):
         """Sets the inbound_message_notification of this GetInboundMessagesNotificationSettingsResponse.
 
-        Should user receive notification about new incoming messages  # noqa: E501
+        Should user receive notification about new incoming messages.  # noqa: E501
 
         :param inbound_message_notification: The inbound_message_notification of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :type: bool
@@ -97,7 +97,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def forwarded_call_notification(self):
         """Gets the forwarded_call_notification of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
 
-        Should user receive notification about new forwarded calls  # noqa: E501
+        Should user receive notification about new forwarded calls.  # noqa: E501
 
         :return: The forwarded_call_notification of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :rtype: bool
@@ -108,7 +108,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def forwarded_call_notification(self, forwarded_call_notification):
         """Sets the forwarded_call_notification of this GetInboundMessagesNotificationSettingsResponse.
 
-        Should user receive notification about new forwarded calls  # noqa: E501
+        Should user receive notification about new forwarded calls.  # noqa: E501
 
         :param forwarded_call_notification: The forwarded_call_notification of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :type: bool
@@ -120,7 +120,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def include_sms_history(self):
         """Gets the include_sms_history of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
 
-        Include SMS history into notification Email  # noqa: E501
+        Include SMS history into notification Email.  # noqa: E501
 
         :return: The include_sms_history of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :rtype: bool
@@ -131,7 +131,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def include_sms_history(self, include_sms_history):
         """Sets the include_sms_history of this GetInboundMessagesNotificationSettingsResponse.
 
-        Include SMS history into notification Email  # noqa: E501
+        Include SMS history into notification Email.  # noqa: E501
 
         :param include_sms_history: The include_sms_history of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :type: bool
@@ -143,7 +143,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def send_in_html_format(self):
         """Gets the send_in_html_format of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
 
-        Send Email notification in HTML format  # noqa: E501
+        Send Email notification in HTML format.  # noqa: E501
 
         :return: The send_in_html_format of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :rtype: bool
@@ -154,7 +154,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def send_in_html_format(self, send_in_html_format):
         """Sets the send_in_html_format of this GetInboundMessagesNotificationSettingsResponse.
 
-        Send Email notification in HTML format  # noqa: E501
+        Send Email notification in HTML format.  # noqa: E501
 
         :param send_in_html_format: The send_in_html_format of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :type: bool
@@ -166,7 +166,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def alert_email1(self):
         """Gets the alert_email1 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
 
-        New message notification email 2  # noqa: E501
+        New message notification email 2.  # noqa: E501
 
         :return: The alert_email1 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -177,7 +177,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def alert_email1(self, alert_email1):
         """Sets the alert_email1 of this GetInboundMessagesNotificationSettingsResponse.
 
-        New message notification email 2  # noqa: E501
+        New message notification email 2.  # noqa: E501
 
         :param alert_email1: The alert_email1 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :type: str
@@ -189,7 +189,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def alert_email2(self):
         """Gets the alert_email2 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
 
-        New message notification email 2  # noqa: E501
+        New message notification email 2.  # noqa: E501
 
         :return: The alert_email2 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -200,7 +200,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def alert_email2(self, alert_email2):
         """Sets the alert_email2 of this GetInboundMessagesNotificationSettingsResponse.
 
-        New message notification email 2  # noqa: E501
+        New message notification email 2.  # noqa: E501
 
         :param alert_email2: The alert_email2 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :type: str
@@ -212,7 +212,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def alert_email3(self):
         """Gets the alert_email3 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
 
-        New message notification email 3  # noqa: E501
+        New message notification email 3.  # noqa: E501
 
         :return: The alert_email3 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -223,7 +223,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def alert_email3(self, alert_email3):
         """Sets the alert_email3 of this GetInboundMessagesNotificationSettingsResponse.
 
-        New message notification email 3  # noqa: E501
+        New message notification email 3.  # noqa: E501
 
         :param alert_email3: The alert_email3 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :type: str

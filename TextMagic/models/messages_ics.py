@@ -204,6 +204,7 @@ class MessagesIcs(object):
     def last_sent(self):
         """Gets the last_sent of this MessagesIcs.  # noqa: E501
 
+        Date and time when last message has been sent.  # noqa: E501
 
         :return: The last_sent of this MessagesIcs.  # noqa: E501
         :rtype: datetime
@@ -214,6 +215,7 @@ class MessagesIcs(object):
     def last_sent(self, last_sent):
         """Sets the last_sent of this MessagesIcs.
 
+        Date and time when last message has been sent.  # noqa: E501
 
         :param last_sent: The last_sent of this MessagesIcs.  # noqa: E501
         :type: datetime
@@ -372,6 +374,7 @@ class MessagesIcs(object):
     def recipients_count(self):
         """Gets the recipients_count of this MessagesIcs.  # noqa: E501
 
+        Amount of actual recipients.  # noqa: E501
 
         :return: The recipients_count of this MessagesIcs.  # noqa: E501
         :rtype: int
@@ -382,6 +385,7 @@ class MessagesIcs(object):
     def recipients_count(self, recipients_count):
         """Sets the recipients_count of this MessagesIcs.
 
+        Amount of actual recipients.  # noqa: E501
 
         :param recipients_count: The recipients_count of this MessagesIcs.  # noqa: E501
         :type: int
@@ -393,6 +397,7 @@ class MessagesIcs(object):
     def timezone(self):
         """Gets the timezone of this MessagesIcs.  # noqa: E501
 
+        User-friendly timezone name (with spaces replaced by underscores).  # noqa: E501
 
         :return: The timezone of this MessagesIcs.  # noqa: E501
         :rtype: str
@@ -403,6 +408,7 @@ class MessagesIcs(object):
     def timezone(self, timezone):
         """Sets the timezone of this MessagesIcs.
 
+        User-friendly timezone name (with spaces replaced by underscores).  # noqa: E501
 
         :param timezone: The timezone of this MessagesIcs.  # noqa: E501
         :type: str
@@ -414,6 +420,7 @@ class MessagesIcs(object):
     def completed(self):
         """Gets the completed of this MessagesIcs.  # noqa: E501
 
+        Indicates that schedling has been completed.  # noqa: E501
 
         :return: The completed of this MessagesIcs.  # noqa: E501
         :rtype: bool
@@ -424,6 +431,7 @@ class MessagesIcs(object):
     def completed(self, completed):
         """Sets the completed of this MessagesIcs.
 
+        Indicates that schedling has been completed.  # noqa: E501
 
         :param completed: The completed of this MessagesIcs.  # noqa: E501
         :type: bool
@@ -435,6 +443,7 @@ class MessagesIcs(object):
     def avatar(self):
         """Gets the avatar of this MessagesIcs.  # noqa: E501
 
+        null  # noqa: E501
 
         :return: The avatar of this MessagesIcs.  # noqa: E501
         :rtype: str
@@ -445,6 +454,7 @@ class MessagesIcs(object):
     def avatar(self, avatar):
         """Sets the avatar of this MessagesIcs.
 
+        null  # noqa: E501
 
         :param avatar: The avatar of this MessagesIcs.  # noqa: E501
         :type: str
@@ -456,6 +466,7 @@ class MessagesIcs(object):
     def created_at(self):
         """Gets the created_at of this MessagesIcs.  # noqa: E501
 
+        Scheduling creation time.  # noqa: E501
 
         :return: The created_at of this MessagesIcs.  # noqa: E501
         :rtype: datetime
@@ -466,6 +477,7 @@ class MessagesIcs(object):
     def created_at(self, created_at):
         """Sets the created_at of this MessagesIcs.
 
+        Scheduling creation time.  # noqa: E501
 
         :param created_at: The created_at of this MessagesIcs.  # noqa: E501
         :type: datetime

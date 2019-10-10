@@ -43,7 +43,7 @@ class Chat(object):
         'last_message': 'str',
         'direction': 'str',
         '_from': 'str',
-        'muted_until': 'str',
+        'muted_until': 'datetime',
         'time_left_mute': 'int',
         'country': 'Country'
     }
@@ -194,6 +194,7 @@ class Chat(object):
     def unsubscribed_contact_id(self):
         """Gets the unsubscribed_contact_id of this Chat.  # noqa: E501
 
+        If this field has a value then it means that chat phone number has been unsubscribed from you and this value is a ID of a Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).  # noqa: E501
 
         :return: The unsubscribed_contact_id of this Chat.  # noqa: E501
         :rtype: int
@@ -204,6 +205,7 @@ class Chat(object):
     def unsubscribed_contact_id(self, unsubscribed_contact_id):
         """Sets the unsubscribed_contact_id of this Chat.
 
+        If this field has a value then it means that chat phone number has been unsubscribed from you and this value is a ID of a Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).  # noqa: E501
 
         :param unsubscribed_contact_id: The unsubscribed_contact_id of this Chat.  # noqa: E501
         :type: int
@@ -215,7 +217,7 @@ class Chat(object):
     def unread(self):
         """Gets the unread of this Chat.  # noqa: E501
 
-        Unread incoming messages count.  # noqa: E501
+        Total unread incoming messages.  # noqa: E501
 
         :return: The unread of this Chat.  # noqa: E501
         :rtype: int
@@ -226,7 +228,7 @@ class Chat(object):
     def unread(self, unread):
         """Sets the unread of this Chat.
 
-        Unread incoming messages count.  # noqa: E501
+        Total unread incoming messages.  # noqa: E501
 
         :param unread: The unread of this Chat.  # noqa: E501
         :type: int
@@ -261,6 +263,7 @@ class Chat(object):
     def status(self):
         """Gets the status of this Chat.  # noqa: E501
 
+        Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted   # noqa: E501
 
         :return: The status of this Chat.  # noqa: E501
         :rtype: str
@@ -271,10 +274,17 @@ class Chat(object):
     def status(self, status):
         """Sets the status of this Chat.
 
+        Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted   # noqa: E501
 
         :param status: The status of this Chat.  # noqa: E501
         :type: str
         """
+        allowed_values = ["a", "c", "d"]  # noqa: E501
+        if status not in allowed_values:
+            raise ValueError(
+                "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
+                .format(status, allowed_values)
+            )
 
         self._status = status
 
@@ -282,6 +292,7 @@ class Chat(object):
     def mute(self):
         """Gets the mute of this Chat.  # noqa: E501
 
+        Indicates when chat is muted.  # noqa: E501
 
         :return: The mute of this Chat.  # noqa: E501
         :rtype: int
@@ -292,6 +303,7 @@ class Chat(object):
     def mute(self, mute):
         """Sets the mute of this Chat.
 
+        Indicates when chat is muted.  # noqa: E501
 
         :param mute: The mute of this Chat.  # noqa: E501
         :type: int
@@ -303,6 +315,7 @@ class Chat(object):
     def last_message(self):
         """Gets the last_message of this Chat.  # noqa: E501
 
+        The last message content of a chat.  # noqa: E501
 
         :return: The last_message of this Chat.  # noqa: E501
         :rtype: str
@@ -313,6 +326,7 @@ class Chat(object):
     def last_message(self, last_message):
         """Sets the last_message of this Chat.
 
+        The last message content of a chat.  # noqa: E501
 
         :param last_message: The last_message of this Chat.  # noqa: E501
         :type: str
@@ -324,6 +338,7 @@ class Chat(object):
     def direction(self):
         """Gets the direction of this Chat.  # noqa: E501
 
+        Last message type: * **ci** - incoming call * **co** - outgoing call * **i** - incoming message * **o** - outgoing message   # noqa: E501
 
         :return: The direction of this Chat.  # noqa: E501
         :rtype: str
@@ -334,10 +349,17 @@ class Chat(object):
     def direction(self, direction):
         """Sets the direction of this Chat.
 
+        Last message type: * **ci** - incoming call * **co** - outgoing call * **i** - incoming message * **o** - outgoing message   # noqa: E501
 
         :param direction: The direction of this Chat.  # noqa: E501
         :type: str
         """
+        allowed_values = ["ci", "co", "i", "o"]  # noqa: E501
+        if direction not in allowed_values:
+            raise ValueError(
+                "Invalid value for `direction` ({0}), must be one of {1}"  # noqa: E501
+                .format(direction, allowed_values)
+            )
 
         self._direction = direction
 
@@ -345,6 +367,7 @@ class Chat(object):
     def _from(self):
         """Gets the _from of this Chat.  # noqa: E501
 
+        If filled then value will be used as a sender number for all outgoing messages of a chat.  # noqa: E501
 
         :return: The _from of this Chat.  # noqa: E501
         :rtype: str
@@ -355,6 +378,7 @@ class Chat(object):
     def _from(self, _from):
         """Sets the _from of this Chat.
 
+        If filled then value will be used as a sender number for all outgoing messages of a chat.  # noqa: E501
 
         :param _from: The _from of this Chat.  # noqa: E501
         :type: str
@@ -366,9 +390,10 @@ class Chat(object):
     def muted_until(self):
         """Gets the muted_until of this Chat.  # noqa: E501
 
+        Date and time until chat will be mutted.  # noqa: E501
 
         :return: The muted_until of this Chat.  # noqa: E501
-        :rtype: str
+        :rtype: datetime
         """
         return self._muted_until
 
@@ -376,9 +401,10 @@ class Chat(object):
     def muted_until(self, muted_until):
         """Sets the muted_until of this Chat.
 
+        Date and time until chat will be mutted.  # noqa: E501
 
         :param muted_until: The muted_until of this Chat.  # noqa: E501
-        :type: str
+        :type: datetime
         """
 
         self._muted_until = muted_until
@@ -387,6 +413,7 @@ class Chat(object):
     def time_left_mute(self):
         """Gets the time_left_mute of this Chat.  # noqa: E501
 
+        Time left till chat will be unmutted (seconds).  # noqa: E501
 
         :return: The time_left_mute of this Chat.  # noqa: E501
         :rtype: int
@@ -397,6 +424,7 @@ class Chat(object):
     def time_left_mute(self, time_left_mute):
         """Sets the time_left_mute of this Chat.
 
+        Time left till chat will be unmutted (seconds).  # noqa: E501
 
         :param time_left_mute: The time_left_mute of this Chat.  # noqa: E501
         :type: int

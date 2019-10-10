@@ -54,7 +54,7 @@ class GetAvailableDedicatedNumbersResponse(object):
     def numbers(self):
         """Gets the numbers of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
 
-        Array of phone number strings.  # noqa: E501
+        Array of phone numbers.  # noqa: E501
 
         :return: The numbers of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
         :rtype: list[str]
@@ -65,7 +65,7 @@ class GetAvailableDedicatedNumbersResponse(object):
     def numbers(self, numbers):
         """Sets the numbers of this GetAvailableDedicatedNumbersResponse.
 
-        Array of phone number strings.  # noqa: E501
+        Array of phone numbers.  # noqa: E501
 
         :param numbers: The numbers of this GetAvailableDedicatedNumbersResponse.  # noqa: E501
         :type: list[str]

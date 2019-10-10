@@ -50,6 +50,7 @@ class ClearAndAssignContactsToListInputObject(object):
     def contacts(self):
         """Gets the contacts of this ClearAndAssignContactsToListInputObject.  # noqa: E501
 
+        Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user  # noqa: E501
 
         :return: The contacts of this ClearAndAssignContactsToListInputObject.  # noqa: E501
         :rtype: str
@@ -60,6 +61,7 @@ class ClearAndAssignContactsToListInputObject(object):
     def contacts(self, contacts):
         """Sets the contacts of this ClearAndAssignContactsToListInputObject.
 
+        Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user  # noqa: E501
 
         :param contacts: The contacts of this ClearAndAssignContactsToListInputObject.  # noqa: E501
         :type: str

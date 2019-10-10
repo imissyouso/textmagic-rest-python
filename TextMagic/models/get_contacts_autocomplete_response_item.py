@@ -142,7 +142,7 @@ class GetContactsAutocompleteResponseItem(object):
     def value(self):
         """Gets the value of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        Id of contact/list if entityType is contact/list OR phone number if entityType is reply  # noqa: E501
+        Id of contact/list if entityType is contact/list OR phone number if entityType is reply.  # noqa: E501
 
         :return: The value of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -153,7 +153,7 @@ class GetContactsAutocompleteResponseItem(object):
     def value(self, value):
         """Sets the value of this GetContactsAutocompleteResponseItem.
 
-        Id of contact/list if entityType is contact/list OR phone number if entityType is reply  # noqa: E501
+        Id of contact/list if entityType is contact/list OR phone number if entityType is reply.  # noqa: E501
 
         :param value: The value of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str
@@ -165,7 +165,7 @@ class GetContactsAutocompleteResponseItem(object):
     def label(self):
         """Gets the label of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        Name of the contact/list if entityType is contact/list OR phone number if entityType is reply  # noqa: E501
+        Name of the contact/list if entityType is contact/list OR phone number if entityType is reply.  # noqa: E501
 
         :return: The label of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -176,7 +176,7 @@ class GetContactsAutocompleteResponseItem(object):
     def label(self, label):
         """Sets the label of this GetContactsAutocompleteResponseItem.
 
-        Name of the contact/list if entityType is contact/list OR phone number if entityType is reply  # noqa: E501
+        Name of the contact/list if entityType is contact/list OR phone number if entityType is reply.  # noqa: E501
 
         :param label: The label of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str
@@ -188,7 +188,7 @@ class GetContactsAutocompleteResponseItem(object):
     def shared_by(self):
         """Gets the shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        If contact or list was shared by another user then name if this user will be shown  # noqa: E501
+        If contact or list was shared by another user then name if this user will be shown.  # noqa: E501
 
         :return: The shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -199,7 +199,7 @@ class GetContactsAutocompleteResponseItem(object):
     def shared_by(self, shared_by):
         """Sets the shared_by of this GetContactsAutocompleteResponseItem.
 
-        If contact or list was shared by another user then name if this user will be shown  # noqa: E501
+        If contact or list was shared by another user then name if this user will be shown.  # noqa: E501
 
         :param shared_by: The shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str
@@ -211,6 +211,7 @@ class GetContactsAutocompleteResponseItem(object):
     def avatar(self):
         """Gets the avatar of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
+        Contact avatar URI.  # noqa: E501
 
         :return: The avatar of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -221,6 +222,7 @@ class GetContactsAutocompleteResponseItem(object):
     def avatar(self, avatar):
         """Sets the avatar of this GetContactsAutocompleteResponseItem.
 
+        Contact avatar URI.  # noqa: E501
 
         :param avatar: The avatar of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str
@@ -232,7 +234,7 @@ class GetContactsAutocompleteResponseItem(object):
     def favorited(self):
         """Gets the favorited of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        If contact was marked as favourited  # noqa: E501
+        If contact has been marked as favorite.  # noqa: E501
 
         :return: The favorited of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: bool
@@ -243,7 +245,7 @@ class GetContactsAutocompleteResponseItem(object):
     def favorited(self, favorited):
         """Sets the favorited of this GetContactsAutocompleteResponseItem.
 
-        If contact was marked as favourited  # noqa: E501
+        If contact has been marked as favorite.  # noqa: E501
 
         :param favorited: The favorited of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: bool
@@ -255,7 +257,7 @@ class GetContactsAutocompleteResponseItem(object):
     def user_id(self):
         """Gets the user_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        Owner id of the contact/list (if it was shared)  # noqa: E501
+        Owner id of the contact/list (if it was shared).  # noqa: E501
 
         :return: The user_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: int
@@ -266,7 +268,7 @@ class GetContactsAutocompleteResponseItem(object):
     def user_id(self, user_id):
         """Sets the user_id of this GetContactsAutocompleteResponseItem.
 
-        Owner id of the contact/list (if it was shared)  # noqa: E501
+        Owner id of the contact/list (if it was shared).  # noqa: E501
 
         :param user_id: The user_id of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: int

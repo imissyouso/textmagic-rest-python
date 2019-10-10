@@ -64,7 +64,7 @@ class UpdateChatDesktopNotificationSettingsInputObject(object):
     def play_sound(self):
         """Gets the play_sound of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
 
-        Notification sound is enable/disabled  # noqa: E501
+        Enable notification sound?  # noqa: E501
 
         :return: The play_sound of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
         :rtype: bool
@@ -75,7 +75,7 @@ class UpdateChatDesktopNotificationSettingsInputObject(object):
     def play_sound(self, play_sound):
         """Sets the play_sound of this UpdateChatDesktopNotificationSettingsInputObject.
 
-        Notification sound is enable/disabled  # noqa: E501
+        Enable notification sound?  # noqa: E501
 
         :param play_sound: The play_sound of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
         :type: bool
@@ -87,7 +87,7 @@ class UpdateChatDesktopNotificationSettingsInputObject(object):
     def show_notifications(self):
         """Gets the show_notifications of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
 
-        Show desktop notifications about new messages  # noqa: E501
+        Show desktop notifications about new messages.  # noqa: E501
 
         :return: The show_notifications of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
         :rtype: bool
@@ -98,7 +98,7 @@ class UpdateChatDesktopNotificationSettingsInputObject(object):
     def show_notifications(self, show_notifications):
         """Sets the show_notifications of this UpdateChatDesktopNotificationSettingsInputObject.
 
-        Show desktop notifications about new messages  # noqa: E501
+        Show desktop notifications about new messages.  # noqa: E501
 
         :param show_notifications: The show_notifications of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
         :type: bool
@@ -133,7 +133,7 @@ class UpdateChatDesktopNotificationSettingsInputObject(object):
     def sound_id(self):
         """Gets the sound_id of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
 
-        Sound Id of a notification  # noqa: E501
+        Sound Id of a notification.  # noqa: E501
 
         :return: The sound_id of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
         :rtype: int
@@ -144,7 +144,7 @@ class UpdateChatDesktopNotificationSettingsInputObject(object):
     def sound_id(self, sound_id):
         """Sets the sound_id of this UpdateChatDesktopNotificationSettingsInputObject.
 
-        Sound Id of a notification  # noqa: E501
+        Sound Id of a notification.  # noqa: E501
 
         :param sound_id: The sound_id of this UpdateChatDesktopNotificationSettingsInputObject.  # noqa: E501
         :type: int

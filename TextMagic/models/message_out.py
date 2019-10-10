@@ -263,7 +263,7 @@ class MessageOut(object):
     def status(self):
         """Gets the status of this MessageOut.  # noqa: E501
 
-        Delivery status of the message. TODO: Please see the table below to see different delivery statuses.   # noqa: E501
+        Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.   # noqa: E501
 
         :return: The status of this MessageOut.  # noqa: E501
         :rtype: str
@@ -274,7 +274,7 @@ class MessageOut(object):
     def status(self, status):
         """Sets the status of this MessageOut.
 
-        Delivery status of the message. TODO: Please see the table below to see different delivery statuses.   # noqa: E501
+        Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.   # noqa: E501
 
         :param status: The status of this MessageOut.  # noqa: E501
         :type: str
@@ -292,6 +292,7 @@ class MessageOut(object):
     def contact_id(self):
         """Gets the contact_id of this MessageOut.  # noqa: E501
 
+        Recipient contact ID.  # noqa: E501
 
         :return: The contact_id of this MessageOut.  # noqa: E501
         :rtype: int
@@ -302,6 +303,7 @@ class MessageOut(object):
     def contact_id(self, contact_id):
         """Sets the contact_id of this MessageOut.
 
+        Recipient contact ID.  # noqa: E501
 
         :param contact_id: The contact_id of this MessageOut.  # noqa: E501
         :type: int
@@ -313,6 +315,7 @@ class MessageOut(object):
     def session_id(self):
         """Gets the session_id of this MessageOut.  # noqa: E501
 
+        Message Session ID of a Message.  # noqa: E501
 
         :return: The session_id of this MessageOut.  # noqa: E501
         :rtype: int
@@ -323,6 +326,7 @@ class MessageOut(object):
     def session_id(self, session_id):
         """Sets the session_id of this MessageOut.
 
+        Message Session ID of a Message.  # noqa: E501
 
         :param session_id: The session_id of this MessageOut.  # noqa: E501
         :type: int
@@ -378,6 +382,7 @@ class MessageOut(object):
     def deleted(self):
         """Gets the deleted of this MessageOut.  # noqa: E501
 
+        Indicates that message has been deleted.  # noqa: E501
 
         :return: The deleted of this MessageOut.  # noqa: E501
         :rtype: bool
@@ -388,6 +393,7 @@ class MessageOut(object):
     def deleted(self, deleted):
         """Sets the deleted of this MessageOut.
 
+        Indicates that message has been deleted.  # noqa: E501
 
         :param deleted: The deleted of this MessageOut.  # noqa: E501
         :type: bool
@@ -512,6 +518,7 @@ class MessageOut(object):
     def phone(self):
         """Gets the phone of this MessageOut.  # noqa: E501
 
+        Receipent phone number.  # noqa: E501
 
         :return: The phone of this MessageOut.  # noqa: E501
         :rtype: str
@@ -522,6 +529,7 @@ class MessageOut(object):
     def phone(self, phone):
         """Sets the phone of this MessageOut.
 
+        Receipent phone number.  # noqa: E501
 
         :param phone: The phone of this MessageOut.  # noqa: E501
         :type: str
@@ -533,6 +541,7 @@ class MessageOut(object):
     def price(self):
         """Gets the price of this MessageOut.  # noqa: E501
 
+        Message price.  # noqa: E501
 
         :return: The price of this MessageOut.  # noqa: E501
         :rtype: float
@@ -543,6 +552,7 @@ class MessageOut(object):
     def price(self, price):
         """Sets the price of this MessageOut.
 
+        Message price.  # noqa: E501
 
         :param price: The price of this MessageOut.  # noqa: E501
         :type: float
@@ -598,6 +608,7 @@ class MessageOut(object):
     def from_number(self):
         """Gets the from_number of this MessageOut.  # noqa: E501
 
+        Phone number which is used to send SMS.  # noqa: E501
 
         :return: The from_number of this MessageOut.  # noqa: E501
         :rtype: str
@@ -608,6 +619,7 @@ class MessageOut(object):
     def from_number(self, from_number):
         """Sets the from_number of this MessageOut.
 
+        Phone number which is used to send SMS.  # noqa: E501
 
         :param from_number: The from_number of this MessageOut.  # noqa: E501
         :type: str

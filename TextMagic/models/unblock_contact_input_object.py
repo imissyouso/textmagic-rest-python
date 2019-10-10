@@ -51,7 +51,7 @@ class UnblockContactInputObject(object):
     def phone(self):
         """Gets the phone of this UnblockContactInputObject.  # noqa: E501
 
-        Contact phone number  # noqa: E501
+        Contact phone number.  # noqa: E501
 
         :return: The phone of this UnblockContactInputObject.  # noqa: E501
         :rtype: str
@@ -62,7 +62,7 @@ class UnblockContactInputObject(object):
     def phone(self, phone):
         """Sets the phone of this UnblockContactInputObject.
 
-        Contact phone number  # noqa: E501
+        Contact phone number.  # noqa: E501
 
         :param phone: The phone of this UnblockContactInputObject.  # noqa: E501
         :type: str

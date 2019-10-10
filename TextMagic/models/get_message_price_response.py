@@ -58,6 +58,7 @@ class GetMessagePriceResponse(object):
     def total(self):
         """Gets the total of this GetMessagePriceResponse.  # noqa: E501
 
+        Total price of the mesasge.  # noqa: E501
 
         :return: The total of this GetMessagePriceResponse.  # noqa: E501
         :rtype: float
@@ -68,6 +69,7 @@ class GetMessagePriceResponse(object):
     def total(self, total):
         """Sets the total of this GetMessagePriceResponse.
 
+        Total price of the mesasge.  # noqa: E501
 
         :param total: The total of this GetMessagePriceResponse.  # noqa: E501
         :type: float
@@ -79,6 +81,7 @@ class GetMessagePriceResponse(object):
     def parts(self):
         """Gets the parts of this GetMessagePriceResponse.  # noqa: E501
 
+        Message parts (multiples of 160 characters) count.  # noqa: E501
 
         :return: The parts of this GetMessagePriceResponse.  # noqa: E501
         :rtype: int
@@ -89,6 +92,7 @@ class GetMessagePriceResponse(object):
     def parts(self, parts):
         """Sets the parts of this GetMessagePriceResponse.
 
+        Message parts (multiples of 160 characters) count.  # noqa: E501
 
         :param parts: The parts of this GetMessagePriceResponse.  # noqa: E501
         :type: int
@@ -100,6 +104,7 @@ class GetMessagePriceResponse(object):
     def countries(self):
         """Gets the countries of this GetMessagePriceResponse.  # noqa: E501
 
+        List of countries where message will be sent with pricing explanation.  # noqa: E501
 
         :return: The countries of this GetMessagePriceResponse.  # noqa: E501
         :rtype: object
@@ -110,6 +115,7 @@ class GetMessagePriceResponse(object):
     def countries(self, countries):
         """Sets the countries of this GetMessagePriceResponse.
 
+        List of countries where message will be sent with pricing explanation.  # noqa: E501
 
         :param countries: The countries of this GetMessagePriceResponse.  # noqa: E501
         :type: object

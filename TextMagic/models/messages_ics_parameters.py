@@ -54,6 +54,7 @@ class MessagesIcsParameters(object):
     def text(self):
         """Gets the text of this MessagesIcsParameters.  # noqa: E501
 
+        Scheduled message text.  # noqa: E501
 
         :return: The text of this MessagesIcsParameters.  # noqa: E501
         :rtype: str
@@ -64,6 +65,7 @@ class MessagesIcsParameters(object):
     def text(self, text):
         """Sets the text of this MessagesIcsParameters.
 
+        Scheduled message text.  # noqa: E501
 
         :param text: The text of this MessagesIcsParameters.  # noqa: E501
         :type: str

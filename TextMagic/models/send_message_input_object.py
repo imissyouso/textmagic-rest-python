@@ -70,7 +70,7 @@ class SendMessageInputObject(object):
         'local_country': 'localCountry'
     }
 
-    def __init__(self, text=None, template_id=None, sending_time=None, sending_date_time=None, sending_timezone=None, contacts=None, lists=None, phones=None, cut_extra=None, parts_count=None, reference_id=None, _from=None, rule=None, create_chat=None, tts=None, local=None, local_country=None):  # noqa: E501
+    def __init__(self, text=None, template_id=None, sending_time=None, sending_date_time=None, sending_timezone=None, contacts=None, lists=None, phones=None, cut_extra=False, parts_count=None, reference_id=None, _from=None, rule=None, create_chat=False, tts=False, local=False, local_country=None):  # noqa: E501
         """SendMessageInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._text = None
@@ -129,7 +129,7 @@ class SendMessageInputObject(object):
     def text(self):
         """Gets the text of this SendMessageInputObject.  # noqa: E501
 
-        Message text. Required if template_id is not set  # noqa: E501
+        Message text. Required if **template_id** is not set.  # noqa: E501
 
         :return: The text of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -140,7 +140,7 @@ class SendMessageInputObject(object):
     def text(self, text):
         """Sets the text of this SendMessageInputObject.
 
-        Message text. Required if template_id is not set  # noqa: E501
+        Message text. Required if **template_id** is not set.  # noqa: E501
 
         :param text: The text of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -152,7 +152,7 @@ class SendMessageInputObject(object):
     def template_id(self):
         """Gets the template_id of this SendMessageInputObject.  # noqa: E501
 
-        Template used instead of message text. Required if text is not set  # noqa: E501
+        Template used instead of message text. Required if **text** is not set.  # noqa: E501
 
         :return: The template_id of this SendMessageInputObject.  # noqa: E501
         :rtype: int
@@ -163,7 +163,7 @@ class SendMessageInputObject(object):
     def template_id(self, template_id):
         """Sets the template_id of this SendMessageInputObject.
 
-        Template used instead of message text. Required if text is not set  # noqa: E501
+        Template used instead of message text. Required if **text** is not set.  # noqa: E501
 
         :param template_id: The template_id of this SendMessageInputObject.  # noqa: E501
         :type: int
@@ -175,7 +175,7 @@ class SendMessageInputObject(object):
     def sending_time(self):
         """Gets the sending_time of this SendMessageInputObject.  # noqa: E501
 
-        DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now  # noqa: E501
+        DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now.  # noqa: E501
 
         :return: The sending_time of this SendMessageInputObject.  # noqa: E501
         :rtype: int
@@ -186,7 +186,7 @@ class SendMessageInputObject(object):
     def sending_time(self, sending_time):
         """Sets the sending_time of this SendMessageInputObject.
 
-        DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now  # noqa: E501
+        DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now.  # noqa: E501
 
         :param sending_time: The sending_time of this SendMessageInputObject.  # noqa: E501
         :type: int
@@ -198,7 +198,7 @@ class SendMessageInputObject(object):
     def sending_date_time(self):
         """Gets the sending_date_time of this SendMessageInputObject.  # noqa: E501
 
-        Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone  # noqa: E501
+        Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**.  # noqa: E501
 
         :return: The sending_date_time of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -209,7 +209,7 @@ class SendMessageInputObject(object):
     def sending_date_time(self, sending_date_time):
         """Sets the sending_date_time of this SendMessageInputObject.
 
-        Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone  # noqa: E501
+        Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**.  # noqa: E501
 
         :param sending_date_time: The sending_date_time of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -221,7 +221,7 @@ class SendMessageInputObject(object):
     def sending_timezone(self):
         """Gets the sending_timezone of this SendMessageInputObject.  # noqa: E501
 
-        ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone  # noqa: E501
+        ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone.  # noqa: E501
 
         :return: The sending_timezone of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -232,7 +232,7 @@ class SendMessageInputObject(object):
     def sending_timezone(self, sending_timezone):
         """Sets the sending_timezone of this SendMessageInputObject.
 
-        ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone  # noqa: E501
+        ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone.  # noqa: E501
 
         :param sending_timezone: The sending_timezone of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -244,7 +244,7 @@ class SendMessageInputObject(object):
     def contacts(self):
         """Gets the contacts of this SendMessageInputObject.  # noqa: E501
 
-        Comma separated array of contact resources id message will be sent to  # noqa: E501
+        Comma separated array of contact resources id message will be sent to.  # noqa: E501
 
         :return: The contacts of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -255,7 +255,7 @@ class SendMessageInputObject(object):
     def contacts(self, contacts):
         """Sets the contacts of this SendMessageInputObject.
 
-        Comma separated array of contact resources id message will be sent to  # noqa: E501
+        Comma separated array of contact resources id message will be sent to.  # noqa: E501
 
         :param contacts: The contacts of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -267,7 +267,7 @@ class SendMessageInputObject(object):
     def lists(self):
         """Gets the lists of this SendMessageInputObject.  # noqa: E501
 
-        Comma separated array of list resources id message will be sent to  # noqa: E501
+        Comma separated array of list resources id message will be sent to.  # noqa: E501
 
         :return: The lists of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -278,7 +278,7 @@ class SendMessageInputObject(object):
     def lists(self, lists):
         """Sets the lists of this SendMessageInputObject.
 
-        Comma separated array of list resources id message will be sent to  # noqa: E501
+        Comma separated array of list resources id message will be sent to.  # noqa: E501
 
         :param lists: The lists of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -290,7 +290,7 @@ class SendMessageInputObject(object):
     def phones(self):
         """Gets the phones of this SendMessageInputObject.  # noqa: E501
 
-        Comma separated array of E.164 phone numbers message will be sent to  # noqa: E501
+        Comma separated array of E.164 phone numbers message will be sent to.  # noqa: E501
 
         :return: The phones of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -301,7 +301,7 @@ class SendMessageInputObject(object):
     def phones(self, phones):
         """Sets the phones of this SendMessageInputObject.
 
-        Comma separated array of E.164 phone numbers message will be sent to  # noqa: E501
+        Comma separated array of E.164 phone numbers message will be sent to.  # noqa: E501
 
         :param phones: The phones of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -313,7 +313,7 @@ class SendMessageInputObject(object):
     def cut_extra(self):
         """Gets the cut_extra of this SendMessageInputObject.  # noqa: E501
 
-        Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. Default is false  # noqa: E501
+        Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead.  # noqa: E501
 
         :return: The cut_extra of this SendMessageInputObject.  # noqa: E501
         :rtype: bool
@@ -324,7 +324,7 @@ class SendMessageInputObject(object):
     def cut_extra(self, cut_extra):
         """Sets the cut_extra of this SendMessageInputObject.
 
-        Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. Default is false  # noqa: E501
+        Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead.  # noqa: E501
 
         :param cut_extra: The cut_extra of this SendMessageInputObject.  # noqa: E501
         :type: bool
@@ -336,7 +336,7 @@ class SendMessageInputObject(object):
     def parts_count(self):
         """Gets the parts_count of this SendMessageInputObject.  # noqa: E501
 
-        Maximum message parts count (TextMagic allows sending 1 to 6 message parts). Default is 6  # noqa: E501
+        Maximum message parts count (TextMagic allows sending 1 to 6 message parts).  # noqa: E501
 
         :return: The parts_count of this SendMessageInputObject.  # noqa: E501
         :rtype: int
@@ -347,7 +347,7 @@ class SendMessageInputObject(object):
     def parts_count(self, parts_count):
         """Sets the parts_count of this SendMessageInputObject.
 
-        Maximum message parts count (TextMagic allows sending 1 to 6 message parts). Default is 6  # noqa: E501
+        Maximum message parts count (TextMagic allows sending 1 to 6 message parts).  # noqa: E501
 
         :param parts_count: The parts_count of this SendMessageInputObject.  # noqa: E501
         :type: int
@@ -359,7 +359,7 @@ class SendMessageInputObject(object):
     def reference_id(self):
         """Gets the reference_id of this SendMessageInputObject.  # noqa: E501
 
-        Custom message reference id which can be used in your application infrastructure  # noqa: E501
+        Custom message reference id which can be used in your application infrastructure.  # noqa: E501
 
         :return: The reference_id of this SendMessageInputObject.  # noqa: E501
         :rtype: int
@@ -370,7 +370,7 @@ class SendMessageInputObject(object):
     def reference_id(self, reference_id):
         """Sets the reference_id of this SendMessageInputObject.
 
-        Custom message reference id which can be used in your application infrastructure  # noqa: E501
+        Custom message reference id which can be used in your application infrastructure.  # noqa: E501
 
         :param reference_id: The reference_id of this SendMessageInputObject.  # noqa: E501
         :type: int
@@ -382,7 +382,7 @@ class SendMessageInputObject(object):
     def _from(self):
         """Gets the _from of this SendMessageInputObject.  # noqa: E501
 
-        One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery  # noqa: E501
+        One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).  # noqa: E501
 
         :return: The _from of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -393,7 +393,7 @@ class SendMessageInputObject(object):
     def _from(self, _from):
         """Sets the _from of this SendMessageInputObject.
 
-        One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery  # noqa: E501
+        One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).  # noqa: E501
 
         :param _from: The _from of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -405,7 +405,7 @@ class SendMessageInputObject(object):
     def rule(self):
         """Gets the rule of this SendMessageInputObject.  # noqa: E501
 
-        iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details  # noqa: E501
+        iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.  # noqa: E501
 
         :return: The rule of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -416,7 +416,7 @@ class SendMessageInputObject(object):
     def rule(self, rule):
         """Sets the rule of this SendMessageInputObject.
 
-        iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details  # noqa: E501
+        iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.  # noqa: E501
 
         :param rule: The rule of this SendMessageInputObject.  # noqa: E501
         :type: str
@@ -428,7 +428,7 @@ class SendMessageInputObject(object):
     def create_chat(self):
         """Gets the create_chat of this SendMessageInputObject.  # noqa: E501
 
-        Should sending method try to create new Chat(if not exist) with specified recipients. Default is false  # noqa: E501
+        Should sending method try to create new Chat(if not exist) with specified recipients.  # noqa: E501
 
         :return: The create_chat of this SendMessageInputObject.  # noqa: E501
         :rtype: bool
@@ -439,7 +439,7 @@ class SendMessageInputObject(object):
     def create_chat(self, create_chat):
         """Sets the create_chat of this SendMessageInputObject.
 
-        Should sending method try to create new Chat(if not exist) with specified recipients. Default is false  # noqa: E501
+        Should sending method try to create new Chat(if not exist) with specified recipients.  # noqa: E501
 
         :param create_chat: The create_chat of this SendMessageInputObject.  # noqa: E501
         :type: bool
@@ -451,7 +451,7 @@ class SendMessageInputObject(object):
     def tts(self):
         """Gets the tts of this SendMessageInputObject.  # noqa: E501
 
-        Send Text to Speech message. Default is false  # noqa: E501
+        Send Text to Speech message.  # noqa: E501
 
         :return: The tts of this SendMessageInputObject.  # noqa: E501
         :rtype: bool
@@ -462,7 +462,7 @@ class SendMessageInputObject(object):
     def tts(self, tts):
         """Sets the tts of this SendMessageInputObject.
 
-        Send Text to Speech message. Default is false  # noqa: E501
+        Send Text to Speech message.  # noqa: E501
 
         :param tts: The tts of this SendMessageInputObject.  # noqa: E501
         :type: bool
@@ -474,7 +474,7 @@ class SendMessageInputObject(object):
     def local(self):
         """Gets the local of this SendMessageInputObject.  # noqa: E501
 
-        Treat phone numbers passed in \\'phones\\' field as local. Default is false  # noqa: E501
+        Treat phone numbers passed in \\'phones\\' field as local.  # noqa: E501
 
         :return: The local of this SendMessageInputObject.  # noqa: E501
         :rtype: bool
@@ -485,7 +485,7 @@ class SendMessageInputObject(object):
     def local(self, local):
         """Sets the local of this SendMessageInputObject.
 
-        Treat phone numbers passed in \\'phones\\' field as local. Default is false  # noqa: E501
+        Treat phone numbers passed in \\'phones\\' field as local.  # noqa: E501
 
         :param local: The local of this SendMessageInputObject.  # noqa: E501
         :type: bool
@@ -497,7 +497,7 @@ class SendMessageInputObject(object):
     def local_country(self):
         """Gets the local_country of this SendMessageInputObject.  # noqa: E501
 
-        2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country  # noqa: E501
+        2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.  # noqa: E501
 
         :return: The local_country of this SendMessageInputObject.  # noqa: E501
         :rtype: str
@@ -508,7 +508,7 @@ class SendMessageInputObject(object):
     def local_country(self, local_country):
         """Sets the local_country of this SendMessageInputObject.
 
-        2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country  # noqa: E501
+        2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.  # noqa: E501
 
         :param local_country: The local_country of this SendMessageInputObject.  # noqa: E501
         :type: str

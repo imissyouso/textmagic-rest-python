@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** |  | 
-**user_id** | **int** | User statement ID. | 
+**id** | **int** | User statement ID. | 
+**user_id** | **int** | User ID. | 
 **_date** | **datetime** | User statement date. | 
 **balance** | **float** |  | 
 **delta** | **float** | Balance change amount. | 

@@ -73,7 +73,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def inbound_message_notification(self):
         """Gets the inbound_message_notification of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
 
-        Should user receive notification about new incoming messages  # noqa: E501
+        Should user receive notification about new incoming messages.  # noqa: E501
 
         :return: The inbound_message_notification of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :rtype: bool
@@ -84,7 +84,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def inbound_message_notification(self, inbound_message_notification):
         """Sets the inbound_message_notification of this UpdateInboundMessagesNotificationSettingsInputObject.
 
-        Should user receive notification about new incoming messages  # noqa: E501
+        Should user receive notification about new incoming messages.  # noqa: E501
 
         :param inbound_message_notification: The inbound_message_notification of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :type: bool
@@ -96,7 +96,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def include_sms_history(self):
         """Gets the include_sms_history of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
 
-        Include SMS history into notification Email  # noqa: E501
+        Include SMS history into notification Email.  # noqa: E501
 
         :return: The include_sms_history of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :rtype: bool
@@ -107,7 +107,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def include_sms_history(self, include_sms_history):
         """Sets the include_sms_history of this UpdateInboundMessagesNotificationSettingsInputObject.
 
-        Include SMS history into notification Email  # noqa: E501
+        Include SMS history into notification Email.  # noqa: E501
 
         :param include_sms_history: The include_sms_history of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :type: bool
@@ -119,7 +119,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def send_in_html_format(self):
         """Gets the send_in_html_format of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
 
-        Send Email notification in HTML format  # noqa: E501
+        Send Email notification in HTML format.  # noqa: E501
 
         :return: The send_in_html_format of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :rtype: bool
@@ -130,7 +130,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def send_in_html_format(self, send_in_html_format):
         """Sets the send_in_html_format of this UpdateInboundMessagesNotificationSettingsInputObject.
 
-        Send Email notification in HTML format  # noqa: E501
+        Send Email notification in HTML format.  # noqa: E501
 
         :param send_in_html_format: The send_in_html_format of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :type: bool
@@ -142,7 +142,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def alert_email1(self):
         """Gets the alert_email1 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
 
-        New message notification email 2  # noqa: E501
+        New message notification email 2.  # noqa: E501
 
         :return: The alert_email1 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :rtype: str
@@ -153,7 +153,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def alert_email1(self, alert_email1):
         """Sets the alert_email1 of this UpdateInboundMessagesNotificationSettingsInputObject.
 
-        New message notification email 2  # noqa: E501
+        New message notification email 2.  # noqa: E501
 
         :param alert_email1: The alert_email1 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :type: str
@@ -165,7 +165,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def alert_email2(self):
         """Gets the alert_email2 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
 
-        New message notification email 2  # noqa: E501
+        New message notification email 2.  # noqa: E501
 
         :return: The alert_email2 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :rtype: str
@@ -176,7 +176,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def alert_email2(self, alert_email2):
         """Sets the alert_email2 of this UpdateInboundMessagesNotificationSettingsInputObject.
 
-        New message notification email 2  # noqa: E501
+        New message notification email 2.  # noqa: E501
 
         :param alert_email2: The alert_email2 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :type: str
@@ -188,7 +188,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def alert_email3(self):
         """Gets the alert_email3 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
 
-        New message notification email 3  # noqa: E501
+        New message notification email 3.  # noqa: E501
 
         :return: The alert_email3 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :rtype: str
@@ -199,7 +199,7 @@ class UpdateInboundMessagesNotificationSettingsInputObject(object):
     def alert_email3(self, alert_email3):
         """Sets the alert_email3 of this UpdateInboundMessagesNotificationSettingsInputObject.
 
-        New message notification email 3  # noqa: E501
+        New message notification email 3.  # noqa: E501
 
         :param alert_email3: The alert_email3 of this UpdateInboundMessagesNotificationSettingsInputObject.  # noqa: E501
         :type: str

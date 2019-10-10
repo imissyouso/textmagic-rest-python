@@ -51,6 +51,7 @@ class CreateContactNoteInputObject(object):
     def note(self):
         """Gets the note of this CreateContactNoteInputObject.  # noqa: E501
 
+        Contact Note text.  # noqa: E501
 
         :return: The note of this CreateContactNoteInputObject.  # noqa: E501
         :rtype: str
@@ -61,6 +62,7 @@ class CreateContactNoteInputObject(object):
     def note(self, note):
         """Sets the note of this CreateContactNoteInputObject.
 
+        Contact Note text.  # noqa: E501
 
         :param note: The note of this CreateContactNoteInputObject.  # noqa: E501
         :type: str

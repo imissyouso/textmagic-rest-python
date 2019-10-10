@@ -78,6 +78,7 @@ class SendMessageResponse(object):
     def id(self):
         """Gets the id of this SendMessageResponse.  # noqa: E501
 
+        Message ID.  # noqa: E501
 
         :return: The id of this SendMessageResponse.  # noqa: E501
         :rtype: int
@@ -88,6 +89,7 @@ class SendMessageResponse(object):
     def id(self, id):
         """Sets the id of this SendMessageResponse.
 
+        Message ID.  # noqa: E501
 
         :param id: The id of this SendMessageResponse.  # noqa: E501
         :type: int
@@ -99,6 +101,7 @@ class SendMessageResponse(object):
     def href(self):
         """Gets the href of this SendMessageResponse.  # noqa: E501
 
+        URI of message session.  # noqa: E501
 
         :return: The href of this SendMessageResponse.  # noqa: E501
         :rtype: str
@@ -109,6 +112,7 @@ class SendMessageResponse(object):
     def href(self, href):
         """Sets the href of this SendMessageResponse.
 
+        URI of message session.  # noqa: E501
 
         :param href: The href of this SendMessageResponse.  # noqa: E501
         :type: str
@@ -141,6 +145,7 @@ class SendMessageResponse(object):
     def session_id(self):
         """Gets the session_id of this SendMessageResponse.  # noqa: E501
 
+        Message session ID.  # noqa: E501
 
         :return: The session_id of this SendMessageResponse.  # noqa: E501
         :rtype: int
@@ -151,6 +156,7 @@ class SendMessageResponse(object):
     def session_id(self, session_id):
         """Sets the session_id of this SendMessageResponse.
 
+        Message session ID.  # noqa: E501
 
         :param session_id: The session_id of this SendMessageResponse.  # noqa: E501
         :type: int
@@ -162,6 +168,7 @@ class SendMessageResponse(object):
     def bulk_id(self):
         """Gets the bulk_id of this SendMessageResponse.  # noqa: E501
 
+        Bulk Session ID. See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session).  # noqa: E501
 
         :return: The bulk_id of this SendMessageResponse.  # noqa: E501
         :rtype: int
@@ -172,6 +179,7 @@ class SendMessageResponse(object):
     def bulk_id(self, bulk_id):
         """Sets the bulk_id of this SendMessageResponse.
 
+        Bulk Session ID. See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session).  # noqa: E501
 
         :param bulk_id: The bulk_id of this SendMessageResponse.  # noqa: E501
         :type: int
@@ -204,6 +212,7 @@ class SendMessageResponse(object):
     def schedule_id(self):
         """Gets the schedule_id of this SendMessageResponse.  # noqa: E501
 
+        Message Schedule ID.  # noqa: E501
 
         :return: The schedule_id of this SendMessageResponse.  # noqa: E501
         :rtype: int
@@ -214,6 +223,7 @@ class SendMessageResponse(object):
     def schedule_id(self, schedule_id):
         """Sets the schedule_id of this SendMessageResponse.
 
+        Message Schedule ID.  # noqa: E501
 
         :param schedule_id: The schedule_id of this SendMessageResponse.  # noqa: E501
         :type: int
@@ -225,6 +235,7 @@ class SendMessageResponse(object):
     def chat_id(self):
         """Gets the chat_id of this SendMessageResponse.  # noqa: E501
 
+        Message Chat ID.  # noqa: E501
 
         :return: The chat_id of this SendMessageResponse.  # noqa: E501
         :rtype: int
@@ -235,6 +246,7 @@ class SendMessageResponse(object):
     def chat_id(self, chat_id):
         """Sets the chat_id of this SendMessageResponse.
 
+        Message Chat ID.  # noqa: E501
 
         :param chat_id: The chat_id of this SendMessageResponse.  # noqa: E501
         :type: int

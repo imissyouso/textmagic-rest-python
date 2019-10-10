@@ -50,6 +50,7 @@ class UserImage(object):
     def href(self):
         """Gets the href of this UserImage.  # noqa: E501
 
+        URI of a user avatar.  # noqa: E501
 
         :return: The href of this UserImage.  # noqa: E501
         :rtype: str
@@ -60,6 +61,7 @@ class UserImage(object):
     def href(self, href):
         """Sets the href of this UserImage.
 
+        URI of a user avatar.  # noqa: E501
 
         :param href: The href of this UserImage.  # noqa: E501
         :type: str

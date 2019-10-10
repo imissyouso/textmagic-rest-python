@@ -9,12 +9,12 @@ Name | Type | Description | Notes
 **email** | **str** | Contact email address. | [optional] 
 **company_name** | **str** | Contact company name | [optional] 
 **lists** | **str** | Comma-separated [list](http://docs.textmagictesting.com/#section/Lists) ID. Each contact must be assigned to at least one list. | 
-**favorited** | **bool** | Is contact favorited | [optional] 
-**blocked** | **bool** | Is contact blocked for outgoing and incoming messaging | [optional] 
-**type** | **int** | Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection) | [optional] 
+**favorited** | **bool** | Is contact marked as favorite. | [optional] 
+**blocked** | **bool** | Is contact blocked for outgoing and incoming messaging. | [optional] 
+**type** | **int** | Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection). | [optional] 
 **custom_field_values** | **object** |  | [optional] 
-**local** | **int** | Treat phone number passed in request body as local | [optional] 
-**country** | **str** | 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country | [optional] 
+**local** | **int** | Treat phone number passed in request body as **local**. | [optional] 
+**country** | **str** | 2-letter ISO country code for local phone numbers, used when **local** is set to true. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

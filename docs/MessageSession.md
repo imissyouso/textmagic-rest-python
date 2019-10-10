@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **reference_id** | **str** | Custom reference ID (see [Messages: Send](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) for details).  | 
 **price** | **float** | Session cost (in account currency). | 
 **numbers_count** | **int** | Session recipient count. | 
-**destination** | **str** |  | 
+**destination** | **str** | Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -74,6 +74,7 @@ class GetMessageSessionStatResponse(object):
     def failed(self):
         """Gets the failed of this GetMessageSessionStatResponse.  # noqa: E501
 
+        Amount of failed messages.  # noqa: E501
 
         :return: The failed of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -84,6 +85,7 @@ class GetMessageSessionStatResponse(object):
     def failed(self, failed):
         """Sets the failed of this GetMessageSessionStatResponse.
 
+        Amount of failed messages.  # noqa: E501
 
         :param failed: The failed of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int
@@ -95,6 +97,7 @@ class GetMessageSessionStatResponse(object):
     def delivered(self):
         """Gets the delivered of this GetMessageSessionStatResponse.  # noqa: E501
 
+        Amount of delivered messages.  # noqa: E501
 
         :return: The delivered of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -105,6 +108,7 @@ class GetMessageSessionStatResponse(object):
     def delivered(self, delivered):
         """Sets the delivered of this GetMessageSessionStatResponse.
 
+        Amount of delivered messages.  # noqa: E501
 
         :param delivered: The delivered of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int
@@ -116,6 +120,7 @@ class GetMessageSessionStatResponse(object):
     def accepted(self):
         """Gets the accepted of this GetMessageSessionStatResponse.  # noqa: E501
 
+        Amount of accepted messages.  # noqa: E501
 
         :return: The accepted of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -126,6 +131,7 @@ class GetMessageSessionStatResponse(object):
     def accepted(self, accepted):
         """Sets the accepted of this GetMessageSessionStatResponse.
 
+        Amount of accepted messages.  # noqa: E501
 
         :param accepted: The accepted of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int
@@ -137,6 +143,7 @@ class GetMessageSessionStatResponse(object):
     def rejected(self):
         """Gets the rejected of this GetMessageSessionStatResponse.  # noqa: E501
 
+        Amount of rejected messages.  # noqa: E501
 
         :return: The rejected of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -147,6 +154,7 @@ class GetMessageSessionStatResponse(object):
     def rejected(self, rejected):
         """Sets the rejected of this GetMessageSessionStatResponse.
 
+        Amount of rejected messages.  # noqa: E501
 
         :param rejected: The rejected of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int
@@ -158,6 +166,7 @@ class GetMessageSessionStatResponse(object):
     def scheduled(self):
         """Gets the scheduled of this GetMessageSessionStatResponse.  # noqa: E501
 
+        Amount of schedules messages.  # noqa: E501
 
         :return: The scheduled of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -168,6 +177,7 @@ class GetMessageSessionStatResponse(object):
     def scheduled(self, scheduled):
         """Sets the scheduled of this GetMessageSessionStatResponse.
 
+        Amount of schedules messages.  # noqa: E501
 
         :param scheduled: The scheduled of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int
@@ -200,6 +210,7 @@ class GetMessageSessionStatResponse(object):
     def sent(self):
         """Gets the sent of this GetMessageSessionStatResponse.  # noqa: E501
 
+        Total sent messages.  # noqa: E501
 
         :return: The sent of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -210,6 +221,7 @@ class GetMessageSessionStatResponse(object):
     def sent(self, sent):
         """Sets the sent of this GetMessageSessionStatResponse.
 
+        Total sent messages.  # noqa: E501
 
         :param sent: The sent of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int
