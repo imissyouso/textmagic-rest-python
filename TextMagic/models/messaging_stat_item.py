@@ -90,7 +90,7 @@ class MessagingStatItem(object):
     def reply_rate(self):
         """Gets the reply_rate of this MessagingStatItem.  # noqa: E501
 
-        the number of incoming messages divided by the number of total messages.  # noqa: E501
+        The number of incoming messages divided by the number of total messages.  # noqa: E501
 
         :return: The reply_rate of this MessagingStatItem.  # noqa: E501
         :rtype: float
@@ -101,7 +101,7 @@ class MessagingStatItem(object):
     def reply_rate(self, reply_rate):
         """Sets the reply_rate of this MessagingStatItem.
 
-        the number of incoming messages divided by the number of total messages.  # noqa: E501
+        The number of incoming messages divided by the number of total messages.  # noqa: E501
 
         :param reply_rate: The reply_rate of this MessagingStatItem.  # noqa: E501
         :type: float

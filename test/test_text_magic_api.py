@@ -806,6 +806,13 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
+    def test_ping(self):
+        """Test case for ping
+
+        Ping  # noqa: E501
+        """
+        pass
+
     def test_reopen_chats_bulk(self):
         """Test case for reopen_chats_bulk
 

@@ -206,6 +206,7 @@ class SubaccountWithToken(object):
     def email(self):
         """Gets the email of this SubaccountWithToken.  # noqa: E501
 
+        Account Email address.  # noqa: E501
 
         :return: The email of this SubaccountWithToken.  # noqa: E501
         :rtype: str
@@ -216,6 +217,7 @@ class SubaccountWithToken(object):
     def email(self, email):
         """Sets the email of this SubaccountWithToken.
 
+        Account Email address.  # noqa: E501
 
         :param email: The email of this SubaccountWithToken.  # noqa: E501
         :type: str

@@ -54,6 +54,7 @@ class PushToken(object):
     def type(self):
         """Gets the type of this PushToken.  # noqa: E501
 
+        type of the token: * **GCM** — Google Cloud Messaging * **APN** — Apple Push Notification * **FCM** — Firebase Cloud Messaging   # noqa: E501
 
         :return: The type of this PushToken.  # noqa: E501
         :rtype: str
@@ -64,10 +65,17 @@ class PushToken(object):
     def type(self, type):
         """Sets the type of this PushToken.
 
+        type of the token: * **GCM** — Google Cloud Messaging * **APN** — Apple Push Notification * **FCM** — Firebase Cloud Messaging   # noqa: E501
 
         :param type: The type of this PushToken.  # noqa: E501
         :type: str
         """
+        allowed_values = ["a", "g", "f"]  # noqa: E501
+        if type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `type` ({0}), must be one of {1}"  # noqa: E501
+                .format(type, allowed_values)
+            )
 
         self._type = type
 
@@ -75,6 +83,7 @@ class PushToken(object):
     def token(self):
         """Gets the token of this PushToken.  # noqa: E501
 
+        Push token value.  # noqa: E501
 
         :return: The token of this PushToken.  # noqa: E501
         :rtype: str
@@ -85,6 +94,7 @@ class PushToken(object):
     def token(self, token):
         """Sets the token of this PushToken.
 
+        Push token value.  # noqa: E501
 
         :param token: The token of this PushToken.  # noqa: E501
         :type: str

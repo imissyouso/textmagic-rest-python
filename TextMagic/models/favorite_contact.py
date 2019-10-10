@@ -70,6 +70,7 @@ class FavoriteContact(object):
     def entity_id(self):
         """Gets the entity_id of this FavoriteContact.  # noqa: E501
 
+        List or Contact ID.  # noqa: E501
 
         :return: The entity_id of this FavoriteContact.  # noqa: E501
         :rtype: int
@@ -80,6 +81,7 @@ class FavoriteContact(object):
     def entity_id(self, entity_id):
         """Sets the entity_id of this FavoriteContact.
 
+        List or Contact ID.  # noqa: E501
 
         :param entity_id: The entity_id of this FavoriteContact.  # noqa: E501
         :type: int
@@ -120,7 +122,7 @@ class FavoriteContact(object):
     def primary_label(self):
         """Gets the primary_label of this FavoriteContact.  # noqa: E501
 
-        Contact first name/last name if entityType is **contact**, List name if entity type is **list**  # noqa: E501
+        Contact first name/last name if entityType is **contact**, List name if entity type is **list**.  # noqa: E501
 
         :return: The primary_label of this FavoriteContact.  # noqa: E501
         :rtype: str
@@ -131,7 +133,7 @@ class FavoriteContact(object):
     def primary_label(self, primary_label):
         """Sets the primary_label of this FavoriteContact.
 
-        Contact first name/last name if entityType is **contact**, List name if entity type is **list**  # noqa: E501
+        Contact first name/last name if entityType is **contact**, List name if entity type is **list**.  # noqa: E501
 
         :param primary_label: The primary_label of this FavoriteContact.  # noqa: E501
         :type: str
@@ -143,7 +145,7 @@ class FavoriteContact(object):
     def secondary_label(self):
         """Gets the secondary_label of this FavoriteContact.  # noqa: E501
 
-        Phone number if entityType is **contact**, List contacts number if entity type is **list**  # noqa: E501
+        Phone number if entityType is **contact**, List contacts number if entity type is **list**.  # noqa: E501
 
         :return: The secondary_label of this FavoriteContact.  # noqa: E501
         :rtype: str
@@ -154,7 +156,7 @@ class FavoriteContact(object):
     def secondary_label(self, secondary_label):
         """Sets the secondary_label of this FavoriteContact.
 
-        Phone number if entityType is **contact**, List contacts number if entity type is **list**  # noqa: E501
+        Phone number if entityType is **contact**, List contacts number if entity type is **list**.  # noqa: E501
 
         :param secondary_label: The secondary_label of this FavoriteContact.  # noqa: E501
         :type: str
@@ -166,7 +168,7 @@ class FavoriteContact(object):
     def tertiary_label(self):
         """Gets the tertiary_label of this FavoriteContact.  # noqa: E501
 
-        Contact country if entityType is **contact** else null  # noqa: E501
+        Contact country if entityType is **contact** else null.  # noqa: E501
 
         :return: The tertiary_label of this FavoriteContact.  # noqa: E501
         :rtype: str
@@ -177,7 +179,7 @@ class FavoriteContact(object):
     def tertiary_label(self, tertiary_label):
         """Sets the tertiary_label of this FavoriteContact.
 
-        Contact country if entityType is **contact** else null  # noqa: E501
+        Contact country if entityType is **contact** else null.  # noqa: E501
 
         :param tertiary_label: The tertiary_label of this FavoriteContact.  # noqa: E501
         :type: str
