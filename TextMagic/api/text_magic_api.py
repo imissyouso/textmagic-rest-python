@@ -10795,7 +10795,7 @@ class TextMagicApi(object):
         auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v2/contacts/import', 'POST',
+            '/api/v2/contacts/import/normalized', 'POST',
             path_params,
             query_params,
             header_params,
