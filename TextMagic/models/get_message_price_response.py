@@ -33,7 +33,7 @@ class GetMessagePriceResponse(object):
     swagger_types = {
         'total': 'float',
         'parts': 'int',
-        'countries': 'object'
+        'countries': 'list[GetMessagePriceResponseCountriesItem]'
     }
 
     attribute_map = {
@@ -104,10 +104,9 @@ class GetMessagePriceResponse(object):
     def countries(self):
         """Gets the countries of this GetMessagePriceResponse.  # noqa: E501
 
-        List of countries where message will be sent with pricing explanation.  # noqa: E501
 
         :return: The countries of this GetMessagePriceResponse.  # noqa: E501
-        :rtype: object
+        :rtype: list[GetMessagePriceResponseCountriesItem]
         """
         return self._countries
 
@@ -115,10 +114,9 @@ class GetMessagePriceResponse(object):
     def countries(self, countries):
         """Sets the countries of this GetMessagePriceResponse.
 
-        List of countries where message will be sent with pricing explanation.  # noqa: E501
 
         :param countries: The countries of this GetMessagePriceResponse.  # noqa: E501
-        :type: object
+        :type: list[GetMessagePriceResponseCountriesItem]
         """
 
         self._countries = countries

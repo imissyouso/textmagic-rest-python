@@ -40,7 +40,7 @@ class UpdateContactInputObject(object):
         'favorited': 'bool',
         'blocked': 'bool',
         'type': 'int',
-        'custom_field_values': 'object',
+        'custom_field_values': 'list[CustomFieldListItem]',
         'local': 'int',
         'country': 'str'
     }
@@ -313,7 +313,7 @@ class UpdateContactInputObject(object):
 
 
         :return: The custom_field_values of this UpdateContactInputObject.  # noqa: E501
-        :rtype: object
+        :rtype: list[CustomFieldListItem]
         """
         return self._custom_field_values
 
@@ -323,7 +323,7 @@ class UpdateContactInputObject(object):
 
 
         :param custom_field_values: The custom_field_values of this UpdateContactInputObject.  # noqa: E501
-        :type: object
+        :type: list[CustomFieldListItem]
         """
 
         self._custom_field_values = custom_field_values

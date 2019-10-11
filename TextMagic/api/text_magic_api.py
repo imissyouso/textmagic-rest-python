@@ -1004,7 +1004,7 @@ class TextMagicApi(object):
         auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v2/contacts', 'POST',
+            '/api/v2/contacts/normalized', 'POST',
             path_params,
             query_params,
             header_params,
@@ -2855,7 +2855,7 @@ class TextMagicApi(object):
     def delete_list(self, id, **kwargs):  # noqa: E501
         """Delete a list  # noqa: E501
 
-        > When you delete a list, the contacts in it are deleted as well unless they were saved in other list.   # noqa: E501
+        This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list(id, async_req=True)
@@ -2877,7 +2877,7 @@ class TextMagicApi(object):
     def delete_list_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a list  # noqa: E501
 
-        > When you delete a list, the contacts in it are deleted as well unless they were saved in other list.   # noqa: E501
+        This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_list_with_http_info(id, async_req=True)
@@ -8577,7 +8577,7 @@ class TextMagicApi(object):
         auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v2/messages/price', 'GET',
+            '/api/v2/messages/price/normalized', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9690,7 +9690,7 @@ class TextMagicApi(object):
         auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v2/sender/settings', 'GET',
+            '/api/v2/sender/settings/normalized', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13685,7 +13685,7 @@ class TextMagicApi(object):
         auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v2/contacts/{id}', 'PUT',
+            '/api/v2/contact/{id}/normalized', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -14398,7 +14398,7 @@ class TextMagicApi(object):
         auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v2/sender/settings', 'PUT',
+            '/api/v2/sender/settings/normalized', 'PUT',
             path_params,
             query_params,
             header_params,

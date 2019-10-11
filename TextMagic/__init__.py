@@ -44,6 +44,7 @@ from TextMagic.models.create_custom_field_input_object import CreateCustomFieldI
 from TextMagic.models.create_list_input_object import CreateListInputObject
 from TextMagic.models.create_template_input_object import CreateTemplateInputObject
 from TextMagic.models.currency import Currency
+from TextMagic.models.custom_field_list_item import CustomFieldListItem
 from TextMagic.models.delete_chat_messages_bulk_input_object import DeleteChatMessagesBulkInputObject
 from TextMagic.models.delete_chats_bulk_input_object import DeleteChatsBulkInputObject
 from TextMagic.models.delete_contacs_from_list_object import DeleteContacsFromListObject
@@ -93,6 +94,7 @@ from TextMagic.models.get_lists_of_contact_paginated_response import GetListsOfC
 from TextMagic.models.get_lists_paginated_response import GetListsPaginatedResponse
 from TextMagic.models.get_message_preview_response import GetMessagePreviewResponse
 from TextMagic.models.get_message_price_response import GetMessagePriceResponse
+from TextMagic.models.get_message_price_response_countries_item import GetMessagePriceResponseCountriesItem
 from TextMagic.models.get_message_prices_response import GetMessagePricesResponse
 from TextMagic.models.get_message_session_stat_response import GetMessageSessionStatResponse
 from TextMagic.models.get_messages_by_session_id_paginated_response import GetMessagesBySessionIdPaginatedResponse
@@ -121,6 +123,7 @@ from TextMagic.models.mark_chats_read_bulk_input_object import MarkChatsReadBulk
 from TextMagic.models.mark_chats_unread_bulk_input_object import MarkChatsUnreadBulkInputObject
 from TextMagic.models.message_in import MessageIn
 from TextMagic.models.message_out import MessageOut
+from TextMagic.models.message_price_item import MessagePriceItem
 from TextMagic.models.message_session import MessageSession
 from TextMagic.models.message_template import MessageTemplate
 from TextMagic.models.messages_ics import MessagesIcs
@@ -151,6 +154,7 @@ from TextMagic.models.send_message_response import SendMessageResponse
 from TextMagic.models.send_phone_verification_code_input_object import SendPhoneVerificationCodeInputObject
 from TextMagic.models.send_phone_verification_code_response import SendPhoneVerificationCodeResponse
 from TextMagic.models.sender_id import SenderId
+from TextMagic.models.sender_settings_item import SenderSettingsItem
 from TextMagic.models.set_chat_status_input_object import SetChatStatusInputObject
 from TextMagic.models.subaccount_with_token import SubaccountWithToken
 from TextMagic.models.survey import Survey
@@ -176,6 +180,7 @@ from TextMagic.models.update_custom_field_value_input_object import UpdateCustom
 from TextMagic.models.update_inbound_messages_notification_settings_input_object import UpdateInboundMessagesNotificationSettingsInputObject
 from TextMagic.models.update_list_object import UpdateListObject
 from TextMagic.models.update_sender_setting_input_object import UpdateSenderSettingInputObject
+from TextMagic.models.update_survey_country_item import UpdateSurveyCountryItem
 from TextMagic.models.update_template_input_object import UpdateTemplateInputObject
 from TextMagic.models.upload_message_attachment_response import UploadMessageAttachmentResponse
 from TextMagic.models.user import User
