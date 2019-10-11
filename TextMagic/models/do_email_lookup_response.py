@@ -504,6 +504,7 @@ class DoEmailLookupResponse(object):
     def has_aa(self):
         """Gets the has_aa of this DoEmailLookupResponse.  # noqa: E501
 
+        `true` if the email address domain has an A record (IPv4).   # noqa: E501
 
         :return: The has_aa of this DoEmailLookupResponse.  # noqa: E501
         :rtype: bool
@@ -514,6 +515,7 @@ class DoEmailLookupResponse(object):
     def has_aa(self, has_aa):
         """Sets the has_aa of this DoEmailLookupResponse.
 
+        `true` if the email address domain has an A record (IPv4).   # noqa: E501
 
         :param has_aa: The has_aa of this DoEmailLookupResponse.  # noqa: E501
         :type: bool
