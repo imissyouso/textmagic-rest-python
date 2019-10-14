@@ -109,6 +109,7 @@ from TextMagic.models.get_unsubscribers_paginated_response import GetUnsubscribe
 from TextMagic.models.get_user_dedicated_numbers_paginated_response import GetUserDedicatedNumbersPaginatedResponse
 from TextMagic.models.get_versions_response import GetVersionsResponse
 from TextMagic.models.import_column_mapping_item import ImportColumnMappingItem
+from TextMagic.models.import_contacts_input_object import ImportContactsInputObject
 from TextMagic.models.invite_subaccount_input_object import InviteSubaccountInputObject
 from TextMagic.models.invoice import Invoice
 from TextMagic.models.list import List

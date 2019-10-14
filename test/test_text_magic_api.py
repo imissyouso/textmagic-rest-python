@@ -771,6 +771,13 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
+    def test_import_contacts(self):
+        """Test case for import_contacts
+
+        Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
+        """
+        pass
+
     def test_invite_subaccount(self):
         """Test case for invite_subaccount
 

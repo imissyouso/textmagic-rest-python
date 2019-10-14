@@ -110,6 +110,7 @@ Method | HTTP request | Description
 [**get_unsubscribed_contact**](TextMagicApi.md#get_unsubscribed_contact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
 [**get_unsubscribers**](TextMagicApi.md#get_unsubscribers) | **GET** /api/v2/unsubscribers | Get all unsubscribed contacts
 [**get_user_dedicated_numbers**](TextMagicApi.md#get_user_dedicated_numbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
+[**import_contacts**](TextMagicApi.md#import_contacts) | **POST** /api/v2/contacts/import/normalized | Import contacts from the CSV, XLS or XLSX file.
 [**invite_subaccount**](TextMagicApi.md#invite_subaccount) | **POST** /api/v2/subaccounts | Invite a new sub-account
 [**mark_chats_read_bulk**](TextMagicApi.md#mark_chats_read_bulk) | **POST** /api/v2/chats/read/bulk | Mark chats as read (bulk)
 [**mark_chats_unread_bulk**](TextMagicApi.md#mark_chats_unread_bulk) | **POST** /api/v2/chats/unread/bulk | Mark chats as unread (bulk)
@@ -5915,6 +5916,60 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **import_contacts**
+> import_contacts(file, import_contacts_input_object)
+
+Import contacts from the CSV, XLS or XLSX file.
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import TextMagic
+from TextMagic.rest import ApiException
+from pprint import pprint
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = TextMagic.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+file = '/path/to/file.txt' # file | File containing contacts in csv or xls(x) formats
+import_contacts_input_object = TextMagic.ImportContactsInputObject() # ImportContactsInputObject | 
+
+try:
+    # Import contacts from the CSV, XLS or XLSX file.
+    api_instance.import_contacts(file, import_contacts_input_object)
+except ApiException as e:
+    print("Exception when calling TextMagicApi->import_contacts: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **file**| File containing contacts in csv or xls(x) formats | 
+ **import_contacts_input_object** | [**ImportContactsInputObject**](ImportContactsInputObject.md)|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

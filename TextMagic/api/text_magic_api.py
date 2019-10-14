@@ -10703,6 +10703,113 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def import_contacts(self, file, import_contacts_input_object, **kwargs):  # noqa: E501
+        """Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
+
+          # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.import_contacts(file, import_contacts_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param file file: File containing contacts in csv or xls(x) formats (required)
+        :param ImportContactsInputObject import_contacts_input_object: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.import_contacts_with_http_info(file, import_contacts_input_object, **kwargs)  # noqa: E501
+        else:
+            (data) = self.import_contacts_with_http_info(file, import_contacts_input_object, **kwargs)  # noqa: E501
+            return data
+
+    def import_contacts_with_http_info(self, file, import_contacts_input_object, **kwargs):  # noqa: E501
+        """Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
+
+          # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.import_contacts_with_http_info(file, import_contacts_input_object, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param file file: File containing contacts in csv or xls(x) formats (required)
+        :param ImportContactsInputObject import_contacts_input_object: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['file', 'import_contacts_input_object']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method import_contacts" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'file' is set
+        if ('file' not in params or
+                params['file'] is None):
+            raise ValueError("Missing the required parameter `file` when calling `import_contacts`")  # noqa: E501
+        # verify the required parameter 'import_contacts_input_object' is set
+        if ('import_contacts_input_object' not in params or
+                params['import_contacts_input_object'] is None):
+            raise ValueError("Missing the required parameter `import_contacts_input_object` when calling `import_contacts`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'file' in params:
+            local_var_files['file'] = params['file']  # noqa: E501
+
+        body_params = None
+        if 'import_contacts_input_object' in params:
+            body_params = params['import_contacts_input_object']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['BasicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v2/contacts/import/normalized', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def invite_subaccount(self, invite_subaccount_input_object, **kwargs):  # noqa: E501
         """Invite a new sub-account  # noqa: E501
 
