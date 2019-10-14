@@ -5921,7 +5921,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **import_contacts**
-> import_contacts(file, import_contacts_input_object)
+> import_contacts(file, column)
 
 Import contacts from the CSV, XLS or XLSX file.
 
@@ -5943,11 +5943,11 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 file = '/path/to/file.txt' # file | File containing contacts in csv or xls(x) formats
-import_contacts_input_object = TextMagic.ImportContactsInputObject() # ImportContactsInputObject | 
+column = [TextMagic.ImportColumnMappingItem()] # list[ImportColumnMappingItem] | 
 
 try:
     # Import contacts from the CSV, XLS or XLSX file.
-    api_instance.import_contacts(file, import_contacts_input_object)
+    api_instance.import_contacts(file, column)
 except ApiException as e:
     print("Exception when calling TextMagicApi->import_contacts: %s\n" % e)
 ```
@@ -5957,7 +5957,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **file**| File containing contacts in csv or xls(x) formats | 
- **import_contacts_input_object** | [**ImportContactsInputObject**](ImportContactsInputObject.md)|  | 
+ **column** | [**list[ImportColumnMappingItem]**](ImportColumnMappingItem.md)|  | 
 
 ### Return type
 

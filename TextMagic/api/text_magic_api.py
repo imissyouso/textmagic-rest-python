@@ -10703,47 +10703,47 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def import_contacts(self, file, import_contacts_input_object, **kwargs):  # noqa: E501
+    def import_contacts(self, file, column, **kwargs):  # noqa: E501
         """Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.import_contacts(file, import_contacts_input_object, async_req=True)
+        >>> thread = api.import_contacts(file, column, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param file file: File containing contacts in csv or xls(x) formats (required)
-        :param ImportContactsInputObject import_contacts_input_object: (required)
+        :param list[ImportColumnMappingItem] column: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.import_contacts_with_http_info(file, import_contacts_input_object, **kwargs)  # noqa: E501
+            return self.import_contacts_with_http_info(file, column, **kwargs)  # noqa: E501
         else:
-            (data) = self.import_contacts_with_http_info(file, import_contacts_input_object, **kwargs)  # noqa: E501
+            (data) = self.import_contacts_with_http_info(file, column, **kwargs)  # noqa: E501
             return data
 
-    def import_contacts_with_http_info(self, file, import_contacts_input_object, **kwargs):  # noqa: E501
+    def import_contacts_with_http_info(self, file, column, **kwargs):  # noqa: E501
         """Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.import_contacts_with_http_info(file, import_contacts_input_object, async_req=True)
+        >>> thread = api.import_contacts_with_http_info(file, column, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param file file: File containing contacts in csv or xls(x) formats (required)
-        :param ImportContactsInputObject import_contacts_input_object: (required)
+        :param list[ImportColumnMappingItem] column: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['file', 'import_contacts_input_object']  # noqa: E501
+        all_params = ['file', 'column']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -10762,10 +10762,10 @@ class TextMagicApi(object):
         if ('file' not in params or
                 params['file'] is None):
             raise ValueError("Missing the required parameter `file` when calling `import_contacts`")  # noqa: E501
-        # verify the required parameter 'import_contacts_input_object' is set
-        if ('import_contacts_input_object' not in params or
-                params['import_contacts_input_object'] is None):
-            raise ValueError("Missing the required parameter `import_contacts_input_object` when calling `import_contacts`")  # noqa: E501
+        # verify the required parameter 'column' is set
+        if ('column' not in params or
+                params['column'] is None):
+            raise ValueError("Missing the required parameter `column` when calling `import_contacts`")  # noqa: E501
 
         collection_formats = {}
 
@@ -10779,10 +10779,11 @@ class TextMagicApi(object):
         local_var_files = {}
         if 'file' in params:
             local_var_files['file'] = params['file']  # noqa: E501
+        if 'column' in params:
+            form_params.append(('column', params['column']))  # noqa: E501
+            collection_formats['column'] = 'csv'  # noqa: E501
 
         body_params = None
-        if 'import_contacts_input_object' in params:
-            body_params = params['import_contacts_input_object']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
