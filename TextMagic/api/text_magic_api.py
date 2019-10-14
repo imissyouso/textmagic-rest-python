@@ -10714,7 +10714,9 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param file file: File containing contacts in csv or xls(x) formats (required)
-        :param list[ImportColumnMappingItem] column: (required)
+        :param str column: (required)
+        :param str list_name: List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end.
+        :param int list_id: List ID contacts will be imported to.
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -10737,13 +10739,15 @@ class TextMagicApi(object):
 
         :param async_req bool
         :param file file: File containing contacts in csv or xls(x) formats (required)
-        :param list[ImportColumnMappingItem] column: (required)
+        :param str column: (required)
+        :param str list_name: List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end.
+        :param int list_id: List ID contacts will be imported to.
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['file', 'column']  # noqa: E501
+        all_params = ['file', 'column', 'list_name', 'list_id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -10772,6 +10776,12 @@ class TextMagicApi(object):
         path_params = {}
 
         query_params = []
+        if 'column' in params:
+            query_params.append(('column', params['column']))  # noqa: E501
+        if 'list_name' in params:
+            query_params.append(('listName', params['list_name']))  # noqa: E501
+        if 'list_id' in params:
+            query_params.append(('listId', params['list_id']))  # noqa: E501
 
         header_params = {}
 
@@ -10779,9 +10789,6 @@ class TextMagicApi(object):
         local_var_files = {}
         if 'file' in params:
             local_var_files['file'] = params['file']  # noqa: E501
-        if 'column' in params:
-            form_params.append(('column', params['column']))  # noqa: E501
-            collection_formats['column'] = 'csv'  # noqa: E501
 
         body_params = None
         # HTTP header `Accept`
