@@ -5975,7 +5975,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **import_contacts**
-> ResourceLinkResponse import_contacts(file, column=column, list_id=list_id, list_name=list_name)
+> ResourceLinkResponse import_contacts(file, column, list_id=list_id, list_name=list_name)
 
 Import contacts
 
@@ -5997,13 +5997,13 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 file = '/path/to/file.txt' # file | File containing contacts in csv or xls(x) formats
-column = '\"0:firstName;1:lastName;3:phone;4:email\"' # str | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (optional)
-list_id = 364 # int | List ID contacts will be imported to. Ignored if `listName` is specified.  (optional)
+column = '\"0:firstName;1:lastName;3:phone;4:email\"' # str | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
+list_id = null # int | List ID contacts will be imported to. Ignored if `listName` is specified.  (optional)
 list_name = '\"A new list\"' # str | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified.  (optional)
 
 try:
     # Import contacts
-    api_response = api_instance.import_contacts(file, column=column, list_id=list_id, list_name=list_name)
+    api_response = api_instance.import_contacts(file, column, list_id=list_id, list_name=list_name)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->import_contacts: %s\n" % e)
@@ -6014,7 +6014,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **file**| File containing contacts in csv or xls(x) formats | 
- **column** | **str**| Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | [optional] 
+ **column** | **str**| Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | 
  **list_id** | **int**| List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
  **list_name** | **str**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  | [optional] 
 

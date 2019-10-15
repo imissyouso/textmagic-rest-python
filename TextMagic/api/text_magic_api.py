@@ -10802,18 +10802,18 @@ class TextMagicApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def import_contacts(self, file, **kwargs):  # noqa: E501
+    def import_contacts(self, file, column, **kwargs):  # noqa: E501
         """Import contacts  # noqa: E501
 
         Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.import_contacts(file, async_req=True)
+        >>> thread = api.import_contacts(file, column, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param file file: File containing contacts in csv or xls(x) formats (required)
-        :param str column: Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
+        :param str column: Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (required)
         :param int list_id: List ID contacts will be imported to. Ignored if `listName` is specified. 
         :param str list_name: List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
         :return: ResourceLinkResponse
@@ -10822,23 +10822,23 @@ class TextMagicApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.import_contacts_with_http_info(file, **kwargs)  # noqa: E501
+            return self.import_contacts_with_http_info(file, column, **kwargs)  # noqa: E501
         else:
-            (data) = self.import_contacts_with_http_info(file, **kwargs)  # noqa: E501
+            (data) = self.import_contacts_with_http_info(file, column, **kwargs)  # noqa: E501
             return data
 
-    def import_contacts_with_http_info(self, file, **kwargs):  # noqa: E501
+    def import_contacts_with_http_info(self, file, column, **kwargs):  # noqa: E501
         """Import contacts  # noqa: E501
 
         Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.import_contacts_with_http_info(file, async_req=True)
+        >>> thread = api.import_contacts_with_http_info(file, column, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param file file: File containing contacts in csv or xls(x) formats (required)
-        :param str column: Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
+        :param str column: Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (required)
         :param int list_id: List ID contacts will be imported to. Ignored if `listName` is specified. 
         :param str list_name: List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
         :return: ResourceLinkResponse
@@ -10865,6 +10865,10 @@ class TextMagicApi(object):
         if ('file' not in params or
                 params['file'] is None):
             raise ValueError("Missing the required parameter `file` when calling `import_contacts`")  # noqa: E501
+        # verify the required parameter 'column' is set
+        if ('column' not in params or
+                params['column'] is None):
+            raise ValueError("Missing the required parameter `column` when calling `import_contacts`")  # noqa: E501
 
         collection_formats = {}
 
