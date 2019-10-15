@@ -68,6 +68,7 @@ Method | HTTP request | Description
 [**get_contact**](TextMagicApi.md#get_contact) | **GET** /api/v2/contacts/{id} | Get the details of a specific contact
 [**get_contact_by_phone**](TextMagicApi.md#get_contact_by_phone) | **GET** /api/v2/contacts/phone/{phone} | Get the details of a specific contact by phone number
 [**get_contact_if_blocked**](TextMagicApi.md#get_contact_if_blocked) | **GET** /api/v2/contacts/block/phone | Check is that phone number blocked
+[**get_contact_import_session_progress**](TextMagicApi.md#get_contact_import_session_progress) | **GET** /api/v2/contacts/import/progress/{id} | Check import progress
 [**get_contact_note**](TextMagicApi.md#get_contact_note) | **GET** /api/v2/notes/{id} | Get a contact note
 [**get_contact_notes**](TextMagicApi.md#get_contact_notes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to the given contact.
 [**get_contacts**](TextMagicApi.md#get_contacts) | **GET** /api/v2/contacts | Get all contacts
@@ -110,7 +111,7 @@ Method | HTTP request | Description
 [**get_unsubscribed_contact**](TextMagicApi.md#get_unsubscribed_contact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
 [**get_unsubscribers**](TextMagicApi.md#get_unsubscribers) | **GET** /api/v2/unsubscribers | Get all unsubscribed contacts
 [**get_user_dedicated_numbers**](TextMagicApi.md#get_user_dedicated_numbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
-[**import_contacts**](TextMagicApi.md#import_contacts) | **POST** /api/v2/contacts/import/normalized | Import contacts from the CSV, XLS or XLSX file.
+[**import_contacts**](TextMagicApi.md#import_contacts) | **POST** /api/v2/contacts/import/normalized | Import contacts
 [**invite_subaccount**](TextMagicApi.md#invite_subaccount) | **POST** /api/v2/subaccounts | Invite a new sub-account
 [**mark_chats_read_bulk**](TextMagicApi.md#mark_chats_read_bulk) | **POST** /api/v2/chats/read/bulk | Mark chats as read (bulk)
 [**mark_chats_unread_bulk**](TextMagicApi.md#mark_chats_unread_bulk) | **POST** /api/v2/chats/unread/bulk | Mark chats as unread (bulk)
@@ -701,7 +702,7 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 create_contact_note_input_object = TextMagic.CreateContactNoteInputObject() # CreateContactNoteInputObject | 
-id = 56 # int | 
+id = 1 # int | 
 
 try:
     # Create a new contact note
@@ -1216,7 +1217,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-id = 56 # int | 
+id = 1 # int | 
 
 try:
     # Delete an avatar
@@ -2880,7 +2881,7 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 country = '\"GB\"' # str | Two-letter dedicated number country ISO code.
-prefix = 1 # int | Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional) (default to 1)
+prefix = 447155 # int | Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
 tollfree = 0 # int | Should we show only tollfree numbers (tollfree available only for US). (optional) (default to 0)
 
 try:
@@ -2896,7 +2897,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **country** | **str**| Two-letter dedicated number country ISO code. | 
- **prefix** | **int**| Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional] [default to 1]
+ **prefix** | **int**| Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional] 
  **tollfree** | **int**| Should we show only tollfree numbers (tollfree available only for US). | [optional] [default to 0]
 
 ### Return type
@@ -3303,7 +3304,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-phone = 'phone_example' # str | 
+phone = '\"447860021130\"' # str | 
 upsert = 0 # int | Create a new chat if not found (optional) (default to 0)
 reopen = 0 # int | Reopen chat if found or do not change status (optional) (default to 0)
 
@@ -3480,7 +3481,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-phone = 'phone_example' # str | 
+phone = '\"447860021130\"' # str | 
 
 try:
     # Get the details of a specific contact by phone number
@@ -3533,7 +3534,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-phone = '447860021130' # str | Phone number to check
+phone = '\"447860021130\"' # str | Phone number to check
 
 try:
     # Check is that phone number blocked
@@ -3552,6 +3553,59 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Contact**](Contact.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_contact_import_session_progress**
+> GetContactImportSessionProgressResponse get_contact_import_session_progress(id)
+
+Check import progress
+
+Get contact import session progress.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import TextMagic
+from TextMagic.rest import ApiException
+from pprint import pprint
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = TextMagic.Configuration()
+configuration.username = 'YOUR_USERNAME'
+configuration.password = 'YOUR_PASSWORD'
+
+# create an instance of the API class
+api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
+id = 1 # int | 
+
+try:
+    # Check import progress
+    api_response = api_instance.get_contact_import_session_progress(id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TextMagicApi->get_contact_import_session_progress: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **int**|  | 
+
+### Return type
+
+[**GetContactImportSessionProgressResponse**](GetContactImportSessionProgressResponse.md)
 
 ### Authorization
 
@@ -3586,7 +3640,7 @@ configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-id = 56 # int | 
+id = 1 # int | 
 
 try:
     # Get a contact note
@@ -4185,7 +4239,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-query = 'A' # str | Find contacts or lists by specified search query (optional) (default to A)
+query = '\"A\"' # str | Find contacts or lists by specified search query (optional)
 
 try:
     # Get favorite contacts and lists
@@ -4201,7 +4255,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **query** | **str**| Find contacts or lists by specified search query | [optional] [default to A]
+ **query** | **str**| Find contacts or lists by specified search query | [optional] 
 
 ### Return type
 
@@ -5015,7 +5069,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 by = 'off' # str | *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional) (default to off)
 start = 1430438400 # int | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
-end = '1431648000' # str | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
+end = 1431648000 # int | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
 
 try:
     # Get messaging statistics
@@ -5031,7 +5085,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **by** | **str**| *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  | [optional] [default to off]
  **start** | **int**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
- **end** | **str**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
+ **end** | **int**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
 ### Return type
 
@@ -5400,7 +5454,7 @@ configuration.password = 'YOUR_PASSWORD'
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 page = 1 # int | Fetch specified results page. (optional) (default to 1)
 limit = 10 # int | The number of results per page. (optional) (default to 10)
-start = "2018-11-11 11:11" # int | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
+start = '\"2018-11-11 11:11\"' # str | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
 end = '\"2019-11-11 11:11\"' # str | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
 
 try:
@@ -5417,7 +5471,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **int**| The number of results per page. | [optional] [default to 10]
- **start** | **int**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
+ **start** | **str**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
  **end** | **str**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
 ### Return type
@@ -5921,11 +5975,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **import_contacts**
-> import_contacts(file, column=column, list_name=list_name, list_id=list_id)
+> ResourceLinkResponse import_contacts(file, column=column, list_id=list_id, list_name=list_name)
+
+Import contacts
 
 Import contacts from the CSV, XLS or XLSX file.
-
-
 
 ### Example
 ```python
@@ -5943,13 +5997,14 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 file = '/path/to/file.txt' # file | File containing contacts in csv or xls(x) formats
-column = 'column_example' # str |  (optional)
-list_name = 'list_name_example' # str | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. (optional)
-list_id = 56 # int | List ID contacts will be imported to. (optional)
+column = '\"0:firstName;1:lastName;3:phone;4:email\"' # str | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required.  (optional)
+list_id = 364 # int | List ID contacts will be imported to. Ignored if `listName` is specified.  (optional)
+list_name = '\"A new list\"' # str | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified.  (optional)
 
 try:
-    # Import contacts from the CSV, XLS or XLSX file.
-    api_instance.import_contacts(file, column=column, list_name=list_name, list_id=list_id)
+    # Import contacts
+    api_response = api_instance.import_contacts(file, column=column, list_id=list_id, list_name=list_name)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling TextMagicApi->import_contacts: %s\n" % e)
 ```
@@ -5959,13 +6014,13 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **file**| File containing contacts in csv or xls(x) formats | 
- **column** | **str**|  | [optional] 
- **list_name** | **str**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. | [optional] 
- **list_id** | **int**| List ID contacts will be imported to. | [optional] 
+ **column** | **str**| Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | [optional] 
+ **list_id** | **int**| List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
+ **list_name** | **str**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  | [optional] 
 
 ### Return type
 
-void (empty response body)
+[**ResourceLinkResponse**](ResourceLinkResponse.md)
 
 ### Authorization
 
@@ -7782,7 +7837,7 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 update_custom_field_value_input_object = TextMagic.UpdateCustomFieldValueInputObject() # UpdateCustomFieldValueInputObject | 
-id = 'id_example' # str | 
+id = 554 # int | 
 
 try:
     # Edit the custom field value of a specified contact
@@ -7797,7 +7852,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **update_custom_field_value_input_object** | [**UpdateCustomFieldValueInputObject**](UpdateCustomFieldValueInputObject.md)|  | 
- **id** | **str**|  | 
+ **id** | **int**|  | 
 
 ### Return type
 
@@ -8103,7 +8158,7 @@ configuration.password = 'YOUR_PASSWORD'
 # create an instance of the API class
 api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
 image = '/path/to/file.txt' # file | Contact avatar. Should be PNG or JPG file not more than 10 MB
-id = 56 # int | 
+id = 1 # int | 
 
 try:
     # Upload an avatar

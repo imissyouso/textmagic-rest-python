@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **recipients_count** | **int** | Amount of actual recipients. | 
 **timezone** | **str** | User-friendly timezone name (with spaces replaced by underscores). | 
 **completed** | **bool** | Indicates that schedling has been completed. | 
-**avatar** | **str** | null | 
+**avatar** | **str** | TODO | 
 **created_at** | **datetime** | Scheduling creation time. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

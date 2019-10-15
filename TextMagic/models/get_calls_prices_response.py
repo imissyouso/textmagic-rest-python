@@ -31,14 +31,124 @@ class GetCallsPricesResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'outbound': 'float',
+        'inbound': 'float',
+        'forward': 'float',
+        'country': 'str'
     }
 
     attribute_map = {
+        'outbound': 'outbound',
+        'inbound': 'inbound',
+        'forward': 'forward',
+        'country': 'country'
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self, outbound=None, inbound=None, forward=None, country=None):  # noqa: E501
         """GetCallsPricesResponse - a model defined in Swagger"""  # noqa: E501
+
+        self._outbound = None
+        self._inbound = None
+        self._forward = None
+        self._country = None
         self.discriminator = None
+
+        self.outbound = outbound
+        self.inbound = inbound
+        self.forward = forward
+        self.country = country
+
+    @property
+    def outbound(self):
+        """Gets the outbound of this GetCallsPricesResponse.  # noqa: E501
+
+        Price for outbound message  # noqa: E501
+
+        :return: The outbound of this GetCallsPricesResponse.  # noqa: E501
+        :rtype: float
+        """
+        return self._outbound
+
+    @outbound.setter
+    def outbound(self, outbound):
+        """Sets the outbound of this GetCallsPricesResponse.
+
+        Price for outbound message  # noqa: E501
+
+        :param outbound: The outbound of this GetCallsPricesResponse.  # noqa: E501
+        :type: float
+        """
+
+        self._outbound = outbound
+
+    @property
+    def inbound(self):
+        """Gets the inbound of this GetCallsPricesResponse.  # noqa: E501
+
+        Price for inbound message  # noqa: E501
+
+        :return: The inbound of this GetCallsPricesResponse.  # noqa: E501
+        :rtype: float
+        """
+        return self._inbound
+
+    @inbound.setter
+    def inbound(self, inbound):
+        """Sets the inbound of this GetCallsPricesResponse.
+
+        Price for inbound message  # noqa: E501
+
+        :param inbound: The inbound of this GetCallsPricesResponse.  # noqa: E501
+        :type: float
+        """
+
+        self._inbound = inbound
+
+    @property
+    def forward(self):
+        """Gets the forward of this GetCallsPricesResponse.  # noqa: E501
+
+        Price for forward  # noqa: E501
+
+        :return: The forward of this GetCallsPricesResponse.  # noqa: E501
+        :rtype: float
+        """
+        return self._forward
+
+    @forward.setter
+    def forward(self, forward):
+        """Sets the forward of this GetCallsPricesResponse.
+
+        Price for forward  # noqa: E501
+
+        :param forward: The forward of this GetCallsPricesResponse.  # noqa: E501
+        :type: float
+        """
+
+        self._forward = forward
+
+    @property
+    def country(self):
+        """Gets the country of this GetCallsPricesResponse.  # noqa: E501
+
+        2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
+
+        :return: The country of this GetCallsPricesResponse.  # noqa: E501
+        :rtype: str
+        """
+        return self._country
+
+    @country.setter
+    def country(self, country):
+        """Sets the country of this GetCallsPricesResponse.
+
+        2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country  # noqa: E501
+
+        :param country: The country of this GetCallsPricesResponse.  # noqa: E501
+        :type: str
+        """
+
+        self._country = country
 
     def to_dict(self):
         """Returns the model properties as a dict"""

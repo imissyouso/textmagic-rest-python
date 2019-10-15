@@ -477,6 +477,13 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
+    def test_get_contact_import_session_progress(self):
+        """Test case for get_contact_import_session_progress
+
+        Check import progress  # noqa: E501
+        """
+        pass
+
     def test_get_contact_note(self):
         """Test case for get_contact_note
 
@@ -774,7 +781,7 @@ class TestTextMagicApi(unittest.TestCase):
     def test_import_contacts(self):
         """Test case for import_contacts
 
-        Import contacts from the CSV, XLS or XLSX file.  # noqa: E501
+        Import contacts  # noqa: E501
         """
         pass
 

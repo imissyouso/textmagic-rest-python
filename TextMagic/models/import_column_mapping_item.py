@@ -36,8 +36,8 @@ class ImportColumnMappingItem(object):
     }
 
     attribute_map = {
-        'column_position_in_file': 'column_position_in_file',
-        'field_or_custom_field_id': 'field_or_custom_field_id'
+        'column_position_in_file': 'columnPositionInFile',
+        'field_or_custom_field_id': 'fieldOrCustomFieldId'
     }
 
     def __init__(self, column_position_in_file=None, field_or_custom_field_id=None):  # noqa: E501
@@ -47,10 +47,8 @@ class ImportColumnMappingItem(object):
         self._field_or_custom_field_id = None
         self.discriminator = None
 
-        if column_position_in_file is not None:
-            self.column_position_in_file = column_position_in_file
-        if field_or_custom_field_id is not None:
-            self.field_or_custom_field_id = field_or_custom_field_id
+        self.column_position_in_file = column_position_in_file
+        self.field_or_custom_field_id = field_or_custom_field_id
 
     @property
     def column_position_in_file(self):

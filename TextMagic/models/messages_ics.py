@@ -443,7 +443,7 @@ class MessagesIcs(object):
     def avatar(self):
         """Gets the avatar of this MessagesIcs.  # noqa: E501
 
-        null  # noqa: E501
+        TODO  # noqa: E501
 
         :return: The avatar of this MessagesIcs.  # noqa: E501
         :rtype: str
@@ -454,7 +454,7 @@ class MessagesIcs(object):
     def avatar(self, avatar):
         """Sets the avatar of this MessagesIcs.
 
-        null  # noqa: E501
+        TODO  # noqa: E501
 
         :param avatar: The avatar of this MessagesIcs.  # noqa: E501
         :type: str

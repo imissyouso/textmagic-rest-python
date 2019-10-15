@@ -42,8 +42,8 @@ class GetMessagePriceResponseCountriesItem(object):
 
     attribute_map = {
         'country': 'country',
-        'country_name': 'country_name',
-        'allow_dedicated': 'allow_dedicated',
+        'country_name': 'countryName',
+        'allow_dedicated': 'allowDedicated',
         'count': 'count',
         'max': 'max',
         'sum': 'sum',

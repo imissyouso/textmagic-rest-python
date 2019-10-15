@@ -37,7 +37,7 @@ class UpdateSurveyCountryItem(object):
 
     attribute_map = {
         'country': 'country',
-        'user_inbound_id': 'user_inbound_id'
+        'user_inbound_id': 'userInboundId'
     }
 
     def __init__(self, country=None, user_inbound_id=None):  # noqa: E501
