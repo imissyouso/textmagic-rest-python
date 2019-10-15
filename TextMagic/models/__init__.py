@@ -21,6 +21,7 @@ from TextMagic.models.bad_request_response_errors import BadRequestResponseError
 from TextMagic.models.block_contact_input_object import BlockContactInputObject
 from TextMagic.models.bulk_session import BulkSession
 from TextMagic.models.buy_dedicated_number_input_object import BuyDedicatedNumberInputObject
+from TextMagic.models.call_price_response import CallPriceResponse
 from TextMagic.models.chat import Chat
 from TextMagic.models.check_phone_verification_code_input_object import CheckPhoneVerificationCodeInputObject
 from TextMagic.models.clear_and_assign_contacts_to_list_input_object import ClearAndAssignContactsToListInputObject
@@ -108,7 +109,6 @@ from TextMagic.models.get_unread_messages_total_response import GetUnreadMessage
 from TextMagic.models.get_unsubscribers_paginated_response import GetUnsubscribersPaginatedResponse
 from TextMagic.models.get_user_dedicated_numbers_paginated_response import GetUserDedicatedNumbersPaginatedResponse
 from TextMagic.models.get_versions_response import GetVersionsResponse
-from TextMagic.models.import_column_mapping_item import ImportColumnMappingItem
 from TextMagic.models.invite_subaccount_input_object import InviteSubaccountInputObject
 from TextMagic.models.invoice import Invoice
 from TextMagic.models.list import List

@@ -232,7 +232,7 @@ class DoEmailLookupResponse(object):
         :param risk: The risk of this DoEmailLookupResponse.  # noqa: E501
         :type: str
         """
-        allowed_values = ["high", "medium", "low"]  # noqa: E501
+        allowed_values = ["high", "medium", "low", "unknown"]  # noqa: E501
         if risk not in allowed_values:
             raise ValueError(
                 "Invalid value for `risk` ({0}), must be one of {1}"  # noqa: E501

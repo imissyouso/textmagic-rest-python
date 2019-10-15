@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import TextMagic
-from TextMagic.models.import_column_mapping_item import ImportColumnMappingItem  # noqa: E501
+from TextMagic.models.call_price_response import CallPriceResponse  # noqa: E501
 from TextMagic.rest import ApiException
 
 
-class TestImportColumnMappingItem(unittest.TestCase):
-    """ImportColumnMappingItem unit test stubs"""
+class TestCallPriceResponse(unittest.TestCase):
+    """CallPriceResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestImportColumnMappingItem(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testImportColumnMappingItem(self):
-        """Test ImportColumnMappingItem"""
+    def testCallPriceResponse(self):
+        """Test CallPriceResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = TextMagic.models.import_column_mapping_item.ImportColumnMappingItem()  # noqa: E501
+        # model = TextMagic.models.call_price_response.CallPriceResponse()  # noqa: E501
         pass
 
 
