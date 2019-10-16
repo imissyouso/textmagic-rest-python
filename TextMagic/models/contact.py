@@ -394,12 +394,6 @@ class Contact(object):
         :param phone_type: The phone_type of this Contact.  # noqa: E501
         :type: str
         """
-        allowed_values = ["-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]  # noqa: E501
-        if phone_type not in allowed_values:
-            raise ValueError(
-                "Invalid value for `phone_type` ({0}), must be one of {1}"  # noqa: E501
-                .format(phone_type, allowed_values)
-            )
 
         self._phone_type = phone_type
 
