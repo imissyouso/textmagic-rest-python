@@ -166,7 +166,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def alert_email1(self):
         """Gets the alert_email1 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
 
-        New message notification email 2.  # noqa: E501
+        New message notification email 1.  # noqa: E501
 
         :return: The alert_email1 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :rtype: str
@@ -177,7 +177,7 @@ class GetInboundMessagesNotificationSettingsResponse(object):
     def alert_email1(self, alert_email1):
         """Sets the alert_email1 of this GetInboundMessagesNotificationSettingsResponse.
 
-        New message notification email 2.  # noqa: E501
+        New message notification email 1.  # noqa: E501
 
         :param alert_email1: The alert_email1 of this GetInboundMessagesNotificationSettingsResponse.  # noqa: E501
         :type: str

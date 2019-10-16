@@ -113,7 +113,7 @@ class GetContactsAutocompleteResponseItem(object):
     def entity_type(self):
         """Gets the entity_type of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-          # noqa: E501
+        Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message   # noqa: E501
 
         :return: The entity_type of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -124,12 +124,12 @@ class GetContactsAutocompleteResponseItem(object):
     def entity_type(self, entity_type):
         """Sets the entity_type of this GetContactsAutocompleteResponseItem.
 
-          # noqa: E501
+        Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message   # noqa: E501
 
         :param entity_type: The entity_type of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str
         """
-        allowed_values = ["list", "contact", "reply"]  # noqa: E501
+        allowed_values = ["reply", "contact", "list"]  # noqa: E501
         if entity_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `entity_type` ({0}), must be one of {1}"  # noqa: E501
@@ -188,7 +188,7 @@ class GetContactsAutocompleteResponseItem(object):
     def shared_by(self):
         """Gets the shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
 
-        If contact or list was shared by another user then name if this user will be shown.  # noqa: E501
+        If contact or list was shared by another sub-account then name if this user will be shown.  # noqa: E501
 
         :return: The shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :rtype: str
@@ -199,7 +199,7 @@ class GetContactsAutocompleteResponseItem(object):
     def shared_by(self, shared_by):
         """Sets the shared_by of this GetContactsAutocompleteResponseItem.
 
-        If contact or list was shared by another user then name if this user will be shown.  # noqa: E501
+        If contact or list was shared by another sub-account then name if this user will be shown.  # noqa: E501
 
         :param shared_by: The shared_by of this GetContactsAutocompleteResponseItem.  # noqa: E501
         :type: str

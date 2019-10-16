@@ -428,6 +428,7 @@ class MessageOut(object):
     def charset_label(self):
         """Gets the charset_label of this MessageOut.  # noqa: E501
 
+        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages   # noqa: E501
 
         :return: The charset_label of this MessageOut.  # noqa: E501
         :rtype: str
@@ -438,6 +439,7 @@ class MessageOut(object):
     def charset_label(self, charset_label):
         """Sets the charset_label of this MessageOut.
 
+        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages   # noqa: E501
 
         :param charset_label: The charset_label of this MessageOut.  # noqa: E501
         :type: str
@@ -587,6 +589,7 @@ class MessageOut(object):
     def from_email(self):
         """Gets the from_email of this MessageOut.  # noqa: E501
 
+        User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.  # noqa: E501
 
         :return: The from_email of this MessageOut.  # noqa: E501
         :rtype: str
@@ -597,6 +600,7 @@ class MessageOut(object):
     def from_email(self, from_email):
         """Sets the from_email of this MessageOut.
 
+        User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.  # noqa: E501
 
         :param from_email: The from_email of this MessageOut.  # noqa: E501
         :type: str

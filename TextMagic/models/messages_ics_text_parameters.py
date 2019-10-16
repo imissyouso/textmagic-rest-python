@@ -116,6 +116,7 @@ class MessagesIcsTextParameters(object):
     def chars(self):
         """Gets the chars of this MessagesIcsTextParameters.  # noqa: E501
 
+        Characters count.  # noqa: E501
 
         :return: The chars of this MessagesIcsTextParameters.  # noqa: E501
         :rtype: int
@@ -126,6 +127,7 @@ class MessagesIcsTextParameters(object):
     def chars(self, chars):
         """Sets the chars of this MessagesIcsTextParameters.
 
+        Characters count.  # noqa: E501
 
         :param chars: The chars of this MessagesIcsTextParameters.  # noqa: E501
         :type: int
@@ -187,6 +189,7 @@ class MessagesIcsTextParameters(object):
     def charset_label(self):
         """Gets the charset_label of this MessagesIcsTextParameters.  # noqa: E501
 
+        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages   # noqa: E501
 
         :return: The charset_label of this MessagesIcsTextParameters.  # noqa: E501
         :rtype: str
@@ -197,6 +200,7 @@ class MessagesIcsTextParameters(object):
     def charset_label(self, charset_label):
         """Sets the charset_label of this MessagesIcsTextParameters.
 
+        Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages   # noqa: E501
 
         :param charset_label: The charset_label of this MessagesIcsTextParameters.  # noqa: E501
         :type: str

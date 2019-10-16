@@ -378,6 +378,7 @@ class Contact(object):
     def phone_type(self):
         """Gets the phone_type of this Contact.  # noqa: E501
 
+        Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.   # noqa: E501
 
         :return: The phone_type of this Contact.  # noqa: E501
         :rtype: str
@@ -388,10 +389,17 @@ class Contact(object):
     def phone_type(self, phone_type):
         """Sets the phone_type of this Contact.
 
+        Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined.   # noqa: E501
 
         :param phone_type: The phone_type of this Contact.  # noqa: E501
         :type: str
         """
+        allowed_values = ["-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]  # noqa: E501
+        if phone_type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `phone_type` ({0}), must be one of {1}"  # noqa: E501
+                .format(phone_type, allowed_values)
+            )
 
         self._phone_type = phone_type
 

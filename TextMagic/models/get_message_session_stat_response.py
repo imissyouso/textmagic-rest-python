@@ -166,7 +166,7 @@ class GetMessageSessionStatResponse(object):
     def scheduled(self):
         """Gets the scheduled of this GetMessageSessionStatResponse.  # noqa: E501
 
-        Amount of schedules messages.  # noqa: E501
+        Amount of scheduled messages.  # noqa: E501
 
         :return: The scheduled of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -177,7 +177,7 @@ class GetMessageSessionStatResponse(object):
     def scheduled(self, scheduled):
         """Sets the scheduled of this GetMessageSessionStatResponse.
 
-        Amount of schedules messages.  # noqa: E501
+        Amount of scheduled messages.  # noqa: E501
 
         :param scheduled: The scheduled of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int
@@ -189,6 +189,7 @@ class GetMessageSessionStatResponse(object):
     def all(self):
         """Gets the all of this GetMessageSessionStatResponse.  # noqa: E501
 
+        Total amount of messages.  # noqa: E501
 
         :return: The all of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -199,6 +200,7 @@ class GetMessageSessionStatResponse(object):
     def all(self, all):
         """Sets the all of this GetMessageSessionStatResponse.
 
+        Total amount of messages.  # noqa: E501
 
         :param all: The all of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int
@@ -210,7 +212,7 @@ class GetMessageSessionStatResponse(object):
     def sent(self):
         """Gets the sent of this GetMessageSessionStatResponse.  # noqa: E501
 
-        Total sent messages.  # noqa: E501
+        Amount of sent but not yet delivered messages.  # noqa: E501
 
         :return: The sent of this GetMessageSessionStatResponse.  # noqa: E501
         :rtype: int
@@ -221,7 +223,7 @@ class GetMessageSessionStatResponse(object):
     def sent(self, sent):
         """Sets the sent of this GetMessageSessionStatResponse.
 
-        Total sent messages.  # noqa: E501
+        Amount of sent but not yet delivered messages.  # noqa: E501
 
         :param sent: The sent of this GetMessageSessionStatResponse.  # noqa: E501
         :type: int

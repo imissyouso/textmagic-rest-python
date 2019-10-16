@@ -124,6 +124,7 @@ class SendMessageResponse(object):
     def type(self):
         """Gets the type of this SendMessageResponse.  # noqa: E501
 
+        Message response type: * **message** when message sent to a single recipient * **session** when message sent to multiple recipients * **schedule** when message has been scheduled for sending * **bulk** when message sent to multiple recipient and the number of recipients requires asynchronous processiong See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session).   # noqa: E501
 
         :return: The type of this SendMessageResponse.  # noqa: E501
         :rtype: str
@@ -134,10 +135,17 @@ class SendMessageResponse(object):
     def type(self, type):
         """Sets the type of this SendMessageResponse.
 
+        Message response type: * **message** when message sent to a single recipient * **session** when message sent to multiple recipients * **schedule** when message has been scheduled for sending * **bulk** when message sent to multiple recipient and the number of recipients requires asynchronous processiong See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session).   # noqa: E501
 
         :param type: The type of this SendMessageResponse.  # noqa: E501
         :type: str
         """
+        allowed_values = ["message", "session", "schedule", "bulk"]  # noqa: E501
+        if type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `type` ({0}), must be one of {1}"  # noqa: E501
+                .format(type, allowed_values)
+            )
 
         self._type = type
 
@@ -191,6 +199,7 @@ class SendMessageResponse(object):
     def message_id(self):
         """Gets the message_id of this SendMessageResponse.  # noqa: E501
 
+        Message ID.  # noqa: E501
 
         :return: The message_id of this SendMessageResponse.  # noqa: E501
         :rtype: int
@@ -201,6 +210,7 @@ class SendMessageResponse(object):
     def message_id(self, message_id):
         """Sets the message_id of this SendMessageResponse.
 
+        Message ID.  # noqa: E501
 
         :param message_id: The message_id of this SendMessageResponse.  # noqa: E501
         :type: int

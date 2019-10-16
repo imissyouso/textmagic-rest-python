@@ -222,6 +222,7 @@ class List(object):
     def service(self):
         """Gets the service of this List.  # noqa: E501
 
+        Internal service field.  # noqa: E501
 
         :return: The service of this List.  # noqa: E501
         :rtype: bool
@@ -232,6 +233,7 @@ class List(object):
     def service(self, service):
         """Sets the service of this List.
 
+        Internal service field.  # noqa: E501
 
         :param service: The service of this List.  # noqa: E501
         :type: bool
@@ -287,7 +289,7 @@ class List(object):
     def is_default(self):
         """Gets the is_default of this List.  # noqa: E501
 
-        Indicates that List is used as a default. All new contacts will be added in this List by default.  # noqa: E501
+        Indicates that List is used as a default. All new contacts that added via Web-app will be added in this List by default.  # noqa: E501
 
         :return: The is_default of this List.  # noqa: E501
         :rtype: bool
@@ -298,7 +300,7 @@ class List(object):
     def is_default(self, is_default):
         """Sets the is_default of this List.
 
-        Indicates that List is used as a default. All new contacts will be added in this List by default.  # noqa: E501
+        Indicates that List is used as a default. All new contacts that added via Web-app will be added in this List by default.  # noqa: E501
 
         :param is_default: The is_default of this List.  # noqa: E501
         :type: bool

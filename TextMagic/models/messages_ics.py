@@ -227,6 +227,7 @@ class MessagesIcs(object):
     def contact_name(self):
         """Gets the contact_name of this MessagesIcs.  # noqa: E501
 
+        Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.  # noqa: E501
 
         :return: The contact_name of this MessagesIcs.  # noqa: E501
         :rtype: str
@@ -237,6 +238,7 @@ class MessagesIcs(object):
     def contact_name(self, contact_name):
         """Sets the contact_name of this MessagesIcs.
 
+        Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.  # noqa: E501
 
         :param contact_name: The contact_name of this MessagesIcs.  # noqa: E501
         :type: str
@@ -283,6 +285,12 @@ class MessagesIcs(object):
         :param type: The type of this MessagesIcs.  # noqa: E501
         :type: str
         """
+        allowed_values = ["Once", "Hourly", "Daily", "Weekly", "Monthly", "Yearly"]  # noqa: E501
+        if type not in allowed_values:
+            raise ValueError(
+                "Invalid value for `type` ({0}), must be one of {1}"  # noqa: E501
+                .format(type, allowed_values)
+            )
 
         self._type = type
 
@@ -290,6 +298,7 @@ class MessagesIcs(object):
     def summary(self):
         """Gets the summary of this MessagesIcs.  # noqa: E501
 
+        A human-readable summary of the sending schedule.  # noqa: E501
 
         :return: The summary of this MessagesIcs.  # noqa: E501
         :rtype: str
@@ -300,6 +309,7 @@ class MessagesIcs(object):
     def summary(self, summary):
         """Sets the summary of this MessagesIcs.
 
+        A human-readable summary of the sending schedule.  # noqa: E501
 
         :param summary: The summary of this MessagesIcs.  # noqa: E501
         :type: str
@@ -332,6 +342,7 @@ class MessagesIcs(object):
     def first_occurrence(self):
         """Gets the first_occurrence of this MessagesIcs.  # noqa: E501
 
+        First occurence date.  # noqa: E501
 
         :return: The first_occurrence of this MessagesIcs.  # noqa: E501
         :rtype: datetime
@@ -342,6 +353,7 @@ class MessagesIcs(object):
     def first_occurrence(self, first_occurrence):
         """Sets the first_occurrence of this MessagesIcs.
 
+        First occurence date.  # noqa: E501
 
         :param first_occurrence: The first_occurrence of this MessagesIcs.  # noqa: E501
         :type: datetime
@@ -353,6 +365,7 @@ class MessagesIcs(object):
     def last_occurrence(self):
         """Gets the last_occurrence of this MessagesIcs.  # noqa: E501
 
+        Last occurence date (could be `null` if the schedule is endless).  # noqa: E501
 
         :return: The last_occurrence of this MessagesIcs.  # noqa: E501
         :rtype: datetime
@@ -363,6 +376,7 @@ class MessagesIcs(object):
     def last_occurrence(self, last_occurrence):
         """Sets the last_occurrence of this MessagesIcs.
 
+        Last occurence date (could be `null` if the schedule is endless).  # noqa: E501
 
         :param last_occurrence: The last_occurrence of this MessagesIcs.  # noqa: E501
         :type: datetime
@@ -443,7 +457,7 @@ class MessagesIcs(object):
     def avatar(self):
         """Gets the avatar of this MessagesIcs.  # noqa: E501
 
-        TODO  # noqa: E501
+        A relative link to the contact avatar.  # noqa: E501
 
         :return: The avatar of this MessagesIcs.  # noqa: E501
         :rtype: str
@@ -454,7 +468,7 @@ class MessagesIcs(object):
     def avatar(self, avatar):
         """Sets the avatar of this MessagesIcs.
 
-        TODO  # noqa: E501
+        A relative link to the contact avatar.  # noqa: E501
 
         :param avatar: The avatar of this MessagesIcs.  # noqa: E501
         :type: str
