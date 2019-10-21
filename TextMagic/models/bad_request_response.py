@@ -61,7 +61,7 @@ class BadRequestResponse(object):
     def code(self):
         """Gets the code of this BadRequestResponse.  # noqa: E501
 
-        HTTP error code.  # noqa: E501
+        Error code. Meanings of error codes are similar to [HTTP response codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  # noqa: E501
 
         :return: The code of this BadRequestResponse.  # noqa: E501
         :rtype: int
@@ -72,7 +72,7 @@ class BadRequestResponse(object):
     def code(self, code):
         """Sets the code of this BadRequestResponse.
 
-        HTTP error code.  # noqa: E501
+        Error code. Meanings of error codes are similar to [HTTP response codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  # noqa: E501
 
         :param code: The code of this BadRequestResponse.  # noqa: E501
         :type: int

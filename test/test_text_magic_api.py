@@ -554,13 +554,6 @@ class TestTextMagicApi(unittest.TestCase):
         """
         pass
 
-    def test_get_disallowed_rules(self):
-        """Test case for get_disallowed_rules
-
-        Get disallowed permissions  # noqa: E501
-        """
-        pass
-
     def test_get_favourites(self):
         """Test case for get_favourites
 

@@ -56,6 +56,7 @@ class UnauthorizedResponse(object):
     def code(self):
         """Gets the code of this UnauthorizedResponse.  # noqa: E501
 
+        Error code. Meanings of error codes are similar to [HTTP response codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  # noqa: E501
 
         :return: The code of this UnauthorizedResponse.  # noqa: E501
         :rtype: int
@@ -66,6 +67,7 @@ class UnauthorizedResponse(object):
     def code(self, code):
         """Sets the code of this UnauthorizedResponse.
 
+        Error code. Meanings of error codes are similar to [HTTP response codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).  # noqa: E501
 
         :param code: The code of this UnauthorizedResponse.  # noqa: E501
         :type: int
@@ -77,6 +79,7 @@ class UnauthorizedResponse(object):
     def message(self):
         """Gets the message of this UnauthorizedResponse.  # noqa: E501
 
+        Brief error message. You could display this message to your user or save it in a log.  # noqa: E501
 
         :return: The message of this UnauthorizedResponse.  # noqa: E501
         :rtype: str
@@ -87,6 +90,7 @@ class UnauthorizedResponse(object):
     def message(self, message):
         """Sets the message of this UnauthorizedResponse.
 
+        Brief error message. You could display this message to your user or save it in a log.  # noqa: E501
 
         :param message: The message of this UnauthorizedResponse.  # noqa: E501
         :type: str

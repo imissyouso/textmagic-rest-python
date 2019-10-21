@@ -50,15 +50,7 @@ class MessageOut(object):
         'price': 'float',
         'parts_count': 'int',
         'from_email': 'str',
-        'from_number': 'str',
-        'smsc_id': 'str',
-        'contact': 'str',
-        'source': 'str',
-        'delivered_count': 'int',
-        'numbers_count': 'int',
-        'user_id': 'int',
-        'credits_price': 'str',
-        'chars': 'int'
+        'from_number': 'str'
     }
 
     attribute_map = {
@@ -81,18 +73,10 @@ class MessageOut(object):
         'price': 'price',
         'parts_count': 'partsCount',
         'from_email': 'fromEmail',
-        'from_number': 'fromNumber',
-        'smsc_id': 'smscId',
-        'contact': 'contact',
-        'source': 'source',
-        'delivered_count': 'deliveredCount',
-        'numbers_count': 'numbersCount',
-        'user_id': 'userId',
-        'credits_price': 'creditsPrice',
-        'chars': 'chars'
+        'from_number': 'fromNumber'
     }
 
-    def __init__(self, id=None, sender=None, receiver=None, text=None, status=None, contact_id=None, session_id=None, message_time=None, avatar=None, deleted=None, charset=None, charset_label=None, first_name=None, last_name=None, country=None, phone=None, price=None, parts_count=None, from_email=None, from_number=None, smsc_id=None, contact=None, source=None, delivered_count=None, numbers_count=None, user_id=None, credits_price=None, chars=None):  # noqa: E501
+    def __init__(self, id=None, sender=None, receiver=None, text=None, status=None, contact_id=None, session_id=None, message_time=None, avatar=None, deleted=None, charset=None, charset_label=None, first_name=None, last_name=None, country=None, phone=None, price=None, parts_count=None, from_email=None, from_number=None):  # noqa: E501
         """MessageOut - a model defined in Swagger"""  # noqa: E501
 
         self._id = None
@@ -115,14 +99,6 @@ class MessageOut(object):
         self._parts_count = None
         self._from_email = None
         self._from_number = None
-        self._smsc_id = None
-        self._contact = None
-        self._source = None
-        self._delivered_count = None
-        self._numbers_count = None
-        self._user_id = None
-        self._credits_price = None
-        self._chars = None
         self.discriminator = None
 
         self.id = id
@@ -152,22 +128,6 @@ class MessageOut(object):
             self.from_email = from_email
         if from_number is not None:
             self.from_number = from_number
-        if smsc_id is not None:
-            self.smsc_id = smsc_id
-        if contact is not None:
-            self.contact = contact
-        if source is not None:
-            self.source = source
-        if delivered_count is not None:
-            self.delivered_count = delivered_count
-        if numbers_count is not None:
-            self.numbers_count = numbers_count
-        if user_id is not None:
-            self.user_id = user_id
-        if credits_price is not None:
-            self.credits_price = credits_price
-        if chars is not None:
-            self.chars = chars
 
     @property
     def id(self):
@@ -630,174 +590,6 @@ class MessageOut(object):
         """
 
         self._from_number = from_number
-
-    @property
-    def smsc_id(self):
-        """Gets the smsc_id of this MessageOut.  # noqa: E501
-
-
-        :return: The smsc_id of this MessageOut.  # noqa: E501
-        :rtype: str
-        """
-        return self._smsc_id
-
-    @smsc_id.setter
-    def smsc_id(self, smsc_id):
-        """Sets the smsc_id of this MessageOut.
-
-
-        :param smsc_id: The smsc_id of this MessageOut.  # noqa: E501
-        :type: str
-        """
-
-        self._smsc_id = smsc_id
-
-    @property
-    def contact(self):
-        """Gets the contact of this MessageOut.  # noqa: E501
-
-
-        :return: The contact of this MessageOut.  # noqa: E501
-        :rtype: str
-        """
-        return self._contact
-
-    @contact.setter
-    def contact(self, contact):
-        """Sets the contact of this MessageOut.
-
-
-        :param contact: The contact of this MessageOut.  # noqa: E501
-        :type: str
-        """
-
-        self._contact = contact
-
-    @property
-    def source(self):
-        """Gets the source of this MessageOut.  # noqa: E501
-
-
-        :return: The source of this MessageOut.  # noqa: E501
-        :rtype: str
-        """
-        return self._source
-
-    @source.setter
-    def source(self, source):
-        """Sets the source of this MessageOut.
-
-
-        :param source: The source of this MessageOut.  # noqa: E501
-        :type: str
-        """
-
-        self._source = source
-
-    @property
-    def delivered_count(self):
-        """Gets the delivered_count of this MessageOut.  # noqa: E501
-
-
-        :return: The delivered_count of this MessageOut.  # noqa: E501
-        :rtype: int
-        """
-        return self._delivered_count
-
-    @delivered_count.setter
-    def delivered_count(self, delivered_count):
-        """Sets the delivered_count of this MessageOut.
-
-
-        :param delivered_count: The delivered_count of this MessageOut.  # noqa: E501
-        :type: int
-        """
-
-        self._delivered_count = delivered_count
-
-    @property
-    def numbers_count(self):
-        """Gets the numbers_count of this MessageOut.  # noqa: E501
-
-
-        :return: The numbers_count of this MessageOut.  # noqa: E501
-        :rtype: int
-        """
-        return self._numbers_count
-
-    @numbers_count.setter
-    def numbers_count(self, numbers_count):
-        """Sets the numbers_count of this MessageOut.
-
-
-        :param numbers_count: The numbers_count of this MessageOut.  # noqa: E501
-        :type: int
-        """
-
-        self._numbers_count = numbers_count
-
-    @property
-    def user_id(self):
-        """Gets the user_id of this MessageOut.  # noqa: E501
-
-
-        :return: The user_id of this MessageOut.  # noqa: E501
-        :rtype: int
-        """
-        return self._user_id
-
-    @user_id.setter
-    def user_id(self, user_id):
-        """Sets the user_id of this MessageOut.
-
-
-        :param user_id: The user_id of this MessageOut.  # noqa: E501
-        :type: int
-        """
-
-        self._user_id = user_id
-
-    @property
-    def credits_price(self):
-        """Gets the credits_price of this MessageOut.  # noqa: E501
-
-
-        :return: The credits_price of this MessageOut.  # noqa: E501
-        :rtype: str
-        """
-        return self._credits_price
-
-    @credits_price.setter
-    def credits_price(self, credits_price):
-        """Sets the credits_price of this MessageOut.
-
-
-        :param credits_price: The credits_price of this MessageOut.  # noqa: E501
-        :type: str
-        """
-
-        self._credits_price = credits_price
-
-    @property
-    def chars(self):
-        """Gets the chars of this MessageOut.  # noqa: E501
-
-
-        :return: The chars of this MessageOut.  # noqa: E501
-        :rtype: int
-        """
-        return self._chars
-
-    @chars.setter
-    def chars(self, chars):
-        """Sets the chars of this MessageOut.
-
-
-        :param chars: The chars of this MessageOut.  # noqa: E501
-        :type: int
-        """
-
-        self._chars = chars
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -43,7 +43,7 @@ class SendMessageInputObject(object):
         'parts_count': 'int',
         'reference_id': 'int',
         '_from': 'str',
-        'rule': 'str',
+        'rrule': 'str',
         'create_chat': 'bool',
         'tts': 'bool',
         'local': 'bool',
@@ -63,14 +63,14 @@ class SendMessageInputObject(object):
         'parts_count': 'partsCount',
         'reference_id': 'referenceId',
         '_from': 'from',
-        'rule': 'rule',
+        'rrule': 'rrule',
         'create_chat': 'createChat',
         'tts': 'tts',
         'local': 'local',
         'local_country': 'localCountry'
     }
 
-    def __init__(self, text=None, template_id=None, sending_time=None, sending_date_time=None, sending_timezone=None, contacts=None, lists=None, phones=None, cut_extra=False, parts_count=None, reference_id=None, _from=None, rule=None, create_chat=False, tts=False, local=False, local_country=None):  # noqa: E501
+    def __init__(self, text=None, template_id=None, sending_time=None, sending_date_time=None, sending_timezone=None, contacts=None, lists=None, phones=None, cut_extra=False, parts_count=None, reference_id=None, _from=None, rrule=None, create_chat=False, tts=False, local=False, local_country=None):  # noqa: E501
         """SendMessageInputObject - a model defined in Swagger"""  # noqa: E501
 
         self._text = None
@@ -85,7 +85,7 @@ class SendMessageInputObject(object):
         self._parts_count = None
         self._reference_id = None
         self.__from = None
-        self._rule = None
+        self._rrule = None
         self._create_chat = None
         self._tts = None
         self._local = None
@@ -114,8 +114,8 @@ class SendMessageInputObject(object):
             self.reference_id = reference_id
         if _from is not None:
             self._from = _from
-        if rule is not None:
-            self.rule = rule
+        if rrule is not None:
+            self.rrule = rrule
         if create_chat is not None:
             self.create_chat = create_chat
         if tts is not None:
@@ -402,27 +402,27 @@ class SendMessageInputObject(object):
         self.__from = _from
 
     @property
-    def rule(self):
-        """Gets the rule of this SendMessageInputObject.  # noqa: E501
+    def rrule(self):
+        """Gets the rrule of this SendMessageInputObject.  # noqa: E501
 
         iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.  # noqa: E501
 
-        :return: The rule of this SendMessageInputObject.  # noqa: E501
+        :return: The rrule of this SendMessageInputObject.  # noqa: E501
         :rtype: str
         """
-        return self._rule
+        return self._rrule
 
-    @rule.setter
-    def rule(self, rule):
-        """Sets the rule of this SendMessageInputObject.
+    @rrule.setter
+    def rrule(self, rrule):
+        """Sets the rrule of this SendMessageInputObject.
 
         iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.  # noqa: E501
 
-        :param rule: The rule of this SendMessageInputObject.  # noqa: E501
+        :param rrule: The rrule of this SendMessageInputObject.  # noqa: E501
         :type: str
         """
 
-        self._rule = rule
+        self._rrule = rrule
 
     @property
     def create_chat(self):

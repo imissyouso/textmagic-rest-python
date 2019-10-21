@@ -79,7 +79,6 @@ Method | HTTP request | Description
 [**get_custom_field**](TextMagicApi.md#get_custom_field) | **GET** /api/v2/customfields/{id} | Get the details of a specific custom field
 [**get_custom_fields**](TextMagicApi.md#get_custom_fields) | **GET** /api/v2/customfields | Get all custom fields
 [**get_dedicated_number**](TextMagicApi.md#get_dedicated_number) | **GET** /api/v2/numbers/{id} | Get the details of a specific dedicated number
-[**get_disallowed_rules**](TextMagicApi.md#get_disallowed_rules) | **GET** /api/v2/user/disallowed-rules | Get disallowed permissions
 [**get_favourites**](TextMagicApi.md#get_favourites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists
 [**get_inbound_message**](TextMagicApi.md#get_inbound_message) | **GET** /api/v2/replies/{id} | Get a single inbound message
 [**get_inbound_messages_notification_settings**](TextMagicApi.md#get_inbound_messages_notification_settings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
@@ -4154,55 +4153,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**UsersInbound**](UsersInbound.md)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **get_disallowed_rules**
-> GetDisallowedRulesResponse get_disallowed_rules()
-
-Get disallowed permissions
-
-Get an array of all rules that are disallowed to the current account.
-
-### Example
-```python
-from __future__ import print_function
-import time
-import TextMagic
-from TextMagic.rest import ApiException
-from pprint import pprint
-
-# Configure HTTP basic authorization: BasicAuth
-configuration = TextMagic.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
-
-# create an instance of the API class
-api_instance = TextMagic.TextMagicApi(TextMagic.ApiClient(configuration))
-
-try:
-    # Get disallowed permissions
-    api_response = api_instance.get_disallowed_rules()
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TextMagicApi->get_disallowed_rules: %s\n" % e)
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**GetDisallowedRulesResponse**](GetDisallowedRulesResponse.md)
 
 ### Authorization
 
